@@ -27,6 +27,9 @@ codes <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidy
 
 # Data description
 
+This dataset is about Women's World Cup, which originally comes from website data.word <https://data.world/sportsvizsunday/womens-world-cup-data>. It consists of final score and win/loss status data from 1991-2019. Additionally, the 2019 rosters for each team are included. After being cleaned by a data analyst, we download the data from his github <https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-07-09>.
+There are three .csv files in this dataset to manage and store the data, and they are named "codes", "squads" and "wwc_outcomes". "wwc_outcomes.csv" has seven variables: "year" represents the year of tournament, "team" is the abbreviated team name, "score" means the score by team, "round" means the round of the tourament, "yearly_game_id" means the grouping variable, "team_num" is 1 or 2, and "win_status" will show if the group win or lose. In "squads.csv", "squad_no" is the squad number from 1to 23, "country" shows the country of the team, "pos" is the position of player, "player" shows the name of player, "dob" is the abbreviation of date of birth, "age" is the players' ages, "caps" diaplays the international games played by player, "goal" is the international goals scored by player, and "club" shows which club is the player belongs to.
+
 # Analysis and findings
 
 [FILL] Should include at least one plot or numerical summary for each of your questions, that helps the reader arrive at an answer. You should also write paragraphs describing the methods, summaries and findings. 
