@@ -21,11 +21,19 @@ codes <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidy
 
 
 
-# Introduction and motivation
+# Introduction and motivation:
 
-[FILL] Give the bigger picture of the data, and inspire the reader to learn more about the problem by reading your analysis. 
+Women's soccer has gained a lot of media attention in the last few years, and deservingly so. Countries like the USA, a dominant force in women's soccer, have produced some top quality players like Megan Rapinoe, Carli Lloyd, Alex Morgan and Julie Ertz. Just north of the USA, Christine Sinclair from Canada became the first player to win the Lou Marsh Award as Canadian Athlete of the Year^1, which is unsurprising considering her outstanding haul of 182 career international goals. Ada Hegerberg from Norway became the first woman to win the prestigious Ballon d'Or award, an yearly honor awarded to best player in the world, which was first introduced for the women's game in 2018^1.
 
-# Data description
+The advancement of women's soccer has been parallel with the understanding and acceptance of data and analytics in the game. The technological advancement in capturing and analysing data has exploded since the late 1990s, when it began. Clubs have used this technology to identify and scout talent from all over the world.
+
+Every country has a different approach towards coaching and developing talent. Success at an international level could be down to the ability of world class players playing with a certain level of chemistry, which could be challenging as it is common for them to be playing for different rival clubs at the domestic level. In the men's game, we saw Italy, Spain and Germany winning world cups in 2006, 2010 and 2014 respectively. Many partly attributed the success of these teams towards the fact that majority of these players playing in the same domestic league (or country), or even in the same club, especially those clubs that produce the most successful international players.
+
+In this paper, we will approach the women's game with the same lens. We will look for any specific domestic clubs that contribute towards more successful world cup players, than others. We believe that these findings could prove meaningful to coaches, scouts and even young players in the game looking to choose clubs to play for with future international success in mind.
+
+
+
+# Data description:
 
 This dataset is about Women's World Cup, which originally comes from website data.word <https://data.world/sportsvizsunday/womens-world-cup-data>. It consists of final score and win/loss status data from 1991-2019. Additionally, the 2019 rosters for each team are included. After being cleaned by a data analyst, we download the data from his github <https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-07-09>.
 There are three .csv files in this dataset to manage and store the data, and they are named "codes", "squads" and "wwc_outcomes". "wwc_outcomes.csv" has seven variables: "year" represents the year of tournament, "team" is the abbreviated team name, "score" means the score by team, "round" means the round of the tourament, "yearly_game_id" means the grouping variable, "team_num" is 1 or 2, and "win_status" will show if the group win or lose. In "squads.csv", "squad_no" is the squad number from 1to 23, "country" shows the country of the team, "pos" is the position of player, "player" shows the name of player, "dob" is the abbreviation of date of birth, "age" is the players' ages, "caps" diaplays the international games played by player, "goal" is the international goals scored by player, and "club" shows which club is the player belongs to.
@@ -35,3 +43,5 @@ There are three .csv files in this dataset to manage and store the data, and the
 [FILL] Should include at least one plot or numerical summary for each of your questions, that helps the reader arrive at an answer. You should also write paragraphs describing the methods, summaries and findings. 
 
 # References
+
+1. Best female soccer players of 2019 - https://sportmob.com/en/article/152786-best-female-soccer-players-of-2019
