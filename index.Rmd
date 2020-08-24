@@ -82,7 +82,17 @@ ggplot(most_capped,
 ```
 
 #### Section 2a - Which are the clubs that provide players that are young and also highly capped - check for players under 25 years of age.
-`
+
+```{r  mostcappedyoung}
+capped_young <- squads %>%
+  filter(age <= 25) %>%
+  arrange(desc(caps)) 
+
+capped_young %>%
+summary() %>%
+  head(5)%>%
+  kable(booktabs = TRUE, caption = "Summary of clubs with players under 25 years old") 
+```
 
 
 ### Section 3 - Clubs that provide the most:
