@@ -40,7 +40,25 @@ There are three .csv files in this dataset to manage and store the data, and the
 
 # Analysis and findings
 
-[FILL] Should include at least one plot or numerical summary for each of your questions, that helps the reader arrive at an answer. You should also write paragraphs describing the methods, summaries and findings. 
+[FILL] Should include at least one plot or numerical summary for each of your questions, that helps the reader arrive at an answer. You should also write paragraphs describing the methods, summaries and findings.
+
+### Section 1 - Clubs that provide the most number of world cup players:
+
+#### Section 1a - Clubs that contribute the highest number of goal scorers - individual players assessment and overall number of goals scored.
+
+
+
+### Section 2 - Clubs that provide the most capped players:
+
+#### Section 2a - Which are the clubs that provide players that are young and also highly capped - check for players under 25 years of age.
+
+
+
+### Section 3 - Clubs that provide the most:
+a. GKs
+b. DFs
+c. MFs
+d. FWDs
 
 # References
 
