@@ -94,6 +94,15 @@ summary() %>%
   kable(booktabs = TRUE, caption = "Summary of clubs with players under 25 years old") 
 ```
 
+```{r}
+capped_young_highly <- capped_young %>%
+  filter(caps >= 22.15) 
+
+capped_young_highly %>%
+  head(5)%>%
+  kable(booktabs = TRUE, caption = "Top five clubs providing both young and highly capped players")
+```
+
 
 ### Section 3 - Clubs that provide the most:
 a. GKs
