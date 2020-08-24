@@ -59,6 +59,19 @@ There are three .csv files in this dataset to manage and store the data, and the
 
 ### Section 2 - Clubs that provide the most capped players:
 
+```{r arrangecapped}
+most_capped <- squads %>%
+  arrange(desc(caps)) 
+
+most_fifty_capped <- most_capped %>%
+  head(50)
+```
+
+```{r  mostcapped}
+most_fifty_capped %>%
+  head(5)%>%
+  kable(booktabs = TRUE, caption = "Top five clubs that providing most capped players") 
+```
 
 #### Section 2a - Which are the clubs that provide players that are young and also highly capped - check for players under 25 years of age.
 `
