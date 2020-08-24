@@ -73,7 +73,8 @@ most_capped %>%
 ```
 
 In this table, we could see that the club with most capped player is Portland Thorns.
-Caps represents the number of times a player has participated in international competitions. Is there any relationship between caps and the age of players? To answer this question, I made a plot of caps changing by age. In Figure \@ref(fig:mostcappedplot)，the purple curve represents the trend of caps with age, while the blue curve represents the trend of conditional mean value of caps with age. 
+Caps represents the number of times a player has participated in international competitions. And we can notice that the top five capped players are all over 30 years old! Is there any relationship between caps and the age of players? 
+To answer this question, I made a plot of caps changing by age. In Figure \@ref(fig:mostcappedplot)，the purple curve represents the trend of caps with age, while the blue curve represents the trend of conditional mean value of caps with age. 
 ```{r mostcappedplot}
 ggplot(most_capped,
        aes(x= age, 
