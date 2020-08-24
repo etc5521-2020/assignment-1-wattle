@@ -73,6 +73,14 @@ most_fifty_capped %>%
   kable(booktabs = TRUE, caption = "Top five clubs that providing most capped players") 
 ```
 
+```{r mostcappedplot}
+ggplot(most_capped,
+       aes(x= age, 
+           y = caps)) +
+  geom_line(color = "purple") +
+  geom_smooth(se = FALSE)
+```
+
 #### Section 2a - Which are the clubs that provide players that are young and also highly capped - check for players under 25 years of age.
 `
 
