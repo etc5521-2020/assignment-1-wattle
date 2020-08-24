@@ -59,6 +59,7 @@ There are three .csv files in this dataset to manage and store the data, and the
 
 ### Section 2 - Clubs that provide the most capped players:
 
+In order to find the club providing player with the highest caps value, the "squads.csv" file is sorted in descending order, and the results top five clubs are displayed in the Table \@ref(tab:mostcapped).
 ```{r arrangecapped}
 most_capped <- squads %>%
   arrange(desc(caps)) 
@@ -71,6 +72,8 @@ most_capped %>%
   kable(booktabs = TRUE, caption = "Top five clubs that providing most capped players") 
 ```
 
+In this table, we could see that the club with most capped player is Portland Thorns.
+Caps represents the number of times a player has participated in international competitions. Is there any relationship between caps and the age of players? To answer this question, I made a plot of caps changing by age. In Figure \@ref(fig:mostcappedplot)，the purple curve represents the trend of caps with age, while the blue curve represents the trend of conditional mean value of caps with age. 
 ```{r mostcappedplot}
 ggplot(most_capped,
        aes(x= age, 
@@ -79,8 +82,12 @@ ggplot(most_capped,
   geom_smooth(se = FALSE)
 ```
 
+Conditional mean refers to the average level of caps predicted under the fixed age, so the characteristics of caps changing with age can be obtained more intuitively by observing the blue line. It can be seen that the blue line shows an upward trend with the increase of age, that is to say, the older a player is, the more times he participates in international competitions. It's not hard to understand that the older he is, the longer his career may be, the more games he will play.
+But we can't help but wonder whether there are players who are both young and highly capped? What club is he from?
+
 #### Section 2a - Which are the clubs that provide players that are young and also highly capped - check for players under 25 years of age.
 
+First of all, we set the age under 25 as "young", and the caps value higher than the mean value belongs to "highly capped", and then it comes to analysis. Make a summary to get the mean value of caps and the results are in Table \@ref(tab:mostcappedyoung). The mean value of caps is 22.45, which means the player with caps higher than 22.5 can be called "highly capped".
 ```{r  mostcappedyoung}
 capped_young <- squads %>%
   filter(age <= 25) %>%
@@ -92,7 +99,9 @@ summary() %>%
   kable(booktabs = TRUE, caption = "Summary of clubs with players under 25 years old") 
 ```
 
-```{r}
+Then select the players whose caps are higher than 22.15, and presenting the top five players with their clubs in Table \@ref(tab:fivetopyoung).
+It can be seen that clubs Paris Saint-Germain,Lyon,Orlando Pride and Paris Saint-Germain all provide both young and highly capped players. Specially, there are two qualified players from the same club Orlando Pride, which means that it may be a club with more young players and more emphasis on training new players.
+```{r fivetopyoung}
 capped_young_highly <- capped_young %>%
   filter(caps >= 22.15) 
 
