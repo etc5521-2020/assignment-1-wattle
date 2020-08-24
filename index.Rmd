@@ -12,7 +12,16 @@ output:
 
 [This assignment is for ETC5521 Assignment 1 by Team `r rmarkdown::metadata$team` comprising of `r knitr::combine_words(rmarkdown::metadata$author)`.]{style="color:#006DAE;"}
 
-```{r}
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, cache=TRUE, messages=FALSE, warning=FALSE)
+
+library(ggplot2)
+library(tidyverse)
+library(kableExtra)
+
+```
+
+```{r readdata}
 wwc_outcomes <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-07-09/wwc_outcomes.csv")
 squads <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-07-09/squads.csv")
 codes <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-07-09/codes.csv")
@@ -50,8 +59,9 @@ There are three .csv files in this dataset to manage and store the data, and the
 
 ### Section 2 - Clubs that provide the most capped players:
 
-#### Section 2a - Which are the clubs that provide players that are young and also highly capped - check for players under 25 years of age.
 
+#### Section 2a - Which are the clubs that provide players that are young and also highly capped - check for players under 25 years of age.
+`
 
 
 ### Section 3 - Clubs that provide the most:
