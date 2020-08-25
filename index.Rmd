@@ -18,7 +18,8 @@ knitr::opts_chunk$set(echo = FALSE, cache=TRUE, messages=FALSE, warning=FALSE)
 library(ggplot2)
 library(tidyverse)
 library(kableExtra)
-
+library(dplyr)
+library(plotly)
 ```
 
 ```{r readdata}
@@ -51,9 +52,33 @@ There are three .csv files in this dataset to manage and store the data, and the
 
 [FILL] Should include at least one plot or numerical summary for each of your questions, that helps the reader arrive at an answer. You should also write paragraphs describing the methods, summaries and findings.
 
-### Section 1 - Clubs that provide the most number of world cup players:
+### Section 1:
 
-#### Section 1a - Clubs that contribute the highest number of goal scorers - individual players assessment and overall number of goals scored.
+Which are the clubs that provide the most number of world cup players?
+
+#### Section 1.1: Overall contribution
+
+Let us begin our analysis by understanding the overall contibution of world cup players by clubs around the world.
+
+```{r player-contri}
+
+wc_clubs <- squads %>% 
+  group_by(club) %>%
+  tally() %>% 
+  arrange(desc(n))
+
+wc_clubs <- wc_clubs %>% 
+  rename(Players = n)
+
+wc_clubs %>% 
+  head(10) %>% 
+  kable()
+
+```
+
+Out of a total of 552 players that featured in the 2019 World Cup, 15 play domestic football in Barcelona (Spain), 14 play for Lyon (France) and 12 play for Chelsea (England). It is interesting to note that clubs with 11 or higher number in this table can play in a match with a squad that's comprised entirely of world cup internationals, greatly increasing the profile of their club's brand.
+
+#### Section 1.2: - Goal scorers
 
 
 
