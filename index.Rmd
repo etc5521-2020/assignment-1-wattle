@@ -18,6 +18,7 @@ knitr::opts_chunk$set(echo = FALSE, cache=TRUE, messages=FALSE, warning=FALSE)
 library(ggplot2)
 library(tidyverse)
 library(kableExtra)
+library(plotly)
 
 ```
 
@@ -76,14 +77,18 @@ In this table, we could see that the club with most capped player is Portland Th
 Caps represents the number of times a player has participated in international competitions. And we can notice that the top five capped players are all over 30 years old! Is there any relationship between caps and the age of players? 
 To answer this question, I made a plot of caps changing by age. In Figure \@ref(fig:mostcappedplot)，the purple curve represents the trend of caps with age, while the blue curve represents the trend of conditional mean value of caps with age. 
 ```{r mostcappedplot, messages=FALSE, warning=FALSE}
-ggplot(most_capped,
+p0 <- ggplot(most_capped,
        aes(x= age, 
            y = caps)) +
   geom_line(color = "purple") +
   geom_smooth(se = FALSE) +
   xlab("Age") +
   ylab("Number of international games") +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
   ggtitle("The number of international games changing with age") 
+
+ggplotly(p0)
 ```
 
 Conditional mean refers to the average level of caps predicted under the fixed age, so the characteristics of caps changing with age can be obtained more intuitively by observing the blue line. It can be seen that the blue line shows an upward trend with the increase of age, that is to say, the older a player is, the more times he participates in international competitions. It's not hard to understand that the older he is, the longer his career may be, the more games he will play.
