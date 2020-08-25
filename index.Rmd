@@ -121,3 +121,4 @@ d. FWDs
 # References
 
 1. Best female soccer players of 2019 - https://sportmob.com/en/article/152786-best-female-soccer-players-of-2019
+2. Smoothed conditional means - https://ggplot2.tidyverse.org/reference/geom_smooth.html
