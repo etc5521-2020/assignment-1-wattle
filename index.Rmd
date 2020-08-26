@@ -58,19 +58,19 @@ Which are the clubs that provide the most number of world cup players?
 
 #### Section 1.1: Overall contribution
 
-Let us begin our analysis by understanding the overall contibution of world cup players by clubs around the world.
+Let us begin our analysis by understanding the overall contibution of world cup players by clubs around the world:
 
 ```{r player-contri}
 
-wc_clubs <- squads %>% 
+wc_clubs_players <- squads %>% 
   group_by(club) %>%
   tally() %>% 
   arrange(desc(n))
 
-wc_clubs <- wc_clubs %>% 
+wc_clubs_players <- wc_clubs_players %>% 
   rename(Players = n)
 
-wc_clubs %>% 
+wc_clubs_players %>% 
   head(10) %>% 
   kable()
 
@@ -80,7 +80,56 @@ Out of a total of 552 players that featured in the 2019 World Cup, 15 play domes
 
 #### Section 1.2: - Goal scorers
 
+Now, let us look at the number of overall international goals scored by players that featured in the 2019 World Cup by clubs: 
 
+```{r goal-contri}
+
+wc_clubs_goals <- squads %>% 
+  group_by(club) %>% 
+  summarise(Goals = sum(goals)) %>% 
+  arrange(desc(Goals))
+
+wc_clubs_goals %>% 
+  head(10) %>% 
+  kable()
+  
+```
+
+Portland Thorns (247) and Orlando Pride (240) both are from the US. They make up for nearly 500 international goals between their players. Lyon (177), Arsenal (148), Barcelona (134) and Chelsea (133) make up the rest of the top 5 clubs. Let us deep dive into these teams and look into players that actually do the goal scoring.
+
+```{r players-goals}
+
+players_goals <- squads %>% 
+  group_by(club) %>% 
+  mutate(Club_goals = sum(goals)) %>% 
+  filter(Club_goals >= 133) %>% 
+  arrange(desc(goals)) %>% 
+  slice(1:5)
+
+
+p1 <- players_goals %>% 
+  ggplot(aes(player, goals, color = club, size = Club_goals)) + 
+  geom_point() +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
+  xlab("Players") +
+  ylab("Goals") +
+  ggtitle("Players v/s Goals Scored For International Team") +
+  labs(size = "", color = "")
+
+ggplotly(p1)
+  
+```
+
+In the above graph, we can see the number of international goals scored by players belonging to the top 6 clubs (colored) contributing to the highest goal scorers, and the size indicates the amount of goals contributed by that player's club.
+
+It is rather interesting to note that Portland Thorns, the club with the most number of international goals (247), has one player Christine Sinclair that contributes to 181 goals for her national team Canada. Without her, Portland Thorns would drop steeply in these rankings, instead of being number 1.
+
+Orlando Pride on the other hand have two major players. Marta (110) and Alex Morgan (101) make up for the majority of international goals for the club. Even though both these clubs from Portland and Orlando are American, among these top 3 scorers only 1 - Alex Morgan, is actually of American nationality. Sinclair and Marta are Canadian and Brazilian respectively.
+
+Lyon, Arsenal, Barcelona and Chelsea have players contributing more equally towards the international goals tally than Portland Thorns and Orlando Pride.
+
+We can conclude in this section alone that in terms of the sheer number of players featuring in the 2019 World Cup, Barcelona has the highest contribution (15), followed by Lyon (177). In terms of goals, however, the American clubs Portland Thorns and Orlando Pride have a massive haul of nearly 500 goals between them, sitting quite comfortable at number 1 and 2 respectively. But Barcelona and Lyon also features in the top 5 for goals contributed.
 
 ### Section 2 - Clubs that provide the most capped players:
 
