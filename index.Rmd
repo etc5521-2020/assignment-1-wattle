@@ -36,7 +36,7 @@ codes <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidy
 
 
 
-# Introduction and motivation:
+# Introduction and motivation
 
 Women's soccer has gained a lot of media attention in the last few years, and deservingly so. Countries like the USA, a dominant force in women's soccer, have produced some top quality players like Megan Rapinoe, Carli Lloyd, Alex Morgan and Julie Ertz. Just north of the USA, Christine Sinclair from Canada became the first player to win the Lou Marsh Award as Canadian Athlete of the Year^1, which is unsurprising considering her outstanding haul of 182 career international goals. Ada Hegerberg from Norway became the first woman to win the prestigious Ballon d'Or award, an yearly honor awarded to best player in the world, which was first introduced for the women's game in 2018^1.
 
@@ -48,7 +48,7 @@ In this paper, we will approach the women's game with the same lens. We will loo
 
 
 
-# Data description:
+# Data description
 
 This dataset is about Women's World Cup, which originally comes from website data.world <https://data.world/sportsvizsunday/womens-world-cup-data>. It consists of final score and win/loss status data from 1991-2019. Additionally, the 2019 world cup rosters for each team are included. After being cleaned by a data analyst, we downloaded the data from his github <https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-07-09>.
 There are three .csv files in this dataset to manage and store the data, and they are named "codes", "squads" and "wwc_outcomes". "wwc_outcomes.csv" has seven variables: "year" represents the year of tournament, "team" is the abbreviated team name, "score" means the score by team, "round" means the round of the tourament, "yearly_game_id" is a grouping variable for matches in each world cup, "team_num" is 1 or 2 representing teams in each match, and "win_status" represents a team win or loss. In "squads.csv", "squad_no" is the player jersey number from 1 to 23, "country" shows the country of the team, "pos" is the position of player, "player" shows the name of the player, "dob" is date of birth, "age" is the players' ages, "caps" displays the number of international games played by the player, "goal" is the number of international goals scored by the player, and "club" shows which domestic club the player belongs to.
@@ -56,9 +56,13 @@ There are three .csv files in this dataset to manage and store the data, and the
 # Analysis and findings
 
 The analysis is mainly divided into three parts, which answer the three secondary questions, and they are :
- - Which are the clubs that provide the most number of world cup players?
- -
- -
+
+- Which are the clubs that provide the most number of world cup players?
+
+- How about contribution by clubs in terms of players' caps and positions?
+
+- How have the successful club players fared in the 2019 World Cup?
+
 
 ### Section 1
 
