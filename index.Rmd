@@ -100,7 +100,7 @@ wc_clubs_goals <- squads %>%
 
 wc_clubs_goals %>% 
   head(10) %>% 
-  kable(booktabs = TRUE, caption = "Overall international goals scored by player") %>%
+  kable(booktabs = TRUE, caption = "Top Ten Clubs Providing Best Goal Scorers") %>%
   kable_styling(bootstrap_options = c("striped", "hover"))
   
 ```
