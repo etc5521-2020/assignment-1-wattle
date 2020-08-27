@@ -7,7 +7,7 @@ author:
   - [FILL]
 date: "`r Sys.Date()`"
 output: 
-  html_document
+  bookdown::html_document2
 ---
 
 [This assignment is for ETC5521 Assignment 1 by Team `r rmarkdown::metadata$team` comprising of `r knitr::combine_words(rmarkdown::metadata$author)`.]{style="color:#006DAE;"}
@@ -20,6 +20,7 @@ library(tidyverse)
 library(kableExtra)
 library(dplyr)
 library(plotly)
+library(bookdown)
 ```
 
 ```{r readdata}
@@ -72,8 +73,8 @@ wc_clubs_players <- wc_clubs_players %>%
 
 wc_clubs_players %>% 
   head(10) %>% 
-  kable()
-
+  kable(booktabs = TRUE, caption = "Top Ten Clubs Providing Most Number Of World Cup Players") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
 ```
 
 Out of a total of 552 players that featured in the 2019 World Cup, 15 play domestic football in Barcelona (Spain), 14 play for Lyon (France) and 12 play for Chelsea (England). It is interesting to note that clubs with 11 or higher number in this table can play in a match with a squad that's comprised entirely of world cup internationals, greatly increasing the profile of their club's brand.
@@ -91,7 +92,8 @@ wc_clubs_goals <- squads %>%
 
 wc_clubs_goals %>% 
   head(10) %>% 
-  kable()
+  kable(booktabs = TRUE, caption = "Top Ten Clubs Providing Best Goal Scorers") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
   
 ```
 
@@ -133,28 +135,36 @@ We can conclude in this section alone that in terms of the sheer number of playe
 
 ### Section 2 - Clubs that provide the most capped players:
 
-In order to find the club providing player with the highest caps value, the "squads.csv" file is sorted in descending order, and the results top five clubs are displayed in the Table \@ref(tab:mostcapped).
+In order to find the club providing player with the highest caps value, the "squads.csv" file is sorted in descending order, and the results top five clubs are displayed in the Table \@ref(tab:cap).
 ```{r arrangecapped}
 most_capped <- squads %>%
   arrange(desc(caps)) 
 
 ```
 
-```{r  mostcapped}
+```{r  cap}
 most_capped %>%
   head(5)%>%
-  kable(booktabs = TRUE, caption = "Top five clubs that providing most capped players") 
+  kable(booktabs = TRUE, caption = "Top five clubs that providing most capped players") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
 ```
 
 In this table, we could see that the club with most capped player is Portland Thorns.
 Caps represents the number of times a player has participated in international competitions. And we can notice that the top five capped players are all over 30 years old! Is there any relationship between caps and the age of players? 
-To answer this question, I made a plot of caps changing by age. In Figure \@ref(fig:mostcappedplot)，the purple curve represents the trend of caps with age, while the blue curve represents the trend of conditional mean value of caps with age. 
-```{r mostcappedplot}
-ggplot(most_capped,
+To answer this question, I made a plot of caps changing by age. In Figure \@ref(fig:international)，the purple curve represents the trend of caps with age, while the blue curve represents the trend of conditional mean value of caps with age. 
+```{r international, fig.cap="caps changing with age"}
+p0 <- ggplot(most_capped,
        aes(x= age, 
            y = caps)) +
   geom_line(color = "purple") +
-  geom_smooth(se = FALSE)
+  geom_smooth(se = FALSE) +
+  xlab("Age") +
+  ylab("Number of international games") +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
+  ggtitle("The number of international games changing with age") 
+
+ggplotly(p0)
 ```
 
 Conditional mean refers to the average level of caps predicted under the fixed age, so the characteristics of caps changing with age can be obtained more intuitively by observing the blue line. It can be seen that the blue line shows an upward trend with the increase of age, that is to say, the older a player is, the more times he participates in international competitions. It's not hard to understand that the older he is, the longer his career may be, the more games he will play.
@@ -162,8 +172,8 @@ But we can't help but wonder whether there are players who are both young and hi
 
 #### Section 2a - Which are the clubs that provide players that are young and also highly capped - check for players under 25 years of age.
 
-First of all, we set the age under 25 as "young", and the caps value higher than the mean value belongs to "highly capped", and then it comes to analysis. Make a summary to get the mean value of caps and the results are in Table \@ref(tab:mostcappedyoung). The mean value of caps is 22.45, which means the player with caps higher than 22.5 can be called "highly capped".
-```{r  mostcappedyoung}
+First of all, we set the age under 25 as "young", and the caps value higher than the mean value belongs to "highly capped", and then it comes to analysis. Make a summary to get the mean value of caps and the results are in Table \@ref(tab:capyoung). The mean value of caps is 22.45, which means the player with caps higher than 22.5 can be called "highly capped".
+```{r  capyoung}
 capped_young <- squads %>%
   filter(age <= 25) %>%
   arrange(desc(caps)) 
@@ -171,18 +181,20 @@ capped_young <- squads %>%
 capped_young %>%
 summary() %>%
   head(5)%>%
-  kable(booktabs = TRUE, caption = "Summary of clubs with players under 25 years old") 
+  kable(booktabs = TRUE, caption = "Summary of clubs with players under 25 years old") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
 ```
 
-Then select the players whose caps are higher than 22.15, and presenting the top five players with their clubs in Table \@ref(tab:fivetopyoung).
+Then select the players whose caps are higher than 22.15, and presenting the top five players with their clubs in Table \@ref(tab:five).
 It can be seen that clubs Paris Saint-Germain,Lyon,Orlando Pride and Paris Saint-Germain all provide both young and highly capped players. Specially, there are two qualified players from the same club Orlando Pride, which means that it may be a club with more young players and more emphasis on training new players.
-```{r fivetopyoung}
+```{r five}
 capped_young_highly <- capped_young %>%
   filter(caps >= 22.15) 
 
 capped_young_highly %>%
   head(5)%>%
-  kable(booktabs = TRUE, caption = "Top five clubs providing both young and highly capped players")
+  kable(booktabs = TRUE, caption = "Top five clubs providing both young and highly capped players") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
 ```
 
 
@@ -312,6 +324,65 @@ Midfielders - Barcelona, Juventus, Manchester City, Nippon TV Beleza, Vfl Wolfsb
 
 Forwards - Barcelona is the only club that boasts 5 of their forwards featuring in the 2019 World Cup, with a combined experience of 249 caps between them. Portland Thorns has 4 forwards, but their combined experience of 534 caps easily overshadows the rest of the teams. Orlando Pride has only 2 forwards but a cap total of 293, the second highest. Lyon and Bayern Munich feature with 4 forwards as well with 254 and 160 caps respectively. Chelsea and Arsenal feature again, but the American clubs Portland Thorns and Orlando Pride really take the stand here.
 
+
+### Section 4: How have the successful club players fared in the 2019 World Cup?
+
+So far, we have seen a few clubs contributing greatly towards providing high scoring and highly experienced (caps) international players. Few of these clubs we can shortlist - Portland Thorns, Orlando Pride, Lyon, Arsenal, Barcelona, Chelsea, Manchester City and Paris Saint-Germain. All of these clubs have players representing various countries, so let us use our 2019 World Cup match results data to understand which of these contributed to world cup success.
+
+```{r attack}
+
+outcomes_2019 <- wwc_outcomes %>% 
+  filter(year == 2019)
+
+best_attack <- outcomes_2019 %>% 
+  group_by(team) %>% 
+  summarise(goals = sum(score)) %>% 
+  arrange(desc(goals))
+
+best_attack %>%
+  head(10) %>% 
+  kable(booktabs = TRUE, caption = "Top Goal Scoring Nations") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+
+The USA scored a whopping 26 goals in the 2019 World Cup. That is twice the number of goals scored by the second highest scoring nation, England. Even though 13 of those goals were scored in one match, against Thailand, it is still a large number considering it was done in only 7 matches. This keeps in line with what we saw previously, that the USA has the best goal scoring clubs, with Portland Thorns and Orlando Pride dominating goal numbers.
+
+
+```{r progress}
+
+round <- c("Group", "Round of 16", "Quarter Final", "Semi Final", "Third Place Playoff", "Final")
+label <- c(1, 2, 3, 4, 4, 5)
+
+round_label <- data.frame(round, label)
+
+outcomes_2019 <- outcomes_2019 %>% left_join(round_label, by = "round")
+
+prog <- outcomes_2019 %>% 
+  group_by(team) %>% 
+  summarise(round = max(label, na.rm = FALSE)) %>% 
+  arrange(desc(round))
+
+
+prog_plot <- prog %>% 
+  ggplot(aes(round, reorder(team, -round), color = "red")) + 
+  geom_point() +
+  xlab("Round") +
+  ylab("Teams") +
+  ggtitle("Teams Progression In The 2019 World Cup") +
+  theme_bw() +
+  theme(legend.position = "none")
+
+ggplotly(prog_plot)
+
+```
+
+Above are the final results of the 2019 Women's World Cup. Each number on the x axis represents the subsequent round - 1 being group stage and 5 being the final.
+
+The USA won their second world cup in a row, beating the Netherlands in the final. In the semi finals, England and Sweden were the casualties, losing out to the USA and Netherlands respectively. They did play a third place match which Sweden won. 
+
+
+### Conclusion:
 
 
 # References
