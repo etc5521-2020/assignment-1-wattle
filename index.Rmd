@@ -186,11 +186,133 @@ capped_young_highly %>%
 ```
 
 
-### Section 3 - Clubs that provide the most:
-a. GKs
-b. DFs
-c. MFs
-d. FWDs
+### Section 3 - COntribution by clubs in terms of player position:
+
+Let us now take a look at player positions. Broadly, we have 4 major positions to consider - Goalkeepers (GK), Defenders (DF), Midfielders (MF) and Forwards (FW). Our objective in this section would be to understand which clubs specialize in providing world cup international players in a particular playing position.
+
+```{r play-pos}
+
+GK <- squads %>% 
+  filter(pos == "GK") %>% 
+  group_by(club) %>% 
+  tally() %>% 
+  rename(Clubs_Gks = n)
+
+GK_caps <- squads %>% 
+  filter(pos == "GK") %>% 
+  group_by(club) %>% 
+  summarise(Clubs_Gk_caps = sum(caps))
+
+DF <- squads %>% 
+  filter(pos == "DF") %>% 
+  group_by(club) %>% 
+  tally() %>% 
+  rename(Clubs_Dfs = n)
+
+DF_caps <- squads %>% 
+  filter(pos == "DF") %>% 
+  group_by(club) %>% 
+  summarise(Clubs_Df_caps = sum(caps))
+
+MF <- squads %>% 
+  filter(pos == "MF") %>% 
+  group_by(club) %>% 
+  tally() %>% 
+  rename(Clubs_Mfs = n)
+
+MF_caps <- squads %>% 
+  filter(pos == "MF") %>% 
+  group_by(club) %>% 
+  summarise(Clubs_Mf_caps = sum(caps))
+
+FW <- squads %>% 
+  filter(pos == "FW") %>% 
+  group_by(club) %>% 
+  tally() %>% 
+  rename(Clubs_Fws = n)
+
+FW_caps <- squads %>% 
+  filter(pos == "FW") %>% 
+  group_by(club) %>% 
+  summarise(Clubs_Fw_caps = sum(caps))
+
+squads_pos <- squads %>% left_join(GK, by = "club")
+squads_pos <- squads_pos %>% left_join(DF, by = "club")
+squads_pos <- squads_pos %>% left_join(MF, by = "club")
+squads_pos <- squads_pos %>% left_join(FW, by = "club")
+
+squads_pos <- squads_pos %>% left_join(GK_caps, by = "club")
+squads_pos <- squads_pos %>% left_join(DF_caps, by = "club")
+squads_pos <- squads_pos %>% left_join(MF_caps, by = "club")
+squads_pos <- squads_pos %>% left_join(FW_caps, by = "club")
+
+squads_pos[is.na(squads_pos)] <- 0
+
+
+p2GK <- squads_pos %>%
+  filter(Clubs_Gks > 1 | Clubs_Gk_caps >= 61) %>%
+  group_by(club) %>% 
+  ggplot(aes(club, as.factor(Clubs_Gks), size = Clubs_Gk_caps, color = club)) +
+  geom_point() +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
+  xlab("Clubs") +
+  ylab("Number of WC GKs per club") +
+  ggtitle("Clubs With Goalkeepers Featuring In 2019 WC") +
+  labs(size = "", color = "")
+
+p2DF <- squads_pos %>%
+  filter(Clubs_Dfs >= 4 | Clubs_Df_caps >= 214) %>%
+  group_by(club) %>% 
+  ggplot(aes(club, as.factor(Clubs_Dfs), size = Clubs_Df_caps, color = club)) +
+  geom_point() +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
+  xlab("Clubs") +
+  ylab("Number of WC DFs per club") +
+  ggtitle("Clubs With Defenders Featuring In 2019 WC") +
+  labs(size = "", color = "")
+
+p2MF <- squads_pos %>%
+  filter(Clubs_Mfs >= 3 | Clubs_Mf_caps >= 191) %>%
+  group_by(club) %>% 
+  ggplot(aes(club, as.factor(Clubs_Mfs), size = Clubs_Mf_caps, color = club)) +
+  geom_point() +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
+  xlab("Clubs") +
+  ylab("Number of WC MFs per club") +
+  ggtitle("Clubs With Midfielders Featuring In 2019 WC") +
+  labs(size = "", color = "")
+
+p2FW <- squads_pos %>%
+  filter(Clubs_Fws >= 3 | Clubs_Fw_caps >= 181) %>%
+  group_by(club) %>% 
+  ggplot(aes(club, as.factor(Clubs_Fws), size = Clubs_Fw_caps, color = club)) +
+  geom_point() +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
+  xlab("Clubs") +
+  ylab("Number of WC FWs per club") +
+  ggtitle("Clubs With Forwards Featuring In 2019 WC") +
+  labs(size = "", color = "")
+
+ggplotly(p2GK)
+ggplotly(p2DF)
+ggplotly(p2MF)
+ggplotly(p2FW)
+
+```
+
+Goalkeepers - Arsenal, Chelsea, Goteborg, Rivers Angels, Vfl Wolfsburg and Vittsjo have 2 goalkeepers that featured in 2019 World Cup. Out of these, Chelsea has the highest cap count 173 for their two goalkeepers. It is interesting to note that Chelsea's London neighbours Arsenal also have 2 goalkeepers with a combined cap count of 53. It can be perceived that London is a good city for goalkeepers to play professionally to achieve their dreams of international success.
+
+Defenders - Lyon dominates this position. They have a whopping 7 defenders that featured in the 2019 World Cup, with a combined total experience of 475 international caps. Not far behind though is Chelsea with 6 defenders and 404 caps between them.
+
+Midfielders - Barcelona, Juventus, Manchester City, Nippon TV Beleza, Vfl Wolfsburg and Washington Spirit all have 4 midfielders represented in the 2019 World Cup. Vfl Wolfsburg have the most experience within their 4 midfielders, with a massive 366 caps between them. Paris Saint-Germain has 3 midfielders but a second highest total of caps between their midfielders, of 273. Rosengard has only 1 midfielder, the Swedish national Caroline Seger who has 193 caps alone for her country.
+
+Forwards - Barcelona is the only club that boasts 5 of their forwards featuring in the 2019 World Cup, with a combined experience of 249 caps between them. Portland Thorns has 4 forwards, but their combined experience of 534 caps easily overshadows the rest of the teams. Orlando Pride has only 2 forwards but a cap total of 293, the second highest. Lyon and Bayern Munich feature with 4 forwards as well with 254 and 160 caps respectively. Chelsea and Arsenal feature again, but the American clubs Portland Thorns and Orlando Pride really take the stand here.
+
+
 
 # References
 
