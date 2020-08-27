@@ -1,19 +1,23 @@
 ---
 title: "ETC5521 Assignment 1"
-subtitle: "Your title"
-team: [FILL]
+subtitle: "Contribution of domestic clubs towards world cup success in women's soccer"
+team: wattle
 author:
-  - [FILL]
-  - [FILL]
+  - Ketan Kabu  31554679
+  - Yiwen Zhang 31203019
 date: "`r Sys.Date()`"
+bibliography: references.bib
+biblio-style: authoryear-comp
 output: 
-  bookdown::html_document2
+  bookdown::html_document2:
+   citation_package: biblatex
+   toc: TRUE
 ---
 
 [This assignment is for ETC5521 Assignment 1 by Team `r rmarkdown::metadata$team` comprising of `r knitr::combine_words(rmarkdown::metadata$author)`.]{style="color:#006DAE;"}
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, cache=TRUE, messages=FALSE, warning=FALSE)
+knitr::opts_chunk$set(echo = FALSE, cache=TRUE, message=FALSE,warning = FALSE,comment = FALSE)
 
 library(ggplot2)
 library(tidyverse)
@@ -51,7 +55,10 @@ There are three .csv files in this dataset to manage and store the data, and the
 
 # Analysis and findings
 
-[FILL] Should include at least one plot or numerical summary for each of your questions, that helps the reader arrive at an answer. You should also write paragraphs describing the methods, summaries and findings.
+The analysis is mainly divided into three parts, which answer the three secondary questions, and they are :
+ - Which are the clubs that provide the most number of world cup players?
+ -
+ -
 
 ### Section 1:
 
@@ -73,11 +80,12 @@ wc_clubs_players <- wc_clubs_players %>%
 
 wc_clubs_players %>% 
   head(10) %>% 
-  kable()
+  kable(booktabs = TRUE, caption = "Overall contibution of world cup players by clubs") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
 
 ```
 
-Out of a total of 552 players that featured in the 2019 World Cup, 15 play domestic football in Barcelona (Spain), 14 play for Lyon (France) and 12 play for Chelsea (England). It is interesting to note that clubs with 11 or higher number in this table can play in a match with a squad that's comprised entirely of world cup internationals, greatly increasing the profile of their club's brand.
+Out of a total of 552 players that featured in the 2019 World Cup, it can be seen in Table \@ref(tab:player-contri) that 15 play domestic football in Barcelona (Spain), 14 play for Lyon (France) and 12 play for Chelsea (England). It is interesting to note that clubs with 11 or higher number in this table can play in a match with a squad that's comprised entirely of world cup internationals, greatly increasing the profile of their club's brand.
 
 #### Section 1.2: - Goal scorers
 
@@ -92,13 +100,14 @@ wc_clubs_goals <- squads %>%
 
 wc_clubs_goals %>% 
   head(10) %>% 
-  kable()
+  kable(booktabs = TRUE, caption = "Overall international goals scored by player") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
   
 ```
 
-Portland Thorns (247) and Orlando Pride (240) both are from the US. They make up for nearly 500 international goals between their players. Lyon (177), Arsenal (148), Barcelona (134) and Chelsea (133) make up the rest of the top 5 clubs. Let us deep dive into these teams and look into players that actually do the goal scoring.
+Looking into Table \@ref(tab:goal-contri), Portland Thorns (247) and Orlando Pride (240) both are from the US. They make up for nearly 500 international goals between their players. Lyon (177), Arsenal (148), Barcelona (134) and Chelsea (133) make up the rest of the top 5 clubs. Let us deep dive into these teams and look into players that actually do the goal scoring.
 
-```{r players-goals}
+```{r players-goals,fig.cap="Players v/s Goals Scored For International Team"}
 
 players_goals <- squads %>% 
   group_by(club) %>% 
@@ -118,11 +127,12 @@ p1 <- players_goals %>%
   ggtitle("Players v/s Goals Scored For International Team") +
   labs(size = "", color = "")
 
-ggplotly(p1)
+ggplotly(p1) 
+  
   
 ```
 
-In the above graph, we can see the number of international goals scored by players belonging to the top 6 clubs (colored) contributing to the highest goal scorers, and the size indicates the amount of goals contributed by that player's club.
+In Figure \@ref(fig:players-goals), we can see the number of international goals scored by players belonging to the top 6 clubs (colored) contributing to the highest goal scorers, and the size indicates the amount of goals contributed by that player's club.
 
 It is rather interesting to note that Portland Thorns, the club with the most number of international goals (247), has one player Christine Sinclair that contributes to 181 goals for her national team Canada. Without her, Portland Thorns would drop steeply in these rankings, instead of being number 1.
 
@@ -323,9 +333,24 @@ Midfielders - Barcelona, Juventus, Manchester City, Nippon TV Beleza, Vfl Wolfsb
 
 Forwards - Barcelona is the only club that boasts 5 of their forwards featuring in the 2019 World Cup, with a combined experience of 249 caps between them. Portland Thorns has 4 forwards, but their combined experience of 534 caps easily overshadows the rest of the teams. Orlando Pride has only 2 forwards but a cap total of 293, the second highest. Lyon and Bayern Munich feature with 4 forwards as well with 254 and 160 caps respectively. Chelsea and Arsenal feature again, but the American clubs Portland Thorns and Orlando Pride really take the stand here.
 
+# Acknowledge
+
+The packages used are as follows:
+
+
+- ggpplot2 [@ggplot2]
+
+- tidyverse [@tidyverse]
+
+- kableExtra [@kableExtra]
+
+- bookdown [@bookdown]
+
+- dplyr [@dplyr]
+
+- plotly [@plotly]
 
 
 # References
 
-1. Best female soccer players of 2019 - https://sportmob.com/en/article/152786-best-female-soccer-players-of-2019
-2. Smoothed conditional means - https://ggplot2.tidyverse.org/reference/geom_smooth.html
+
