@@ -325,6 +325,65 @@ Midfielders - Barcelona, Juventus, Manchester City, Nippon TV Beleza, Vfl Wolfsb
 Forwards - Barcelona is the only club that boasts 5 of their forwards featuring in the 2019 World Cup, with a combined experience of 249 caps between them. Portland Thorns has 4 forwards, but their combined experience of 534 caps easily overshadows the rest of the teams. Orlando Pride has only 2 forwards but a cap total of 293, the second highest. Lyon and Bayern Munich feature with 4 forwards as well with 254 and 160 caps respectively. Chelsea and Arsenal feature again, but the American clubs Portland Thorns and Orlando Pride really take the stand here.
 
 
+### Section 4: How have the successful club players fared in the 2019 World Cup?
+
+So far, we have seen a few clubs contributing greatly towards providing high scoring and highly experienced (caps) international players. Few of these clubs we can shortlist - Portland Thorns, Orlando Pride, Lyon, Arsenal, Barcelona, Chelsea, Manchester City and Paris Saint-Germain. All of these clubs have players representing various countries, so let us use our 2019 World Cup match results data to understand which of these contributed to world cup success.
+
+```{r attack}
+
+outcomes_2019 <- wwc_outcomes %>% 
+  filter(year == 2019)
+
+best_attack <- outcomes_2019 %>% 
+  group_by(team) %>% 
+  summarise(goals = sum(score)) %>% 
+  arrange(desc(goals))
+
+best_attack %>%
+  head(10) %>% 
+  kable(booktabs = TRUE, caption = "Top Goal Scoring Nations") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+
+The USA scored a whopping 26 goals in the 2019 World Cup. That is twice the number of goals scored by the second highest scoring nation, England. Even though 13 of those goals were scored in one match, against Thailand, it is still a large number considering it was done in only 7 matches. This keeps in line with what we saw previously, that the USA has the best goal scoring clubs, with Portland Thorns and Orlando Pride dominating goal numbers.
+
+
+```{r progress}
+
+round <- c("Group", "Round of 16", "Quarter Final", "Semi Final", "Third Place Playoff", "Final")
+label <- c(1, 2, 3, 4, 4, 5)
+
+round_label <- data.frame(round, label)
+
+outcomes_2019 <- outcomes_2019 %>% left_join(round_label, by = "round")
+
+prog <- outcomes_2019 %>% 
+  group_by(team) %>% 
+  summarise(round = max(label, na.rm = FALSE)) %>% 
+  arrange(desc(round))
+
+
+prog_plot <- prog %>% 
+  ggplot(aes(round, reorder(team, -round), color = "red")) + 
+  geom_point() +
+  xlab("Round") +
+  ylab("Teams") +
+  ggtitle("Teams Progression In The 2019 World Cup") +
+  theme_bw() +
+  theme(legend.position = "none")
+
+ggplotly(prog_plot)
+
+```
+
+Above are the final results of the 2019 Women's World Cup. Each number on the x axis represents the subsequent round - 1 being group stage and 5 being the final.
+
+The USA won their second world cup in a row, beating the Netherlands in the final. In the semi finals, England and Sweden were the casualties, losing out to the USA and Netherlands respectively. They did play a third place match which Sweden won. 
+
+
+### Conclusion:
+
 
 # References
 
