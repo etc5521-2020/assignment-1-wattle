@@ -73,8 +73,8 @@ wc_clubs_players <- wc_clubs_players %>%
 
 wc_clubs_players %>% 
   head(10) %>% 
-  kable()
-
+  kable(booktabs = TRUE, caption = "Top Ten Clubs Providing Most Number Of World Cup Players") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
 ```
 
 Out of a total of 552 players that featured in the 2019 World Cup, 15 play domestic football in Barcelona (Spain), 14 play for Lyon (France) and 12 play for Chelsea (England). It is interesting to note that clubs with 11 or higher number in this table can play in a match with a squad that's comprised entirely of world cup internationals, greatly increasing the profile of their club's brand.
@@ -92,7 +92,8 @@ wc_clubs_goals <- squads %>%
 
 wc_clubs_goals %>% 
   head(10) %>% 
-  kable()
+  kable(booktabs = TRUE, caption = "Top Ten Clubs Providing Best Goal Scorers") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
   
 ```
 
