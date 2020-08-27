@@ -186,7 +186,7 @@ capped_young_highly %>%
 ```
 
 
-### Section 3 - COntribution by clubs in terms of player position:
+### Section 3 - Contribution by clubs in terms of player position:
 
 Let us now take a look at player positions. Broadly, we have 4 major positions to consider - Goalkeepers (GK), Defenders (DF), Midfielders (MF) and Forwards (FW). Our objective in this section would be to understand which clubs specialize in providing world cup international players in a particular playing position.
 
@@ -304,7 +304,7 @@ ggplotly(p2FW)
 
 ```
 
-Goalkeepers - Arsenal, Chelsea, Goteborg, Rivers Angels, Vfl Wolfsburg and Vittsjo have 2 goalkeepers that featured in 2019 World Cup. Out of these, Chelsea has the highest cap count 173 for their two goalkeepers. It is interesting to note that Chelsea's London neighbours Arsenal also have 2 goalkeepers with a combined cap count of 53. It can be perceived that London is a good city for goalkeepers to play professionally to achieve their dreams of international success.
+Goalkeepers - Arsenal, Chelsea, Goteborg, Rivers Angels, Vfl Wolfsburg and Vittsjo have 2 goalkeepers that featured in 2019 World Cup. Out of these, Chelsea has the highest cap count 173 for their two goalkeepers. It is interesting to note that Chelsea's north London neighbours Arsenal also have 2 goalkeepers with a combined cap count of 53. It can be perceived that London is a good city for goalkeepers to play professionally to achieve international success.
 
 Defenders - Lyon dominates this position. They have a whopping 7 defenders that featured in the 2019 World Cup, with a combined total experience of 475 international caps. Not far behind though is Chelsea with 6 defenders and 404 caps between them.
 
