@@ -1,11 +1,11 @@
 # ETC5521 Assignment 1 
 
-Team name: [FILL]
+Team name: Wattle
 
 Team members:
 
-* [FILL]
-* [FILL]
+* Ketan Kabu - 31554679
+* Yiwen Zhang - 31203019
 
 # Steps
 
