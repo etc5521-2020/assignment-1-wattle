@@ -65,7 +65,7 @@ The analysis is mainly divided into three parts, which answer the three secondar
 
 - How about contribution by clubs in terms of players' caps and positions?
 
-- How have the successful club players fared in the 2019 World Cup?
+- How is the performance of successful clubs in the 2019 World Cup?
 
 ## Clubs that provide the most number of world cup players:
 
