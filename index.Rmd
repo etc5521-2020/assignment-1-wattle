@@ -38,37 +38,33 @@ codes <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidy
 
 # Introduction and motivation
 
-Women's soccer has gained a lot of media attention in the last few years, and deservingly so. Countries like the USA, a dominant force in women's soccer, have produced some top quality players like Megan Rapinoe, Carli Lloyd, Alex Morgan and Julie Ertz. Just north of the USA, Christine Sinclair from Canada became the first player to win the Lou Marsh Award as Canadian Athlete of the Year^1, which is unsurprising considering her outstanding haul of 182 career international goals. Ada Hegerberg from Norway became the first woman to win the prestigious Ballon d'Or award, an yearly honor awarded to best player in the world, which was first introduced for the women's game in 2018^1.
+Women's soccer has gained a lot of media attention in the last few years, and deservingly so. Countries like the USA, a dominant force in women's soccer, have produced some top quality players like Megan Rapinoe, Carli Lloyd, Alex Morgan and Julie Ertz. Just north of the USA, Christine Sinclair from Canada became the first player to win the Lou Marsh Award as Canadian Athlete of the Year^1, which is unsurprising considering her outstanding haul of 182 career international goals. Ada Hegerberg from Norway became the first woman to win the prestigious Ballon d'Or award, an yearly honor awarded to best player in the world, which was first introduced for the women's game in 2018^1^.
 
 The advancement of women's soccer has been parallel with the understanding and acceptance of data and analytics in the game. The technological advancement in capturing and analysing data has exploded since the late 1990s, when it began. Clubs have used this technology to identify and scout talent from all over the world.
 
 Every country has a different approach towards coaching and developing talent. Success at an international level could be down to the ability of world class players playing with a certain level of chemistry, which could be challenging as it is common for them to be playing for different rival clubs at the domestic level. In the men's game, we saw Italy, Spain and Germany winning world cups in 2006, 2010 and 2014 respectively. Many partly attributed the success of these teams towards the fact that majority of these players playing in the same domestic league (or country), or even in the same club, especially those clubs that produce the most successful international players.
 
-In this paper, we will approach the women's game with the same lens. We will look for any specific domestic clubs that contribute towards more successful world cup players, than others. We believe that these findings could prove meaningful to coaches, scouts and even young players in the game looking to choose clubs to play for with future international success in mind.
+In this paper, we will approach the women's game with the same lens. We believe that these findings could prove meaningful to coaches, scouts and even young players in the game looking to choose clubs to play for with future international success in mind.
 
+Limitations - The squad data that we had access to had only the 2019 world cup team rosters, which is why we could only focus on the 2019 world cup matches. If similar dataset for all world cups is obtained, analysis can be done on all world cups and a trend observation can produce deeper insights about how nations have progressed in women's soccer. 
+There is also a need to assess players' performance not solely on the basis of goals they scored. Midfielders, Defenders and Goalkeepers have various other parameters they can be judged on - like assists, distance covered in a match, tackles, clearances, saves(goalkeepers) and various others. If this information is available, better player performance insights can be achieved. 
+We could also do match by match analysis of the world cup if we can obtain information about how each player was rated, or scored certain number of goals, in a world cup match.
+In our clubs data, we have a reference named as "Unattached", which will appear sometimes in our analysis. This signifies that the player(s) is not contracted with any domestic club when the data was collected.
 
 
 # Data description
 
+*We will look for any specific domestic clubs that contribute towards more successful world cup players, than others*. We will do this by analysing the number of players each club provides to the world cup, the goals and caps these players come with, and the specific positions (goalkeepers, defenders, midfielders and forwards) that clubs specialize in, if any.
+
 This dataset is about Women's World Cup, which originally comes from website data.world <https://data.world/sportsvizsunday/womens-world-cup-data>. It consists of final score and win/loss status data from 1991-2019. Additionally, the 2019 world cup rosters for each team are included. After being cleaned by a data analyst, we downloaded the data from his github <https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-07-09>.
+
 There are three .csv files in this dataset to manage and store the data, and they are named "codes", "squads" and "wwc_outcomes". "wwc_outcomes.csv" has seven variables: "year" represents the year of tournament, "team" is the abbreviated team name, "score" means the score by team, "round" means the round of the tourament, "yearly_game_id" is a grouping variable for matches in each world cup, "team_num" is 1 or 2 representing teams in each match, and "win_status" represents a team win or loss. In "squads.csv", "squad_no" is the player jersey number from 1 to 23, "country" shows the country of the team, "pos" is the position of player, "player" shows the name of the player, "dob" is date of birth, "age" is the players' ages, "caps" displays the number of international games played by the player, "goal" is the number of international goals scored by the player, and "club" shows which domestic club the player belongs to.
 
 # Analysis and findings
 
-The analysis is mainly divided into three parts, which answer the three secondary questions, and they are :
+## Clubs that provide the most number of world cup players:
 
-- Which are the clubs that provide the most number of world cup players?
-
-- How about contribution by clubs in terms of players' caps and positions?
-
-- How have the successful club players fared in the 2019 World Cup?
-
-
-### Section 1
-
-Which are the clubs that provide the most number of world cup players?
-
-#### Section 1.1 - Overall contribution
+### Overall contribution
 
 Let us begin our analysis by understanding the overall contibution of world cup players by clubs around the world:
 
@@ -91,7 +87,7 @@ wc_clubs_players %>%
 
 Out of a total of 552 players that featured in the 2019 World Cup, it can be seen in Table \@ref(tab:player-contri) that 15 play domestic football in Barcelona (Spain), 14 play for Lyon (France) and 12 play for Chelsea (England). It is interesting to note that clubs with 11 or higher number in this table can play in a match with a squad that's comprised entirely of world cup internationals, greatly increasing the profile of their club's brand.
 
-#### Section 1.2 - Goal scorers
+### Goal scorers
 
 Now, let us look at the number of overall international goals scored by players that featured in the 2019 World Cup by clubs: 
 
@@ -144,13 +140,15 @@ Orlando Pride on the other hand have two major players. Marta (110) and Alex Mor
 
 Lyon, Arsenal, Barcelona and Chelsea have players contributing more equally towards the international goals tally than Portland Thorns and Orlando Pride.
 
-We can conclude in this section alone that in terms of the sheer number of players featuring in the 2019 World Cup, Barcelona has the highest contribution (15), followed by Lyon (177). In terms of goals, however, the American clubs Portland Thorns and Orlando Pride have a massive haul of nearly 500 goals between them, sitting quite comfortable at number 1 and 2 respectively. But Barcelona and Lyon also features in the top 5 for goals contributed.
+We can conclude in this section alone that in terms of the sheer number of players featuring in the 2019 World Cup, Barcelona has the highest contribution (15), followed by Lyon (177). In terms of goals, however, the American clubs Portland Thorns and Orlando Pride have a massive haul of nearly 500 goals between them, sitting quite comfortably at number 1 and 2 respectively. But Barcelona and Lyon also feature in the top 5 for goals contributed.
 
-### Section 2 - Contribution by clubs
+## Cap contribution by clubs
 
-#### Section 2a - Contribution by clubs in terms of players' caps
+Let us now focus on the international experience of players being provided by these clubs, also termed as "caps".
 
-In order to find the club providing player with the highest caps value, the "squads.csv" file is sorted in descending order, and the results top five clubs are displayed in the Table \@ref(tab:cap).
+### Contribution by clubs in terms of players' caps:
+
+In order to find the clubs providing players with the highest cap value, the "squads.csv" file is sorted in descending order, and the resulting top five clubs are displayed in the Table \@ref(tab:cap).
 ```{r arrangecapped}
 most_capped <- squads %>%
   arrange(desc(caps)) 
@@ -164,9 +162,9 @@ most_capped %>%
   kable_styling(bootstrap_options = c("striped", "hover"))
 ```
 
-In this table, we could see that the club with most capped player is Portland Thorns.
-Caps represents the number of times a player has participated in international competitions. And we can notice that the top five capped players are all over 30 years old! Is there any relationship between caps and the age of players? 
-To answer this question, I made a plot of caps changing by age. In Figure \@ref(fig:international)，the purple curve represents the trend of caps with age, while the blue curve represents the trend of conditional mean value of caps with age. 
+In this table, we could see that the club with the most capped player is Portland Thorns.
+We notice that the top five capped players are all over 30 years old! Is there any relationship between caps and the age of players? 
+To answer this question, we made a plot of caps changing by age. In Figure \@ref(fig:international)，the purple curve represents the trend of caps with age, while the blue curve represents the trend of conditional mean value of caps with age. 
 ```{r international, fig.cap="caps changing with age"}
 p0 <- ggplot(most_capped,
        aes(x= age, 
@@ -182,12 +180,12 @@ p0 <- ggplot(most_capped,
 ggplotly(p0)
 ```
 
-Conditional mean refers to the average level of caps predicted under the fixed age, so the characteristics of caps changing with age can be obtained more intuitively by observing the blue line. It can be seen that the blue line shows an upward trend with the increase of age, that is to say, the older a player is, the more times he participates in international competitions. It's not hard to understand that the older he is, the longer his career may be, the more games he will play.
-But we can't help but wonder whether there are players who are both young and highly capped? What club is he from?
+Conditional mean refers to the average level of caps predicted under the fixed age, so the characteristics of caps changing with age can be obtained more intuitively by observing the blue line. It can be seen that the blue line shows an upward trend with the increase of age, that is to say, the older a player is, the more times he participates in international competitions. It's reather easy to understand that the older she is, and the longer her career may be, the more games she will play.
+But we can not help but wonder whether there are players who are both young and highly capped, and which clubs they come from.
 
-#### Section 2b - Which are the clubs that provide players that are young and also highly capped
+### Clubs that provide players that are young and also highly experienced:
 
-First of all, we set the age under 25 as "young", and the caps value higher than the mean value belongs to "highly capped", and then it comes to analysis. Make a summary to get the mean value of caps and the results are in Table \@ref(tab:capyoung). The mean value of caps is 22.45, which means the player with caps higher than 22.5 can be called "highly capped".
+First of all, we set the age under 25 as "young", and the caps value higher than the mean value belongs to "highly capped", and then it comes to analysis. We then made a summary to get the mean value of caps and the results are in Table \@ref(tab:capyoung). The mean value of caps is 22.45, which means the player with caps higher than 22.5 can be called "highly experienced".
 ```{r  capyoung}
 capped_young <- squads %>%
   filter(age <= 25) %>%
@@ -200,8 +198,8 @@ summary() %>%
   kable_styling(bootstrap_options = c("striped", "hover"))
 ```
 
-Then select the players whose caps are higher than 22.15, and presenting the top five players with their clubs in Table \@ref(tab:five).
-It can be seen that clubs Paris Saint-Germain,Lyon,Orlando Pride and Paris Saint-Germain all provide both young and highly capped players. Specially, there are two qualified players from the same club Orlando Pride, which means that it may be a club with more young players and more emphasis on training new players.
+Then we select the players whose caps are higher than 22.5, and we present the top five players with their clubs in Table \@ref(tab:five).
+It can be seen that clubs Paris Saint-Germain, Lyon and Orlando Pride all provide both young and highly capped players. Specifically, there are two qualified players from the same club Orlando Pride, which means that it may be a club with more young players and places relatively more importance in training newer players.
 ```{r five}
 capped_young_highly <- capped_young %>%
   filter(caps >= 22.15) 
@@ -213,7 +211,7 @@ capped_young_highly %>%
 ```
 
 
-#### Section 2c - Contribution by clubs in terms of player position
+### Section - Contribution by clubs in terms of player position
 
 Let us now take a look at player positions. Broadly, we have 4 major positions to consider - Goalkeepers (GK), Defenders (DF), Midfielders (MF) and Forwards (FW). Our objective in this section would be to understand which clubs specialize in providing world cup international players in a particular playing position.
 
@@ -293,6 +291,8 @@ p2GK <- squads_pos %>%
 ggplotly(p2GK)
 ```
 
+Goalkeepers, figure \@ref(fig:Goalkeepers) - Arsenal, Chelsea, Goteborg, Rivers Angels, Vfl Wolfsburg and Vittsjo have 2 goalkeepers that featured in 2019 World Cup. Out of these, Chelsea has the highest cap count of 173 for their two goalkeepers. It is interesting to note that Chelsea's north London neighbours Arsenal also have 2 goalkeepers with a combined cap count of 53. It can be perceived that London is a good city for goalkeepers to play professionally to achieve international success.
+
 ```{r Defenders, fig.cap="Clubs With Defenders Featuring In 2019 WC"}
 p2DF <- squads_pos %>%
   filter(Clubs_Dfs >= 4 | Clubs_Df_caps >= 214) %>%
@@ -308,6 +308,8 @@ p2DF <- squads_pos %>%
 
 ggplotly(p2DF)
 ```
+
+Defenders, figure \@ref(fig:Defenders) - Lyon dominates this position. They have a whopping 7 defenders that featured in the 2019 World Cup, with a combined total experience of 475 international caps. Not far behind though is Chelsea with 6 defenders and 404 caps between them.
 
 ```{r Midfielders, fig.cap="Clubs With Midfielders Featuring In 2019 WC"}
 p2MF <- squads_pos %>%
@@ -325,6 +327,8 @@ p2MF <- squads_pos %>%
 ggplotly(p2MF)
 ```
 
+Midfielders, figure \@ref(fig:Midfielders) - Barcelona, Juventus, Manchester City, Nippon TV Beleza, Vfl Wolfsburg and Washington Spirit all have 4 midfielders represented in the 2019 World Cup. Vfl Wolfsburg have the most experience within their 4 midfielders, with a massive 366 caps between them. Paris Saint-Germain has 3 midfielders but a second highest total of caps between them, of 273. Rosengard has only 1 midfielder, the Swedish national Caroline Seger who has 193 caps alone for her country.
+
 ```{r Forwards, fig.cap="Clubs With Forwards Featuring In 2019 WC"}
 p2FW <- squads_pos %>%
   filter(Clubs_Fws >= 3 | Clubs_Fw_caps >= 181) %>%
@@ -341,17 +345,15 @@ p2FW <- squads_pos %>%
 ggplotly(p2FW)
 ```
 
-Goalkeepers in Figure \@ref(fig:Goalkeepers) - Arsenal, Chelsea, Goteborg, Rivers Angels, Vfl Wolfsburg and Vittsjo have 2 goalkeepers that featured in 2019 World Cup. Out of these, Chelsea has the highest cap count 173 for their two goalkeepers. It is interesting to note that Chelsea's north London neighbours Arsenal also have 2 goalkeepers with a combined cap count of 53. It can be perceived that London is a good city for goalkeepers to play professionally to achieve international success.
+Forwards, figure \@ref(fig:Forwards) - Barcelona is the only club that boasts 5 of their forwards featuring in the 2019 World Cup, with a combined experience of 249 caps between them. Portland Thorns has 4 forwards, but their combined experience of 534 caps easily overshadows the rest of the teams. Orlando Pride has only 2 forwards but a cap total of 293, the second highest. Lyon and Bayern Munich feature with 4 forwards as well with 254 and 160 caps respectively. Chelsea and Arsenal feature again, but the American clubs Portland Thorns and Orlando Pride really take the cake here.
 
-Defenders in Figure \@ref(fig:Defenders) - Lyon dominates this position. They have a whopping 7 defenders that featured in the 2019 World Cup, with a combined total experience of 475 international caps. Not far behind though is Chelsea with 6 defenders and 404 caps between them.
-
-Midfielders in Figure \@ref(fig:Midfielders) - Barcelona, Juventus, Manchester City, Nippon TV Beleza, Vfl Wolfsburg and Washington Spirit all have 4 midfielders represented in the 2019 World Cup. Vfl Wolfsburg have the most experience within their 4 midfielders, with a massive 366 caps between them. Paris Saint-Germain has 3 midfielders but a second highest total of caps between their midfielders, of 273. Rosengard has only 1 midfielder, the Swedish national Caroline Seger who has 193 caps alone for her country.
-
-Forwards in Figure \@ref(fig:Forwards) - Barcelona is the only club that boasts 5 of their forwards featuring in the 2019 World Cup, with a combined experience of 249 caps between them. Portland Thorns has 4 forwards, but their combined experience of 534 caps easily overshadows the rest of the teams. Orlando Pride has only 2 forwards but a cap total of 293, the second highest. Lyon and Bayern Munich feature with 4 forwards as well with 254 and 160 caps respectively. Chelsea and Arsenal feature again, but the American clubs Portland Thorns and Orlando Pride really take the stand here.
-
-### Section 3 - How have the successful club players fared in the 2019 World Cup?
+## Performance of successful clubs in the 2019 World Cup:
 
 So far, we have seen a few clubs contributing greatly towards providing high scoring and highly experienced (caps) international players. Few of these clubs we can shortlist - Portland Thorns, Orlando Pride, Lyon, Arsenal, Barcelona, Chelsea, Manchester City and Paris Saint-Germain. All of these clubs have players representing various countries, so let us use our 2019 World Cup match results data to understand which of these contributed to world cup success.
+
+### Goals scored by nations in the world cup:
+
+Let us see the goal scoring performance of all teams in 2019 world cup.
 
 ```{r attack}
 
@@ -370,9 +372,10 @@ best_attack %>%
 ```
 
 
-Looking into Table \@ref(tab:attack), the USA scored a whopping 26 goals in the 2019 World Cup. That is twice the number of goals scored by the second highest scoring nation, England. Even though 13 of those goals were scored in one match, against Thailand, it is still a large number considering it was done in only 7 matches. This keeps in line with what we saw previously, that the USA has the best goal scoring clubs, with Portland Thorns and Orlando Pride dominating goal numbers.
+Looking into table \@ref(tab:attack), the USA scored a whopping 26 goals in the 2019 World Cup. That is twice the number of goals scored by the second highest scoring nation, England. Even though 13 of those goals were scored in one match, against Thailand, it is still a large number considering it was done in only 7 matches. This keeps in line with what we saw previously, that the USA has the best goal scoring clubs, with Portland Thorns and Orlando Pride dominating goal numbers.
 
 
+### Section - World Cup progress:
 ```{r round}
 
 round <- c("Group", "Round of 16", "Quarter Final", "Semi Final", "Third Place Playoff", "Final")
@@ -410,6 +413,15 @@ The USA won their second world cup in a row, beating the Netherlands in the fina
 
 # Conclusion
 
+Barcelona and Lyon provide the most number of world cup players, with 15 and 14 respectively. 10 Barcelona players out of those 15 were Spanish, although Spain were eliminated in the round of 16 by the eventual winners - the USA. Lyon provided 7 French nationals in the world cup, and France were eliminated in the quarter finals, again by the USA.
+
+The USA scored a massive 26 goals in the tournament's 7 matches, which can be justified by the fact that just 2 American clubs - Portland Thorns and Orlando Pride, both have nearly 500 international goals between them.
+
+In terms of experience, Christian Sinclair and Carli Lloyd from Portland Thorns and Sky Blue FC (the latter an American club again), are the most capped, with 282 and 271 caps respectively. The top 5 capped players are all above 30 years of age, although there are young players (25 or below) that already have a lot of international experience under their belts, like the 24 year old Chinese midfielder Wang Shuang (93 caps) who plays for Paris Saint-Germain.
+
+In terms of positional contribution, Chelsea dominates goalkeepers with their 2 goalkeepers featuring in the world cup, boasting 173 caps between them. Lyon and Chelsea have 7 and 6 defenders respectively and 475 and 404 caps. Vfl Wolfsburg has 4 midfielders with 366 caps between them. Barcelona has 5 forwards featuring in the world cup who had 249 goals between them, although Spain scored only 4 goals in their 4 matches. Portland Thorns on the other hand had 4 forwards with 534 goals between them, and the USA scored 26 goals in the world cup.
+
+Finally, considering the sheer number of goals scored, the USA deservingly won the world cup, eliminating the likes of Spain, France, England and Netherlands in the process. Netherlands came in second, losing the final to USA and Sweden came in third, beating England in the third place playoffs.
 
 # Acknowledge
 
