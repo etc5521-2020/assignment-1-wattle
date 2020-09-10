@@ -6,6 +6,11 @@ Team members:
 
 * Ketan Kabu - 31554679
 * Yiwen Zhang - 31203019
+------
+Assignment2 Team members:
+
+* Xue Wang -30032245 
+* Hanh Ngo -31196101
 
 # Steps
 
