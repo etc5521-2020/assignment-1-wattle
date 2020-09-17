@@ -21,10 +21,14 @@ knitr::opts_chunk$set(echo = FALSE, cache=TRUE, message=FALSE,warning = FALSE,co
 
 library(ggplot2)
 library(tidyverse)
-library(kableExtra)
 library(dplyr)
 library(plotly)
 library(bookdown)
+library(ggridges)
+library(colorspace)
+library(plotly)
+library(GGally)
+library(kableExtra)
 ```
 
 ```{r readdata}
@@ -32,7 +36,9 @@ wwc_outcomes <- readr::read_csv("https://raw.githubusercontent.com/rfordatascien
 squads <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-07-09/squads.csv")
 codes <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-07-09/codes.csv")
 
+df <- read.csv("https://query.data.world/s/va6hy244mzxtoc7c3ww3nracqhreab", header=TRUE, stringsAsFactors=FALSE)
 ```
+
 
 
 
@@ -54,18 +60,202 @@ In our clubs data, we have a reference named as "Unattached", which will appear 
 
 # Data description
 
-This dataset is about Women's World Cup, which originally comes from website data.world <https://data.world/sportsvizsunday/womens-world-cup-data>.It consists of final score and win/loss status data from 1991-2019. Additionally, the 2019 world cup rosters for each team are included. After being cleaned by a data analyst, we downloaded the data from his github <https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-07-09>.
-There are three .csv files in this dataset to manage and store the data, and they are named "codes", "squads" and "wwc_outcomes". "wwc_outcomes.csv" has seven variables: "year" represents the year of tournament, "team" is the abbreviated team name, "score" means the score by team, "round" means the round of the tourament, "yearly_game_id" is a grouping variable for matches in each world cup, "team_num" is 1 or 2 representing teams in each match, and "win_status" represents a team win or loss. In "squads.csv", "squad_no" is the player jersey number from 1 to 23, "country" shows the country of the team, "pos" is the position of player, "player" shows the name of the player, "dob" is date of birth, "age" is the players' ages, "caps" displays the number of international games played by the player, "goal" is the number of international goals scored by the player, and "club" shows which domestic club the player belongs to.
+This dataset is about Women's World Cup, which originally comes from website data.world <https://data.world/sportsvizsunday/womens-world-cup-data>.It consists of final score and win/loss status data from 1991-2019. Additionally, the 2019 world cup rosters for each team are included. After being cleaned by a data analyst, we downloaded the data from his github <https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-07-09>. Figure \@ref(fig:miss-data) shows the missing data for squads.
 
+```{r outcome-data, warning=FALSE, message=FALSE}
+outcome_data <- tibble(Variable = c("year", "team", "score", "round", "yearly_game_id","team_num","win_status"),
+                          Class = c( "double",  "character", "double","character", "integer", "double",  "character"),
+                          Description = c("Year of tournamente", 
+                                          "Abbreviated team", 
+                                          "Score by team", 
+                                          "Round of the tournament", 
+                                          "Grouping variable - pairs team 1 and team 2 by round/year","team num (1 or 2)","Win Status = win/lose or tie (group only)")) 
+outcome_data %>%
+  kable(caption = "Woman world cup outcome data") %>%
+  kable_styling(bootstrap_options = "striped", 
+                full_width = F, 
+                position = "center")
+```
+
+```{r outcome-data, warning=FALSE, message=FALSE}
+squads_data <- tibble(Variable = c("squad_no", "country", "pos", "player", "dob","age","caps","goals","club"),
+                          Class = c( "double",  "character","character","character", "date", "double", "double","double", "character"),
+                          Description = c("Squad number (1 through 23)", 
+                                          "Country", 
+                                          "position", 
+                                          "Player name", 
+                                          "date of birth",
+                                          "age (years)",
+                                          "caps - international games played","Goals - international goals scored","Professional Club")) 
+squads_data %>%
+  kable(caption = "squads data") %>%
+  kable_styling(bootstrap_options = "striped", 
+                full_width = F, 
+                position = "center")
+```
+
+```{r miss-data,fig.cap="Missing data for squads"}
+visdat::vis_miss(squads)
+```
 # Analysis and findings
 
-The analysis is mainly divided into three parts, which answer the three secondary questions, and they are :
+Main question:
 
+- What factor affect the performance of the football team in the world cup?
+
+The analysis is mainly divided into three parts, which answer the three secondary questions, and they are :
 - Which are the clubs that provide the most number of world cup players?
 
 - How about contribution by clubs in terms of players' caps and positions?
 
 - How is the performance of successful clubs in the 2019 World Cup?
+
+
+## Analysis the performance of woman world cup by country
+### Overall summary trend of the number of goals scored by the country
+```{r score-dis,fig.cap="Nation goals distribution"}
+wwc_outcomes_2019 <- wwc_outcomes %>% 
+  group_by(team,year) %>% 
+  summarise(score = sum(score))
+  
+p1 <- ggplot(wwc_outcomes_2019, aes(score, team)) +  
+  geom_density_ridges() + 
+  geom_point() + 
+  labs(y = "Country", x= "score")+
+  theme(axis.text.y = element_text(color = "grey",face = "bold"),
+        plot.title = element_text(face = "bold"),
+        plot.background = element_rect(fill="white"),
+        panel.background = element_rect(fill="white"))
+p1
+```
+
+Looking into figure \@ref(fig:score-dis), the USA and Germany score significantly more goals each year than other countries, the kurtosis reflects the central tendency. The more right the kurtosis, the more goals are scored. The point shows the total number of goals scored by different countries each year. It can be seen that the most happened in the United State.
+
+```{r data-process}
+
+  wwc_outcomes_ROUND <- wwc_outcomes%>% 
+   mutate(Round = case_when(
+      str_detect(round, "Group") ~ "G",
+      str_detect(round, "Quarter Final") ~ "Q",
+      str_detect(round, "Semi Final") ~ "S",
+      str_detect(round, "Third Place Playoff") ~ "T",
+      str_detect(round, "Final") ~ "F",
+      str_detect(round, "Round of 16") ~ "R"
+      )) 
+
+```
+
+### General summary of the promotion of the National Women's World Cup
+
+```{r exp-layout, fig.width = 15, fig.height = 8, fig.cap = "Experimental layout. Each cell represents an experimental unit for each categorised behaviour. The number written in the cell shows the number of observations recorded and the color of the cell shows the treatment applied to the calve."}
+
+options(repr.plot.width = 12, repr.plot.height = 18)
+ wwc_outcomes_ROUND  %>% 
+  ggplot(aes(year, Round),height = "120%") + 
+  geom_tile(color = "black", aes(fill = win_status)) + 
+  #geom_text(aes(label = Round)) + 
+  #facet_wrap(~team) + 
+  facet_wrap( ~team) +
+  scale_fill_discrete_qualitative() + 
+  scale_color_manual(values = c("black", "brown")) +
+  coord_equal() + 
+  theme_classic(base_size =12) + 
+  guides(color = FALSE) + 
+  labs(fill = "Win_status", y = "Round", x = "Year")
+```
+Figure \@ref(fig:exp-layout) show the promotion situation for all the country attend the woman world cup between 1991 and 2019, the color represents the win, lose or tie, Each row represents a different stage of the game, such as group matches, semi-finals or final. It is clear to see that the United States has only lost four times in the past 20 years, The United States is a strong opponent in the Women's World Cup, followed by Germany, Although the number of losses is greater than that of the United States, Germany has also won many times. Figure \@ref(fig:exp-layout clearly sees the situation of each country. It can be seen that in women's football, the strength of different countries is very different. Why does this happen? What factors affect this phenomenon?
+
+## More score, more change to get the champion
+
+### Total goals scored by different countries
+
+```{r map-count, fig.cap = "Total goals scored by different countries"}
+
+whole_code <- wwc_outcomes %>% 
+  left_join(codes) %>% 
+   # filter(round =="Group") %>% 
+  mutate(country= as.character(country),
+        country = if_else(country %in% c("China PR","Chinese Taipei"), "China", country),
+        country = if_else(country %in% "United States", "USA", country),
+        country = if_else(country %in% "England","UK", country),
+        country = if_else(country %in% "Ivory Coast (Côte d'Ivoire)","Ivory Coast", country)) %>% 
+  group_by(country) %>% 
+  summarise(total_score = sum(score))
+  
+  
+world_map <- map_data("world")
+
+numofplayers <- world_map %>% 
+  mutate(region = as.character(region)) %>% 
+  left_join(whole_code,by = c("region"="country")) 
+  
+
+ 
+numofplayers[is.na(numofplayers)] <- 0
+
+p2 <- ggplot(numofplayers, aes(long, lat, group = group,label = region))+
+    geom_polygon(aes(fill = total_score ), color = "white")+
+    scale_fill_viridis_c(option = "C")+
+    theme_void()+
+    labs(fill = "Total number of goals",
+         title = "Number of goals with different countries")+
+   theme(
+    legend.position = c(.20, .30),
+    legend.box.just = c("right","bottom"))+
+   theme(axis.text.y = element_text(color = "grey", 
+                                             face = "bold"),
+        plot.title = element_text(face = "bold"),
+        plot.background = element_rect(fill="white"),
+        panel.background = element_rect(fill="white"))
+
+ggplotly(p2)
+```
+
+Figure \@ref(fig:map-count) is an interactive map. Click on the location on the map, and we can see the country's name and the total number of goals scored in the World Cup. The color also indicates the number of goals. USA, Germany, and Norway those three countries have the most number of total goals, especially compared to other countries. Does the total number of goals have anything to do with the chance of winning the championship? Will the country with more goals win the game? 
+
+### THe relationship between total score and chance of winning
+
+```{r Correlation,fig.cap="Correlation analysis"}
+new_num <- numofplayers %>% 
+  select(region,total_score) %>% 
+  filter(total_score >0) %>% 
+  distinct()
+
+
+new_wwc <- wwc_outcomes %>% 
+  left_join(codes)%>% 
+
+    mutate(country= as.character(country),
+        country = if_else(country %in% c("China PR","Chinese Taipei"), "China", country),
+        country = if_else(country %in% "United States", "USA", country),
+        country = if_else(country %in% "England","UK", country),
+        country = if_else(country %in% "Ivory Coast (Côte d'Ivoire)","Ivory Coast", country)) %>% 
+    filter(win_status=="Won") %>% 
+  filter(round == "Final") %>% 
+  # 用胜利的次数作为表现好的体现
+  group_by(country) %>% 
+  summarise(total = sum(score)) %>% 
+    
+  left_join(new_num,by = c("country"="region")) %>% 
+  select(-country)
+
+p3 <- ggpairs(new_wwc, title="correlogram with ggpairs()") +
+  theme(axis.text.y = element_text(color = "grey", 
+                                             face = "bold"),
+        plot.title = element_text(face = "bold"),
+        plot.background = element_rect(fill="white"),
+        panel.background = element_rect(fill="white"))
+
+ggplotly(p3)
+
+```
+
+Figure \@ref(fig:Correlation) is a correlation analysis between total goals and change to win, The correlation coefficient is 0.768, which shows a positive correlation, that is, the more the total number of goals, the greater the chance of winning the championship.
+
+
+
+
+
 
 ## Clubs that provide the most number of world cup players:
 
@@ -354,70 +544,7 @@ ggplotly(p2FW)
 
 Forwards, figure \@ref(fig:Forwards) - Barcelona is the only club that boasts 5 of their forwards featuring in the 2019 World Cup, with a combined experience of 249 caps between them. Portland Thorns has 4 forwards, but their combined experience of 534 caps easily overshadows the rest of the teams. Orlando Pride has only 2 forwards but a cap total of 293, the second highest. Lyon and Bayern Munich feature with 4 forwards as well with 254 and 160 caps respectively. Chelsea and Arsenal feature again, but the American clubs Portland Thorns and Orlando Pride really take the cake here.
 
-## Performance of successful clubs in the 2019 World Cup
 
-So far, we have seen a few clubs contributing greatly towards providing high scoring and highly experienced (caps) international players. Few of these clubs we can shortlist - Portland Thorns, Orlando Pride, Lyon, Arsenal, Barcelona, Chelsea, Manchester City and Paris Saint-Germain. All of these clubs have players representing various countries, so let us use our 2019 World Cup match results data to understand which of these contributed to world cup success.
-
-
-### Goals scored by nations in the world cup
-
-Let us see the goal scoring performance of all teams in 2019 world cup.
-
-```{r attack}
-
-outcomes_2019 <- wwc_outcomes %>% 
-  filter(year == 2019)
-
-best_attack <- outcomes_2019 %>% 
-  group_by(team) %>% 
-  summarise(goals = sum(score)) %>% 
-  arrange(desc(goals))
-
-best_attack %>%
-  head(10) %>% 
-  kable(booktabs = TRUE, caption = "Top Goal Scoring Nations") %>%
-  kable_styling(bootstrap_options = c("striped", "hover"))
-```
-
-
-Looking into table \@ref(tab:attack), the USA scored a whopping 26 goals in the 2019 World Cup. That is twice the number of goals scored by the second highest scoring nation, England. Even though 13 of those goals were scored in one match, against Thailand, it is still a large number considering it was done in only 7 matches. This keeps in line with what we saw previously, that the USA has the best goal scoring clubs, with Portland Thorns and Orlando Pride dominating goal numbers.
-
-
-### World Cup progress
-
-```{r round}
-
-round <- c("Group", "Round of 16", "Quarter Final", "Semi Final", "Third Place Playoff", "Final")
-label <- c(1, 2, 3, 4, 4, 5)
-
-round_label <- data.frame(round, label)
-
-outcomes_2019 <- outcomes_2019 %>% left_join(round_label, by = "round")
-
-prog <- outcomes_2019 %>% 
-  group_by(team) %>% 
-  summarise(round = max(label, na.rm = FALSE)) %>% 
-  arrange(desc(round))
-```
-
-```{r progress, fig.cap="Teams Progression In The 2019 World Cup"}
-
-prog_plot <- prog %>% 
-  ggplot(aes(round, reorder(team, -round), color = "red")) + 
-  geom_point() +
-  xlab("Round") +
-  ylab("Teams") +
-  ggtitle("Teams Progression In The 2019 World Cup") +
-  theme_bw() +
-  theme(legend.position = "none")
-
-ggplotly(prog_plot)
-
-```
-
-Figure \@ref(fig:progress) represents the final results of the 2019 Women's World Cup. Each number on the x axis represents the subsequent round - 1 being group stage and 5 being the final.
-
-The USA won their second world cup in a row, beating the Netherlands in the final. In the semi finals, England and Sweden were the casualties, losing out to the USA and Netherlands respectively. They did play a third place match which Sweden won. 
 
 
 # Conclusion
