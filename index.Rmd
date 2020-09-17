@@ -29,11 +29,10 @@ library(bookdown)
 
 ```{r readdata}
 wwc_outcomes <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-07-09/wwc_outcomes.csv")
-squads <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-07-09/squads.csv")
+squads_raw <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-07-09/squads.csv")
 codes <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-07-09/codes.csv")
 
 ```
-
 
 
 # Introduction and motivation
@@ -55,11 +54,138 @@ In our clubs data, we have a reference named as "Unattached", which will appear 
 # Data description
 
 This dataset is about Women's World Cup, which originally comes from website data.world <https://data.world/sportsvizsunday/womens-world-cup-data>.It consists of final score and win/loss status data from 1991-2019. Additionally, the 2019 world cup rosters for each team are included. After being cleaned by a data analyst, we downloaded the data from his github <https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-07-09>.
-There are three .csv files in this dataset to manage and store the data, and they are named "codes", "squads" and "wwc_outcomes". "wwc_outcomes.csv" has seven variables: "year" represents the year of tournament, "team" is the abbreviated team name, "score" means the score by team, "round" means the round of the tourament, "yearly_game_id" is a grouping variable for matches in each world cup, "team_num" is 1 or 2 representing teams in each match, and "win_status" represents a team win or loss. In "squads.csv", "squad_no" is the player jersey number from 1 to 23, "country" shows the country of the team, "pos" is the position of player, "player" shows the name of the player, "dob" is date of birth, "age" is the players' ages, "caps" displays the number of international games played by the player, "goal" is the number of international goals scored by the player, and "club" shows which domestic club the player belongs to.
+There are three .csv files in this dataset to manage and store the data, and they are named "codes", "squads" and "wwc_outcomes".  
+
+"wwc_outcomes.csv" has seven variables:  
+```{r}
+head(wwc_outcomes)
+```
+
+- "year" represents the year of tournament,  
+- "team" is the abbreviated team name,  
+- "score" means the score by team, 
+- "round" means the round of the tourament, includes: "Group", "Quarter Final", "Semi Final", "Third Place Playoff", "Final" and "Round of 16",   
+    +) Ground: In the first stage (the "Group Stage"), the 32 teams are placed into eight groups of four teams each, The top two teams from each group advance to the second stage (the 'Knockout Stage'). If two or more teams finish even on points, tie-breakers are used: the first is 'goal differential' then total goals scored, then head-to-head results, and finally drawing of lots.  
+    +) Round of 16:  the winner of each Group plays against the runner-up from another group  
+    +) Quarter final  --> Semi Finals --> Final  
+    +) Third place playoff: The losing semi-finalists play a match for third place.  
+- "yearly_game_id" is a grouping variable for matches in each world cup,   
+- "team_num" is 1 or 2 representing teams in each match, and  
+- "win_status" represents a team win or loss. 
+
+In "squads.csv":
+```{r clean-squads}
+# load the squad information for the remaining world cups
+wc_squad_full <- read.csv(here::here("femalewwc_squad.csv")) %>%
+  mutate(dob = as.Date(dob, format = "%d-%B-%Y"))
+
+# Update missing info for squads_raw
+squads_raw <- squads_raw %>%
+  mutate(
+    caps = case_when(
+    str_detect(player, "Xu Huan") ~ 1,
+    str_detect(player, "Lin Yuping") ~ 13,
+    str_detect(player, "Wang Yan") ~ 28,
+    str_detect(player, "Wang Ying") ~ 4,
+    str_detect(player, "Li Wen") ~ 32,
+    str_detect(player, "Bi Xiaolin") ~ 35,
+    str_detect(player, "Yao Wei") ~ 14,
+    str_detect(player, "Luo Guiping") ~ 1,
+    str_detect(player, "Liu Yanqiu") ~ 2,
+    TRUE ~ caps
+  ),
+  goals = case_when(
+    str_detect(player, "Xu Huan") ~ 0,
+    str_detect(player, "Lin Yuping") ~ 0,
+    str_detect(player, "Wang Yan") ~ 0,
+    str_detect(player, "Wang Ying") ~ 0,
+    str_detect(player, "Li Wen") ~ 3,
+    str_detect(player, "Bi Xiaolin") ~ 0,
+    str_detect(player, "Yao Wei") ~ 3,
+    str_detect(player, "Luo Guiping") ~ 0,
+    str_detect(player, "Liu Yanqiu") ~ 0,
+    TRUE ~ goals)
+  )
+    
+# row binds with 2019 squad info
+squads <- squads_raw %>%
+  mutate(year = 2019) 
+squads <- squads %>%
+  rbind(wc_squad_full)
+
+# manually fix the name of some clubs to avoid mismatch
+squads <- squads %>%
+  mutate(club = case_when(
+    str_detect(club, "Olympique Lyon") ~ "Lyon",
+    str_detect(club, "Olympique Lyonnais") ~ "Lyon",
+    str_detect(club, "Ajax") ~ "AFC Ajax",
+    str_detect(club, "AIK Fotboll") ~ "AIK",
+    str_detect(club, "Asker S.K.") ~ "Asker SK",
+    str_detect(club, "Avaldsnes") ~ "Avaldsnes IL",
+    str_detect(club, "Bangkok F.C.") ~ "Bangkok",
+    str_detect(club, "Klepp") ~ "Klepp IL",
+    str_detect(club, "Urawa Red Diamonds") ~ "Urawa Red Diamonds Ladies",
+    str_detect(club, "Urawa Reds Ladies") ~ "Urawa Red Diamonds Ladies",
+    str_detect(club, "Linköping FC") ~ "Linköping",
+    str_detect(club, "Arna-Bjørnar") ~ "Arna-Bjornar",
+    str_detect(club, "Arsenal L.F.C.") ~ "Arsenal",
+    str_detect(club, "Bayelsa Queens FC") ~ "Bayelsa Queens",
+    str_detect(club, "Beijing Chengjian") ~ "Beijing Chenjian",
+    str_detect(club, "Birmingham City L.F.C.") ~ "Birmingham City",
+    str_detect(club, "Changchun Zhuoyue [zh]") ~ "Changchun Zhuoyue",
+    str_detect(club, "Chelsea L.F.C.") ~ "Chelsea",
+    str_detect(club, "Delta Queens FC") ~ "Delta Queens",
+    str_detect(club, "Djurgården") ~ "Djurgårdens IF",
+    str_detect(club, "Doncaster Rovers Belles LFC") ~ "Doncaster Rovers Belles",
+    str_detect(club, "Eastern Suburbs AFC") ~ "Eastern Suburbs",
+    str_detect(club, "Everton L.F.C.") ~ "Everton",
+    str_detect(club, "FC Barcelona") ~ "Barcelona",
+    str_detect(club, "FFC Frankfurt") ~ "1. FFC Frankfurt",
+    str_detect(club, "FFC Turbine Potsdam") ~ "1. FFC Turbine Potsdam",
+    str_detect(club, "KIF Örebro DFF") ~ "KIF Örebro",
+    str_detect(club, "Kolbotn Fotball") ~ "Kolbotn",
+    str_detect(club, "Kristianstads DFF") ~ "Kristianstads",
+    str_detect(club, "Levante UD") ~ "Levante",
+    str_detect(club, "Louves Miniproff [de]") ~ "Louves Minproff",
+    str_detect(club, "LSK Kvinner FK") ~ "LSK Kvinner",
+    str_detect(club, "Melbourne Victory FC") ~ "Melbourne Victory",
+    str_detect(club, "Montpellier") ~ "Montpellier",
+    str_detect(club, "Nasarawa Amazons FC") ~ "Nasarawa Amazons",
+    str_detect(club, "Pelican Stars FC") ~ "Pelican Stars",
+    str_detect(club, "Piteå") ~ "Piteå",
+    str_detect(club, "Rivers Angels FC") ~ "Rivers Angels",
+    str_detect(club, "Sevilla FC") ~ "Sevilla",
+    str_detect(club, "Sky Blue FC") ~ "Sky Blue",
+    str_detect(club, "Stabæk Fotball") ~ "Stabæk",
+    str_detect(club, "Tianjin Teda F.C.") ~ "Tianjin Teda",
+    str_detect(club, "Trondheims-Ørn SK") ~ "Trondheims-Ørn",
+    str_detect(club, "Tyresö FF") ~ "Tyresö",
+    str_detect(club, "Umeå IK") ~ "Umeå",
+    str_detect(club, "Valencia CF") ~ "Valencia",
+    str_detect(club, "Vegalta Sendai") ~ "Vegalta Sendai Ladies",
+    str_detect(club, "Vittsjö GIK") ~ "Vittsjö",
+    str_detect(club, "Wuhan Jianghan University [zh]") ~ "Wuhan Jianghan Univ.",
+    str_detect(club, "SwedenJitex BK") ~ "Jitex BK",
+    str_detect(club, "EnglandNotts County") ~ "Notts County",
+    TRUE ~ club
+  ))
+```
+
+- "squad_no" is the player jersey number from 1 to 23,  
+- "country" shows the country of the team,  
+- "pos" is the position of player,  
+- "player" shows the name of the player,  
+- "dob" is date of birth,   
+- "age" is the players' ages,  
+- "caps" displays the number of international games played by the player,  
+- "goal" is the number of international goals scored by the player, and  
+- "club" shows which domestic club the player belongs to.
 
 # Analysis and findings
 
 The analysis is mainly divided into three parts, which answer the three secondary questions, and they are :
+
+Primary question: What would describe the Worldcup participants and most importantly, if possible, the world cup winner?
 
 - Which are the clubs that provide the most number of world cup players?
 
@@ -67,37 +193,276 @@ The analysis is mainly divided into three parts, which answer the three secondar
 
 - How is the performance of successful clubs in the 2019 World Cup?
 
+# Changes from Assignment 1:
+In the previous stage of this report, the **wattle** team had performed a range of analysis on the player contribution by club, goals score. player's cap and player position. Even though the analysis was done thoroughly, the works lacked direction towards answering the primary question. In this improvised version, we tried to re- address the wattle team's analysis by expanding the scope (by obtaining more data) to direct the results towards answering the primary question.  
+
+Details of change are as follow:   
+- Primary question was introduced, and small questions were added and revised to better facilitate the primary question.  
+- Report structure: We introduced a new primary question and a set of small questions. Thus the report was restructured to reflect the appearance of new questions.  
+- Data description: We obtained more data, so we do further introduction. Also the missing values analysis was conducted on both the new and old datasets.  
+- Part 3.1 _Clubs that provided the most number of world cup players_:  
+  +) We relocated the _Overall contribution_ to under the new _Analysys by club_ and expanded the work using the data of other World Cup tournaments as well.  
+  +) The _Goal scorers_ was removed as we wanted to discuss the relationship among the age, caps and the goals to dertermine the characteristic of a World Cup player.  
+- Part 3.2 _Cap contribution by clubs_:  
+  +) The _Contribution by clubs in terms of players’ caps_ was relocated to under the new _Analysys by players_.  
+  +) The _Clubs that provide players that are young and also highly experienced_ was removed as we will discuss the players'age in a seperate section under the _Analysys by players_ section.  
+  +) The _Contribution by clubs in terms of player position_ was removed as we deemed unrelevant to the main question and contained less usefull information.  
+- Conclusion: new conclusion to associate with new analysis.  
+
+_________________________________________________________________________________________
+NEW STRUCTURE from here
+
+## Analysis by country
+
+```{r}
+# read the fifa code
+fifa_code <- read.csv(here::here("fifa_country_code.csv"))
+
+# reference the country code in the wwc_outcomes
+wwc_outcomes_fullname <- wwc_outcomes %>%
+  left_join(codes, by = "team")
+```
+
+
+```{r team-result}
+# count the number of rounds participated by each country
+team_count <- wwc_outcomes_fullname %>%
+  select(country, year, score) %>%
+  count(country, year) %>%
+  rename("rounds" = n)
+# calculate the result for each team
+team_result <-wwc_outcomes_fullname %>%
+  select(country, year, score) %>%
+  group_by(country, year) %>%
+  summarise(total_score = sum(score)) %>%
+  ungroup()
+# bind the two tables to calculate avg score/ round
+avg_score_per_round <- team_result %>%
+  left_join(team_count, by = c("country", "year")) %>%
+  mutate(avg_score = total_score/rounds)
+```
+
+
+## Analysis by club
+
+To find out what factors could determind a World Cup player, we tried to looked at two elements of her career: the player herself and the club that she played for in her normal time not attending the World Cup. In this section, we will have a look at the club first.  
+It's no surprise when we would see some clubs or leagues that better represents the players than the others. Those clubs usually are big in size, providing more resources to produce a quality player. In the figure below, we will examine the biggest 12 clubs that are or were home to the highest numbers of World Cup players.  
+
+```{r player-contri, fig.cap = "Contribution of World Cup players by clubs from 2007 to 2019"}
+wc_clubs_players <- squads %>% 
+  # leave the unattached out to count
+  # filter out 2003 as clubs info were missing
+  filter(year > 2003,
+         !club == "Unattached") %>%
+  group_by(club) %>%
+  # count the unique players only as one player could attend more than one WC
+  summarise("Player" = n_distinct(player)) %>% 
+  arrange(desc(Player))
+
+wc_clubs_players %>% 
+  head(12) %>% 
+  kable(booktabs = TRUE, caption = "Contribution of World Cup players by clubs from 2007 to 2019") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+We filtered for the 2007 World Cup up to 2019 World Cup (4 tournaments in total) as the club's information was not fully provided for all of the prior tournaments. After that we counted the number of unique players that each club had brought to the World Cup. 
+
+Lyon contributed the highest number of players throughout the four World Cup tournaments. Asides from Lyon, the France Women's First Division League had another national clubs got into the top 10, which was Paris Saint-Germain. Most of the other clubs in the ranking saw themselves belonged to the countries that are most well-known for their football history. They are Germany (1. FFC Frankfurt and VfL Wolfsburg), England (Arsenal and Chelsea), Norway (LSK Kvinner), Sweden (Linköping), Canada (Vancouver Whitecaps) and Spain (Barcelona).  
+
+We have two special cases that top the chart: 25-Apr of North Korea and Rivers Angels of Nigeria. These two clubs were special in their own way that their national World Cup teams mostly consisted of their players. We will revisit this point again when we get to the breakdown of Domestical and Foreign elements of these 12 clubs later in this section.   
+
+```{r top-10-by-year, fig.cap = "Clubs' players by year from WC2007-WC2019"}
+squads %>% 
+  # filter top twelve only
+  filter(club %in% c("Lyon", "Arsenal", "Paris Saint-Germain", "1. FFC Frankfurt", "25-Apr",
+                     "Barcelona", "Rivers Angels", "Chelsea", "Vancouver Whitecaps", "VfL Wolfsburg",
+                     "Linköping", "LSK Kvinner"),
+         year > 2003) %>%
+  group_by(club, year) %>%
+  # leave the unattached out to count
+  # filter out 2003 as clubs info were missing
+  summarise("Player" = n_distinct(player)) %>% 
+  arrange(club, year) %>%
+  ggplot(aes(x = factor(year), Player)) +
+  geom_col(stat = "identity") +
+  facet_wrap(~ club) +
+  theme_bw() +
+  xlab("year") +
+  ggtitle("Clubs' players by year from WC2007-WC2019")
+```
+
+In terms of year, 5 out of the 12 clubs featured in the chart did not join the whole four World Cups. We can see clearly from the chart that 25-Apr had made an impressive contribution of players for the North Korea team in 2007 and 2011, which brought them to our ranking even though they dropped out in the recent two games. 
+
+Except for Chelsea and Barcelona, other clubs did not observe a significant change in the number of World Cup player in 2019. Rather, most of them went down in numbers. There is a couple of explanations that might explain this overvation:  
+- 2015 was the first year that allowed the number of participated teams to increased from 16 in 2011 to 24. As a result, we will see that most clubs saw theie players surged in number in 2015.  
+- There is a fact in the football industry that big clubs usually hestitated to send their prominant players to the World Club. They want to reserve their stars for the national tournaments or other premier leagues. In the male football industry, this practice threatened the success of World Cup so bad that FIFA even comes up with a commission scheme to pay the clubs for their "collaboration" [@reuters]. A drop in the female players'number could suggest two things: (1) the women's football clubs also concerned for other games that they did not want to send away their star players, and (2) 2019 was the second World Cup that allowed 24 teams to participate. Other clubs might have used this chance to send their players to the international field, making the share smaller for all.  
+
+For (1), we was confirmed that FIFA has announced the first beneficial package to promote the clubs for participating in the Women's World Cup. This program was introduced ahead of the World Cup 2019. More details can be read [here](https://img.fifa.com/image/upload/imn0xwvea97tommxx5uz.pdf).  
+
+Finally in this club section, we will look at the composition of the players that each of these 12 clubs sent to World Cup. Would they be playing along or against their comrades?
+
+```{r top-12-by-year, fig.cap = "Percentage of domestical player of top 12"}
+# Count the distinct nationals in each club in top 12
+domestic <- squads %>% 
+  # filter top 12 only
+  filter(club %in% c("Lyon", "Arsenal", "Paris Saint-Germain", "1. FFC Frankfurt", "25-Apr",
+                     "Barcelona", "Rivers Angels", "Chelsea", "Vancouver Whitecaps", "VfL Wolfsburg",
+                     "Linköping", "LSK Kvinner"),
+         year > 2003) %>%
+  group_by(club, country) %>%
+  # leave the unattached out to count
+  # filter out 2003 as clubs info were missing
+  summarise("Player" = n_distinct(player)) %>%
+  ungroup()
+
+# Visualise the combination of domestical and foreign elements
+domestic %>%
+  group_by(club) %>%
+  # all clubs will have majority of their players coming from the country
+  mutate("origin" = ifelse(Player == max(Player), "Domestic", "Other"),
+         prop = Player/sum(Player)) %>%
+  group_by(club,origin) %>%
+  summarise(prop = sum(prop)) %>%
+  filter(origin == "Domestic") %>%
+  ggplot(aes(fct_reorder(club, prop), prop)) +
+  geom_col(stat = "identity", colour = "blue", fill = "blue") +
+  coord_flip() +
+  theme_bw() + 
+  ylab("club") +
+  xlab("% Domestical Player") +
+  ggtitle("Percentage of domestical player of top 12")
+```
+
+We can see that Vancouver Whitecaps, 25-apr and Rivers Angels had most of their World Cup players coming from their own country. Other big names like Chelse, Arsena, Lyon or 1. FFC Frankfurt hold only 50% - 60% of their World Cup players domestic, other were exported. To understand better about how such composition would contribute to their performance in World Cup, we were tempted to see of all the international clubs featured in the World Cup, which one hold the highest of players and how would that related to their performance. However, the task of gathering the nation of each club took a lot of time and hand works, hence we refered to a study by FIFA for this question.
+
+```{r fifa-research, fig.cap = "Players owner in World Cup 2019", out.height = "60%"}
+knitr::include_graphics(here::here("wc_owner.png"))
+```
+
+In an article published on dw.com[@fifa], FIFA has released their figures showing that US club held roughly 14% of total World Cup 2019 player - 73 players. That figure was very impressive if you consider there were hundreds of clubs from all over the world sending their players to the game. Followed behind were our familiar faces of Spain, France and England. The article also pointed out that Spain's national women team qualified for the game first time in 2015, by that team, there were only 21 of the players belonged to the top Spanish teams. In 2019, the number increased to 51. The article also suggested that this change came from a significant improve in supports for women's football in Spain in the recent years. 
+
+The domination of US and the rising of Spain suggested how a nation would support their players. It was of nature that players would come to the clubs that offered them the best of conditions. The better the condition, the more likely to attract top players and finally the better performance at any tournament. The United States had crowned the championship at the World Cup for 4 times out of 8 times the Women World Cup was held until now.  
+
+## Analysis by player
+Next we will take a look deeper into the stars of the game - the players. In this section, we wanted to know if there are any factors that would determine a player's chance to participate in the World Cup, or even further, how these factors can tell about the performance of such player in the game.  
+
+### Player's age
+First of all, we will comb through the age of all participants that took part in World Cup from the very first tournament in 1991 to the most recent in 2019.  
+
+```{r country-age, fig.cap = "Summary of player age by country"}
+player_age <- squads %>%
+  group_by(year, country) %>%
+  ggplot(aes(reorder(country, age, FUN = median), age)) +
+  geom_boxplot() +
+  theme_bw() +
+  theme(axis.text.x=element_text(angle=90, hjust=1)) +
+  xlab("country") +
+  ggtitle("Summary of player age by country")
+
+ggplotly(player_age)
+```
+
+On average, a World Cup player would not be younger than her 20s. The ideal age range for players would be around 25 to 27 years. The World Cup 
+
+
+```{r player-age, fig.cap = "Player's age distribution"}
+squads %>%
+  ggplot(aes(x = age)) +
+  geom_histogram(binwidth = 1 , color = "black", fill = "magenta") +
+  theme_bw()+
+  ggtitle("Player's age distribution")
+```
+
+### Player's cap
+
+Cap means 
+In order to find the clubs providing players with the highest cap value, the "squads.csv" file is sorted in descending order, and the resulting top five clubs are displayed in the Table \@ref(tab:cap).
+```{r arrangecapped}
+most_capped <- squads %>%
+  filter(year > 2003,
+         !club == "Unattached") %>%
+  select(-age, - dob, - squad_no) %>%
+  group_by(player) %>%
+  arrange(desc(year)) %>%
+  slice(1) %>%
+  arrange(desc(caps))
+```
+
+```{r cap-by-year, fig.cap = "Comparison of cap bar by year"}
+capped_2019 <- most_capped %>%
+  # filter countries with NA
+  filter(year == 2019,
+         !country %in% c("Nigeria", "Cameroon")) %>%
+  group_by(country) %>%
+  ggplot(aes(reorder(country, caps, FUN = median, na.rm = TRUE), caps)) +
+  geom_boxplot() +
+  theme_bw() +
+  theme(axis.text.x=element_text(angle=90, hjust=1)) +
+  xlab("country in 2019") +
+  coord_flip()
+  ggtitle("Summary of player cap by country")
+  
+capped_2015 <- most_capped %>%
+  filter(year == 2015) %>%
+  group_by(country) %>%
+  ggplot(aes(reorder(country, caps, FUN = median), caps)) +
+  geom_boxplot() +
+  theme_bw() +
+  theme(axis.text.x=element_text(angle=90, hjust=1)) +
+  xlab("country in 2015") +
+  coord_flip()
+  ggtitle("Summary of player cap by country")
+  
+capped_both <- grid.arrange(capped_2019,capped_2015, ncol = 2)
+```
+
+
+
+
+
+
+### Performance
+
+Explore the relation between the cap, the age and the goals
+
+```{r}
+library(GGally)
+# filter out 2003 and forwards due to the lack of info
+squads %>% 
+  filter(year > 2003) %>%
+  ggscatmat(columns = 6:8, color = "year") +
+  scale_colour_brewer(palette="Set1") +
+  theme_bw()
+```
+
+
+
+
+NEW STRUCTURE end here
+_________________________________________________________________________________________
+
+
+
+
+
+
 ## Clubs that provide the most number of world cup players:
 
 ### Overall contribution
 
-Let us begin our analysis by understanding the overall contibution of world cup players by clubs around the world:
 
-```{r player-contri}
 
-wc_clubs_players <- squads %>% 
-  group_by(club) %>%
-  tally() %>% 
-  arrange(desc(n))
-
-wc_clubs_players <- wc_clubs_players %>% 
-  rename(Players = n)
-
-wc_clubs_players %>% 
-  head(10) %>% 
-  kable(booktabs = TRUE, caption = "Overall contibution of world cup players by clubs") %>%
-  kable_styling(bootstrap_options = c("striped", "hover"))
-
-```
+## Cap contribution by clubs
 
 Out of a total of 552 players that featured in the 2019 World Cup, it can be seen in Table \@ref(tab:player-contri) that 15 play domestic football in Barcelona (Spain), 14 play for Lyon (France) and 12 play for Chelsea (England). It is interesting to note that clubs with 11 or higher number in this table can play in a match with a squad that's comprised entirely of world cup internationals, greatly increasing the profile of their club's brand.
+
+> Not really, other players from other nations can also play for the club. Also club team members can actually go against rather than along each other. 
 
 ### Goal scorers
 
 Now, let us look at the number of overall international goals scored by players that featured in the 2019 World Cup by clubs: 
 
 ```{r goal-contri}
-
 wc_clubs_goals <- squads %>% 
   group_by(club) %>% 
   summarise(Goals = sum(goals)) %>% 
@@ -113,7 +478,6 @@ wc_clubs_goals %>%
 Looking into Table \@ref(tab:goal-contri), Portland Thorns (247) and Orlando Pride (240) both are from the US. They make up for nearly 500 international goals between their players. Lyon (177), Arsenal (148), Barcelona (134) and Chelsea (133) make up the rest of the top 5 clubs. Let us deep dive into these teams and look into players that actually do the goal scoring.
 
 ```{r players-goals,fig.cap="Players v/s Goals Scored For International Team"}
-
 players_goals <- squads %>% 
   group_by(club) %>% 
   mutate(Club_goals = sum(goals)) %>% 
@@ -134,7 +498,6 @@ p1 <- players_goals %>%
 
 ggplotly(p1) 
   
-  
 ```
 
 In Figure \@ref(fig:players-goals), we can see the number of international goals scored by players belonging to the top 6 clubs (colored) contributing to the highest goal scorers, and the size indicates the amount of goals contributed by that player's club.
@@ -147,29 +510,12 @@ Lyon, Arsenal, Barcelona and Chelsea have players contributing more equally towa
 
 We can conclude in this section alone that in terms of the sheer number of players featuring in the 2019 World Cup, Barcelona has the highest contribution (15), followed by Lyon (177). In terms of goals, however, the American clubs Portland Thorns and Orlando Pride have a massive haul of nearly 500 goals between them, sitting quite comfortably at number 1 and 2 respectively. But Barcelona and Lyon also feature in the top 5 for goals contributed.
 
-## Cap contribution by clubs
 
-Let us now focus on the international experience of players being provided by these clubs, also termed as "caps".
+### Contribution by caps
 
-### Contribution by clubs in terms of players' caps
-
-In order to find the clubs providing players with the highest cap value, the "squads.csv" file is sorted in descending order, and the resulting top five clubs are displayed in the Table \@ref(tab:cap).
-```{r arrangecapped}
-most_capped <- squads %>%
-  arrange(desc(caps)) 
-
-```
-
-```{r  cap}
-most_capped %>%
-  head(5)%>%
-  kable(booktabs = TRUE, caption = "Top five clubs that providing most capped players") %>%
-  kable_styling(bootstrap_options = c("striped", "hover"))
-```
-
-In this table, we could see that the club with the most capped player is Portland Thorns.
 We notice that the top five capped players are all over 30 years old! Is there any relationship between caps and the age of players? 
 To answer this question, we made a plot of caps changing by age. In Figure \@ref(fig:international)，the purple curve represents the trend of caps with age, while the blue curve represents the trend of conditional mean value of caps with age. 
+
 ```{r international, fig.cap="caps changing with age"}
 p0 <- ggplot(most_capped,
        aes(x= age, 
@@ -187,8 +533,6 @@ ggplotly(p0)
 
 Conditional mean refers to the average level of caps predicted under the fixed age, so the characteristics of caps changing with age can be obtained more intuitively by observing the blue line. [@geomsmoothggplot2]It can be seen that the blue line shows an upward trend with the increase of age, that is to say, the older a player is, the more times he participates in international competitions. It's not hard to understand that the older he is, the longer his career may be, the more games he will play.
 But we can't help but wonder whether there are players who are both young and highly capped? What club is he from?
-
-
 
 ### Clubs that provide players that are young and also highly experienced
 
@@ -223,7 +567,6 @@ capped_young_highly %>%
 Let us now take a look at player positions. Broadly, we have 4 major positions to consider - Goalkeepers (GK), Defenders (DF), Midfielders (MF) and Forwards (FW). Our objective in this section would be to understand which clubs specialize in providing world cup international players in a particular playing position.
 
 ```{r play-pos}
-
 GK <- squads %>% 
   filter(pos == "GK") %>% 
   group_by(club) %>% 
@@ -354,6 +697,7 @@ ggplotly(p2FW)
 
 Forwards, figure \@ref(fig:Forwards) - Barcelona is the only club that boasts 5 of their forwards featuring in the 2019 World Cup, with a combined experience of 249 caps between them. Portland Thorns has 4 forwards, but their combined experience of 534 caps easily overshadows the rest of the teams. Orlando Pride has only 2 forwards but a cap total of 293, the second highest. Lyon and Bayern Munich feature with 4 forwards as well with 254 and 160 caps respectively. Chelsea and Arsenal feature again, but the American clubs Portland Thorns and Orlando Pride really take the cake here.
 
+
 ## Performance of successful clubs in the 2019 World Cup
 
 So far, we have seen a few clubs contributing greatly towards providing high scoring and highly experienced (caps) international players. Few of these clubs we can shortlist - Portland Thorns, Orlando Pride, Lyon, Arsenal, Barcelona, Chelsea, Manchester City and Paris Saint-Germain. All of these clubs have players representing various countries, so let us use our 2019 World Cup match results data to understand which of these contributed to world cup success.
@@ -452,4 +796,8 @@ The packages used are as follows:
 
 # References
 
+Contibution of world cup players by clubs from 2007 to 2019
 
+https://www.reuters.com/article/us-soccer-world-fifa/fifa-to-pay-clubs-209-million-for-world-cup-collaboration-idUSKBN0MG1I320150320
+
+https://img.fifa.com/image/upload/imn0xwvea97tommxx5uz.pdf
