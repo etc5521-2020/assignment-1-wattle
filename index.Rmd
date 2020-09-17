@@ -347,46 +347,71 @@ The domination of US and the rising of Spain suggested how a nation would suppor
 Next we will take a look deeper into the stars of the game - the players. In this section, we wanted to know if there are any factors that would determine a player's chance to participate in the World Cup, or even further, how these factors can tell about the performance of such player in the game.  
 
 ### Player's age
-First of all, we will comb through the age of all participants that took part in World Cup from the very first tournament in 1991 to the most recent in 2019.  
-
-```{r country-age, fig.cap = "Summary of player age by country"}
-player_age <- squads %>%
-  group_by(year, country) %>%
-  ggplot(aes(reorder(country, age, FUN = median), age)) +
-  geom_boxplot() +
-  theme_bw() +
-  theme(axis.text.x=element_text(angle=90, hjust=1)) +
-  xlab("country") +
-  ggtitle("Summary of player age by country")
-
-ggplotly(player_age)
-```
-
-On average, a World Cup player would not be younger than her 20s. The ideal age range for players would be around 25 to 27 years. The World Cup 
-
+First of all, we will look at the over age distribution of all the players through all eight World Cup tournaments.
 
 ```{r player-age, fig.cap = "Player's age distribution"}
 squads %>%
   ggplot(aes(x = age)) +
   geom_histogram(binwidth = 1 , color = "black", fill = "magenta") +
   theme_bw()+
+  facet_wrap(~ year) +
   ggtitle("Player's age distribution")
 ```
 
+We chosed the bindwith equals to 1, each bindwith represented 1 year of age. We could ignore the count for each year as the number of teams participated were not similar for the all the years. Instead we will concentrate on the distribution. 
+
+We can see that the age distribution by year varied quite significantly. From 1991 up to 2015, the age distribution was lightly right skewed, meaning players cluttered around the lower age - lower than 30 , around 20- 25 as we can refer from the charts. But coming to 2019, a clear shift was observed where the age cluttered around the higher age of 27. More observations were observed at further beyond 30, indicating that players that qualified for World Cup are getting older than before.  
+
+Next up, we will comb through the age of all participants that took part in World Cup from the very first tournament in 1991 to the most recent in 2019.  
+
+```{r country-age, fig.cap = "Summary of player age by country"}
+player_age <- squads %>%
+  group_by(year, country) %>%
+  mutate(dummy = ifelse(country %in% c("US", "Norway", "Germany","Netherlands", "Japan", "China PR", "Sweden", "Brazil"),1, 0)) 
+
+pa <- player_age %>%
+  ggplot(aes(reorder(country, age, FUN = median), age, color = dummy)) +
+  geom_boxplot() +
+  theme_bw() +
+  theme(axis.text.x=element_text(angle=90, hjust=1),
+        legend.position = "none") +
+  xlab("country") +
+  ggtitle("Summary of player age by country")
+
+ggplotly(pa)
+```
+
+On average, a World Cup player would not be younger than her 20s. The ideal age range for players would be around 25 to 27 years. The World Cup had witnessed a fair share of matured players who rocked the age of past 30s and even reached the 40s in history. Let's located the winners and the runners up for all of the past World Cup and see how the ages varied.
+
+We have United States (4 wins, 1 runner up), Norway (1 win, 1 runner up), Germany (2 wins, 1 runner up), Japan (1 win, 1 runner up), China PR, Sweden, Brazil and Netherlands (each had 1 runner up). I have highlighted the countries mentioned in the chart above for easier reference. We can see that most of the countries resided on the right half of the chart, indicating a higher than average median age of players. The 4-time champion US even had a long right tail where the maximum age could reach 39. Other highlighted countries also possessed some players with the age felt into the outliers that passed 35. We have Japan and China on the other half of the chart, with China seems to have younger ladies than the others. Japan eventhough on the other half, had a long right tail of age distribution where players can get to the age of 36. 
+
 ### Player's cap
 
-Cap means 
-In order to find the clubs providing players with the highest cap value, the "squads.csv" file is sorted in descending order, and the resulting top five clubs are displayed in the Table \@ref(tab:cap).
+The number of caps of each player represents the number of times a player represents her team in an international play ground. 
+
+Table \@ref(tab:arrangecapped) below summarised top 10 players with the highest caps in the history of World Cup, along with the country they presented, their positions, the clubs they played for and their caps and goals at the most recent time they participated in the World Cup. 
+
 ```{r arrangecapped}
 most_capped <- squads %>%
   filter(year > 2003,
          !club == "Unattached") %>%
-  select(-age, - dob, - squad_no) %>%
+  select(-age, - squad_no) %>%
   group_by(player) %>%
   arrange(desc(year)) %>%
   slice(1) %>%
   arrange(desc(caps))
+
+most_capped %>%
+  head(10) %>%
+  kable(caption = "Top 10 players with the highest caps") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
 ```
+
+Again, the US took up the majority of ranks in the ranking table, 4 out of 10. Among which, Kristine Lilly hold the highest records at the World Cup 2007 - her last World Cup before retirement. After that and up until now, no players has been able to surpass her. Christie Rampone got the closest at the moment with 32 caps in difference.
+
+We will look further and compare the caps countries to countries. For this task, we would take into focus only two years 2015 and 2019, as the two cyears had the same number of participating teams, making it easier to compare countries.
+
+However, for 2019, we had to cross Nigeria and Cameroon off the list as these two countries missed a lot information regrading the caps and the goals. The result figure is presented below:
 
 ```{r cap-by-year, fig.cap = "Comparison of cap bar by year"}
 capped_2019 <- most_capped %>%
@@ -416,10 +441,9 @@ capped_2015 <- most_capped %>%
 capped_both <- grid.arrange(capped_2019,capped_2015, ncol = 2)
 ```
 
+Surprisingly, the US team, eventhough still at the top, actually had their caps lowering in 2019 compared to 2015, with only Carli Lloyd having the caps high enough to become an outliner. Most of the celebrity teams (teams that had won and achieved runner up), except for China PR and Brazil, saw their median caps dropped. Expanding further from the top 10 highest cap in table \@ref(tab:arrangecapped) above to the top 30, we only had 12 players who participated in the World Cup 2019. Whilst we cannot calculate the impact of such drops on the teams' performance (US still won and Netherlands was the runner up in 2019), we can try to explain the reasons behind such drop in caps.
 
-
-
-
+It could possibly mean that the celebrity team either (1) had their prestige players reaching the retirement age (If you revisit the top 10 table, you would see that most players in top 10 born in late 70s and early 80s) so they had to drop out of the tournament or (2) the celebrity team considered to save their ace players for other premier leagues rather than exhaust them in World Cup. Whilst we can infer the assumption (1) from the date of birth provided, we had no solid base for the assumption (2). All we know at the moment is that FIFA has stepped in to encourage the teams to "collaborate" in exchange for a handsome commission under the form of supports given to the clubs to help build up their talents. 
 
 ### Performance
 
