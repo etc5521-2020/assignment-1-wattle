@@ -60,7 +60,7 @@ In our clubs data, we have a reference named as "Unattached", which will appear 
 
 # Data description
 
-This dataset is about Women's World Cup, which originally comes from website data.world <https://data.world/sportsvizsunday/womens-world-cup-data>.It consists of final score and win/loss status data from 1991-2019. Additionally, the 2019 world cup rosters for each team are included. After being cleaned by a data analyst, we downloaded the data from his github <https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-07-09>. Figure \@ref(fig:miss-data) shows the missing data for squads.
+This dataset is about Women's World Cup, which originally comes from website data.world <https://data.world/sportsvizsunday/womens-world-cup-data>.It consists of final score and win/loss status data from 1991-2019. Additionally, the 2019 world cup rosters for each team are included. After being cleaned by Thomas Mock at tidy tuesday challenge, we downloaded the two dataset from his github at <https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-07-09>. Figure \@ref(fig:miss-data) shows the missing data for squads.
 
 ```{r outcome-data, warning=FALSE, message=FALSE}
 outcome_data <- tibble(Variable = c("year", "team", "score", "round", "yearly_game_id","team_num","win_status"),
@@ -97,6 +97,118 @@ squads_data %>%
 ```{r miss-data,fig.cap="Missing data for squads"}
 visdat::vis_miss(squads)
 ```
+
+For the "squads" dataset, we made two improvements:
+- The missing value for the caps and goals were mostly of the China PR, Nigeria and Cameroon teams. We had managed to find and added the missing caps and goals for the China PR team from Wikipedia which can be found [here](https://en.wikipedia.org/wiki/2019_FIFA_Women%27s_World_Cup_squads).  
+- Asides from the squads information of 2019 that was provided, we tried to expand the dataset to include the information of thep previous World Cups. Information was gathered manually by hands from Wikipedia and stored in a csv file before merged with the squads information of 2019. The new dataset now has the new dimension as below:  
+
+```{r clean-squads}
+# load the squad information for the remaining world cups
+wc_squad_full <- read.csv(here::here("femalewwc_squad.csv")) %>%
+  mutate(dob = as.Date(dob, format = "%d-%B-%Y"))
+
+# Update missing info for squads_raw
+squads <- squads %>%
+  mutate(
+    caps = case_when(
+    str_detect(player, "Xu Huan") ~ 1,
+    str_detect(player, "Lin Yuping") ~ 13,
+    str_detect(player, "Wang Yan") ~ 28,
+    str_detect(player, "Wang Ying") ~ 4,
+    str_detect(player, "Li Wen") ~ 32,
+    str_detect(player, "Bi Xiaolin") ~ 35,
+    str_detect(player, "Yao Wei") ~ 14,
+    str_detect(player, "Luo Guiping") ~ 1,
+    str_detect(player, "Liu Yanqiu") ~ 2,
+    TRUE ~ caps
+  ),
+  goals = case_when(
+    str_detect(player, "Xu Huan") ~ 0,
+    str_detect(player, "Lin Yuping") ~ 0,
+    str_detect(player, "Wang Yan") ~ 0,
+    str_detect(player, "Wang Ying") ~ 0,
+    str_detect(player, "Li Wen") ~ 3,
+    str_detect(player, "Bi Xiaolin") ~ 0,
+    str_detect(player, "Yao Wei") ~ 3,
+    str_detect(player, "Luo Guiping") ~ 0,
+    str_detect(player, "Liu Yanqiu") ~ 0,
+    TRUE ~ goals)
+  )
+    
+# row binds with 2019 squad info
+squads <- squads %>%
+  mutate(year = 2019) 
+squads <- squads %>%
+  rbind(wc_squad_full)
+
+# manually fix the name of some clubs to avoid mismatch
+squads <- squads %>%
+  mutate(club = case_when(
+    str_detect(club, "Olympique Lyon") ~ "Lyon",
+    str_detect(club, "Olympique Lyonnais") ~ "Lyon",
+    str_detect(club, "Ajax") ~ "AFC Ajax",
+    str_detect(club, "AIK Fotboll") ~ "AIK",
+    str_detect(club, "Asker S.K.") ~ "Asker SK",
+    str_detect(club, "Avaldsnes") ~ "Avaldsnes IL",
+    str_detect(club, "Bangkok F.C.") ~ "Bangkok",
+    str_detect(club, "Klepp") ~ "Klepp IL",
+    str_detect(club, "Urawa Red Diamonds") ~ "Urawa Red Diamonds Ladies",
+    str_detect(club, "Urawa Reds Ladies") ~ "Urawa Red Diamonds Ladies",
+    str_detect(club, "Linköping FC") ~ "Linköping",
+    str_detect(club, "Arna-Bjørnar") ~ "Arna-Bjornar",
+    str_detect(club, "Arsenal L.F.C.") ~ "Arsenal",
+    str_detect(club, "Bayelsa Queens FC") ~ "Bayelsa Queens",
+    str_detect(club, "Beijing Chengjian") ~ "Beijing Chenjian",
+    str_detect(club, "Birmingham City L.F.C.") ~ "Birmingham City",
+    str_detect(club, "Changchun Zhuoyue [zh]") ~ "Changchun Zhuoyue",
+    str_detect(club, "Chelsea L.F.C.") ~ "Chelsea",
+    str_detect(club, "Delta Queens FC") ~ "Delta Queens",
+    str_detect(club, "Djurgården") ~ "Djurgårdens IF",
+    str_detect(club, "Doncaster Rovers Belles LFC") ~ "Doncaster Rovers Belles",
+    str_detect(club, "Eastern Suburbs AFC") ~ "Eastern Suburbs",
+    str_detect(club, "Everton L.F.C.") ~ "Everton",
+    str_detect(club, "FC Barcelona") ~ "Barcelona",
+    str_detect(club, "FFC Frankfurt") ~ "1. FFC Frankfurt",
+    str_detect(club, "FFC Turbine Potsdam") ~ "1. FFC Turbine Potsdam",
+    str_detect(club, "KIF Örebro DFF") ~ "KIF Örebro",
+    str_detect(club, "Kolbotn Fotball") ~ "Kolbotn",
+    str_detect(club, "Kristianstads DFF") ~ "Kristianstads",
+    str_detect(club, "Levante UD") ~ "Levante",
+    str_detect(club, "Louves Miniproff [de]") ~ "Louves Minproff",
+    str_detect(club, "LSK Kvinner FK") ~ "LSK Kvinner",
+    str_detect(club, "Melbourne Victory FC") ~ "Melbourne Victory",
+    str_detect(club, "Montpellier") ~ "Montpellier",
+    str_detect(club, "Nasarawa Amazons FC") ~ "Nasarawa Amazons",
+    str_detect(club, "Pelican Stars FC") ~ "Pelican Stars",
+    str_detect(club, "Piteå") ~ "Piteå",
+    str_detect(club, "Rivers Angels FC") ~ "Rivers Angels",
+    str_detect(club, "Sevilla FC") ~ "Sevilla",
+    str_detect(club, "Sky Blue FC") ~ "Sky Blue",
+    str_detect(club, "Stabæk Fotball") ~ "Stabæk",
+    str_detect(club, "Tianjin Teda F.C.") ~ "Tianjin Teda",
+    str_detect(club, "Trondheims-Ørn SK") ~ "Trondheims-Ørn",
+    str_detect(club, "Tyresö FF") ~ "Tyresö",
+    str_detect(club, "Umeå IK") ~ "Umeå",
+    str_detect(club, "Valencia CF") ~ "Valencia",
+    str_detect(club, "Vegalta Sendai") ~ "Vegalta Sendai Ladies",
+    str_detect(club, "Vittsjö GIK") ~ "Vittsjö",
+    str_detect(club, "Wuhan Jianghan University [zh]") ~ "Wuhan Jianghan Univ.",
+    str_detect(club, "SwedenJitex BK") ~ "Jitex BK",
+    str_detect(club, "EnglandNotts County") ~ "Notts County",
+    TRUE ~ club
+  ))
+
+glimpse(squads)
+```
+
+After we joined the two datasets, once again we checked the missing values for this newly created "squads"
+
+```{r miss-data,fig.cap="Missing data for squads"}
+visdat::vis_miss(squads)
+```
+
+The information of caps, goals and clubs were mostly not available for the World Cup that took place too long ago. In each analysis, we will filter only the years that have suffice information to respond to the tasks on hand.  
+
 # Analysis and findings
 
 Main question:
@@ -254,295 +366,6 @@ Figure \@ref(fig:Correlation) is a correlation analysis between total goals and 
 
 
 
-
-
-
-## Clubs that provide the most number of world cup players:
-
-### Overall contribution
-
-Let us begin our analysis by understanding the overall contibution of world cup players by clubs around the world:
-
-```{r player-contri}
-
-wc_clubs_players <- squads %>% 
-  group_by(club) %>%
-  tally() %>% 
-  arrange(desc(n))
-
-wc_clubs_players <- wc_clubs_players %>% 
-  rename(Players = n)
-
-wc_clubs_players %>% 
-  head(10) %>% 
-  kable(booktabs = TRUE, caption = "Overall contibution of world cup players by clubs") %>%
-  kable_styling(bootstrap_options = c("striped", "hover"))
-
-```
-
-Out of a total of 552 players that featured in the 2019 World Cup, it can be seen in Table \@ref(tab:player-contri) that 15 play domestic football in Barcelona (Spain), 14 play for Lyon (France) and 12 play for Chelsea (England). It is interesting to note that clubs with 11 or higher number in this table can play in a match with a squad that's comprised entirely of world cup internationals, greatly increasing the profile of their club's brand.
-
-### Goal scorers
-
-Now, let us look at the number of overall international goals scored by players that featured in the 2019 World Cup by clubs: 
-
-```{r goal-contri}
-
-wc_clubs_goals <- squads %>% 
-  group_by(club) %>% 
-  summarise(Goals = sum(goals)) %>% 
-  arrange(desc(Goals))
-
-wc_clubs_goals %>% 
-  head(10) %>% 
-  kable(booktabs = TRUE, caption = "Top Ten Clubs Providing Best Goal Scorers") %>%
-  kable_styling(bootstrap_options = c("striped", "hover"))
-  
-```
-
-Looking into Table \@ref(tab:goal-contri), Portland Thorns (247) and Orlando Pride (240) both are from the US. They make up for nearly 500 international goals between their players. Lyon (177), Arsenal (148), Barcelona (134) and Chelsea (133) make up the rest of the top 5 clubs. Let us deep dive into these teams and look into players that actually do the goal scoring.
-
-```{r players-goals,fig.cap="Players v/s Goals Scored For International Team"}
-
-players_goals <- squads %>% 
-  group_by(club) %>% 
-  mutate(Club_goals = sum(goals)) %>% 
-  filter(Club_goals >= 133) %>% 
-  arrange(desc(goals)) %>% 
-  slice(1:5)
-
-
-p1 <- players_goals %>% 
-  ggplot(aes(player, goals, color = club, size = Club_goals)) + 
-  geom_point() +
-  theme_bw() +
-  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
-  xlab("Players") +
-  ylab("Goals") +
-  ggtitle("Players v/s Goals Scored For International Team") +
-  labs(size = "", color = "")
-
-ggplotly(p1) 
-  
-  
-```
-
-In Figure \@ref(fig:players-goals), we can see the number of international goals scored by players belonging to the top 6 clubs (colored) contributing to the highest goal scorers, and the size indicates the amount of goals contributed by that player's club.
-
-It is rather interesting to note that Portland Thorns, the club with the most number of international goals (247), has one player Christine Sinclair that contributes to 181 goals for her national team Canada. Without her, Portland Thorns would drop steeply in these rankings, instead of being number 1.
-
-Orlando Pride on the other hand have two major players. Marta (110) and Alex Morgan (101) make up for the majority of international goals for the club. Even though both these clubs from Portland and Orlando are American, among these top 3 scorers only 1 - Alex Morgan, is actually of American nationality. Sinclair and Marta are Canadian and Brazilian respectively.
-
-Lyon, Arsenal, Barcelona and Chelsea have players contributing more equally towards the international goals tally than Portland Thorns and Orlando Pride.
-
-We can conclude in this section alone that in terms of the sheer number of players featuring in the 2019 World Cup, Barcelona has the highest contribution (15), followed by Lyon (177). In terms of goals, however, the American clubs Portland Thorns and Orlando Pride have a massive haul of nearly 500 goals between them, sitting quite comfortably at number 1 and 2 respectively. But Barcelona and Lyon also feature in the top 5 for goals contributed.
-
-## Cap contribution by clubs
-
-Let us now focus on the international experience of players being provided by these clubs, also termed as "caps".
-
-### Contribution by clubs in terms of players' caps
-
-In order to find the clubs providing players with the highest cap value, the "squads.csv" file is sorted in descending order, and the resulting top five clubs are displayed in the Table \@ref(tab:cap).
-```{r arrangecapped}
-most_capped <- squads %>%
-  arrange(desc(caps)) 
-
-```
-
-```{r  cap}
-most_capped %>%
-  head(5)%>%
-  kable(booktabs = TRUE, caption = "Top five clubs that providing most capped players") %>%
-  kable_styling(bootstrap_options = c("striped", "hover"))
-```
-
-In this table, we could see that the club with the most capped player is Portland Thorns.
-We notice that the top five capped players are all over 30 years old! Is there any relationship between caps and the age of players? 
-To answer this question, we made a plot of caps changing by age. In Figure \@ref(fig:international)，the purple curve represents the trend of caps with age, while the blue curve represents the trend of conditional mean value of caps with age. 
-```{r international, fig.cap="caps changing with age"}
-p0 <- ggplot(most_capped,
-       aes(x= age, 
-           y = caps)) +
-  geom_line(color = "purple") +
-  geom_smooth(se = FALSE) +
-  xlab("Age") +
-  ylab("Number of international games") +
-  theme_bw() +
-  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
-  ggtitle("The number of international games changing with age") 
-
-ggplotly(p0)
-```
-
-Conditional mean refers to the average level of caps predicted under the fixed age, so the characteristics of caps changing with age can be obtained more intuitively by observing the blue line. [@geomsmoothggplot2]It can be seen that the blue line shows an upward trend with the increase of age, that is to say, the older a player is, the more times he participates in international competitions. It's not hard to understand that the older he is, the longer his career may be, the more games he will play.
-But we can't help but wonder whether there are players who are both young and highly capped? What club is he from?
-
-
-
-### Clubs that provide players that are young and also highly experienced
-
-First of all, we set the age under 25 as "young", and the caps value higher than the mean value belongs to "highly capped", and then it comes to analysis. We then made a summary to get the mean value of caps and the results are in Table \@ref(tab:capyoung). The mean value of caps is 22.45, which means the player with caps higher than 22.5 can be called "highly experienced".
-```{r  capyoung}
-capped_young <- squads %>%
-  filter(age <= 25) %>%
-  arrange(desc(caps)) 
-
-capped_young %>%
-summary() %>%
-  head(5)%>%
-  kable(booktabs = TRUE, caption = "Summary of clubs with players under 25 years old") %>%
-  kable_styling(bootstrap_options = c("striped", "hover"))
-```
-
-Then we select the players whose caps are higher than 22.5, and we present the top five players with their clubs in Table \@ref(tab:five).
-It can be seen that clubs Paris Saint-Germain, Lyon and Orlando Pride all provide both young and highly capped players. Specifically, there are two qualified players from the same club Orlando Pride, which means that it may be a club with more young players and places relatively more importance in training newer players.
-```{r five}
-capped_young_highly <- capped_young %>%
-  filter(caps >= 22.15) 
-
-capped_young_highly %>%
-  head(5)%>%
-  kable(booktabs = TRUE, caption = "Top five clubs providing both young and highly capped players") %>%
-  kable_styling(bootstrap_options = c("striped", "hover"))
-```
-
-
-### Contribution by clubs in terms of player position
-
-Let us now take a look at player positions. Broadly, we have 4 major positions to consider - Goalkeepers (GK), Defenders (DF), Midfielders (MF) and Forwards (FW). Our objective in this section would be to understand which clubs specialize in providing world cup international players in a particular playing position.
-
-```{r play-pos}
-
-GK <- squads %>% 
-  filter(pos == "GK") %>% 
-  group_by(club) %>% 
-  tally() %>% 
-  rename(Clubs_Gks = n)
-
-GK_caps <- squads %>% 
-  filter(pos == "GK") %>% 
-  group_by(club) %>% 
-  summarise(Clubs_Gk_caps = sum(caps))
-
-DF <- squads %>% 
-  filter(pos == "DF") %>% 
-  group_by(club) %>% 
-  tally() %>% 
-  rename(Clubs_Dfs = n)
-
-DF_caps <- squads %>% 
-  filter(pos == "DF") %>% 
-  group_by(club) %>% 
-  summarise(Clubs_Df_caps = sum(caps))
-
-MF <- squads %>% 
-  filter(pos == "MF") %>% 
-  group_by(club) %>% 
-  tally() %>% 
-  rename(Clubs_Mfs = n)
-
-MF_caps <- squads %>% 
-  filter(pos == "MF") %>% 
-  group_by(club) %>% 
-  summarise(Clubs_Mf_caps = sum(caps))
-
-FW <- squads %>% 
-  filter(pos == "FW") %>% 
-  group_by(club) %>% 
-  tally() %>% 
-  rename(Clubs_Fws = n)
-
-FW_caps <- squads %>% 
-  filter(pos == "FW") %>% 
-  group_by(club) %>% 
-  summarise(Clubs_Fw_caps = sum(caps))
-
-squads_pos <- squads %>% left_join(GK, by = "club")
-squads_pos <- squads_pos %>% left_join(DF, by = "club")
-squads_pos <- squads_pos %>% left_join(MF, by = "club")
-squads_pos <- squads_pos %>% left_join(FW, by = "club")
-
-squads_pos <- squads_pos %>% left_join(GK_caps, by = "club")
-squads_pos <- squads_pos %>% left_join(DF_caps, by = "club")
-squads_pos <- squads_pos %>% left_join(MF_caps, by = "club")
-squads_pos <- squads_pos %>% left_join(FW_caps, by = "club")
-
-squads_pos[is.na(squads_pos)] <- 0
-
-```
-
-```{r Goalkeepers, fig.cap="Clubs With Goalkeepers Featuring In 2019 WC"}
-p2GK <- squads_pos %>%
-  filter(Clubs_Gks > 1 | Clubs_Gk_caps >= 61) %>%
-  group_by(club) %>% 
-  ggplot(aes(club, as.factor(Clubs_Gks), size = Clubs_Gk_caps, color = club)) +
-  geom_point() +
-  theme_bw() +
-  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
-  xlab("Clubs") +
-  ylab("Number of WC GKs per club") +
-  ggtitle("Clubs With Goalkeepers Featuring In 2019 WC") +
-  labs(size = "", color = "")
-
-ggplotly(p2GK)
-```
-
-Goalkeepers, figure \@ref(fig:Goalkeepers) - Arsenal, Chelsea, Goteborg, Rivers Angels, Vfl Wolfsburg and Vittsjo have 2 goalkeepers that featured in 2019 World Cup. Out of these, Chelsea has the highest cap count of 173 for their two goalkeepers. It is interesting to note that Chelsea's north London neighbours Arsenal also have 2 goalkeepers with a combined cap count of 53. It can be perceived that London is a good city for goalkeepers to play professionally to achieve international success.
-
-```{r Defenders, fig.cap="Clubs With Defenders Featuring In 2019 WC"}
-p2DF <- squads_pos %>%
-  filter(Clubs_Dfs >= 4 | Clubs_Df_caps >= 214) %>%
-  group_by(club) %>% 
-  ggplot(aes(club, as.factor(Clubs_Dfs), size = Clubs_Df_caps, color = club)) +
-  geom_point() +
-  theme_bw() +
-  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
-  xlab("Clubs") +
-  ylab("Number of WC DFs per club") +
-  ggtitle("Clubs With Defenders Featuring In 2019 WC") +
-  labs(size = "", color = "")
-
-ggplotly(p2DF)
-```
-
-Defenders, figure \@ref(fig:Defenders) - Lyon dominates this position. They have a whopping 7 defenders that featured in the 2019 World Cup, with a combined total experience of 475 international caps. Not far behind though is Chelsea with 6 defenders and 404 caps between them.
-
-```{r Midfielders, fig.cap="Clubs With Midfielders Featuring In 2019 WC"}
-p2MF <- squads_pos %>%
-  filter(Clubs_Mfs >= 3 | Clubs_Mf_caps >= 191) %>%
-  group_by(club) %>% 
-  ggplot(aes(club, as.factor(Clubs_Mfs), size = Clubs_Mf_caps, color = club)) +
-  geom_point() +
-  theme_bw() +
-  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
-  xlab("Clubs") +
-  ylab("Number of WC MFs per club") +
-  ggtitle("Clubs With Midfielders Featuring In 2019 WC") +
-  labs(size = "", color = "")
-
-ggplotly(p2MF)
-```
-
-Midfielders, figure \@ref(fig:Midfielders) - Barcelona, Juventus, Manchester City, Nippon TV Beleza, Vfl Wolfsburg and Washington Spirit all have 4 midfielders represented in the 2019 World Cup. Vfl Wolfsburg have the most experience within their 4 midfielders, with a massive 366 caps between them. Paris Saint-Germain has 3 midfielders but a second highest total of caps between them, of 273. Rosengard has only 1 midfielder, the Swedish national Caroline Seger who has 193 caps alone for her country.
-
-```{r Forwards, fig.cap="Clubs With Forwards Featuring In 2019 WC"}
-p2FW <- squads_pos %>%
-  filter(Clubs_Fws >= 3 | Clubs_Fw_caps >= 181) %>%
-  group_by(club) %>% 
-  ggplot(aes(club, as.factor(Clubs_Fws), size = Clubs_Fw_caps, color = club)) +
-  geom_point() +
-  theme_bw() +
-  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
-  xlab("Clubs") +
-  ylab("Number of WC FWs per club") +
-  ggtitle("Clubs With Forwards Featuring In 2019 WC") +
-  labs(size = "", color = "")
-
-ggplotly(p2FW)
-```
-
-Forwards, figure \@ref(fig:Forwards) - Barcelona is the only club that boasts 5 of their forwards featuring in the 2019 World Cup, with a combined experience of 249 caps between them. Portland Thorns has 4 forwards, but their combined experience of 534 caps easily overshadows the rest of the teams. Orlando Pride has only 2 forwards but a cap total of 293, the second highest. Lyon and Bayern Munich feature with 4 forwards as well with 254 and 160 caps respectively. Chelsea and Arsenal feature again, but the American clubs Portland Thorns and Orlando Pride really take the cake here.
 
 
 
