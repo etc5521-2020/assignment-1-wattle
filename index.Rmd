@@ -29,7 +29,7 @@ library(bookdown)
 
 ```{r readdata}
 wwc_outcomes <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-07-09/wwc_outcomes.csv")
-squads_raw <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-07-09/squads.csv")
+squads <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-07-09/squads.csv")
 codes <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-07-09/codes.csv")
 
 ```
@@ -80,7 +80,7 @@ wc_squad_full <- read.csv(here::here("femalewwc_squad.csv")) %>%
   mutate(dob = as.Date(dob, format = "%d-%B-%Y"))
 
 # Update missing info for squads_raw
-squads_raw <- squads_raw %>%
+squads <- squads %>%
   mutate(
     caps = case_when(
     str_detect(player, "Xu Huan") ~ 1,
@@ -108,7 +108,7 @@ squads_raw <- squads_raw %>%
   )
     
 # row binds with 2019 squad info
-squads <- squads_raw %>%
+squads <- squads %>%
   mutate(year = 2019) 
 squads <- squads %>%
   rbind(wc_squad_full)
