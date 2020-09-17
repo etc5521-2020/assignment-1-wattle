@@ -215,14 +215,10 @@ NEW STRUCTURE from here
 ## Analysis by country
 
 ```{r}
-# read the fifa code
-fifa_code <- read.csv(here::here("fifa_country_code.csv"))
-
 # reference the country code in the wwc_outcomes
 wwc_outcomes_fullname <- wwc_outcomes %>%
   left_join(codes, by = "team")
 ```
-
 
 ```{r team-result}
 # count the number of rounds participated by each country
@@ -443,283 +439,39 @@ capped_both <- grid.arrange(capped_2019,capped_2015, ncol = 2)
 
 Surprisingly, the US team, eventhough still at the top, actually had their caps lowering in 2019 compared to 2015, with only Carli Lloyd having the caps high enough to become an outliner. Most of the celebrity teams (teams that had won and achieved runner up), except for China PR and Brazil, saw their median caps dropped. Expanding further from the top 10 highest cap in table \@ref(tab:arrangecapped) above to the top 30, we only had 12 players who participated in the World Cup 2019. Whilst we cannot calculate the impact of such drops on the teams' performance (US still won and Netherlands was the runner up in 2019), we can try to explain the reasons behind such drop in caps.
 
-It could possibly mean that the celebrity team either (1) had their prestige players reaching the retirement age (If you revisit the top 10 table, you would see that most players in top 10 born in late 70s and early 80s) so they had to drop out of the tournament or (2) the celebrity team considered to save their ace players for other premier leagues rather than exhaust them in World Cup. Whilst we can infer the assumption (1) from the date of birth provided, we had no solid base for the assumption (2). All we know at the moment is that FIFA has stepped in to encourage the teams to "collaborate" in exchange for a handsome commission under the form of supports given to the clubs to help build up their talents. 
+It could possibly mean that the celebrity team either (1) had their prestige players reaching the retirement age (If you revisit the top 10 table, you would see that most players in top 10 born in late 70s and early 80s) so they had to drop out of the tournament or (2) the celebrity team considered to save their ace players for other premier leagues rather than exhaust them in World Cup. Whilst we can infer the assumption (1) from the date of birth provided, we had no solid base for the assumption (2). All we know at the moment is that FIFA has stepped in to encourage the teams to "collaborate" in exchange for a handsome commission under the form of supports given to the clubs helping them build up their talents. 
 
-### Performance
+A bonus fun fact for this graph: 2019 was the first year Jamaica qualified for the World Cup and the teams comprised of members who never have once played for any Jamaica clubs! 
 
-Explore the relation between the cap, the age and the goals
+### Relationship between the age, the caps and the goals
 
-```{r}
+We will conclude this section by examining the relationship between the age, the caps and the goals of a World Cup player whether one or more variables would explain the other, or in this case, whether the caps and age of a player would determine her ability to score more goals.
+
+In this section we used _ggscatmat_ function to visualise the relationship between the variables in four different years, from 2007 to 2019. Again year 2003 was filtered out due to lack of information. 
+
+```{r relation, fig.cap = "Relationship between ages, caps and goals"}
 library(GGally)
-# filter out 2003 and forwards due to the lack of info
+# filter out 2003 and forwards due to lack of info
 squads %>% 
   filter(year > 2003) %>%
-  ggscatmat(columns = 6:8, color = "year") +
+  ggscatmat(columns = 6:8, color = "year", alpha = 0.5) +
   scale_colour_brewer(palette="Set1") +
-  theme_bw()
+  theme_bw() + 
+  xlab("") +
+  ylab("") +
+  ggtitle("Relationship between ages, caps and goals")
 ```
 
+In figure \@ref(fig:relation), we have the density plot for each variables, the corelation for each pair of variables and the scatter plot. Some insights we can draw from the club would include:  
 
-
+- The caps and the goals have a higher density at the lower values, which is not suprising. The caps, unlike the goals of which the density steeply dropped as the goals increased, have a notable lump at around 20 - 30 caps for all the year observed. Year 2011 and 2015 also observed another minor lump near 100 caps. However, year 2019 saw a dip at the point. We have concluded from the previous section that in 2019, the number of high capped players greatly decreased compared to the previous years.  
+- Age and caps have a roughly positive relation where the higher the age, the more foreign experience a player most likely has. However, the relation was not definite for year 2015 as we can see a handful of players at high age who did not possess a lot of caps (the green dots scattered at the lower right end of the chart).  
+- Unlike the age and caps relation, there was not a recognizable relation between the age and the goals. Higher age does not necessarily associate with higher goals. In fact, most goals were scored by players in their 20s - 30s. However, 2011 and 2015 had a noticable amount of scatter at the right hand side of the plot, suggesting that in these two years, the World Cup might have welcomed more matured talented players than it did in 2007 and 2019. This would actually make sense as players had the time to ripe from 2007 through out 2011 and 2015 and reach matured/ retirement age in 2019.  
+- There seemed to be two cut off points in the caps - goals scatter plot: one at 100 caps and the other at nearly 200 caps. Before 100 caps, most plots cluttered in the lower left corner where higher caps had roughly the same goals. Pass 100, we started to see an upwards trend where higher caps led to higher goals, even though this trend mostly happened for 2015 and 2019. Pass 200 caps, there was hardly any players left at this point. We had some high caps but with low goals, they might be a goal keepers. But if we had high caps with high goals, the goals were extraordinarly high, as in the plot we can see some points flied far and beyond in the upper right corner.  
 
 NEW STRUCTURE end here
 _________________________________________________________________________________________
 
-
-
-
-
-
-## Clubs that provide the most number of world cup players:
-
-### Overall contribution
-
-
-
-## Cap contribution by clubs
-
-Out of a total of 552 players that featured in the 2019 World Cup, it can be seen in Table \@ref(tab:player-contri) that 15 play domestic football in Barcelona (Spain), 14 play for Lyon (France) and 12 play for Chelsea (England). It is interesting to note that clubs with 11 or higher number in this table can play in a match with a squad that's comprised entirely of world cup internationals, greatly increasing the profile of their club's brand.
-
-> Not really, other players from other nations can also play for the club. Also club team members can actually go against rather than along each other. 
-
-### Goal scorers
-
-Now, let us look at the number of overall international goals scored by players that featured in the 2019 World Cup by clubs: 
-
-```{r goal-contri}
-wc_clubs_goals <- squads %>% 
-  group_by(club) %>% 
-  summarise(Goals = sum(goals)) %>% 
-  arrange(desc(Goals))
-
-wc_clubs_goals %>% 
-  head(10) %>% 
-  kable(booktabs = TRUE, caption = "Top Ten Clubs Providing Best Goal Scorers") %>%
-  kable_styling(bootstrap_options = c("striped", "hover"))
-  
-```
-
-Looking into Table \@ref(tab:goal-contri), Portland Thorns (247) and Orlando Pride (240) both are from the US. They make up for nearly 500 international goals between their players. Lyon (177), Arsenal (148), Barcelona (134) and Chelsea (133) make up the rest of the top 5 clubs. Let us deep dive into these teams and look into players that actually do the goal scoring.
-
-```{r players-goals,fig.cap="Players v/s Goals Scored For International Team"}
-players_goals <- squads %>% 
-  group_by(club) %>% 
-  mutate(Club_goals = sum(goals)) %>% 
-  filter(Club_goals >= 133) %>% 
-  arrange(desc(goals)) %>% 
-  slice(1:5)
-
-
-p1 <- players_goals %>% 
-  ggplot(aes(player, goals, color = club, size = Club_goals)) + 
-  geom_point() +
-  theme_bw() +
-  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
-  xlab("Players") +
-  ylab("Goals") +
-  ggtitle("Players v/s Goals Scored For International Team") +
-  labs(size = "", color = "")
-
-ggplotly(p1) 
-  
-```
-
-In Figure \@ref(fig:players-goals), we can see the number of international goals scored by players belonging to the top 6 clubs (colored) contributing to the highest goal scorers, and the size indicates the amount of goals contributed by that player's club.
-
-It is rather interesting to note that Portland Thorns, the club with the most number of international goals (247), has one player Christine Sinclair that contributes to 181 goals for her national team Canada. Without her, Portland Thorns would drop steeply in these rankings, instead of being number 1.
-
-Orlando Pride on the other hand have two major players. Marta (110) and Alex Morgan (101) make up for the majority of international goals for the club. Even though both these clubs from Portland and Orlando are American, among these top 3 scorers only 1 - Alex Morgan, is actually of American nationality. Sinclair and Marta are Canadian and Brazilian respectively.
-
-Lyon, Arsenal, Barcelona and Chelsea have players contributing more equally towards the international goals tally than Portland Thorns and Orlando Pride.
-
-We can conclude in this section alone that in terms of the sheer number of players featuring in the 2019 World Cup, Barcelona has the highest contribution (15), followed by Lyon (177). In terms of goals, however, the American clubs Portland Thorns and Orlando Pride have a massive haul of nearly 500 goals between them, sitting quite comfortably at number 1 and 2 respectively. But Barcelona and Lyon also feature in the top 5 for goals contributed.
-
-
-### Contribution by caps
-
-We notice that the top five capped players are all over 30 years old! Is there any relationship between caps and the age of players? 
-To answer this question, we made a plot of caps changing by age. In Figure \@ref(fig:international)，the purple curve represents the trend of caps with age, while the blue curve represents the trend of conditional mean value of caps with age. 
-
-```{r international, fig.cap="caps changing with age"}
-p0 <- ggplot(most_capped,
-       aes(x= age, 
-           y = caps)) +
-  geom_line(color = "purple") +
-  geom_smooth(se = FALSE) +
-  xlab("Age") +
-  ylab("Number of international games") +
-  theme_bw() +
-  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
-  ggtitle("The number of international games changing with age") 
-
-ggplotly(p0)
-```
-
-Conditional mean refers to the average level of caps predicted under the fixed age, so the characteristics of caps changing with age can be obtained more intuitively by observing the blue line. [@geomsmoothggplot2]It can be seen that the blue line shows an upward trend with the increase of age, that is to say, the older a player is, the more times he participates in international competitions. It's not hard to understand that the older he is, the longer his career may be, the more games he will play.
-But we can't help but wonder whether there are players who are both young and highly capped? What club is he from?
-
-### Clubs that provide players that are young and also highly experienced
-
-First of all, we set the age under 25 as "young", and the caps value higher than the mean value belongs to "highly capped", and then it comes to analysis. We then made a summary to get the mean value of caps and the results are in Table \@ref(tab:capyoung). The mean value of caps is 22.45, which means the player with caps higher than 22.5 can be called "highly experienced".
-```{r  capyoung}
-capped_young <- squads %>%
-  filter(age <= 25) %>%
-  arrange(desc(caps)) 
-
-capped_young %>%
-summary() %>%
-  head(5)%>%
-  kable(booktabs = TRUE, caption = "Summary of clubs with players under 25 years old") %>%
-  kable_styling(bootstrap_options = c("striped", "hover"))
-```
-
-Then we select the players whose caps are higher than 22.5, and we present the top five players with their clubs in Table \@ref(tab:five).
-It can be seen that clubs Paris Saint-Germain, Lyon and Orlando Pride all provide both young and highly capped players. Specifically, there are two qualified players from the same club Orlando Pride, which means that it may be a club with more young players and places relatively more importance in training newer players.
-```{r five}
-capped_young_highly <- capped_young %>%
-  filter(caps >= 22.15) 
-
-capped_young_highly %>%
-  head(5)%>%
-  kable(booktabs = TRUE, caption = "Top five clubs providing both young and highly capped players") %>%
-  kable_styling(bootstrap_options = c("striped", "hover"))
-```
-
-
-### Contribution by clubs in terms of player position
-
-Let us now take a look at player positions. Broadly, we have 4 major positions to consider - Goalkeepers (GK), Defenders (DF), Midfielders (MF) and Forwards (FW). Our objective in this section would be to understand which clubs specialize in providing world cup international players in a particular playing position.
-
-```{r play-pos}
-GK <- squads %>% 
-  filter(pos == "GK") %>% 
-  group_by(club) %>% 
-  tally() %>% 
-  rename(Clubs_Gks = n)
-
-GK_caps <- squads %>% 
-  filter(pos == "GK") %>% 
-  group_by(club) %>% 
-  summarise(Clubs_Gk_caps = sum(caps))
-
-DF <- squads %>% 
-  filter(pos == "DF") %>% 
-  group_by(club) %>% 
-  tally() %>% 
-  rename(Clubs_Dfs = n)
-
-DF_caps <- squads %>% 
-  filter(pos == "DF") %>% 
-  group_by(club) %>% 
-  summarise(Clubs_Df_caps = sum(caps))
-
-MF <- squads %>% 
-  filter(pos == "MF") %>% 
-  group_by(club) %>% 
-  tally() %>% 
-  rename(Clubs_Mfs = n)
-
-MF_caps <- squads %>% 
-  filter(pos == "MF") %>% 
-  group_by(club) %>% 
-  summarise(Clubs_Mf_caps = sum(caps))
-
-FW <- squads %>% 
-  filter(pos == "FW") %>% 
-  group_by(club) %>% 
-  tally() %>% 
-  rename(Clubs_Fws = n)
-
-FW_caps <- squads %>% 
-  filter(pos == "FW") %>% 
-  group_by(club) %>% 
-  summarise(Clubs_Fw_caps = sum(caps))
-
-squads_pos <- squads %>% left_join(GK, by = "club")
-squads_pos <- squads_pos %>% left_join(DF, by = "club")
-squads_pos <- squads_pos %>% left_join(MF, by = "club")
-squads_pos <- squads_pos %>% left_join(FW, by = "club")
-
-squads_pos <- squads_pos %>% left_join(GK_caps, by = "club")
-squads_pos <- squads_pos %>% left_join(DF_caps, by = "club")
-squads_pos <- squads_pos %>% left_join(MF_caps, by = "club")
-squads_pos <- squads_pos %>% left_join(FW_caps, by = "club")
-
-squads_pos[is.na(squads_pos)] <- 0
-
-```
-
-```{r Goalkeepers, fig.cap="Clubs With Goalkeepers Featuring In 2019 WC"}
-p2GK <- squads_pos %>%
-  filter(Clubs_Gks > 1 | Clubs_Gk_caps >= 61) %>%
-  group_by(club) %>% 
-  ggplot(aes(club, as.factor(Clubs_Gks), size = Clubs_Gk_caps, color = club)) +
-  geom_point() +
-  theme_bw() +
-  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
-  xlab("Clubs") +
-  ylab("Number of WC GKs per club") +
-  ggtitle("Clubs With Goalkeepers Featuring In 2019 WC") +
-  labs(size = "", color = "")
-
-ggplotly(p2GK)
-```
-
-Goalkeepers, figure \@ref(fig:Goalkeepers) - Arsenal, Chelsea, Goteborg, Rivers Angels, Vfl Wolfsburg and Vittsjo have 2 goalkeepers that featured in 2019 World Cup. Out of these, Chelsea has the highest cap count of 173 for their two goalkeepers. It is interesting to note that Chelsea's north London neighbours Arsenal also have 2 goalkeepers with a combined cap count of 53. It can be perceived that London is a good city for goalkeepers to play professionally to achieve international success.
-
-```{r Defenders, fig.cap="Clubs With Defenders Featuring In 2019 WC"}
-p2DF <- squads_pos %>%
-  filter(Clubs_Dfs >= 4 | Clubs_Df_caps >= 214) %>%
-  group_by(club) %>% 
-  ggplot(aes(club, as.factor(Clubs_Dfs), size = Clubs_Df_caps, color = club)) +
-  geom_point() +
-  theme_bw() +
-  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
-  xlab("Clubs") +
-  ylab("Number of WC DFs per club") +
-  ggtitle("Clubs With Defenders Featuring In 2019 WC") +
-  labs(size = "", color = "")
-
-ggplotly(p2DF)
-```
-
-Defenders, figure \@ref(fig:Defenders) - Lyon dominates this position. They have a whopping 7 defenders that featured in the 2019 World Cup, with a combined total experience of 475 international caps. Not far behind though is Chelsea with 6 defenders and 404 caps between them.
-
-```{r Midfielders, fig.cap="Clubs With Midfielders Featuring In 2019 WC"}
-p2MF <- squads_pos %>%
-  filter(Clubs_Mfs >= 3 | Clubs_Mf_caps >= 191) %>%
-  group_by(club) %>% 
-  ggplot(aes(club, as.factor(Clubs_Mfs), size = Clubs_Mf_caps, color = club)) +
-  geom_point() +
-  theme_bw() +
-  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
-  xlab("Clubs") +
-  ylab("Number of WC MFs per club") +
-  ggtitle("Clubs With Midfielders Featuring In 2019 WC") +
-  labs(size = "", color = "")
-
-ggplotly(p2MF)
-```
-
-Midfielders, figure \@ref(fig:Midfielders) - Barcelona, Juventus, Manchester City, Nippon TV Beleza, Vfl Wolfsburg and Washington Spirit all have 4 midfielders represented in the 2019 World Cup. Vfl Wolfsburg have the most experience within their 4 midfielders, with a massive 366 caps between them. Paris Saint-Germain has 3 midfielders but a second highest total of caps between them, of 273. Rosengard has only 1 midfielder, the Swedish national Caroline Seger who has 193 caps alone for her country.
-
-```{r Forwards, fig.cap="Clubs With Forwards Featuring In 2019 WC"}
-p2FW <- squads_pos %>%
-  filter(Clubs_Fws >= 3 | Clubs_Fw_caps >= 181) %>%
-  group_by(club) %>% 
-  ggplot(aes(club, as.factor(Clubs_Fws), size = Clubs_Fw_caps, color = club)) +
-  geom_point() +
-  theme_bw() +
-  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
-  xlab("Clubs") +
-  ylab("Number of WC FWs per club") +
-  ggtitle("Clubs With Forwards Featuring In 2019 WC") +
-  labs(size = "", color = "")
-
-ggplotly(p2FW)
-```
-
-Forwards, figure \@ref(fig:Forwards) - Barcelona is the only club that boasts 5 of their forwards featuring in the 2019 World Cup, with a combined experience of 249 caps between them. Portland Thorns has 4 forwards, but their combined experience of 534 caps easily overshadows the rest of the teams. Orlando Pride has only 2 forwards but a cap total of 293, the second highest. Lyon and Bayern Munich feature with 4 forwards as well with 254 and 160 caps respectively. Chelsea and Arsenal feature again, but the American clubs Portland Thorns and Orlando Pride really take the cake here.
 
 
 ## Performance of successful clubs in the 2019 World Cup
