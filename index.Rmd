@@ -5,6 +5,8 @@ team: wattle
 author:
   - Ketan Kabu  31554679
   - Yiwen Zhang 31203019
+  - Hanh Ngo 31196101
+  - Xue Wang
 date: "`r Sys.Date()`"
 bibliography: references.bib
 biblio-style: authoryear-comp
@@ -45,7 +47,7 @@ Every country has a different approach towards coaching and developing talent. S
 
 In this paper, we will approach the women's game with the same lens. We believe that these findings could prove meaningful to coaches, scouts and even young players in the game looking to choose clubs to play for with future international success in mind.
  
-The squads data set also provided the information regarding a player's position on the field, be it the Midfielders, Defenders and Goalkeepers. Each have various other parameters they can be judged on - like assists, distance covered in a match, tackles, clearances, saves(goalkeepers) and various others. If this information is available, better player performance insights can be achieved. However, we only have the goals information which may not did a justice for any positions rather than the Forwards. For the sake of this report, we will forgo the analysis of the player's position, as analysis many not make a lot of sense with the current level of information provided.  
+The squads data set also provided the information regarding a player's position on the field, be it the Midfielders, Defenders and Goalkeepers. Each have various other parameters they can be judged on - like assists, distance covered in a match, tackles, clearances, saves(goalkeepers) and various others. If this information is available, better player performance insights can be achieved. However, we only have the goals information which may not did a justice for any positions rather than the Forwards. For the sake of this report, we will forgo the analysis of the player's position, as analysis may not make a lot of sense with the current level of information provided.  
 
 We could also do match by match analysis of the world cup if we can obtain information about how each player was rated, or scored certain number of goals, in a world cup match.
 In our clubs data, we have a reference named as "Unattached", which will appear sometimes in our analysis. This signifies that the player(s) is not contracted with any domestic club when the data was collected.
@@ -436,9 +438,9 @@ capped_2015 <- most_capped %>%
 capped_both <- grid.arrange(capped_2019,capped_2015, ncol = 2)
 ```
 
-Surprisingly, the US team, even though still at the top, actually had their caps lowering in 2019 compared to 2015, with only Carli Lloyd having the caps high enough to become an outliner. Most of the celebrity teams (teams that had won and achieved runner up), except for China PR and Brazil, saw their median caps dropped. Expanding further from the top 10 highest cap in table \@ref(tab:arrangecapped) above to the top 30, we only had 12 players who participated in the World Cup 2019. Whilst we cannot calculate the impact of such drops on the teams' performance (US still won and Netherlands was the runner up in 2019), we can try to explain the reasons behind such drop in caps.
+Surprisingly, the US team, even though still at the top, actually had their caps lowering in 2019 compared to 2015, with only Carli Lloyd having the caps high enough to become an outliner. Most of the celebrity teams (teams that had won and achieved runner up), except for China PR and Brazil, saw their median caps dropped. Expanding further from the top 10 highest cap in table \@ref(tab:arrangecapped) above to the top 30, we only had a total of 12 players who participated in the most recent World Cup 2019. Whilst we cannot calculate the impact of such drops on the teams' performance (US still won and Netherlands was the runner up in 2019), we can try to explain the reasons behind such drop in caps.
 
-It could possibly mean that the celebrity team either (1) had their prestige players reaching the retirement age (If you revisit the top 10 table, you would see that most players in top 10 born in late 70s and early 80s) so they had to drop out of the tournament or (2) the celebrity team considered to save their ace players for other premier leagues rather than exhaust them in the World Cup. Whilst we can infer the assumption (1) from the date of birth provided, we had no solid base for the assumption (2). All we know at the moment is that FIFA has stepped in to encourage the teams to "collaborate" in exchange for a handsome commission under the form of supports given to the clubs helping them build up their talents. 
+It could possibly mean that the celebrity team either (1) had their prestige players reaching the retirement age (If you revisit the top 10 table, you would see that most players in top 10 born in the late 70s and early 80s) so they had to drop out of the tournament or (2) the celebrity team considered to save their ace players for other premier leagues rather than exhaust them in the World Cup. Whilst we can infer the assumption (1) from the date of birth provided, we had no solid base for the assumption (2). All we know at the moment is that FIFA has stepped in to encourage the teams to "collaborate" in exchange for a handsome commission under the form of supports given to the clubs helping them build up their talents. 
 
 A bonus fun fact for this graph: 2019 was the first year Jamaica qualified for the World Cup and the teams comprised of members who never have once played for any Jamaica clubs! 
 
@@ -466,30 +468,17 @@ In figure \@ref(fig:relation), we have the density plot for each variables, the 
 - The caps and the goals have a higher density at the lower values, which is not surprising. The caps, unlike the goals of which the density steeply dropped as the goals increased, have a notable lump at around 20 - 30 caps for all the year observed. Year 2011 and 2015 also observed another minor lump near 100 caps. However, year 2019 saw a dip at the point. We have concluded from the previous section that in 2019, the number of high capped players greatly decreased compared to the previous years.  
 - Age and caps have a roughly positive relation where the higher the age, the more foreign experience a player most likely has. However, the relation was not definitive for year 2015 as we can see a handful of players at high age that did not possess a lot of caps (the green dots scattered at the lower right end of the chart).  
 - Unlike the age and caps relation, there was not a recognizable relation between the age and the goals. Higher age does not necessarily associate with higher goals. In fact, most goals were scored by players in their 20s - 30s. However, 2011 and 2015 had a noticeable amount of scatter plots at the right hand side of the plot. These dots could presented the Goal keepers who may possess a high caps but have no needs to score a goal.  
-- There seemed to be two cut off points in the caps - goals scatter plot: one at 100 caps and the other at nearly 200 caps. Before 100 caps, most plots cluttered in the lower left corner where higher caps had roughly the same goals. Pass 100, we started to see an upwards trend where higher caps led to higher goals, even though this trend mostly happened for 2015 and 2019. Pass 200 caps, there was hardly any players left at this point. We had some high caps but with low goals, they might be goal keepers. But if we had high caps with high goals, the goals were extraordinary high, as in the plot we can see some points flied far and beyond to the upper right corner of the plot.    
+- There seemed to be two cut off points in the caps - goals scatter plot: one at 100 caps and the other at nearly 200 caps. Before 100 caps, most plots cluttered in the lower left corner where higher caps had roughly the same goals. Pass 100, we started to see an upwards trend where higher caps led to higher goals, even though this trend mostly happened for 2015 and 2019. Pass 200 caps, there was hardly any players left at this point. We had some high caps but with low goals which may belong to the goal keepers or Defenders. If we had high caps with high goals, the goals were extraordinary high, as in the plot we can see some points flied far and beyond to the upper right corner of the plot.    
 
 
 
 # Conclusion
 
-In this exercise, we have learnt to 
+In this exercise, we have learnt a bridging connection from the domestic clubs to the performance of their nations in an international field, which may appear to be counter - intuitive at first reception. If a country has managed to attract a lot of players played for its national clubs, the better its performance can be at any tournament.  Take the US for an example, the number of foreign players played for the US clubs as documented by FIFA was the highest out of all countries. Now that those foreign players came back to fight for their national teams, would you question how that would benefit the performance of the US national team? The US had won the World Cup half the time it was held until now, with another one being a runner up. The underlying fact was that if a country was attractive enough to have the players from everywhere come over, such country itself possesses enough resources to invest in talents, which solidify its stance further in any international game.    
 
-- The better the condition, the more likely to attract top players and finally the better performance at any tournament.
+Ages also influence over whether a player could be qualifies for World Cup or not. On average, a World Cup player would not be younger than her 20s and an ideal age range would be around 25 to 27 years. We also learnt that age and caps have a roughly positive relation where the higher the age, the more foreign experience a player most likely has. Unlike the age and caps, there was not a recognizable relation between the age and the goals. Higher age does not necessarily associate with higher goals. In fact, most goals were scored by players in their 20s - 30s. The position of players need to be taken into consideration rather than just goals to gauge a player's performance.  
 
-- On average, a World Cup player would not be younger than her 20s. The ideal age range for players would be around 25 to 27 years
-
-- It could possibly mean that the celebrity team either (1) had their prestige players reaching the retirement age (If you revisit the top 10 table, you would see that most players in top 10 born in late 70s and early 80s) so they had to drop out of the tournament or (2) the celebrity team considered to save their ace players for other premier leagues rather than exhaust them in the World Cup
-
-- Countries that have more players imported will perform better. counter intuitive but make senses. 
-
-- The caps and the goals have a higher density at the lower values, which is not surprising. The caps, unlike the goals of which the density steeply dropped as the goals increased, have a notable lump at around 20 - 30 caps for all the year observed. Year 2011 and 2015 also observed another minor lump near 100 caps. However, year 2019 saw a dip at the point. We have concluded from the previous section that in 2019, the number of high capped players greatly decreased compared to the previous years.
-
-- Age and caps have a roughly positive relation where the higher the age, the more foreign experience a player most likely has
-
-- Unlike the age and caps relation, there was not a recognizable relation between the age and the goals. Higher age does not necessarily associate with higher goals. In fact, most goals were scored by players in their 20s - 30s.
-
-- There seemed to be two cut off points in the caps - goals scatter plot: one at 100 caps and the other at nearly 200 caps
-
+Finally, from the data we have analysed, we formed up an assumption that some of the national clubs either had their prestige players reaching the retirement age, by the most recent Women World Cup 2019 or they might have been holding back from sending their ace players to the field. Whether the assumption holds or not, we only knew that FIFA has responded by introducing the support package the first time ever, where the national clubs will be benefited by releasing the best out of the safe vault and allow them to compete in the World Cup. 
 
 
 # Acknowledge
