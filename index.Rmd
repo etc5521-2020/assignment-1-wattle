@@ -208,9 +208,9 @@ After we joined the two datasets, once again we checked the missing values for t
 visdat::vis_miss(squads_cleaned)
 ```
 
-The information of caps, goals and clubs were mostly not available for the World Cup that took place too long ago. In each analysis, we will filter only the years that have suffice information to respond to the tasks on hand.  
+The information of caps, goals and clubs were mostly not available for the World Cup that took place too long ago. In each analysis, we will filter only the years that have suffice information that can respond to the tasks on hand.  
 
-# Changes from Assignment 1:
+# Changes from Assignment 1
 In the previous stage of this report, the **wattle** team had performed a range of analysis on the player contribution by club, goals score. player's cap and player position. Even though the analysis was done thoroughly, the works lacked direction towards answering the primary question. In this improvised version, we tried to re- address the wattle team's analysis by expanding the scope (by obtaining more data) to direct the results towards answering the primary question.  
 
 Details of change are as follow:  
@@ -499,7 +499,7 @@ domestic %>%
   summarise(prop = sum(prop)) %>%
   filter(origin == "Domestic") %>%
   ggplot(aes(fct_reorder(club, prop), prop)) +
-  geom_col(stat = "identity",fill="#f68060", fill="#f68060"，alpha=.6, width=.4) +
+  geom_col(stat = "identity",fill="#f68060", fill="#f68060", alpha=.6, width=.4) +
   coord_flip() +
   # theme_bw() + 
   ylab("club") +
@@ -529,26 +529,24 @@ Next we will take a look deeper into the stars of the game - the players. In thi
 First of all, we will look at the overall age distribution of all the players through all eight World Cup tournaments.
 
 ```{r player-age, fig.cap = "Player's age distribution"}
-
-
-  squads_mean <-squads_cleaned %>% 
+squads_mean <-squads_cleaned %>% 
   group_by(year) %>% 
   summarise(age = mean(age))
   
 ggplot()+
-  geom_histogram(squads_cleaned, mapping = aes(age,fill= as.factor(year)))+
+  geom_histogram(binwidth = 1 ,squads_cleaned, mapping = aes(age,fill= as.factor(year)), color = "black")+
   geom_vline(squads_mean, mapping = aes(xintercept = age), color = "red", size = 1.5)+
-  geom_text(squads_mean, mapping = aes(x = age+3, y =0, label = round(age,digits = 2)))+
-  facet_wrap(year~., scales = "free")+
+  geom_text(squads_mean, mapping = aes(x = age+3, y = 60, label = round(age,digits = 2)))+
+  facet_wrap(year~.)+
   theme_minimal()+
-  theme(legend.position = "bottom")+
+  theme(legend.position = "none")+
   labs(y = "Count", title = "Player's age distribution")
 
 ```
 
-We chose the bindwith equals to 1, meaning each bindwith represented 1 year of age. We could ignore the count for each year as the number of teams participated were not similar for the all the years. Instead we will concentrate on the distribution. 
+We chose the bindwith equals to 1, meaning each bindwith represented 1 year of age. The red line indicated the average age of the players by year. We could ignore the count for each year as the number of teams participated were not similar for the all the years. Instead we will concentrate on the distribution. 
 
-We can see that the age distribution by year varied quite significantly. From 1991 up to 2015, the age distribution was lightly right skewed, meaning players cluttered around the lower age - lower than 30 , around 20- 25 as we can refer from the charts. But coming to 2019, a clear shift was observed where the age cluttered around the higher age of 27. More observations were observed at points further beyond 30, indicating that players who qualified for World Cup are getting older than before.  
+We can see that the age distribution by year varied quite significantly. From 1991 up to 2015, the age distribution was lightly right skewed, meaning players cluttered around the lower age - lower than 30 , around 20- 25 as we can refer from the charts. But coming to 2019, a clear shift was observed where the age cluttered around the higher age of 27. More observations were observed at points further beyond 30, indicating that players who qualified for World Cup are getting older than before. We can also see that the mean age of 2019 was higher than those of the other years.  
 
 Next up, we will comb through the age of all participants that took part in the World Cup from the very first tournament in 1991 to the most recent in 2019.  
 
