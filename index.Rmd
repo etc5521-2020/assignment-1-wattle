@@ -11,7 +11,7 @@ date: "`r Sys.Date()`"
 bibliography: references.bib
 biblio-style: authoryear-comp
 output: 
-  bookdown::html_document2: 
+  bookdown::html_document2:
     toc: yes
     toc_float:
       collapsed: true
@@ -542,7 +542,7 @@ player_age <- squads_cleaned %>%
   group_by(year, country) %>%
   mutate(dummy = ifelse(country %in% c("US", "Norway", "Germany","Netherlands", "Japan", "China PR", "Sweden", "Brazil"),1, 0)) 
 
-pa <- player_age %>%
+plotly_age <- player_age %>%
   ggplot(aes(reorder(country, age, FUN = median), age, color = dummy)) +
   geom_boxplot() +
   theme_bw() +
@@ -551,7 +551,7 @@ pa <- player_age %>%
   xlab("country") +
   ggtitle("Summary of player age by country")
 
-ggplotly(pa)
+ggplotly(plotly_age)
 ```
 
 On average, a World Cup player would not be younger than her 20s. The ideal age range for players would be around 25 to 27 years. The World Cup had witnessed a fair share of matured players who rocked the age of past 30s and even reached the 40s in history. Let's locate the winners and the runners up for all of the past World Cup and see how the ages varied.
