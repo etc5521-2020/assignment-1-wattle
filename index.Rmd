@@ -5,19 +5,25 @@ team: wattle
 author:
   - Ketan Kabu  31554679
   - Yiwen Zhang 31203019
+  - Hanh Ngo 31196101
+  - Xue Wang 30032245
 date: "`r Sys.Date()`"
 bibliography: references.bib
 biblio-style: authoryear-comp
 output: 
-  bookdown::html_document2:
-   citation_package: biblatex
-   toc: TRUE
+  bookdown::html_document2: 
+    toc: yes
+    toc_float:
+      collapsed: true
+      number_sections: false
+    theme: paper
 ---
 
 [This assignment is for ETC5521 Assignment 1 by Team `r rmarkdown::metadata$team` comprising of `r knitr::combine_words(rmarkdown::metadata$author)`.]{style="color:#006DAE;"}
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, cache=TRUE, message=FALSE,warning = FALSE,comment = FALSE,fig.pos = 'H')
+knitr::opts_chunk$set(echo = FALSE, cache=TRUE, 
+                      message=FALSE,warning = FALSE,comment = FALSE,fig.pos = 'H')
 
 library(ggplot2)
 library(tidyverse)
@@ -40,20 +46,18 @@ df <- read.csv("https://query.data.world/s/va6hy244mzxtoc7c3ww3nracqhreab", head
 ```
 
 
-
-
 # Introduction and motivation
 
-Women's soccer has gained a lot of media attention in the last few years, and deservingly so. Countries like the USA, a dominant force in women's soccer, have produced some top quality players like Megan Rapinoe, Carli Lloyd, Alex Morgan and Julie Ertz. Just north of the USA, Christine Sinclair from Canada became the first player to win the Lou Marsh Award as Canadian Athlete of the Year, which is unsurprising considering her outstanding haul of 182 career international goals. Ada Hegerberg from Norway became the first woman to win the prestigious Ballon d'Or award, an yearly honor awarded to best player in the world, which was first introduced for the women's game in 2018.[@sportmob2020]
+Women's soccer has gained a lot of media attention in the last few years, and deserving so. Countries like the USA, a dominant force in women's soccer, have produced some top quality players like Megan Rapinoe, Carli Lloyd, Alex Morgan and Julie Ertz. Just north of the USA, Christine Sinclair from Canada became the first player to win the Lou Marsh Award as Canadian Athlete of the Year, which is unsurprising considering her outstanding haul of 182 career international goals. Ada Hegerberg from Norway became the first woman to win the prestigious Ballon d'Or award, an yearly honor awarded to best player in the world, which was first introduced for the women's game in 2018.[@sportmob2020]
 
-The advancement of women's soccer has been parallel with the understanding and acceptance of data and analytics in the game. The technological advancement in capturing and analysing data has exploded since the late 1990s, when it began. Clubs have used this technology to identify and scout talent from all over the world.
+The advancement of women's soccer has been parallel with the understanding and acceptance of data and analytic in the game. The technological advancement in capturing and analysing data has exploded since the late 1990s, when it began. Clubs have used this technology to identify and scout talent from all over the world.
 
 Every country has a different approach towards coaching and developing talent. Success at an international level could be down to the ability of world class players playing with a certain level of chemistry, which could be challenging as it is common for them to be playing for different rival clubs at the domestic level. In the men's game, we saw Italy, Spain and Germany winning world cups in 2006, 2010 and 2014 respectively. Many partly attributed the success of these teams towards the fact that majority of these players playing in the same domestic league (or country), or even in the same club, especially those clubs that produce the most successful international players.
 
 In this paper, we will approach the women's game with the same lens. We believe that these findings could prove meaningful to coaches, scouts and even young players in the game looking to choose clubs to play for with future international success in mind.
+ 
+The squads data set also provided the information regarding a player's position on the field, be it the Midfielders, Defenders and Goalkeepers. Each have various other parameters they can be judged on - like assists, distance covered in a match, tackles, clearances, saves(goalkeepers) and various others. If this information is available, better player performance insights can be achieved. However, we only have the goals information which may not did a justice for any positions rather than the Forwards. For the sake of this report, we will forgo the analysis of the player's position, as analysis may not make a lot of sense with the current level of information provided.  
 
-Limitations - The squad data that we had access to had only the 2019 world cup team rosters, which is why we could only focus on the 2019 world cup matches. If similar dataset for all world cups is obtained, analysis can be done on all world cups and a trend observation can produce deeper insights about how nations have progressed in women's soccer. 
-There is also a need to assess players' performance not solely on the basis of goals they scored. Midfielders, Defenders and Goalkeepers have various other parameters they can be judged on - like assists, distance covered in a match, tackles, clearances, saves(goalkeepers) and various others. If this information is available, better player performance insights can be achieved. 
 We could also do match by match analysis of the world cup if we can obtain information about how each player was rated, or scored certain number of goals, in a world cup match.
 In our clubs data, we have a reference named as "Unattached", which will appear sometimes in our analysis. This signifies that the player(s) is not contracted with any domestic club when the data was collected.
 
@@ -77,7 +81,7 @@ outcome_data %>%
                 position = "center")
 ```
 
-```{r outcome-data, warning=FALSE, message=FALSE}
+```{r outcome-data-2, warning=FALSE, message=FALSE}
 squads_data <- tibble(Variable = c("squad_no", "country", "pos", "player", "dob","age","caps","goals","club"),
                           Class = c( "double",  "character","character","character", "date", "double", "double","double", "character"),
                           Description = c("Squad number (1 through 23)", 
@@ -92,10 +96,6 @@ squads_data %>%
   kable_styling(bootstrap_options = "striped", 
                 full_width = F, 
                 position = "center")
-```
-
-```{r miss-data,fig.cap="Missing data for squads"}
-visdat::vis_miss(squads)
 ```
 
 For the "squads" dataset, we made two improvements:
@@ -209,21 +209,38 @@ visdat::vis_miss(squads)
 
 The information of caps, goals and clubs were mostly not available for the World Cup that took place too long ago. In each analysis, we will filter only the years that have suffice information to respond to the tasks on hand.  
 
+# Changes from Assignment 1:
+In the previous stage of this report, the **wattle** team had performed a range of analysis on the player contribution by club, goals score. player's cap and player position. Even though the analysis was done thoroughly, the works lacked direction towards answering the primary question. In this improvised version, we tried to re- address the wattle team's analysis by expanding the scope (by obtaining more data) to direct the results towards answering the primary question.  
+
+Details of change are as follow:  
+
+- Primary question was introduced, and small questions were added and revised to better facilitate the primary question.  
+- Report structure: We introduced a new primary question and a set of small questions. Thus the report was restructured to reflect the appearance of new questions.  
+- Data description: We obtained more data, so we do further introduction. Also the missing values analysis was conducted on both the new and old data sets.  
+- Part 3.1 _Clubs that provided the most number of world cup players_:  
+  +) We relocated the _Overall contribution_ to under the new _Analysis by club_ and expanded the work using the data of other World Cup tournaments as well.  
+  +) The _Goal scorers_ was removed as we wanted to discuss the relationship among the age, caps and the goals to determine the characteristic of a World Cup player.  
+- Part 3.2 _Cap contribution by clubs_:  
+  +) The _Contribution by clubs in terms of players’ caps_ was relocated to under the new _Analysis by players_.  
+  +) The _Clubs that provide players that are young and also highly experienced_ was removed as we will discuss the players'age in a separate section under the _Analysis by players_ section.  
+  +) The _Contribution by clubs in terms of player position_ was removed as we deemed irrelevant to the main question and contained less useful information.  
+- Conclusion: new conclusion to associate with new analysis.  
+
 # Analysis and findings
 
-Main question:
+Before we start, there are a couple of questions we need to bear in mind to serve as the guidelines for our analysis, they are:
 
-- What factor affect the performance of the football team in the world cup?
+Primary question: What factors would describe a World Cup participant's characteristics and if possible, the World Cup champion?
 
-The analysis is mainly divided into three parts, which answer the three secondary questions, and they are :
-- Which are the clubs that provide the most number of world cup players?
+- How does the a player's domestic club influence her performance?
 
-- How about contribution by clubs in terms of players' caps and positions?
+- How does the age and the caps of a player influence her performance?
 
-- How is the performance of successful clubs in the 2019 World Cup?
+- Is there any relation between the age of a player, the caps she has achieved and the goals she made?
 
 
 ## Analysis the performance of woman world cup by country
+
 ### Overall summary trend of the number of goals scored by the country
 ```{r score-dis,fig.cap="Nation goals distribution"}
 wwc_outcomes_2019 <- wwc_outcomes %>% 
@@ -237,7 +254,8 @@ p1 <- ggplot(wwc_outcomes_2019, aes(score, team)) +
   theme(axis.text.y = element_text(color = "grey",face = "bold"),
         plot.title = element_text(face = "bold"),
         plot.background = element_rect(fill="white"),
-        panel.background = element_rect(fill="white"))
+        panel.background = element_rect(fill="white")) +
+  ggtitle("Nation goals distribution")
 p1
 ```
 
@@ -259,7 +277,9 @@ Looking into figure \@ref(fig:score-dis), the USA and Germany score significantl
 
 ### General summary of the promotion of the National Women's World Cup
 
-```{r exp-layout, fig.width = 15, fig.height = 8, fig.cap = "Experimental layout. Each cell represents an experimental unit for each categorised behaviour. The number written in the cell shows the number of observations recorded and the color of the cell shows the treatment applied to the calve."}
+> Remember to change the caption and titles, check the height of the graphics also.
+
+```{r exp-layout, fig.width = 15, fig.cap = "Experimental layout", fig.height= 20}
 
 options(repr.plot.width = 12, repr.plot.height = 18)
  wwc_outcomes_ROUND  %>% 
@@ -273,9 +293,10 @@ options(repr.plot.width = 12, repr.plot.height = 18)
   coord_equal() + 
   theme_classic(base_size =12) + 
   guides(color = FALSE) + 
-  labs(fill = "Win_status", y = "Round", x = "Year")
+  labs(fill = "Win_status", y = "Round", x = "Year") +
+  ggtitle("Experimental layout")
 ```
-Figure \@ref(fig:exp-layout) show the promotion situation for all the country attend the woman world cup between 1991 and 2019, the color represents the win, lose or tie, Each row represents a different stage of the game, such as group matches, semi-finals or final. It is clear to see that the United States has only lost four times in the past 20 years, The United States is a strong opponent in the Women's World Cup, followed by Germany, Although the number of losses is greater than that of the United States, Germany has also won many times. Figure \@ref(fig:exp-layout clearly sees the situation of each country. It can be seen that in women's football, the strength of different countries is very different. Why does this happen? What factors affect this phenomenon?
+Figure \@ref(fig:exp-layout) show the promotion situation for all the country attend the woman world cup between 1991 and 2019, the color represents the win, lose or tie, Each row represents a different stage of the game, such as group matches, semi-finals or final. It is clear to see that the United States has only lost four times in the past 20 years, The United States is a strong opponent in the Women's World Cup, followed by Germany, Although the number of losses is greater than that of the United States, Germany has also won many times. Figure \@ref(fig:exp-layout)  clearly sees the situation of each country. It can be seen that in women's football, the strength of different countries is very different. Why does this happen? What factors affect this phenomenon?
 
 ## More score, more change to get the champion
 
@@ -325,7 +346,7 @@ ggplotly(p2)
 
 Figure \@ref(fig:map-count) is an interactive map. Click on the location on the map, and we can see the country's name and the total number of goals scored in the World Cup. The color also indicates the number of goals. USA, Germany, and Norway those three countries have the most number of total goals, especially compared to other countries. Does the total number of goals have anything to do with the chance of winning the championship? Will the country with more goals win the game? 
 
-### THe relationship between total score and chance of winning
+### The relationship between total score and chance of winning
 
 ```{r Correlation,fig.cap="Correlation analysis"}
 new_num <- numofplayers %>% 
@@ -344,7 +365,6 @@ new_wwc <- wwc_outcomes %>%
         country = if_else(country %in% "Ivory Coast (Côte d'Ivoire)","Ivory Coast", country)) %>% 
     filter(win_status=="Won") %>% 
   filter(round == "Final") %>% 
-  # 用胜利的次数作为表现好的体现
   group_by(country) %>% 
   summarise(total = sum(score)) %>% 
     
@@ -364,23 +384,277 @@ ggplotly(p3)
 
 Figure \@ref(fig:Correlation) is a correlation analysis between total goals and change to win, The correlation coefficient is 0.768, which shows a positive correlation, that is, the more the total number of goals, the greater the chance of winning the championship.
 
+> Take note to come back to this part!
+
+```{r}
+# reference the country code in the wwc_outcomes
+wwc_outcomes_fullname <- wwc_outcomes %>%
+  left_join(codes, by = "team")
+```
+
+```{r team-result}
+# count the number of rounds participated by each country
+team_count <- wwc_outcomes_fullname %>%
+  select(country, year, score) %>%
+  count(country, year) %>%
+  rename("rounds" = n)
+# calculate the result for each team
+team_result <-wwc_outcomes_fullname %>%
+  select(country, year, score) %>%
+  group_by(country, year) %>%
+  summarise(total_score = sum(score)) %>%
+  ungroup()
+# bind the two tables to calculate avg score/ round
+avg_score_per_round <- team_result %>%
+  left_join(team_count, by = c("country", "year")) %>%
+  mutate(avg_score = total_score/rounds)
+```
 
 
 
+> Draw a line chart/ any other approprate charts for this. 
 
+## Analysis by club
 
+To find out what factors could determined a World Cup player, we tried to looked at two elements of her career: the player herself and the club that she played for in her normal time not attending the World Cup. In this section, we will have a look at the club first.  
+It's no surprise when we would see some clubs or leagues that better represents the players than the others. Those clubs usually are big in size, providing more resources to produce a quality player. In the figure below, we will examine the biggest 12 clubs that are or were home to the highest numbers of World Cup players.  
+
+```{r player-contri}
+wc_clubs_players <- squads %>% 
+  # leave the unattached out to count
+  # filter out 2003 as clubs info were missing
+  filter(year > 2003,
+         !club == "Unattached") %>%
+  group_by(club) %>%
+  # count the unique players only as one player could attend more than one WC
+  summarise("Player" = n_distinct(player)) %>% 
+  arrange(desc(Player))
+
+wc_clubs_players %>% 
+  head(12) %>% 
+  kable(booktabs = TRUE, caption = "Contribution of World Cup players by clubs from 2007 to 2019") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+We filtered for the 2007 World Cup up to 2019 World Cup (4 tournaments in total) as the club's information was not fully provided for all of the prior tournaments. After that we counted the number of unique players that each club had brought to the World Cup. 
+
+Lyon contributed the highest number of players throughout the four World Cup tournaments. Asides from Lyon, the France Women's First Division League had another national clubs got into the top 10, which was Paris Saint-Germain. Most of the other clubs in the ranking saw themselves belonged to the countries that are most well-known for their football history. They are Germany (1. FFC Frankfurt and VfL Wolfsburg), England (Arsenal and Chelsea), Norway (LSK Kvinner), Sweden (Linköping), Canada (Vancouver Whitecaps) and Spain (Barcelona).  
+
+We have two special cases that top the chart: 25-Apr of North Korea and Rivers Angels of Nigeria. These two clubs were special in their own way that their national World Cup teams mostly consisted of their players. We will revisit this point again when we get to the breakdown of Domestical and Foreign elements of these 12 clubs later in this section.   
+
+```{r top-10-by-year, fig.cap = "Clubs' players by year from WC2007-WC2019"}
+squads %>% 
+  # filter top twelve only
+  filter(club %in% c("Lyon", "Arsenal", "Paris Saint-Germain", "1. FFC Frankfurt", "25-Apr",
+                     "Barcelona", "Rivers Angels", "Chelsea", "Vancouver Whitecaps", "VfL Wolfsburg",
+                     "Linköping", "LSK Kvinner"),
+         year > 2003) %>%
+  group_by(club, year) %>%
+  # leave the unattached out to count
+  # filter out 2003 as clubs info were missing
+  summarise("Player" = n_distinct(player)) %>% 
+  arrange(club, year) %>%
+  ggplot(aes(x = factor(year), Player, fill = year)) +
+  geom_col(stat = "identity") +
+  facet_wrap(~ club) +
+  theme_bw() +
+  xlab("year") +
+  theme(legend.position = "none") +
+  ggtitle("Clubs' players by year from WC2007-WC2019")
+```
+
+In terms of year, 5 out of the 12 clubs featured in the chart did not join the whole four World Cups. We can see clearly from the chart that 25-Apr had made an impressive contribution of players for the North Korea team in 2007 and 2011, which brought them to our ranking even though they dropped out in the recent two games.
+
+Except for Chelsea and Barcelona, other clubs did not observe a significant change in the number of World Cup player in 2019. Rather, most of them went down in numbers. There is a couple of explanations for this observation:  
+- 2015 was the first year that allowed the number of participated teams to increased from 16 in 2011 to 24. As a result, we will see that most clubs saw their players surged in number in 2015.  
+- There is a fact in the football industry that big clubs usually hesitated to send their prominent players to the World Club. They want to reserve their stars for the national tournaments or other premier leagues. In the male football industry, this practice threatened the success of the World Cup so bad that FIFA even comes up with a commission scheme to pay the clubs for their "collaboration" [@homewood_2020]. A drop in the female players'number could suggest two things: (1) the women's football clubs also concerned for other games that they did not want to send away their star players, and (2) 2019 was the second World Cup that allowed 24 teams to participate. Other clubs might have used this chance to send their players off to the international field, making the share smaller for all.  
+
+For (1), we was confirmed that FIFA had announced the first beneficial package to promote the clubs for participating in the Women's World Cup. This program was introduced ahead of the World Cup 2019. More details can be read [here](https://img.fifa.com/image/upload/imn0xwvea97tommxx5uz.pdf).  
+
+Finally in this club section, we will look at the composition of the players that each of these 12 clubs sent to World Cup. Would they be playing along or against their comrades?
+
+```{r top-12-by-year, fig.cap = "Percentage of domestical player of top 12"}
+# Count the distinct nationals in each club in top 12
+domestic <- squads %>% 
+  # filter top 12 only
+  filter(club %in% c("Lyon", "Arsenal", "Paris Saint-Germain", "1. FFC Frankfurt", "25-Apr",
+                     "Barcelona", "Rivers Angels", "Chelsea", "Vancouver Whitecaps", "VfL Wolfsburg",
+                     "Linköping", "LSK Kvinner"),
+         year > 2003) %>%
+  group_by(club, country) %>%
+  # leave the unattached out to count
+  # filter out 2003 as clubs info were missing
+  summarise("Player" = n_distinct(player)) %>%
+  ungroup()
+
+# Visualise the combination of domestical and foreign elements
+domestic %>%
+  group_by(club) %>%
+  # all clubs will have majority of their players coming from the country
+  mutate("origin" = ifelse(Player == max(Player), "Domestic", "Other"),
+         prop = Player/sum(Player)) %>%
+  group_by(club,origin) %>%
+  summarise(prop = sum(prop)) %>%
+  filter(origin == "Domestic") %>%
+  ggplot(aes(fct_reorder(club, prop), prop)) +
+  geom_col(stat = "identity", colour = "blue", fill = "blue") +
+  coord_flip() +
+  theme_bw() + 
+  ylab("club") +
+  xlab("% Domestical Player") +
+  ggtitle("Percentage of domestical player of top 12")
+```
+
+We can see that Vancouver Whitecaps, 25-apr and Rivers Angels had most of their World Cup players coming from their own country. Other big names like Chelse, Arsena, Lyon or 1. FFC Frankfurt hold only 50% - 60% of their World Cup players domestic, other were exported. To understand better about how such composition would contribute to their performance in World Cup, we were tempted to see of all the international clubs featured in the World Cup, which one hold the highest of players and how would that related to their performance. However, the task of gathering the nation of each club took a lot of time and manual works, hence we referred to a study by FIFA for this question.
+
+```{r fifa-research, fig.cap = "Players owner in World Cup 2019", out.height = "60%"}
+knitr::include_graphics(here::here("wc_owner.png"))
+```
+
+In an article published on dw.com[@schacht_2019], FIFA has released their figures showing that US club held roughly 14% of total World Cup 2019 players - 73 players. That figure was very impressive if you considered there were hundreds of clubs from all over the world sending their players to the game. Followed behind were our familiar faces of Spain, France and England. The article also pointed out that Spain's national women team qualified for the game first time in 2015. By that time, there were only 21 of the players belonged to the top Spanish teams. In 2019, the number increased to 51. The article also suggested that this change came from a significant improve in supports for women's football in Spain in the recent years. 
+
+The domination of US and the rising of Spain suggested how a nation would support their players. It was of nature that players would come to the clubs that offered them the best of conditions. The better the condition, the more likely to attract top players and finally the better performance at any tournament. The United States had crowned the championship at the World Cup for 4 times out of 8 times the Women World Cup was held until now.  
+
+## Analysis by player
+
+Next we will take a look deeper into the stars of the game - the players. In this section, we wanted to know if there are any factors that would determine a player's chance to participate in the World Cup, or even further, how these factors can tell about the performance of such player in the game.  
+
+### Player's age
+First of all, we will look at the overall age distribution of all the players through all eight World Cup tournaments.
+
+```{r player-age, fig.cap = "Player's age distribution"}
+squads %>%
+  ggplot(aes(x = age)) +
+  geom_histogram(binwidth = 1 , color = "black", fill = "magenta") +
+  theme_bw()+
+  facet_wrap(~ year) +
+  ggtitle("Player's age distribution")
+```
+
+We chose the bindwith equals to 1, meaning each bindwith represented 1 year of age. We could ignore the count for each year as the number of teams participated were not similar for the all the years. Instead we will concentrate on the distribution. 
+
+We can see that the age distribution by year varied quite significantly. From 1991 up to 2015, the age distribution was lightly right skewed, meaning players cluttered around the lower age - lower than 30 , around 20- 25 as we can refer from the charts. But coming to 2019, a clear shift was observed where the age cluttered around the higher age of 27. More observations were observed at points further beyond 30, indicating that players who qualified for World Cup are getting older than before.  
+
+Next up, we will comb through the age of all participants that took part in the World Cup from the very first tournament in 1991 to the most recent in 2019.  
+
+```{r country-age, fig.cap = "Summary of player age by country"}
+player_age <- squads %>%
+  group_by(year, country) %>%
+  mutate(dummy = ifelse(country %in% c("US", "Norway", "Germany","Netherlands", "Japan", "China PR", "Sweden", "Brazil"),1, 0)) 
+
+pa <- player_age %>%
+  ggplot(aes(reorder(country, age, FUN = median), age, color = dummy)) +
+  geom_boxplot() +
+  theme_bw() +
+  theme(axis.text.x=element_text(angle=90, hjust=1),
+        legend.position = "none") +
+  xlab("country") +
+  ggtitle("Summary of player age by country")
+
+ggplotly(pa)
+```
+
+On average, a World Cup player would not be younger than her 20s. The ideal age range for players would be around 25 to 27 years. The World Cup had witnessed a fair share of matured players who rocked the age of past 30s and even reached the 40s in history. Let's locate the winners and the runners up for all of the past World Cup and see how the ages varied.
+
+We have United States (4 wins, 1 runner up), Norway (1 win, 1 runner up), Germany (2 wins, 1 runner up), Japan (1 win, 1 runner up), China PR, Sweden, Brazil and Netherlands (each had 1 runner up). I have highlighted the countries mentioned in the chart above for easier reference. We can see that most of the countries resided on the right half of the chart, indicating a higher than average median age of players. The 4-time champion US even had a long right tail where the maximum age could reach 39. Other highlighted countries also possessed some players with the age felt into the outliers that passed 35. We have Japan and China on the other half of the chart, with China seems to have younger ladies than the others. Japan even though on the other half, had a long right tail of age distribution where players can get to the age of 36. 
+
+### Player's caps
+
+The number of caps of each player represents the number of times a player represents her team in an international play ground. 
+
+Table \@ref(tab:arrangecapped) below summarised top 10 players with the highest caps in the history of World Cup, along with the country they presented, their positions, the clubs they played for and their caps and goals at the most recent time they participated in the World Cup. 
+
+```{r arrangecapped}
+most_capped <- squads %>%
+  filter(year > 2003,
+         !club == "Unattached") %>%
+  select(-age, - squad_no) %>%
+  group_by(player) %>%
+  arrange(desc(year)) %>%
+  slice(1) %>%
+  arrange(desc(caps))
+
+most_capped %>%
+  head(10) %>%
+  kable(caption = "Top 10 players with the highest caps") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+Again, the US took up the majority of ranks in the ranking table, 4 out of 10. Among which, Kristine Lilly hold the highest records at the World Cup 2007 - her last World Cup before retirement. After that and up until now, no players have been able to surpass her. Christie Rampone got the closest at the moment with 32 caps in difference.
+
+We will look further and compare the caps countries to countries. For this task, we would take into focus only two years 2015 and 2019, as these two years had the same number of participating teams, making it easier to compare.
+
+However, for 2019, we had to cross Nigeria and Cameroon off the list as these two countries missed a lot information regrading the caps and the goals. The result figure is presented below:
+
+```{r cap-by-year, fig.cap = "Comparison of cap bar by year", message = FALSE}
+capped_2019 <- most_capped %>%
+  # filter countries with NA
+  filter(year == 2019,
+         !country %in% c("Nigeria", "Cameroon")) %>%
+  group_by(country) %>%
+  ggplot(aes(reorder(country, caps, FUN = median, na.rm = TRUE), caps)) +
+  geom_boxplot() +
+  theme_bw() +
+  theme(axis.text.x=element_text(angle=90, hjust=1)) +
+  xlab("country in 2019") +
+  coord_flip() +
+  ggtitle("Summary of player cap in 2019")
+  
+capped_2015 <- most_capped %>%
+  filter(year == 2015) %>%
+  group_by(country) %>%
+  ggplot(aes(reorder(country, caps, FUN = median), caps)) +
+  geom_boxplot() +
+  theme_bw() +
+  theme(axis.text.x=element_text(angle=90, hjust=1)) +
+  xlab("country in 2015") +
+  coord_flip() +
+  ggtitle("Summary of player cap in 2015")
+
+library(gridExtra)
+grid.arrange(capped_2019,capped_2015, ncol = 2)
+```
+
+Surprisingly, the US team, even though still at the top, actually had their caps lowering in 2019 compared to 2015, with only Carli Lloyd having the caps high enough to become an outliner. Most of the celebrity teams (teams that had won and achieved runner up), except for China PR and Brazil, saw their median caps dropped. Expanding further from the top 10 highest cap in table \@ref(tab:arrangecapped) above to the top 30, we only had a total of 12 players who participated in the most recent World Cup 2019. Whilst we cannot calculate the impact of such drops on the teams' performance (US still won and Netherlands was the runner up in 2019), we can try to explain the reasons behind such drop in caps.
+
+It could possibly mean that the celebrity team either (1) had their prestige players reaching the retirement age (If you revisit the top 10 table, you would see that most players in top 10 born in the late 70s and early 80s) so they had to drop out of the tournament or (2) the celebrity team considered to save their ace players for other premier leagues rather than exhaust them in the World Cup. Whilst we can infer the assumption (1) from the date of birth provided, we had no solid base for the assumption (2). All we know at the moment is that FIFA has stepped in to encourage the teams to "collaborate" in exchange for a handsome commission under the form of supports given to the clubs helping them build up their talents. 
+
+A bonus fun fact for this graph: 2019 was the first year Jamaica qualified for the World Cup and the teams comprised of members who never have once played for any Jamaica clubs! 
+
+### Relationship between the age, the caps and the goals
+
+We will conclude this section by examining the relationship between the age, the caps and the goals of a World Cup player whether one or more variables would explain the other, or in this case, whether the caps and age of a player would determine her ability to score more goals.
+
+In this section we used _ggscatmat_ function to visualise the relationship between the variables in four different years, from 2007 to 2019. Again years before 2003 were filtered out due to lack of information. 
+
+```{r relation, fig.cap = "Relationship between ages, caps and goals"}
+library(GGally)
+# filter out 2003 and forwards due to lack of info
+squads %>% 
+  filter(year > 2003) %>%
+  ggscatmat(columns = 6:8, color = "year", alpha = 0.5) +
+  scale_colour_brewer(palette="Set1") +
+  theme_bw() + 
+  xlab("") +
+  ylab("") +
+  ggtitle("Relationship between ages, caps and goals")
+```
+
+In figure \@ref(fig:relation), we have the density plot for each variables, the correlation for each pair of variables and the scatter plot. Some insights we can draw from the club would include:  
+
+- The caps and the goals have a higher density at the lower values, which is not surprising. The caps, unlike the goals of which the density steeply dropped as the goals increased, have a notable lump at around 20 - 30 caps for all the year observed. Year 2011 and 2015 also observed another minor lump near 100 caps. However, year 2019 saw a dip at the point. We have concluded from the previous section that in 2019, the number of high capped players greatly decreased compared to the previous years.  
+- Age and caps have a roughly positive relation where the higher the age, the more foreign experience a player most likely has. However, the relation was not definitive for year 2015 as we can see a handful of players at high age that did not possess a lot of caps (the green dots scattered at the lower right end of the chart).  
+- Unlike the age and caps relation, there was not a recognizable relation between the age and the goals. Higher age does not necessarily associate with higher goals. In fact, most goals were scored by players in their 20s - 30s. However, 2011 and 2015 had a noticeable amount of scatter plots at the right hand side of the plot. These dots could presented the Goal keepers who may possess a high caps but have no needs to score a goal.  
+- There seemed to be two cut off points in the caps - goals scatter plot: one at 100 caps and the other at nearly 200 caps. Before 100 caps, most plots cluttered in the lower left corner where higher caps had roughly the same goals. Pass 100, we started to see an upwards trend where higher caps led to higher goals, even though this trend mostly happened for 2015 and 2019. Pass 200 caps, there was hardly any players left at this point. We had some high caps but with low goals which may belong to the goal keepers or Defenders. If we had high caps with high goals, the goals were extraordinary high, as in the plot we can see some points flied far and beyond to the upper right corner of the plot.    
 
 # Conclusion
 
-Barcelona and Lyon provide the most number of world cup players, with 15 and 14 respectively. 10 Barcelona players out of those 15 were Spanish, although Spain were eliminated in the round of 16 by the eventual winners - the USA. Lyon provided 7 French nationals in the world cup, and France were eliminated in the quarter finals, again by the USA.
+In this exercise, we have learnt a bridging connection from the domestic clubs to the performance of their nations in an international field, which may appear to be counter - intuitive at first reception. If a country has managed to attract a lot of players played for its national clubs, the better its performance can be at any tournament.  Take the US for an example, the number of foreign players played for the US clubs as documented by FIFA was the highest out of all countries. Now that those foreign players came back to fight for their national teams, would you question how that would benefit the performance of the US national team? The US had won the World Cup half the time it was held until now, with another one being a runner up. The underlying fact was that if a country was attractive enough to have the players from everywhere come over, such country itself possesses enough resources to invest in talents, which solidify its stance further in any international game.    
 
-The USA scored a massive 26 goals in the tournament's 7 matches, which can be justified by the fact that just 2 American clubs - Portland Thorns and Orlando Pride, both have nearly 500 international goals between them.
+Ages also influence over whether a player could be qualifies for World Cup or not. On average, a World Cup player would not be younger than her 20s and an ideal age range would be around 25 to 27 years. We also learnt that age and caps have a roughly positive relation where the higher the age, the more foreign experience a player most likely has. Unlike the age and caps, there was not a recognizable relation between the age and the goals. Higher age does not necessarily associate with higher goals. In fact, most goals were scored by players in their 20s - 30s. The position of players need to be taken into consideration rather than just goals to gauge a player's performance.  
 
-In terms of experience, Christian Sinclair and Carli Lloyd from Portland Thorns and Sky Blue FC (the latter an American club again), are the most capped, with 282 and 271 caps respectively. The top 5 capped players are all above 30 years of age, although there are young players (25 or below) that already have a lot of international experience under their belts, like the 24 year old Chinese midfielder Wang Shuang (93 caps) who plays for Paris Saint-Germain.
+Finally, from the data we have analysed, we formed up an assumption that some of the national clubs either had their prestige players reaching the retirement age, by the most recent Women World Cup 2019 or they might have been holding back from sending their ace players to the field. Whether the assumption holds or not, we only knew that FIFA has responded by introducing the support package for the first time ever, by which the national clubs will be benefited by releasing the best out of the safe vault and allow them to compete in the World Cup. 
 
-In terms of positional contribution, Chelsea dominates goalkeepers with their 2 goalkeepers featuring in the world cup, boasting 173 caps between them. Lyon and Chelsea have 7 and 6 defenders respectively and 475 and 404 caps. Vfl Wolfsburg has 4 midfielders with 366 caps between them. Barcelona has 5 forwards featuring in the world cup who had 249 goals between them, although Spain scored only 4 goals in their 4 matches. Portland Thorns on the other hand had 4 forwards with 534 goals between them, and the USA scored 26 goals in the world cup.
-
-Finally, considering the sheer number of goals scored, the USA deservingly won the world cup, eliminating the likes of Spain, France, England and Netherlands in the process. Netherlands came in second, losing the final to USA and Sweden came in third, beating England in the third place playoffs.
 
 # Acknowledge
 
@@ -399,7 +673,9 @@ The packages used are as follows:
 
 - plotly [@plotly]
 
+- GGally [@ggally]
+
+
 
 # References
-
 

@@ -1,0 +1,17 @@
+base
+ggplot2
+tidyverse
+tibble
+tidyr
+readr
+purrr
+dplyr
+stringr
+forcats
+plotly
+bookdown
+ggridges
+colorspace
+GGally
+kableExtra
+gridExtra

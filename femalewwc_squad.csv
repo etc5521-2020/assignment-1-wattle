@@ -1,0 +1,2319 @@
+﻿squad_no,country,pos,player,dob,age,caps,goals,club,year
+1,Canada,GK,Erin McLeod,26-Feb-1983,32,110,0,Houston Dash,2015
+2,Canada,DF,Emily Zurrer,12-Jul-1987,27,82,3,SwedenJitex BK,2015
+3,Canada,DF,Kadeisha Buchanan,5-Nov-1995,19,40,2,West Virginia Univ.,2015
+4,Canada,DF,Carmelina Moscato,2-May-1984,31,94,2,Unattached,2015
+5,Canada,DF,Robyn Gayle,31-Oct-1985,29,81,2,Unattached,2015
+6,Canada,MF,Kaylyn Kyle,6-Oct-1988,26,101,6,Portland Thorns,2015
+7,Canada,DF,Rhian Wilkinson,12-May-1982,33,166,7,Portland Thorns,2015
+8,Canada,MF,Diana Matheson,6-Apr-1984,31,167,15,Washington Spirit,2015
+9,Canada,FW,Josée Bélanger,14-May-1986,29,35,5,Unattached,2015
+10,Canada,DF,Lauren Sesselmann,14-Aug-1983,31,44,0,Houston Dash,2015
+11,Canada,MF,Desiree Scott,31-Jul-1987,27,95,0,EnglandNotts County,2015
+12,Canada,FW,Christine Sinclair,12-Jun-1983,31,228,155,Portland Thorns,2015
+13,Canada,MF,Sophie Schmidt,28-Jun-1988,26,137,16,Unattached,2015
+14,Canada,FW,Melissa Tancredi,27-Dec-1981,33,105,22,Chicago Red Stars,2015
+15,Canada,DF,Allysha Chapman,25-Jan-1989,26,17,1,Houston Dash,2015
+16,Canada,FW,Jonelle Filigno,24-Sep-1990,24,71,11,Sky Blue,2015
+17,Canada,MF,Jessie Fleming,11-Mar-1998,17,18,1,Nor'West SC,2015
+18,Canada,MF,Selenia Iacchelli,5-Jun-1986,29,4,0,Unattached,2015
+19,Canada,FW,Adriana Leon,2-Oct-1992,22,38,5,Chicago Red Stars,2015
+20,Canada,DF,Marie-Ève Nault,16-Feb-1982,33,68,0,Unattached,2015
+21,Canada,GK,Stephanie Labbé,10-Oct-1986,28,20,0,Unattached,2015
+22,Canada,MF,Ashley Lawrence,11-Jun-1995,19,23,1,West Virginia Univ.,2015
+23,Canada,GK,Karina LeBlanc,30-Mar-1980,35,110,0,Chicago Red Stars,2015
+1,China PR,GK,Zhang Yue,30-Sep-1990,24,48,0,Beijing BG,2015
+2,China PR,DF,Liu Shanshan,16-Mar-1992,23,33,0,Hebei Zhongji,2015
+3,China PR,DF,Pang Fengyue,19-Jan-1989,26,50,7,Dalian Junfeng,2015
+4,China PR,DF,Li Jiayue,8-Jun-1990,24,45,1,Shanghai Vinpac,2015
+5,China PR,DF,Wu Haiyan,26-Feb-1993,22,50,0,Shandong,2015
+6,China PR,DF,Li Dongna,6-Dec-1988,26,50,5,Suwon FMC,2015
+7,China PR,MF,Xu Yanlu,16-Sep-1991,23,27,3,Jiangsu Huatai,2015
+8,China PR,MF,Ma Jun,6-Mar-1989,26,50,15,Daejeon Sportstoto,2015
+9,China PR,DF,Wang Shanshan,27-Jan-1990,25,41,0,Tianjin Huisen,2015
+10,China PR,FW,Li Ying,7-Jan-1993,22,8,2,Shandong,2015
+11,China PR,MF,Wang Shuang,23-Jan-1995,20,11,1,Wuhan Jianghan Univ.,2015
+12,China PR,GK,Wang Fei,22-Mar-1990,25,52,0,Turbine Potsdam,2015
+13,China PR,MF,Tang Jiali,16-Mar-1995,20,10,2,Shanghai Vinpac,2015
+14,China PR,FW,Zhao Rong,2-Aug-1991,23,14,0,Beijing BG,2015
+15,China PR,MF,Lei Jiahui,22-Sep-1995,19,6,0,Henan,2015
+16,China PR,FW,Lou Jiahui,26-May-1991,24,45,1,Henan,2015
+17,China PR,FW,Gu Yasha,28-Nov-1990,24,87,10,Beijing BG,2015
+18,China PR,MF,Han Peng,20-Dec-1989,25,52,3,Tianjin Huisen,2015
+19,China PR,MF,Tan Ruyin,17-Jul-1994,20,8,0,Guangdong Sports Lottery,2015
+20,China PR,MF,Zhang Rui,17-Jan-1989,26,60,11,Liberation Army FC,2015
+21,China PR,MF,Wang Lisi,28-Nov-1991,23,45,5,Jiangsu Huatai,2015
+22,China PR,GK,Zhao Lina,18-Sep-1991,23,0,0,Shanghai Vinpac,2015
+23,China PR,MF,Ren Guixin,19-Dec-1988,26,45,5,Changchun Zhuoyue,2015
+1,Netherlands,GK,Loes Geurts,12-Jan-1986,29,103,0,Kopparbergs/Göteborg,2015
+2,Netherlands,MF,Desiree van Lunteren,30-Dec-1992,22,21,0,AFC Ajax,2015
+3,Netherlands,DF,Stefanie van der Gragt,16-Aug-1992,22,22,1,Telstar,2015
+4,Netherlands,DF,Mandy van den Berg,26-Aug-1990,24,57,3,LSK Kvinner FK,2015
+5,Netherlands,DF,Petra Hogewoning,26-Mar-1986,29,96,0,AFC Ajax,2015
+6,Netherlands,FW,Anouk Dekker,15-Nov-1986,28,38,5,FC Twente,2015
+7,Netherlands,FW,Manon Melis,31-Aug-1986,28,123,54,Kopparbergs/Göteborg,2015
+8,Netherlands,MF,Sherida Spitse,29-May-1990,25,104,15,LSK Kvinner FK,2015
+9,Netherlands,FW,Vivianne Miedema,15-Jul-1996,18,23,19,FC Bayern Munich,2015
+10,Netherlands,MF,Daniëlle van de Donk,5-Aug-1991,23,35,6,PSV/FC Eindhoven,2015
+11,Netherlands,MF,Lieke Martens,16-Dec-1992,22,49,20,Kopparbergs/Göteborg,2015
+12,Netherlands,DF,Dyanne Bito,10-Aug-1981,33,146,6,Telstar,2015
+13,Netherlands,DF,Dominique Janssen,17-Jan-1995,20,6,0,SGS Essen,2015
+14,Netherlands,MF,Anouk Hoogendijk,6-May-1985,30,101,9,AFC Ajax,2015
+15,Netherlands,MF,Merel van Dongen,11-Feb-1993,22,4,1,AFC Ajax,2015
+16,Netherlands,GK,Sari van Veenendaal,3-Apr-1990,25,13,0,FC Twente,2015
+17,Netherlands,MF,Tessel Middag,23-Dec-1992,22,24,3,AFC Ajax,2015
+18,Netherlands,DF,Maran van Erp,3-Dec-1990,24,1,0,PSV/FC Eindhoven,2015
+19,Netherlands,FW,Kirsten van de Ven,11-May-1985,30,82,16,Rosengård,2015
+20,Netherlands,MF,Jill Roord,22-Apr-1997,18,5,1,FC Twente,2015
+21,Netherlands,MF,Vanity Lewerissa,1-Apr-1991,24,4,0,Standard Liège,2015
+22,Netherlands,FW,Shanice van de Sanden,2-Oct-1992,22,15,3,FC Twente,2015
+23,Netherlands,GK,Angela Christ,6-Mar-1989,26,13,0,PSV/FC Eindhoven,2015
+1,New Zealand,GK,Erin Nayler,17-Apr-1992,23,28,0,Norwest United,2015
+2,New Zealand,DF,Ria Percival,7-Dec-1989,25,103,11,USV Jena,2015
+3,New Zealand,DF,Anna Green,20-Aug-1990,24,55,7,Unattached,2015
+4,New Zealand,MF,Katie Hoyle,1-Feb-1988,27,102,1,FC Zürich,2015
+5,New Zealand,DF,Abby Erceg,20-Nov-1989,25,113,4,Chicago Red Stars,2015
+6,New Zealand,DF,Rebekah Stott,17-Jun-1993,21,39,0,Unattached,2015
+7,New Zealand,DF,Ali Riley,30-Oct-1987,27,92,1,Rosengård,2015
+8,New Zealand,FW,Jasmine Pereira,20-Jul-1996,18,8,0,Three Kings United,2015
+9,New Zealand,FW,Amber Hearn,28-Nov-1984,30,99,45,USV Jena,2015
+10,New Zealand,FW,Sarah Gregorius,6-Aug-1987,27,66,23,AS Elfen Saitama,2015
+11,New Zealand,MF,Kirsty Yallop,4-Nov-1986,28,89,12,Vittsjö GIK,2015
+12,New Zealand,MF,Betsy Hassett,4-Aug-1990,24,79,8,Unattached,2015
+13,New Zealand,FW,Rosie White,6-Jun-1993,22,69,14,Unattached,2015
+14,New Zealand,MF,Katie Bowen,15-Apr-1994,21,26,0,Univ. of North Carolina,2015
+15,New Zealand,DF,Meikayla Moore,4-Jun-1996,19,10,0,Eastern Suburbs,2015
+16,New Zealand,MF,Annalie Longo,1-Jul-1991,23,78,6,Coastal Spirit,2015
+17,New Zealand,FW,Hannah Wilkinson,28-May-1992,23,69,22,Univ. of Tennessee,2015
+18,New Zealand,DF,C. J. Bott,22-Apr-1995,20,1,0,Forrest Hill Milford,2015
+19,New Zealand,MF,Evie Millynn,23-Nov-1994,20,2,0,Eastern Suburbs,2015
+20,New Zealand,MF,Daisy Cleverley,30-Apr-1997,18,3,2,Forrest Hill Milford,2015
+21,New Zealand,GK,Rebecca Rolls,22-Aug-1975,39,21,0,Three Kings United,2015
+22,New Zealand,FW,Emma Kete,1-Sep-1987,27,48,3,Fencibles United,2015
+23,New Zealand,GK,Cushla Lichtwark,29-Nov-1980,34,0,0,Hutt City,2015
+1,Germany,GK,Nadine Angerer,10-Nov-1978,36,139,0,Portland Thorns,2015
+2,Germany,DF,Bianca Schmidt,23-Jan-1990,25,48,3,1. FFC Frankfurt,2015
+3,Germany,DF,Saskia Bartusiak,9-Sep-1982,32,80,1,1. FFC Frankfurt,2015
+4,Germany,DF,Leonie Maier,29-Sep-1992,22,25,3,FC Bayern Munich,2015
+5,Germany,DF,Annike Krahn,1-Jul-1985,29,117,5,Paris Saint-Germain,2015
+6,Germany,MF,Simone Laudehr,12-Jul-1986,28,88,24,1. FFC Frankfurt,2015
+7,Germany,MF,Melanie Behringer,18-Nov-1985,29,104,26,FC Bayern Munich,2015
+8,Germany,FW,Pauline Bremer,10-Apr-1996,19,5,0,1. FFC Turbine Potsdam,2015
+9,Germany,FW,Lena Lotzen,11-Sep-1993,21,22,4,FC Bayern Munich,2015
+10,Germany,MF,Dzsenifer Marozsán,18-Apr-1992,23,48,25,1. FFC Frankfurt,2015
+11,Germany,FW,Anja Mittag,16-May-1985,30,120,33,Rosengård,2015
+12,Germany,GK,Almuth Schult,9-Feb-1991,24,20,0,VfL Wolfsburg,2015
+13,Germany,FW,Célia Šašić,27-Jun-1988,26,104,57,1. FFC Frankfurt,2015
+14,Germany,DF,Babett Peter,12-May-1988,27,89,4,VfL Wolfsburg,2015
+15,Germany,DF,Jennifer Cramer,24-Feb-1993,22,21,0,1. FFC Turbine Potsdam,2015
+16,Germany,MF,Melanie Leupolz,14-Apr-1994,21,28,5,FC Bayern Munich,2015
+17,Germany,DF,Josephine Henning,8-Sep-1989,25,25,0,Paris Saint-Germain,2015
+18,Germany,FW,Alexandra Popp,6-Apr-1991,24,54,27,VfL Wolfsburg,2015
+19,Germany,FW,Lena Petermann,5-Feb-1994,21,2,0,SC Freiburg,2015
+20,Germany,MF,Lena Goeßling,8-Mar-1986,29,72,8,VfL Wolfsburg,2015
+21,Germany,GK,Laura Benkarth,14-Oct-1992,22,0,0,SC Freiburg,2015
+22,Germany,DF,Tabea Kemme,14-Dec-1991,23,13,0,1. FFC Turbine Potsdam,2015
+23,Germany,MF,Sara Däbritz,15-Feb-1995,20,16,0,SC Freiburg,2015
+1,Ivory Coast,GK,Lydie Saki,22-Dec-1984,30,27,0,Juventus de Yopougon,2015
+2,Ivory Coast,DF,Fatou Coulibaly,13-Feb-1987,28,31,1,Juventus de Yopougon,2015
+3,Ivory Coast,DF,Djelika Coulibaly,22-Feb-1984,31,29,0,Juventus de Yopougon,2015
+4,Ivory Coast,DF,Nina Kpaho,30-Dec-1996,18,12,0,Juventus de Yopougon,2015
+5,Ivory Coast,DF,Mariam Diakité,11-Apr-1995,20,12,9,ES Abobo,2015
+6,Ivory Coast,MF,Rita Akaffou,5-Dec-1986,28,33,4,Juventus de Yopougon,2015
+7,Ivory Coast,FW,Nadege Essoh,5-May-1990,25,29,4,Juventus de Yopougon,2015
+8,Ivory Coast,FW,Ines Nrehy,1-Oct-1993,21,17,13,WFC Rossiyanka,2015
+9,Ivory Coast,FW,Sandrine Niamien,30-Aug-1994,20,2,1,ES Abobo,2015
+10,Ivory Coast,FW,Ange N'Guessan,18-Nov-1990,24,19,3,Omness de Dabou,2015
+11,Ivory Coast,FW,Rebecca Elloh,25-Dec-1994,20,15,2,Onze Sœurs de Gagnoa,2015
+12,Ivory Coast,MF,Ida Guehai,15-Jul-1994,20,22,1,Kristianstads DFF,2015
+13,Ivory Coast,DF,Fernande Tchetche,20-Jun-1988,26,19,0,Omness de Dabou,2015
+14,Ivory Coast,FW,Josée Nahi,29-May-1989,26,18,12,Zvezda 2005 Perm,2015
+15,Ivory Coast,MF,Christine Lohoues,18-Oct-1992,22,22,1,Onze Sœurs de Gagnoa,2015
+16,Ivory Coast,GK,Dominique Thiamale,20-May-1982,33,27,0,Omness de Dabou,2015
+17,Ivory Coast,FW,Nadège Cissé,4-Apr-1997,18,6,0,ES Abobo,2015
+18,Ivory Coast,MF,Binta Diakité,7-May-1988,27,20,2,ASF Medenine,2015
+19,Ivory Coast,MF,Jessica Aby,16-Jun-1998,16,1,0,Onze Sœurs de Gagnoa,2015
+20,Ivory Coast,MF,Aminata Haidara,13-May-1997,18,4,0,Onze Sœurs de Gagnoa,2015
+21,Ivory Coast,DF,Sophie Aguie,31-Dec-1996,18,4,0,Omness de Dabou,2015
+22,Ivory Coast,DF,Raymonde Kacou,7-Jan-1987,28,6,0,Juventus de Yopougon,2015
+23,Ivory Coast,GK,Cynthia Djohore,16-Dec-1987,27,27,0,Onze Sœurs de Gagnoa,2015
+1,Norway,GK,Ingrid Hjelmseth,10-Apr-1980,35,92,0,Stabæk,2015
+2,Norway,DF,Maria Thorisdottir,5-Jun-1993,22,5,0,Klepp IL,2015
+3,Norway,DF,Marita Skammelsrud Lund,29-Jan-1989,26,62,2,LSK Kvinner FK,2015
+4,Norway,MF,Gry Tofte Ims,2-Mar-1986,29,42,4,Klepp IL,2015
+5,Norway,FW,Lisa-Marie Karlseng Utland,19-Sep-1992,22,1,0,Trondheims-Ørn SK,2015
+6,Norway,MF,Maren Mjelde,6-Nov-1989,25,87,10,Avaldsnes IL,2015
+7,Norway,DF,Trine Rønning,14-Jun-1982,32,153,21,Stabæk,2015
+8,Norway,MF,Solveig Gulbrandsen,12-Jan-1981,34,179,53,Kolbotn,2015
+9,Norway,FW,Isabell Herlovsen,23-Jun-1988,26,100,41,LSK Kvinner FK,2015
+10,Norway,MF,Anja Sønstevold,21-Jun-1992,22,3,0,LSK Kvinner FK,2015
+11,Norway,DF,Nora Holstad Berge,26-Mar-1987,28,46,1,FC Bayern Munich,2015
+12,Norway,GK,Silje Vesterbekkmo,22-Jun-1983,31,8,0,Røa IL,2015
+13,Norway,DF,Ingrid Moe Wold,29-Jan-1990,25,10,1,LSK Kvinner FK,2015
+14,Norway,MF,Ingrid Schjelderup,21-Dec-1987,27,9,0,Stabæk,2015
+15,Norway,DF,Marit Sandvei,21-May-1987,28,7,0,LSK Kvinner FK,2015
+16,Norway,FW,Elise Thorsnes,14-Aug-1988,26,81,16,Avaldsnes IL,2015
+17,Norway,MF,Lene Mykjåland,20-Feb-1987,28,78,11,LSK Kvinner FK,2015
+18,Norway,FW,Melissa Bjånesøy,18-Apr-1992,23,20,4,Stabæk,2015
+19,Norway,MF,Kristine Minde,8-Aug-1992,22,47,6,Linköping,2015
+20,Norway,FW,Emilie Haavi,16-Jun-1992,22,40,11,LSK Kvinner FK,2015
+21,Norway,FW,Ada Hegerberg,10-Jul-1995,19,34,16,Olympique Lyon,2015
+22,Norway,FW,Hege Hansen,24-Oct-1990,24,9,4,Klepp IL,2015
+23,Norway,GK,Cecilie Fiskerstrand,20-Mar-1996,19,3,0,Stabæk,2015
+1,Thailand,GK,Waraporn Boonsing,16-Feb-1990,25,84,0,BG Bundit Asia,2015
+2,Thailand,DF,Darut Changplook,3-Feb-1988,27,20,1,North Bangkok College,2015
+3,Thailand,DF,Natthakarn Chinwong,15-Mar-1992,23,8,0,BG Bundit Asia,2015
+4,Thailand,DF,Duangnapa Sritala,4-Feb-1986,29,22,2,Bangkok F.C.,2015
+5,Thailand,DF,Ainon Phancha,27-Jan-1992,23,7,3,Chonburi Sriprathum,2015
+6,Thailand,MF,Pikul Khueanpet,20-Sep-1988,26,41,0,Khonkaen F.C.,2015
+7,Thailand,MF,Silawan Intamee,22-Jan-1994,21,11,0,Chonburi Sriprathum,2015
+8,Thailand,MF,Naphat Seesraum,11-May-1987,28,83,20,BG Bundit Asia,2015
+9,Thailand,DF,Warunee Phetwiset,13-Dec-1990,24,41,0,Chonburi Sriprathum,2015
+10,Thailand,DF,Sunisa Srangthaisong,6-May-1988,27,24,2,BG Bundit Asia,2015
+11,Thailand,FW,Alisa Rukpinij,2-Feb-1995,20,3,0,Chonburi Sriprathum,2015
+12,Thailand,MF,Rattikan Thongsombut,7-Jul-1991,23,18,3,BG Bundit Asia,2015
+13,Thailand,FW,Orathai Srimanee,12-Jun-1988,26,5,0,Khonkaen F.C.,2015
+14,Thailand,FW,Thanatta Chawong,19-Jun-1989,25,66,23,BG Bundit Asia,2015
+15,Thailand,MF,Nattaya Duanjanthuek,9-Jun-1991,23,1,0,BG Bundit Asia,2015
+16,Thailand,DF,Khwanrudi Saengchan,10-Sep-1993,21,20,0,BG Bundit Asia,2015
+17,Thailand,MF,Anootsara Maijarern,14-Feb-1986,29,80,21,Air Force United,2015
+18,Thailand,GK,Yada Sengyong,10-Sep-1993,21,3,0,North Bangkok College,2015
+19,Thailand,FW,Taneekarn Dangda,15-Dec-1992,22,16,9,Bangkok F.C.,2015
+20,Thailand,MF,Wilaiporn Boothduang,25-Jun-1987,27,45,11,Bangkok F.C.,2015
+21,Thailand,MF,Kanjana Sungngoen,21-Sep-1986,28,44,30,Bangkok F.C.,2015
+22,Thailand,GK,Sukanya Chor Charoenying,24-Nov-1987,27,8,0,Air Force United,2015
+23,Thailand,FW,Nisa Romyen,18-Jan-1990,25,47,32,North Bangkok College,2015
+1,Cameroon,GK,Annette Ngo Ndom,2-Jun-1985,30,40,0,Union Nové Zámky,2015
+2,Cameroon,DF,Christine Manie,4-May-1984,31,59,9,CFF Olimpia Cluj,2015
+3,Cameroon,FW,Ajara Nchout,12-Jan-1993,22,39,2,Western New York Flash,2015
+4,Cameroon,DF,Yvonne Leuko,20-Nov-1991,23,23,0,Arras FCF,2015
+5,Cameroon,DF,Augustine Ejangue,19-Jan-1989,26,56,0,Energy Voronezh,2015
+6,Cameroon,FW,Francine Zouga,9-Nov-1987,27,52,5,FF Chênois,2015
+7,Cameroon,FW,Gabrielle Onguéné,25-Feb-1989,26,49,13,Louves Minproff,2015
+8,Cameroon,MF,Raissa Feudjio,29-Oct-1995,19,40,1,Merilappi United,2015
+9,Cameroon,FW,Madeleine Ngono Mani,16-Oct-1983,31,72,38,Claix Football,2015
+10,Cameroon,FW,Jeannette Yango,12-Jun-1993,21,31,1,FF Yzeure,2015
+11,Cameroon,DF,Aurelle Awona,2-Feb-1993,22,2,0,ASJ Soyaux,2015
+12,Cameroon,DF,Claudine Meffometou,1-Jul-1990,24,21,1,Zvezda 2005 Perm,2015
+13,Cameroon,DF,Cathy Bou Ndjouh,7-Nov-1987,27,52,0,FC Minsk,2015
+14,Cameroon,MF,Ninon Abena,5-Sep-1994,20,3,0,Louves Minproff,2015
+15,Cameroon,DF,Ysis Sonkeng,20-Sep-1989,25,42,0,Louves Minproff,2015
+16,Cameroon,GK,Thècle Mbororo,24-Sep-1989,25,5,0,Panthère de Garoua,2015
+17,Cameroon,FW,Gaëlle Enganamouit,9-Jun-1992,22,39,2,Eskilstuna United,2015
+18,Cameroon,MF,Henriette Akaba,7-Jun-1992,22,31,0,Louves Minproff,2015
+19,Cameroon,MF,Agathe Ngani,26-May-1992,23,3,0,Louves Minproff,2015
+20,Cameroon,MF,Genevieve Ngo Mbeleck,10-Mar-1993,22,6,0,Caïman Douala,2015
+21,Cameroon,FW,Rose Bella,5-May-1994,21,7,0,AS Police,2015
+22,Cameroon,DF,Wanki Awachwi,6-Jan-1994,21,5,0,Locomotive Yaoundé,2015
+23,Cameroon,GK,Flore Enyegue,9-Jul-1991,23,9,0,AS Police,2015
+1,Ecuador,GK,Shirley Berruz,6-Jan-1991,24,25,0,Rocafuerte Fútbol Club,2015
+2,Ecuador,DF,Katherine Ortiz,16-Feb-1991,24,23,3,Rocafuerte Fútbol Club,2015
+3,Ecuador,DF,Nancy Aguilar,6-Jul-1985,29,46,0,Atlético de Febrero,2015
+4,Ecuador,DF,Merly Zambrano,7-Dec-1981,33,11,0,Espuce,2015
+5,Ecuador,MF,Mayra Olvera,22-Aug-1992,22,33,2,Atlético de Febrero,2015
+6,Ecuador,DF,Angie Ponce,14-Jul-1996,18,28,4,Talleres Emanuel,2015
+7,Ecuador,DF,Ingrid Rodríguez,24-Nov-1991,23,34,6,Unión Española,2015
+8,Ecuador,MF,Erika Vásquez,4-Aug-1992,22,32,3,Unión Española,2015
+9,Ecuador,FW,Giannina Lattanzio,19-May-1993,22,13,0,Atlético de Febrero,2015
+10,Ecuador,FW,Ámbar Torres,21-Dec-1994,20,23,10,Talleres Emanuel,2015
+11,Ecuador,FW,Mónica Quinteros,5-Jul-1988,26,42,8,Atlético de Febrero,2015
+12,Ecuador,GK,Irene Tobar,5-May-1989,26,10,0,Atlético de Febrero,2015
+13,Ecuador,MF,Madelin Riera,7-Aug-1989,25,32,0,Unión Española,2015
+14,Ecuador,FW,Carina Caicedo,23-Jul-1987,27,8,1,Deportivo Quito,2015
+15,Ecuador,MF,Ana Palacios,16-Feb-1991,24,30,0,Rocafuerte Fútbol Club,2015
+16,Ecuador,DF,Ligia Moreira,19-Mar-1992,23,44,3,Atlético de Febrero,2015
+17,Ecuador,MF,Alexandra Salvador,11-Aug-1995,19,13,0,Universidad de Quito,2015
+18,Ecuador,MF,Adriana Barré,4-Apr-1995,20,23,0,Galápagos S.C.,2015
+19,Ecuador,MF,Kerlly Real,7-Nov-1998,16,24,2,Espuce,2015
+20,Ecuador,FW,Denise Pesántes,14-Jan-1988,27,32,3,Galápagos S.C.,2015
+21,Ecuador,MF,Mabel Velarde,4-Dec-1988,26,13,0,Deportivo Quito,2015
+22,Ecuador,GK,Andrea Vera,10-Apr-1993,22,2,0,Universidad de Quito,2015
+23,Ecuador,FW,Mariela Jácome,6-Mar-1996,19,1,0,Universidad de Quito,2015
+1,Japan,GK,Miho Fukumoto,2-Oct-1983,31,77,0,Okayama Yunogo Belle,2015
+2,Japan,DF,Yukari Kinga,2-May-1984,31,94,5,INAC Kobe Leonessa,2015
+3,Japan,DF,Azusa Iwashimizu,14-Oct-1986,28,111,11,NTV Beleza,2015
+4,Japan,DF,Saki Kumagai,17-Oct-1990,24,65,0,Olympique Lyon,2015
+5,Japan,DF,Aya Sameshima,16-Jun-1987,27,60,3,INAC Kobe Leonessa,2015
+6,Japan,MF,Mizuho Sakaguchi,15-Oct-1987,27,89,26,NTV Beleza,2015
+7,Japan,MF,Kozue Ando,9-Jul-1982,32,123,19,1. FFC Frankfurt,2015
+8,Japan,MF,Aya Miyama,28-Jan-1985,30,147,36,Okayama Yunogo Belle,2015
+9,Japan,MF,Nahomi Kawasumi,23-Sep-1985,29,70,19,INAC Kobe Leonessa,2015
+10,Japan,MF,Homare Sawa,6-Sep-1978,36,197,82,INAC Kobe Leonessa,2015
+11,Japan,FW,Shinobu Ohno,23-Jan-1984,31,128,39,INAC Kobe Leonessa,2015
+12,Japan,DF,Megumi Kamionobe,15-Mar-1986,29,29,2,Albirex Niigata,2015
+13,Japan,MF,Rumi Utsugi,5-Dec-1988,26,78,5,"Montpellier	",2015
+14,Japan,MF,Asuna Tanaka,23-Apr-1988,27,33,3,INAC Kobe Leonessa,2015
+15,Japan,FW,Yuika Sugasawa,5-Oct-1990,24,28,9,JEF United,2015
+16,Japan,FW,Mana Iwabuchi,18-Mar-1993,22,25,3,FC Bayern Munich,2015
+17,Japan,FW,Yūki Ogimi,15-Jul-1987,27,115,52,VfL Wolfsburg,2015
+18,Japan,GK,Ayumi Kaihori,4-Sep-1986,28,47,0,INAC Kobe Leonessa,2015
+19,Japan,DF,Saori Ariyoshi,1-Nov-1987,27,34,0,NTV Beleza,2015
+20,Japan,DF,Yuri Kawamura,17-May-1989,26,13,2,Vegalta Sendai Ladies,2015
+21,Japan,GK,Erina Yamane,20-Dec-1990,24,14,0,JEF United,2015
+22,Japan,MF,Asano Nagasato,24-Jan-1989,26,10,1,1. FFC Turbine Potsdam,2015
+23,Japan,DF,Kana Kitahara,17-Dec-1988,26,14,2,Albirex Niigata,2015
+1,Switzerland,GK,Gaëlle Thalmann,18-Jan-1986,29,36,0,MSV Duisburg,2015
+2,Switzerland,DF,Nicole Remund,31-Dec-1989,25,42,2,FC Zürich,2015
+3,Switzerland,DF,Sandra Betschart,30-Mar-1989,26,66,2,Sunnanå SK,2015
+4,Switzerland,DF,Rachel Rinast,2-Jun-1991,24,6,0,1. FC Köln,2015
+5,Switzerland,DF,Noëlle Maritz,23-Dec-1995,19,29,1,VfL Wolfsburg,2015
+6,Switzerland,DF,Selina Kuster,8-Aug-1991,23,59,1,FC Zürich,2015
+7,Switzerland,MF,Martina Moser,9-Apr-1986,29,105,16,TSG Hoffenheim,2015
+8,Switzerland,MF,Cinzia Zehnder,4-Aug-1997,17,6,0,FC Zürich,2015
+9,Switzerland,MF,Lia Wälti,19-Apr-1993,22,42,3,Turbine Potsdam,2015
+10,Switzerland,FW,Ramona Bachmann,25-Dec-1990,24,61,33,Rosengård,2015
+11,Switzerland,FW,Lara Dickenmann,27-Nov-1985,29,99,40,Olympique Lyon,2015
+12,Switzerland,GK,Stenia Michel,23-Oct-1987,27,11,0,USV Jena,2015
+13,Switzerland,FW,Ana-Maria Crnogorčević,3-Oct-1990,24,69,35,1. FFC Frankfurt,2015
+14,Switzerland,DF,Rahel Kiwic,5-Jan-1991,24,28,3,MSV Duisburg,2015
+15,Switzerland,DF,Caroline Abbé,13-Jan-1988,27,105,9,Bayern Munich,2015
+16,Switzerland,MF,Fabienne Humm,20-Dec-1986,28,35,10,FC Zürich,2015
+17,Switzerland,MF,Florijana Ismaili,1-Jan-1995,20,10,0,BSC YB Frauen,2015
+18,Switzerland,MF,Vanessa Bürki,1-Apr-1986,29,68,9,Bayern Munich,2015
+19,Switzerland,FW,Eseosa Aigbogun,23-May-1993,22,19,2,FC Basel,2015
+20,Switzerland,DF,Daniela Schwarz,9-Sep-1985,29,23,1,Vålerenga,2015
+21,Switzerland,GK,Jennifer Oehrli,13-Jan-1989,26,15,0,BSC YB Frauen,2015
+22,Switzerland,MF,Vanessa Bernauer,23-Mar-1988,27,50,3,VfL Wolfsburg,2015
+23,Switzerland,FW,Barla Deplazes,14-Nov-1995,19,1,0,FC Zürich,2015
+1,Australia,GK,Lydia Williams,13-May-1988,27,46,0,Washington Spirit,2015
+2,Australia,FW,Larissa Crummer,10-Jan-1996,19,7,1,Brisbane Roar,2015
+3,Australia,FW,Ashleigh Sykes,15-Dec-1991,23,16,4,Canberra United,2015
+4,Australia,DF,Clare Polkinghorne,1-Feb-1989,26,79,5,Brisbane Roar,2015
+5,Australia,DF,Laura Alleway,28-Nov-1989,25,36,2,Brisbane Roar,2015
+6,Australia,DF,Servet Uzunlar,8-Mar-1989,26,49,2,Sydney FC,2015
+7,Australia,DF,Steph Catley,26-Jan-1994,21,39,2,Melbourne Victory,2015
+8,Australia,DF,Elise Kellond-Knight,10-Aug-1990,24,62,1,Brisbane Roar,2015
+9,Australia,FW,Caitlin Foord,11-Nov-1994,20,35,5,Perth Glory,2015
+10,Australia,MF,Emily van Egmond,12-Jul-1993,21,45,11,Newcastle Jets,2015
+11,Australia,FW,Lisa De Vanna,14-Nov-1984,30,104,37,Melbourne Victory,2015
+12,Australia,FW,Leena Khamis,19-Jun-1986,28,25,5,Sydney FC,2015
+13,Australia,MF,Tameka Butt,16-Jun-1991,23,49,6,Brisbane Roar,2015
+14,Australia,MF,Alanna Kennedy,21-Jan-1995,20,34,0,Perth Glory,2015
+15,Australia,MF,Teresa Polias,16-May-1990,25,10,0,Sydney FC,2015
+16,Australia,FW,Hayley Raso,5-Sep-1994,20,13,1,Brisbane Roar,2015
+17,Australia,FW,Kyah Simon,25-Jun-1991,23,57,14,Sydney FC,2015
+18,Australia,GK,Melissa Barbieri,20-Jan-1980,35,86,0,Adelaide United,2015
+19,Australia,MF,Katrina Gorry,13-Aug-1992,22,35,11,Brisbane Roar,2015
+20,Australia,FW,Sam Kerr,10-Sep-1993,21,42,7,Perth Glory,2015
+21,Australia,GK,Mackenzie Arnold,25-Feb-1994,21,7,0,Perth Glory,2015
+22,Australia,MF,Nicola Bolger,3-Mar-1993,22,6,0,Sydney FC,2015
+23,Australia,FW,Michelle Heyman,4-Jul-1988,26,40,15,Canberra United,2015
+1,Nigeria,GK,Precious Dede,18-Jan-1980,35,96,0,Ibom Queens,2015
+2,Nigeria,DF,Blessing Edoho,5-Sep-1992,22,4,1,Pelican Stars,2015
+3,Nigeria,DF,Osinachi Ohale,21-Dec-1991,23,24,1,Rivers Angels,2015
+4,Nigeria,FW,Perpetua Nkwocha,3-Jan-1976,39,98,80,Clemensnäs IF,2015
+5,Nigeria,DF,Onome Ebi,8-May-1983,32,48,0,FC Minsk,2015
+6,Nigeria,DF,Josephine Chukwunonye,19-Mar-1992,23,22,0,Rivers Angels,2015
+7,Nigeria,FW,Esther Sunday,13-Mar-1992,23,23,5,FC Minsk,2015
+8,Nigeria,FW,Asisat Oshoala,9-Oct-1994,20,14,10,Liverpool,2015
+9,Nigeria,FW,Desire Oparanozie,17-Dec-1993,21,32,22,Guingamp,2015
+10,Nigeria,FW,Courtney Dike,3-Feb-1995,20,0,0,Oklahoma State Univ.,2015
+11,Nigeria,FW,Ini-Abasi Umotong,15-May-1994,21,0,0,Portsmouth,2015
+12,Nigeria,MF,Halimatu Ayinde,16-May-1995,20,9,0,Delta Queens,2015
+13,Nigeria,MF,Ngozi Okobi,14-Dec-1993,21,22,2,Delta Queens,2015
+14,Nigeria,MF,Evelyn Nwabuoku,14-Nov-1985,29,39,3,BIIK Kazygurt,2015
+15,Nigeria,DF,Ugo Njoku,27-Nov-1994,20,6,0,Rivers Angels,2015
+16,Nigeria,GK,Ibubeleye Whyte,9-Jan-1992,23,6,0,Rivers Angels,2015
+17,Nigeria,FW,Francisca Ordega,19-Oct-1993,21,23,6,Washington Spirit,2015
+18,Nigeria,FW,Loveth Ayila,6-Sep-1994,20,3,0,Rivers Angels,2015
+19,Nigeria,MF,Martina Ohadugha,5-May-1991,24,35,2,Rivers Angels,2015
+20,Nigeria,MF,Cecilia Nku,26-Oct-1992,22,8,1,Rivers Angels,2015
+21,Nigeria,GK,Christy Ohiaeriaku,13-Dec-1996,18,0,0,Rivers Angels,2015
+22,Nigeria,DF,Sarah Nnodim,25-Dec-1995,19,1,0,Nasarawa Amazons,2015
+23,Nigeria,DF,Ngozi Ebere,5-Aug-1991,23,17,1,Rivers Angels,2015
+1,Sweden,GK,Hedvig Lindahl,29-Apr-1983,32,107,0,Chelsea,2015
+2,Sweden,DF,Charlotte Rohlin,2-Dec-1980,34,77,7,Linköping,2015
+3,Sweden,DF,Linda Sembrant,15-May-1987,28,55,4,"Montpellier	",2015
+4,Sweden,DF,Emma Berglund,19-Dec-1988,26,35,0,Rosengård,2015
+5,Sweden,DF,Nilla Fischer,2-Aug-1984,30,130,19,VfL Wolfsburg,2015
+6,Sweden,DF,Sara Thunebro,26-Apr-1979,36,131,5,Eskilstuna United,2015
+7,Sweden,MF,Lisa Dahlkvist,6-Feb-1987,28,95,9,KIF Örebro,2015
+8,Sweden,FW,Lotta Schelin,27-Feb-1984,31,149,80,Olympique Lyon,2015
+9,Sweden,FW,Kosovare Asllani,29-Jul-1989,25,76,21,Paris Saint-Germain,2015
+10,Sweden,FW,Sofia Jakobsson,23-Apr-1990,25,56,10,"Montpellier	",2015
+11,Sweden,FW,Jenny Hjohlman,13-Feb-1990,25,12,1,Umeå IK,2015
+12,Sweden,GK,Hilda Carlén,13-Aug-1991,23,1,0,"Piteå	",2015
+13,Sweden,MF,Malin Diaz,3-Jan-1994,21,11,0,Eskilstuna United,2015
+14,Sweden,DF,Amanda Ilestedt,17-Jan-1993,22,6,1,Rosengård,2015
+15,Sweden,MF,Therese Sjögran,8-Apr-1977,38,209,21,Rosengård,2015
+16,Sweden,DF,Lina Nilsson,17-Jun-1987,27,64,3,Rosengård,2015
+17,Sweden,MF,Caroline Seger,19-Mar-1985,30,137,21,Paris Saint-Germain,2015
+18,Sweden,DF,Jessica Samuelsson,30-Jan-1993,22,21,0,Linköping,2015
+19,Sweden,FW,Emma Lundh,26-Jun-1989,25,11,2,AIK Fotboll,2015
+20,Sweden,MF,Emilia Appelqvist,11-Feb-1990,25,4,0,"Piteå	",2015
+21,Sweden,GK,Carola Söberg,29-Jul-1982,32,11,0,KIF Örebro,2015
+22,Sweden,MF,Olivia Schough,11-Mar-1991,24,22,1,Eskilstuna United,2015
+23,Sweden,DF,Elin Rubensson,11-May-1993,22,18,0,Kopparbergs/Göteborg,2015
+1,US,GK,Hope Solo,30-Jul-1981,33,170,0,Seattle Reign,2015
+2,US,FW,Sydney Leroux,7-May-1990,25,71,35,Western New York Flash,2015
+3,US,DF,Christie Rampone,24-Jun-1975,39,306,4,Sky Blue,2015
+4,US,DF,Becky Sauerbrunn,6-Jun-1985,30,81,0,Kansas City,2015
+5,US,DF,Kelley O'Hara,4-Aug-1988,26,60,0,Sky Blue,2015
+6,US,DF,Whitney Engen,28-Nov-1987,27,26,3,Western New York Flash,2015
+7,US,MF,Shannon Boxx,29-Jun-1977,37,190,27,Chicago Red Stars,2015
+8,US,FW,Amy Rodriguez,17-Feb-1987,28,123,29,Kansas City,2015
+9,US,MF,Heather O'Reilly,2-Jan-1985,30,219,41,Kansas City,2015
+10,US,MF,Carli Lloyd,16-Jul-1982,32,195,63,Houston Dash,2015
+11,US,DF,Ali Krieger,28-Jul-1984,30,66,1,Washington Spirit,2015
+12,US,MF,Lauren Holiday,30-Sep-1987,27,124,23,Kansas City,2015
+13,US,FW,Alex Morgan,2-Jul-1989,25,84,51,Portland Thorns,2015
+14,US,MF,Morgan Brian,26-Feb-1993,22,29,4,Houston Dash,2015
+15,US,MF,Megan Rapinoe,5-Jul-1985,29,102,29,Seattle Reign,2015
+16,US,DF,Lori Chalupny,29-Jan-1984,31,102,10,Chicago Red Stars,2015
+17,US,MF,Tobin Heath,29-May-1988,27,92,11,Portland Thorns,2015
+18,US,GK,Ashlyn Harris,19-Oct-1985,29,6,0,Washington Spirit,2015
+19,US,DF,Julie Johnston,6-Apr-1992,23,12,3,Chicago Red Stars,2015
+20,US,FW,Abby Wambach,2-Jun-1980,35,242,182,Unattached,2015
+21,US,GK,Alyssa Naeher,20-Apr-1988,27,1,0,Boston Breakers,2015
+22,US,DF,Meghan Klingenberg,2-Aug-1988,26,34,2,Houston Dash,2015
+23,US,FW,Christen Press,29-Dec-1988,26,45,20,Chicago Red Stars,2015
+1,Brazil,GK,Luciana,24-Jul-1987,27,33,0,Ferroviária,2015
+2,Brazil,DF,Fabiana,4-Aug-1989,25,53,6,Centro Olímpico,2015
+3,Brazil,DF,Mônica,21-Apr-1987,28,21,0,Ferroviária,2015
+4,Brazil,FW,Rafinha,18-Aug-1988,26,0,0,Boston Breakers,2015
+5,Brazil,MF,Andressinha,1-May-1995,20,17,7,Kindermann,2015
+6,Brazil,DF,Tamires,10-Oct-1987,27,31,3,Centro Olímpico,2015
+7,Brazil,MF,Beatriz,17-Dec-1993,21,16,1,Hyundai Red Angels,2015
+8,Brazil,MF,Thaisa,17-Dec-1988,26,26,2,Ferroviária,2015
+9,Brazil,MF,Andressa Alves,10-Nov-1992,22,36,9,São José,2015
+10,Brazil,MF,Marta,19-Feb-1986,29,92,91,Rosengård,2015
+11,Brazil,FW,Cristiane,15-May-1985,30,106,74,Centro Olímpico,2015
+12,Brazil,GK,Bárbara,4-Apr-1988,27,22,0,Kindermann,2015
+13,Brazil,DF,Poliana,6-Feb-1991,24,32,2,São José,2015
+14,Brazil,DF,Géssica,19-Mar-1991,24,0,0,Ferroviária,2015
+15,Brazil,DF,Tayla,9-May-1992,23,31,1,Ferroviária,2015
+16,Brazil,DF,Rafaelle,18-Jun-1991,23,3,0,São Francisco,2015
+17,Brazil,FW,Rosana,7-Jul-1982,32,111,17,São José,2015
+18,Brazil,FW,Raquel,21-Mar-1991,24,18,3,Ferroviária,2015
+19,Brazil,MF,Maurine,14-Jan-1986,29,56,6,Ferroviária,2015
+20,Brazil,MF,Formiga,3-Mar-1978,37,131,19,São José,2015
+21,Brazil,MF,Gabi Zanotti,28-Feb-1985,30,20,2,Centro Olímpico,2015
+22,Brazil,MF,Darlene,11-Jan-1990,25,31,4,Centro Olímpico,2015
+23,Brazil,GK,Letícia Izidoro,13-Aug-1994,20,0,0,São José,2015
+1,Costa Rica,GK,Dinnia Díaz,14-Jan-1988,27,21,0,UD Moravia,2015
+2,Costa Rica,DF,Gabriela Guillén,1-Mar-1992,23,10,0,Deportivo Saprissa,2015
+3,Costa Rica,DF,Emilie Valenciano,15-Feb-1997,18,4,0,L.D. Alajuelense,2015
+4,Costa Rica,DF,Mariana Benavides,26-Dec-1994,20,12,4,C.S. Herediano,2015
+5,Costa Rica,DF,Diana Sáenz,15-Apr-1989,26,48,0,Univ. of South Florida,2015
+6,Costa Rica,DF,Carol Sánchez,16-Apr-1986,29,33,2,UD Moravia,2015
+7,Costa Rica,FW,Melissa Herrera,10-Oct-1996,18,20,12,Deportivo Saprissa,2015
+8,Costa Rica,DF,Daniela Cruz,8-Mar-1991,24,33,6,Deportivo Saprissa,2015
+9,Costa Rica,FW,Carolina Venegas,28-Sep-1991,23,35,15,Deportivo Saprissa,2015
+10,Costa Rica,MF,Shirley Cruz,28-Aug-1985,29,60,21,Paris Saint-Germain,2015
+11,Costa Rica,FW,Raquel Rodríguez,28-Oct-1993,21,37,24,Penn State Univ.,2015
+12,Costa Rica,DF,Lixy Rodríguez,4-Nov-1990,24,47,2,L.D. Alajuelense,2015
+13,Costa Rica,GK,Noelia Bermúdez,20-Sep-1994,20,1,0,Deportivo Saprissa,2015
+14,Costa Rica,FW,María Barrantes,12-Apr-1989,26,20,21,UD Moravia,2015
+15,Costa Rica,MF,Cristin Granados,19-Aug-1989,25,53,10,Deportivo Saprissa,2015
+16,Costa Rica,MF,Katherine Alvarado,11-Apr-1991,24,47,18,Deportivo Saprissa,2015
+17,Costa Rica,FW,Karla Villalobos,16-Jul-1986,28,6,3,C.S. Herediano,2015
+18,Costa Rica,GK,Yirlania Arroyo,28-May-1986,29,40,0,Sky Blue FC,2015
+19,Costa Rica,DF,Fabiola Sánchez,9-Apr-1993,22,10,3,Martin Methodist College,2015
+20,Costa Rica,FW,Wendy Acosta,19-Dec-1989,25,38,18,UD Moravia,2015
+21,Costa Rica,FW,Adriana Venegas,12-Jun-1989,25,10,5,C.S. Herediano,2015
+22,Costa Rica,DF,María Coto,2-Mar-1998,17,3,0,L.D. Alajuelense,2015
+23,Costa Rica,MF,Gloriana Villalobos,20-Aug-1999,15,12,2,Deportivo Saprissa,2015
+1,South Korea,GK,Jun Min-kyung,16-Jan-1985,30,45,0,Icheon Daekyo,2015
+2,South Korea,DF,Lee Eun-mi,18-Aug-1988,26,60,12,Icheon Daekyo,2015
+3,South Korea,DF,Lim Seon-joo,27-Nov-1990,24,44,2,Incheon Hyundai Steel Red Angels,2015
+4,South Korea,DF,Shim Seo-yeon,15-Apr-1989,26,48,0,Icheon Daekyo,2015
+5,South Korea,DF,Kim Do-yeon,7-Dec-1988,26,60,1,Incheon Hyundai Steel Red Angels,2015
+6,South Korea,DF,Hwang Bo-ram,10-Jun-1987,27,32,0,Icheon Daekyo,2015
+7,South Korea,MF,Jeon Ga-eul,14-Sep-1988,26,67,32,Incheon Hyundai Steel Red Angels,2015
+8,South Korea,MF,Cho So-hyun,24-Jun-1988,26,78,9,Incheon Hyundai Steel Red Angels,2015
+9,South Korea,FW,Park Eun-sun,25-Dec-1986,28,32,18,WFC Rossiyanka,2015
+10,South Korea,FW,Ji So-yun,21-Feb-1991,24,74,38,Chelsea,2015
+11,South Korea,MF,Jung Seol-bin,1-Jun-1990,25,40,11,Incheon Hyundai Steel Red Angels,2015
+12,South Korea,FW,Yoo Young-a,15-Apr-1988,27,63,28,Incheon Hyundai Steel Red Angels,2015
+13,South Korea,MF,Kwon Hah-nul,7-Mar-1988,27,94,15,Busan Sangmu,2015
+14,South Korea,DF,Song Su-ran,7-Sep-1990,24,20,1,Daejeon Sportstoto,2015
+15,South Korea,MF,Park Hee-young,21-Mar-1991,24,38,8,Daejeon Sportstoto,2015
+16,South Korea,MF,Kang Yu-mi,5-Oct-1991,23,2,0,Hwacheon KSPO,2015
+17,South Korea,DF,Kim Hye-yeong,26-Feb-1995,20,7,1,Icheon Daekyo,2015
+18,South Korea,GK,Kim Jung-mi,16-Oct-1984,30,89,0,Incheon Hyundai Steel Red Angels,2015
+19,South Korea,DF,Kim Soo-yun,30-Aug-1989,25,43,9,Hwacheon KSPO,2015
+20,South Korea,DF,Kim Hye-ri,25-Jun-1990,24,45,1,Incheon Hyundai Steel Red Angels,2015
+21,South Korea,GK,Yoon Young-geul,28-Oct-1987,27,1,0,Suwon FMC,2015
+22,South Korea,MF,Lee So-dam,12-Oct-1994,20,17,1,Daejeon Sportstoto,2015
+23,South Korea,MF,Lee Geum-min,7-Apr-1994,21,6,1,Seoul,2015
+1,Spain,GK,Ainhoa Tirapu,4-Sep-1984,30,43,0,Athletic Bilbao,2015
+2,Spain,DF,Celia Jiménez,20-Jun-1995,19,3,0,Univ. of Alabama,2015
+3,Spain,DF,Leire Landa,19-Dec-1986,28,20,0,FC Barcelona,2015
+4,Spain,DF,Melanie Serrano,12-Oct-1989,25,9,0,FC Barcelona,2015
+5,Spain,DF,Ruth García,26-Apr-1987,28,45,2,FC Barcelona,2015
+6,Spain,MF,Virginia Torrecilla,4-Sep-1994,20,13,0,FC Barcelona,2015
+7,Spain,FW,Natalia Pablos,15-Oct-1985,29,17,12,Arsenal,2015
+8,Spain,FW,Sonia Bermúdez,18-Nov-1984,30,50,28,FC Barcelona,2015
+9,Spain,FW,Verónica Boquete,9-Apr-1987,28,46,29,1. FFC Frankfurt,2015
+10,Spain,MF,Jennifer Hermoso,9-May-1990,25,24,11,FC Barcelona,2015
+11,Spain,FW,Priscila Borja,28-Apr-1985,30,22,6,Atlético Madrid,2015
+12,Spain,MF,Marta Corredera,8-Aug-1991,23,25,2,FC Barcelona,2015
+13,Spain,GK,Lola Gallardo,10-Jun-1993,21,7,0,Atlético Madrid,2015
+14,Spain,MF,Vicky Losada,5-Mar-1991,24,22,3,Arsenal,2015
+15,Spain,MF,Silvia Meseguer,12-Mar-1989,26,35,3,Atlético Madrid,2015
+16,Spain,DF,Ivana Andrés,1-Jul-1994,20,1,0,Valencia CF,2015
+17,Spain,MF,Elisabeth Ibarra,29-Jun-1981,33,42,2,Athletic Bilbao,2015
+18,Spain,DF,Marta Torrejón,27-Feb-1990,25,48,7,FC Barcelona,2015
+19,Spain,FW,Erika Vázquez,16-Feb-1983,32,45,7,Athletic Bilbao,2015
+20,Spain,DF,Irene Paredes,4-Jul-1991,23,22,1,Athletic Bilbao,2015
+21,Spain,MF,Alexia Putellas,4-Feb-1994,21,19,3,FC Barcelona,2015
+22,Spain,MF,Amanda Sampedro,26-Jun-1993,21,4,0,Atlético Madrid,2015
+23,Spain,GK,Sandra Paños,4-Nov-1992,22,3,0,Levante UD,2015
+1,Colombia,GK,Stefany Castaño,11-Jan-1994,21,7,0,Graceland Univ.,2015
+2,Colombia,MF,Carolina Arbeláez,8-Mar-1995,20,1,0,Formas Íntimas,2015
+3,Colombia,DF,Natalia Gaitán,3-Apr-1991,24,35,4,CD Gol Star,2015
+4,Colombia,MF,Diana Ospina,3-Mar-1989,26,29,3,Formas Íntimas,2015
+5,Colombia,DF,Lina Granados,19-May-1994,21,0,0,Vanderbilt University,2015
+6,Colombia,MF,Daniela Montoya,22-Aug-1990,24,32,2,Formas Íntimas,2015
+7,Colombia,FW,Ingrid Vidal,22-Apr-1991,24,50,11,CD Palmiranas,2015
+8,Colombia,MF,Mildrey Pineda,1-Oct-1989,25,25,2,CD Palmiranas,2015
+9,Colombia,FW,Oriánica Velásquez,1-Aug-1989,25,37,2,CD Gol Star,2015
+10,Colombia,MF,Yoreli Rincón,27-Jul-1993,21,45,9,Torres Calcio,2015
+11,Colombia,MF,Catalina Usme,25-Dec-1989,25,40,19,Formas Íntimas,2015
+12,Colombia,GK,Sandra Sepúlveda,3-Mar-1988,27,37,0,Formas Íntimas,2015
+13,Colombia,DF,Ángela Clavijo,1-Sep-1993,21,15,0,Club Kamatsa,2015
+14,Colombia,DF,Nataly Arias,2-Apr-1986,29,43,6,Atlanta Silverbacks,2015
+15,Colombia,FW,Tatiana Ariza,21-Feb-1991,24,35,8,CD Gol Star,2015
+16,Colombia,FW,Lady Andrade,10-Jan-1992,23,41,7,CD Palmiranas,2015
+17,Colombia,DF,Carolina Arias,2-Sep-1990,24,38,0,CD Palmiranas,2015
+18,Colombia,FW,Yisela Cuesta,27-Sep-1991,23,4,1,Formas Íntimas,2015
+19,Colombia,MF,Leicy Santos,16-May-1996,19,13,2,Club Besser,2015
+20,Colombia,FW,Laura Cosme,5-Mar-1992,23,5,1,CD Palmiranas,2015
+21,Colombia,MF,Isabella Echeverri,16-Jun-1994,20,14,1,Univ. of Toledo,2015
+22,Colombia,GK,Catalina Pérez,8-Nov-1994,20,4,0,Univ. of Miami,2015
+23,Colombia,FW,Manuela González,29-Aug-1995,19,1,0,CD Palmiranas,2015
+1,England,GK,Karen Bardsley,14-Oct-1984,30,43,0,Manchester City,2015
+2,England,DF,Alex Scott,14-Oct-1984,30,123,12,Arsenal,2015
+3,England,DF,Claire Rafferty,11-Jan-1989,26,9,0,Chelsea,2015
+4,England,MF,Fara Williams,25-Jan-1984,31,139,37,Liverpool,2015
+5,England,DF,Steph Houghton,23-Apr-1988,27,53,7,Manchester City,2015
+6,England,DF,Laura Bassett,2-Aug-1983,31,49,2,Notts County,2015
+7,England,MF,Jordan Nobbs,8-Dec-1992,22,21,3,Arsenal,2015
+8,England,MF,Jill Scott,2-Feb-1987,28,90,13,Manchester City,2015
+9,England,FW,Eniola Aluko,21-Feb-1987,28,90,32,Chelsea,2015
+10,England,MF,Karen Carney,1-Aug-1987,27,103,23,Birmingham City,2015
+11,England,MF,Jade Moore,22-Oct-1990,24,16,1,Birmingham City,2015
+12,England,DF,Lucy Bronze,28-Oct-1991,23,16,2,Manchester City,2015
+13,England,GK,Siobhan Chamberlain,15-Aug-1983,31,33,0,Arsenal,2015
+14,England,DF,Alex Greenwood,7-Sep-1993,21,12,1,Notts County,2015
+15,England,DF,Casey Stoney,13-May-1982,33,118,6,Arsenal,2015
+16,England,MF,Katie Chapman,15-Jun-1982,32,85,8,Chelsea,2015
+17,England,MF,Jo Potter,13-Nov-1984,30,19,2,Birmingham City,2015
+18,England,FW,Toni Duggan,25-Jul-1991,23,25,14,Manchester City,2015
+19,England,FW,Jodie Taylor,17-May-1986,29,8,4,Portland Thorns,2015
+20,England,FW,Lianne Sanderson,3-Feb-1988,27,46,15,Portland Thorns,2015
+21,England,GK,Carly Telford,7-Jul-1987,27,5,0,Notts County,2015
+22,England,FW,Fran Kirby,29-Jun-1993,21,8,2,Chelsea,2015
+23,England,FW,Ellen White,9-May-1989,26,50,17,Notts County,2015
+1,France,GK,Céline Deville,24-Jan-1982,33,65,0,FCF Juvisy,2015
+2,France,DF,Wendie Renard,20-Jul-1990,24,65,16,Olympique Lyon,2015
+3,France,DF,Laure Boulleau,22-Oct-1986,28,57,0,Paris Saint-Germain,2015
+4,France,DF,Laura Georges,20-Aug-1984,30,158,6,Paris Saint-Germain,2015
+5,France,DF,Sabrina Delannoy,18-May-1986,29,25,2,Paris Saint-Germain,2015
+6,France,MF,Amandine Henry,28-Sep-1989,25,39,3,Olympique Lyon,2015
+7,France,MF,Kenza Dali,31-Jul-1991,23,11,2,Paris Saint-Germain,2015
+8,France,DF,Jessica Houara,29-Sep-1987,27,32,1,Paris Saint-Germain,2015
+9,France,FW,Eugénie Le Sommer,18-May-1989,26,104,44,Olympique Lyon,2015
+10,France,MF,Camille Abily,5-Dec-1984,30,145,29,Olympique Lyon,2015
+11,France,MF,Claire Lavogez,18-Jun-1994,20,9,1,"Montpellier	",2015
+12,France,MF,Élodie Thomis,13-Aug-1986,28,116,31,Olympique Lyon,2015
+13,France,FW,Kadidiatou Diani,1-Apr-1995,20,5,1,FCF Juvisy,2015
+14,France,MF,Louisa Nécib,23-Jan-1987,28,125,32,Olympique Lyon,2015
+15,France,MF,Élise Bussaglia,24-Sep-1985,29,143,26,Olympique Lyon,2015
+16,France,GK,Sarah Bouhaddi,17-Oct-1986,28,93,0,Olympique Lyon,2015
+17,France,FW,Gaëtane Thiney,28-Oct-1985,29,122,55,FCF Juvisy,2015
+18,France,FW,Marie-Laure Delie,29-Jan-1988,27,85,57,Paris Saint-Germain,2015
+19,France,DF,Griedge Mbock Bathy,26-Feb-1995,20,9,0,EA Guingamp,2015
+20,France,DF,Annaïg Butel,15-Feb-1992,23,8,0,FCF Juvisy,2015
+21,France,GK,Méline Gérard,30-May-1990,25,1,0,Olympique Lyon,2015
+22,France,DF,Amel Majri,25-Jan-1993,22,7,1,Olympique Lyon,2015
+23,France,MF,Kheira Hamraoui,13-Jan-1990,25,15,0,Paris Saint-Germain,2015
+1,Mexico,GK,Cecilia Santiago,19-Oct-1994,20,39,0,Unattached,2015
+2,Mexico,DF,Kenti Robles,15-Feb-1991,24,40,0,RCD Espanyol,2015
+3,Mexico,DF,Christina Murillo,28-Jan-1993,22,22,0,Univ. of Michigan,2015
+4,Mexico,DF,Alina Garciamendez,16-Apr-1991,24,46,1,Unattached,2015
+5,Mexico,DF,Valeria Miranda,18-Aug-1992,22,12,0,Pumas UNAM,2015
+6,Mexico,MF,Jennifer Ruiz,9-Aug-1983,31,31,4,Unattached,2015
+7,Mexico,MF,Nayeli Rangel,28-Feb-1992,23,67,6,Unattached,2015
+8,Mexico,MF,Teresa Noyola,15-Apr-1990,25,38,3,Houston Dash,2015
+9,Mexico,FW,Charlyn Corral,11-Sep-1991,23,28,15,Merilappi United,2015
+10,Mexico,MF,Stephany Mayor,23-Sep-1991,23,50,10,UDLA Puebla,2015
+11,Mexico,FW,Mónica Ocampo,4-Jan-1987,28,73,14,Sky Blue FC,2015
+12,Mexico,GK,Pamela Tajonar,2-Dec-1984,30,37,0,Sevilla FC,2015
+13,Mexico,DF,Greta Espinoza,5-Jun-1995,20,11,0,Arizona Strikers,2015
+14,Mexico,DF,Arianna Romero,29-Jul-1992,22,29,1,Washington Spirit,2015
+15,Mexico,DF,Bianca Sierra,25-Jun-1992,22,30,0,Boston Breakers,2015
+16,Mexico,MF,Mónica Alvarado,11-Jan-1991,24,20,0,Texas Christian Univ.,2015
+17,Mexico,MF,Verónica Pérez,18-May-1988,27,73,8,Washington Spirit,2015
+18,Mexico,MF,Amanda Pérez,31-Jul-1994,20,4,0,Univ. of Washington,2015
+19,Mexico,FW,Renae Cuéllar,24-Jun-1990,24,26,7,Washington Spirit,2015
+20,Mexico,MF,María Sánchez,20-Feb-1996,19,0,0,Unattached,2015
+21,Mexico,FW,Anisa Guajardo,10-Mar-1991,24,13,4,Heidelberg United,2015
+22,Mexico,MF,Fabiola Ibarra,2-Feb-1994,21,3,0,Club Tijuana,2015
+23,Mexico,GK,Emily Alvarado,9-Jun-1998,16,0,0,Texas Rush,2015
+1,Canada,GK,Karina LeBlanc,30-Mar-1980,31,88,0,Chicago Red Stars,2011
+2,Canada,DF,Emily Zurrer,12-Jul-1987,23,45,2,Vancouver Whitecaps,2011
+3,Canada,MF,Kelly Parker,8-Mar-1981,30,14,1,Atlanta Beat,2011
+4,Canada,MF,Carmelina Moscato,2-May-1984,27,52,2,Unattached,2011
+5,Canada,DF,Robyn Gayle,31-Oct-1985,25,44,0,Vancouver Whitecaps,2011
+6,Canada,MF,Kaylyn Kyle,6-Oct-1988,22,32,2,Vancouver Whitecaps,2011
+7,Canada,DF,Rhian Wilkinson,12-May-1982,29,100,7,Lillestrøm SK,2011
+8,Canada,MF,Diana Matheson,6-Apr-1984,27,122,10,Lillestrøm SK,2011
+9,Canada,DF,Candace Chapman,2-Apr-1983,28,88,6,Western New York Flash,2011
+10,Canada,FW,Jodi-Ann Robinson,17-Apr-1989,22,50,7,Vancouver Whitecaps,2011
+11,Canada,MF,Desiree Scott,31-Jul-1987,23,22,0,Vancouver Whitecaps,2011
+12,Canada,FW,Christine Sinclair,12-Jun-1983,28,159,116,Western New York Flash,2011
+13,Canada,MF,Sophie Schmidt,28-Jun-1988,22,63,3,Vancouver Whitecaps,2011
+14,Canada,FW,Melissa Tancredi,27-Dec-1981,29,61,13,Vancouver Whitecaps,2011
+15,Canada,FW,Christina Julien,6-May-1988,23,28,7,Ottawa Fury,2011
+16,Canada,FW,Jonelle Filigno,24-Sep-1990,20,39,8,Rutgers University,2011
+17,Canada,DF,Brittany Timko,5-Sep-1985,25,101,4,Unattached,2011
+18,Canada,GK,Erin McLeod,26-Feb-1983,28,62,0,Chicago Red Stars,2011
+19,Canada,MF,Chelsea Stewart,28-Apr-1990,21,23,0,Vancouver Whitecaps,2011
+20,Canada,DF,Marie-Ève Nault,16-Feb-1982,29,43,0,Ottawa Fury,2011
+21,Canada,GK,Stephanie Labbé,10-Oct-1986,24,8,0,"Piteå	",2011
+1,France,GK,Céline Deville,24-Jan-1982,29,42,0,Montpellier,2011
+2,France,DF,Wendie Renard,20-Jul-1990,20,7,0,Lyon,2011
+3,France,DF,Laure Boulleau,22-Oct-1986,24,13,1,Paris Saint-Germain,2011
+4,France,DF,Laura Georges,20-Aug-1984,26,98,2,Lyon,2011
+5,France,DF,Ophélie Meilleroux,18-Jan-1984,27,44,0,Montpellier,2011
+6,France,MF,Sandrine Soubeyrand,16-Aug-1973,37,161,17,Juvisy,2011
+7,France,MF,Corine Petit,5-Oct-1983,27,47,8,Lyon,2011
+8,France,DF,Sonia Bompastor,8-Jun-1980,31,128,15,Lyon,2011
+9,France,FW,Eugénie Le Sommer,18-May-1989,22,34,9,Lyon,2011
+10,France,MF,Camille Abily,5-Dec-1984,26,75,19,Lyon,2011
+11,France,DF,Laure Lepailleur,7-Mar-1985,26,28,2,Paris Saint-Germain,2011
+12,France,FW,Élodie Thomis,13-Aug-1986,24,52,15,Lyon,2011
+13,France,MF,Caroline Pizzala,23-Nov-1987,23,15,0,Paris Saint-Germain,2011
+14,France,MF,Louisa Nécib,23-Jan-1987,24,58,10,Lyon,2011
+15,France,MF,Élise Bussaglia,24-Sep-1985,25,81,18,Paris Saint-Germain,2011
+16,France,GK,Bérangère Sapowicz,6-Feb-1983,28,18,0,Paris Saint-Germain,2011
+17,France,FW,Gaëtane Thiney,28-Oct-1985,25,48,19,Juvisy,2011
+18,France,FW,Marie-Laure Delie,29-Jan-1988,23,20,21,Montpellier,2011
+19,France,FW,Sandrine Brétigny,2-Jul-1984,26,19,9,Lyon,2011
+20,France,DF,Sabrina Viguier,4-Jan-1981,30,85,1,Lyon,2011
+21,France,GK,Laëtitia Philippe,30-Apr-1991,20,1,0,Montpellier,2011
+1,Germany,GK,Nadine Angerer,10-Nov-1978,32,97,0,1. FFC Frankfurt,2011
+2,Germany,DF,Bianca Schmidt,23-Jan-1990,21,15,0,1. FFC Turbine Potsdam,2011
+3,Germany,DF,Saskia Bartusiak,9-Sep-1982,28,40,0,1. FFC Frankfurt,2011
+4,Germany,DF,Babett Peter,12-May-1988,23,50,1,1. FFC Turbine Potsdam,2011
+5,Germany,DF,Annike Krahn,1-Jul-1985,25,65,4,FCR 2001 Duisburg,2011
+6,Germany,MF,Simone Laudehr,12-Jul-1986,24,40,8,FCR 2001 Duisburg,2011
+7,Germany,MF,Melanie Behringer,18-Nov-1985,25,64,17,1. FFC Frankfurt,2011
+8,Germany,FW,Inka Grings,31-Oct-1978,32,89,62,FCR 2001 Duisburg,2011
+9,Germany,FW,Birgit Prinz,25-Oct-1977,33,211,128,1. FFC Frankfurt,2011
+10,Germany,DF,Linda Bresonik,7-Dec-1983,27,64,5,FCR 2001 Duisburg,2011
+11,Germany,FW,Alexandra Popp,6-Apr-1991,20,11,7,FCR 2001 Duisburg,2011
+12,Germany,GK,Ursula Holl,26-Jun-1982,29,5,0,FCR 2001 Duisburg,2011
+13,Germany,MF,Célia Okoyino da Mbabi,27-Jun-1988,22,54,10,SC 07 Bad Neuenahr,2011
+14,Germany,MF,Kim Kulig,9-Apr-1990,21,23,6,Hamburger SV,2011
+15,Germany,DF,Verena Faißt,22-May-1989,22,3,0,VfL Wolfsburg,2011
+16,Germany,FW,Martina Müller,18-Apr-1980,31,92,30,VfL Wolfsburg,2011
+17,Germany,MF,Ariane Hingst,25-Jul-1979,31,172,10,1. FFC Frankfurt,2011
+18,Germany,MF,Kerstin Garefrekes,4-Sep-1979,31,125,41,1. FFC Frankfurt,2011
+19,Germany,MF,Fatmire Bajramaj,1-Apr-1988,23,46,8,1. FFC Turbine Potsdam,2011
+20,Germany,DF,Lena Goeßling,8-Mar-1986,25,22,0,SC 07 Bad Neuenahr,2011
+21,Germany,GK,Almuth Schult,9-Feb-1991,20,0,0,Magdeburger FFC,2011
+1,Nigeria,GK,Precious Dede,18-Jan-1980,31,70,0,Rivers Angels,2011
+2,Nigeria,MF,Rebecca Kalu,12-Jun-1990,21,1,0,Rivers Angels,2011
+3,Nigeria,DF,Osinachi Ohale,21-Dec-1991,19,9,0,Delta Queens,2011
+4,Nigeria,MF,Perpetua Nkwocha,3-Jan-1976,35,80,40,Sunnanå SK,2011
+5,Nigeria,DF,Onome Ebi,5-Aug-1983,27,45,0,Düvenciler Lisesispor,2011
+6,Nigeria,DF,Helen Ukaonu,17-May-1991,20,11,1,Sunnanå SK,2011
+7,Nigeria,FW,Stella Mbachu,16-Apr-1978,33,85,20,Rivers Angels,2011
+8,Nigeria,MF,Ebere Orji,23-Dec-1992,18,13,2,Rivers Angels,2011
+9,Nigeria,FW,Desire Oparanozie,17-Dec-1993,17,12,6,Delta Queens,2011
+10,Nigeria,MF,Rita Chikwelu,6-Mar-1988,23,37,16,Umeå IK,2011
+11,Nigeria,MF,Glory Iroka,3-Jan-1990,21,8,0,Rivers Angels,2011
+12,Nigeria,FW,Sarah Michael,22-Jul-1990,20,6,0,KIF Örebro DFF,2011
+13,Nigeria,MF,Ogonna Chukwudi,4-Sep-1988,22,12,0,Umeå IK,2011
+14,Nigeria,DF,Faith Ikidi,28-Feb-1987,24,47,0,"Piteå	",2011
+15,Nigeria,DF,Josephine Chukwunonye,19-Mar-1992,19,10,0,Rivers Angels,2011
+16,Nigeria,GK,Tochukwu Oluehi,3-Jun-1988,23,40,0,Sunshine Queens,2011
+17,Nigeria,FW,Francisca Ordega,19-Oct-1993,17,9,1,Bayelsa Queens,2011
+18,Nigeria,DF,Ulunma Jerome,11-Apr-1988,23,37,0,"Piteå	",2011
+19,Nigeria,FW,Uchechi Sunday,9-Sep-1994,16,0,0,FC Neunkirch,2011
+20,Nigeria,FW,Amenze Aighewi,21-Nov-1991,19,3,0,Rivers Angels,2011
+21,Nigeria,GK,Alaba Jonathan,1-Jun-1992,19,0,0,Pelican Stars,2011
+1,England,GK,Karen Bardsley,14-Oct-1984,26,12,0,Sky Blue FC,2011
+2,England,DF,Alex Scott,14-Oct-1984,26,33,6,Boston Breakers,2011
+3,England,DF,Rachel Unitt,5-Jun-1982,29,63,4,Everton L.F.C.,2011
+4,England,MF,Jill Scott,2-Feb-1987,24,11,1,Everton L.F.C.,2011
+5,England,DF,Faye White,2-Feb-1978,33,56,4,Arsenal L.F.C.,2011
+6,England,DF,Casey Stoney,13-May-1982,29,49,2,Lincoln Ladies F.C.,2011
+7,England,MF,Jessica Clarke,5-May-1989,22,25,6,Lincoln Ladies F.C.,2011
+8,England,MF,Fara Williams,25-Jan-1984,27,53,16,Everton L.F.C.,2011
+9,England,FW,Ellen White,9-May-1989,22,14,5,Arsenal L.F.C.,2011
+10,England,FW,Kelly Smith,29-Oct-1978,32,103,25,Boston Breakers,2011
+11,England,MF,Rachel Yankey,1-Nov-1979,31,108,11,Arsenal L.F.C.,2011
+12,England,FW,Karen Carney,1-Aug-1987,23,31,5,Birmingham City L.F.C.,2011
+13,England,GK,Rachel Brown,2-Jul-1980,30,48,0,Everton L.F.C.,2011
+14,England,FW,Eniola Aluko,21-Feb-1987,24,26,4,Sky Blue FC,2011
+15,England,DF,Sophie Bradley,5-May-1989,22,5,0,Lincoln Ladies F.C.,2011
+16,England,MF,Steph Houghton,23-Apr-1988,23,16,1,Arsenal L.F.C.,2011
+17,England,MF,Laura Bassett,2-Aug-1983,27,19,0,Birmingham City L.F.C.,2011
+18,England,MF,Anita Asante,27-Apr-1985,26,24,1,Sky Blue FC,2011
+19,England,DF,Dunia Susi,10-Aug-1987,23,13,0,Birmingham City L.F.C.,2011
+20,England,DF,Claire Rafferty,11-Jan-1989,22,4,1,Chelsea L.F.C.,2011
+21,England,GK,Siobhan Chamberlain,15-Aug-1983,27,6,0,Bristol Academy,2011
+1,Japan,GK,Nozomi Yamago,16-Jan-1975,36,96,0,Urawa Red Diamonds Ladies,2011
+2,Japan,DF,Yukari Kinga,2-May-1984,27,62,4,INAC Kobe Leonessa,2011
+3,Japan,DF,Azusa Iwashimizu,14-Oct-1986,24,64,8,NTV Beleza,2011
+4,Japan,DF,Saki Kumagai,17-Oct-1990,20,23,0,Urawa Red Diamonds Ladies,2011
+5,Japan,DF,Kyoko Yano,3-Jun-1984,27,67,1,Urawa Red Diamonds Ladies,2011
+6,Japan,MF,Mizuho Sakaguchi,15-Oct-1987,23,38,15,Albirex Niigata Ladies,2011
+7,Japan,FW,Kozue Ando,9-Jul-1982,28,86,17,FCR 2001 Duisburg,2011
+8,Japan,MF,Aya Miyama,28-Jan-1985,26,93,24,Okayama Yunogo Belle,2011
+9,Japan,MF,Nahomi Kawasumi,23-Sep-1985,25,14,2,INAC Kobe Leonessa,2011
+10,Japan,MF,Homare Sawa,9-Jul-1978,32,167,75,INAC Kobe Leonessa,2011
+11,Japan,FW,Shinobu Ohno,23-Jan-1984,27,87,34,INAC Kobe Leonessa,2011
+12,Japan,GK,Miho Fukumoto,2-Oct-1983,27,54,0,Okayama Yunogo Belle,2011
+13,Japan,MF,Rumi Utsugi,5-Dec-1988,22,43,5,"Montpellier	",2011
+14,Japan,DF,Megumi Kamionobe,15-Mar-1986,25,13,2,Albirex Niigata Ladies,2011
+15,Japan,DF,Aya Sameshima,16-Jun-1987,24,27,2,Boston Breakers,2011
+16,Japan,DF,Asuna Tanaka,23-Apr-1988,23,3,0,INAC Kobe Leonessa,2011
+17,Japan,FW,Yūki Nagasato,15-Jun-1987,24,64,31,1. FFC Turbine Potsdam,2011
+18,Japan,FW,Karina Maruyama,26-Mar-1983,28,62,13,JEF United Chiba Ladies,2011
+19,Japan,FW,Megumi Takase,10-Nov-1990,20,16,4,INAC Kobe Leonessa,2011
+20,Japan,FW,Mana Iwabuchi,18-Mar-1993,18,6,2,NTV Beleza,2011
+21,Japan,GK,Ayumi Kaihori,4-Sep-1986,24,18,0,INAC Kobe Leonessa,2011
+1,Mexico,GK,Erika Vanegas,7-Jul-1988,22,13,0,Unattached,2011
+2,Mexico,DF,Kenti Robles,15-Feb-1991,20,12,0,RCD Espanyol,2011
+3,Mexico,DF,Marlene Sandoval,18-Jan-1984,27,70,5,Unattached,2011
+4,Mexico,DF,Alina Garciamendez,16-Apr-1991,20,17,1,Stanford University,2011
+5,Mexico,DF,Natalie Vinti,2-Jan-1988,23,20,0,University of San Diego,2011
+6,Mexico,DF,Natalie Garcia,30-Jan-1990,21,3,0,University of San Diego,2011
+7,Mexico,MF,Juana López,25-Dec-1978,32,102,14,Unattached,2011
+8,Mexico,MF,Guadalupe Worbis,12-Dec-1983,27,95,22,Extremadura Femenino CF,2011
+9,Mexico,FW,Maribel Domínguez,18-Nov-1978,32,90,67,UE L'Estartit,2011
+10,Mexico,MF,Dinora Garza,24-Jan-1988,23,30,9,Tigres de la UANL,2011
+11,Mexico,MF,Nayeli Rangel,28-Feb-1992,19,27,3,Tigres de la UANL,2011
+12,Mexico,GK,Pamela Tajonar,2-Dec-1984,26,36,0,Club Atlético Málaga,2011
+13,Mexico,MF,Liliana Mercado,22-Oct-1988,22,11,0,UDLA Puebla,2011
+14,Mexico,DF,Mónica Alvarado,11-Jan-1991,20,5,0,Texas Christian University,2011
+15,Mexico,DF,Luz Saucedo,14-Dec-1983,27,91,2,Unattached,2011
+16,Mexico,DF,Charlyn Corral,11-Sep-1991,19,19,3,Monterrey Royal Eagles,2011
+17,Mexico,MF,Teresa Noyola,15-Apr-1990,21,7,0,Stanford University,2011
+18,Mexico,FW,Verónica Pérez,18-May-1988,23,23,4,Saint Louis Athletica,2011
+19,Mexico,FW,Mónica Ocampo,4-Jan-1987,24,36,12,Atlanta Beat,2011
+20,Mexico,GK,Cecilia Santiago,19-Oct-1994,16,11,0,Club Santos Laguna,2011
+21,Mexico,FW,Stephany Mayor,23-Sep-1991,19,16,5,UDLA Puebla,2011
+1,New Zealand,GK,Jenny Bindon,25-Feb-1973,38,16,0,Hibiscus Coast AFC,2011
+2,New Zealand,DF,Ria Percival,7-Dec-1989,21,16,2,Lynn-Avon United,2011
+3,New Zealand,DF,Anna Green,20-Aug-1990,20,37,5,Three Kings United,2011
+4,New Zealand,MF,Katie Hoyle,1-Feb-1988,23,11,0,Glenfield Rovers,2011
+5,New Zealand,DF,Abby Erceg,20-Nov-1989,21,16,2,Fencibles United,2011
+6,New Zealand,DF,Rebecca Smith,17-Jun-1981,30,25,2,VfL Wolfsburg,2011
+7,New Zealand,DF,Ali Riley,30-Oct-1987,23,12,0,Western New York Flash,2011
+8,New Zealand,MF,Hayley Moorwood,13-Feb-1984,27,24,2,Chelsea L.F.C.,2011
+9,New Zealand,FW,Amber Hearn,28-Nov-1984,26,43,22,Lynn-Avon United,2011
+10,New Zealand,FW,Sarah Gregorius,6-Aug-1987,23,13,8,Eastern Suburbs AFC,2011
+11,New Zealand,MF,Kirsty Yallop,4-Nov-1986,24,47,11,Lynn-Avon United,2011
+12,New Zealand,MF,Betsy Hassett,4-Aug-1990,20,23,2,"University of California, Berkeley",2011
+13,New Zealand,FW,Rosie White,6-Jun-1993,18,27,7,Three Kings United,2011
+14,New Zealand,FW,Sarah McLaughlin,3-Jun-1991,20,9,0,Claudelands Rovers,2011
+15,New Zealand,FW,Emma Kete,1-Sep-1987,23,40,3,Lincoln Ladies F.C.,2011
+16,New Zealand,MF,Annalie Longo,1-Jul-1991,19,9,0,Three Kings United,2011
+17,New Zealand,FW,Hannah Wilkinson,28-May-1992,19,19,8,Glenfield Rovers,2011
+18,New Zealand,DF,Katie Bowen,15-Apr-1994,17,2,0,Glenfield Rovers,2011
+19,New Zealand,DF,Kristy Hill,1-Jul-1979,31,17,0,Fencibles United,2011
+20,New Zealand,GK,Aroon Clansey,12-Feb-1986,25,62,0,Three Kings United,2011
+21,New Zealand,GK,Erin Nayler,17-Apr-1992,19,0,0,Eastern Suburbs AFC,2011
+1,Colombia,GK,Yineth Varón,23-Jun-1982,29,2,0,Club Deportivo Generaciones Palmiranas,2011
+2,Colombia,DF,Yuli Muñoz,18-Mar-1989,22,14,1,Club Deportivo Estudiantes F.C.,2011
+3,Colombia,DF,Natalia Gaitán,3-Apr-1991,20,1,0,University of Toledo,2011
+4,Colombia,MF,Diana Ospina,3-Mar-1989,22,1,0,Club Deportivo Formas Íntimas,2011
+5,Colombia,DF,Nataly Arias,2-Apr-1986,25,11,3,University of Maryland,2011
+6,Colombia,MF,Daniela Montoya,22-Aug-1990,20,,,Club Deportivo Formas Íntimas,2011
+7,Colombia,FW,Catalina Usme,25-Dec-1989,21,8,1,Independiente Medellín,2011
+8,Colombia,DF,Andrea Peralta,9-May-1988,23,17,14,Club Deportivo Estudiantes F.C.,2011
+9,Colombia,MF,Carmen Rodallega,15-Jul-1983,27,24,1,Sarmiento Lora,2011
+10,Colombia,MF,Yoreli Rincón,27-Jul-1993,17,29,4,Club Deportivo Gol Star,2011
+11,Colombia,MF,Liana Salazar,16-Sep-1992,18,11,8,University of Kansas,2011
+12,Colombia,GK,Sandra Sepúlveda,3-Mar-1988,23,10,0,Club Deportivo Formas Íntimas,2011
+13,Colombia,MF,Yulieth Domínguez,6-Sep-1993,17,11,0,Club Deportivo Estudiantes F.C.,2011
+14,Colombia,DF,Kelis Peduzine,21-Apr-1983,28,12,3,Club Deportivo Eba,2011
+15,Colombia,MF,Tatiana Ariza,21-Feb-1991,20,19,2,Austin Peay State University,2011
+16,Colombia,FW,Lady Andrade,10-Jan-1992,19,10,1,Club Deportivo Inter de Bogotá,2011
+17,Colombia,FW,Ingrid Vidal,22-Apr-1991,20,5,1,Club Deportivo Generaciones Palmiranas,2011
+18,Colombia,FW,Katerin Castro,21-Nov-1991,19,14,5,Club Deportivo Estudiantes F.C.,2011
+19,Colombia,DF,Fátima Montaño,2-Oct-1984,26,3,3,Club Deportivo Águila,2011
+20,Colombia,MF,Oriánica Velásquez,1-Aug-1989,21,10,1,Indiana University,2011
+21,Colombia,GK,Alejandra Velasco,23-Aug-1985,25,0,0,Club Deportivo Gol Star,2011
+1,North Korea,GK,Hong Myong-hui,4-Sep-1991,19,9,0,25-Apr,2011
+2,North Korea,DF,Jon Hong-yon,11-Jun-1992,19,1,0,25-Apr,2011
+3,North Korea,DF,Ho Un-byol,19-Jan-1992,19,1,0,25-Apr,2011
+4,North Korea,MF,Kim Myong-gum,4-Nov-1990,20,2,0,Rimyongsu,2011
+5,North Korea,DF,Song Jong-sun,11-Mar-1981,30,14,0,Rimyongsu,2011
+6,North Korea,DF,Paek Sol-hui,20-Mar-1994,17,3,0,25-Apr,2011
+7,North Korea,FW,Yun Hyon-hi,9-Sep-1992,18,1,0,25-Apr,2011
+8,North Korea,MF,Kim Su-gyong,4-Jan-1995,16,3,0,25-Apr,2011
+9,North Korea,FW,Ra Un-sim,2-Jul-1988,22,20,7,Amrokgang,2011
+10,North Korea,MF,Jo Yun-mi,5-Jan-1987,24,30,6,25-Apr,2011
+11,North Korea,MF,Ri Ye-gyong,26-Oct-1989,21,14,0,Amrokgang,2011
+12,North Korea,MF,Jon Myong-hwa,9-Aug-1993,17,9,2,25-Apr,2011
+13,North Korea,MF,Kim Un-ju,9-Apr-1993,18,4,0,25-Apr,2011
+14,North Korea,MF,Kim Chung-sim,27-Nov-1990,20,14,0,25-Apr,2011
+15,North Korea,DF,Yu Jong-hui,21-Mar-1986,25,7,0,25-Apr,2011
+16,North Korea,DF,Jong Pok-sim,31-Jul-1985,25,6,0,25-Apr,2011
+17,North Korea,DF,Ri Un-hyang,15-May-1988,23,1,0,Amrokgang,2011
+18,North Korea,GK,Kim Chol-ok,15-Oct-1994,16,1,0,25-Apr,2011
+19,North Korea,FW,Choe Mi-gyong,17-Jan-1991,20,2,0,Rimyongsu,2011
+20,North Korea,FW,Kwon Song-hwa,5-Feb-1992,19,2,0,25-Apr,2011
+21,North Korea,GK,Ri Jin-sim,29-May-1991,20,1,0,Wolmido,2011
+1,Sweden,GK,Hedvig Lindahl,29-Apr-1983,28,24,0,Kristianstads DFF,2011
+2,Sweden,DF,Charlotte Rohlin,2-Dec-1980,30,4,1,Linköping,2011
+3,Sweden,DF,Linda Sembrant,15-May-1987,24,22,1,Kopparbergs/Göteborg,2011
+4,Sweden,DF,Annica Svensson,3-Mar-1983,28,12,0,Tyresö FF,2011
+5,Sweden,MF,Caroline Seger,19-Mar-1985,26,34,3,Western New York Flash,2011
+6,Sweden,DF,Sara Thunebro,26-Apr-1979,32,21,2,1. FFC Frankfurt,2011
+7,Sweden,DF,Sara Larsson,13-May-1979,32,101,6,KIF Örebro DFF,2011
+8,Sweden,FW,Lotta Schelin,27-Feb-1984,27,45,11,Olympique Lyonnais,2011
+9,Sweden,FW,Jessica Landström,12-Dec-1984,26,50,16,1. FFC Frankfurt,2011
+10,Sweden,MF,Sofia Jakobsson,23-Apr-1990,21,1,0,Umeå IK,2011
+11,Sweden,MF,Antonia Göransson,16-Sep-1990,20,9,0,Hamburger SV,2011
+12,Sweden,GK,Kristin Hammarström,29-Mar-1982,29,0,0,Kopparbergs/Göteborg,2011
+13,Sweden,DF,Lina Nilsson,17-Jun-1987,24,26,0,LdB FC Malmö,2011
+14,Sweden,FW,Josefine Öqvist,23-Jul-1983,27,64,17,Tyresö FF,2011
+15,Sweden,MF,Therese Sjögran,8-Apr-1977,34,160,11,Sky Blue FC,2011
+16,Sweden,MF,Linda Forsberg,19-Jun-1985,26,4,0,LdB FC Malmö,2011
+17,Sweden,MF,Lisa Dahlkvist,6-Feb-1987,24,35,5,Kopparbergs/Göteborg,2011
+18,Sweden,MF,Nilla Fischer,2-Aug-1984,26,22,2,LdB FC Malmö,2011
+19,Sweden,FW,Madelaine Edlund,15-Sep-1985,25,1,0,Tyresö FF,2011
+20,Sweden,MF,Marie Hammarström,29-Mar-1982,29,9,0,KIF Örebro DFF,2011
+21,Sweden,GK,Sofia Lundgren,20-Sep-1982,28,19,0,Linköping,2011
+1,US,GK,Hope Solo,30-Jul-1981,29,95,0,agicJack,2011
+2,US,DF,Heather Mitts,9-Jun-1978,33,116,2,tlanta Beat,2011
+3,US,DF,Christie Rampone,24-Jun-1975,36,235,4,magicJack,2011
+4,US,DF,Becky Sauerbrunn,6-Jun-1985,26,11,0,magicJack,2011
+5,US,MF,Kelley O'Hara,4-Aug-1988,22,5,0,Boston Breakers,2011
+6,US,DF,Amy LePeilbet,12-Mar-1982,29,49,0,Boston Breakers,2011
+7,US,MF,Shannon Boxx,29-Jun-1977,33,146,22,magicJack,2011
+8,US,FW,Amy Rodriguez,17-Feb-1987,24,65,17,Philadelphia Independence,2011
+9,US,MF,Heather O'Reilly,2-Jan-1985,26,144,29,Sky Blue FC,2011
+10,US,MF,Carli Lloyd,16-Jul-1982,28,111,27,Atlanta Beat,2011
+11,US,DF,Ali Krieger,28-Jul-1984,26,18,0,1. FFC Frankfurt,2011
+12,US,FW,Lauren Cheney,30-Sep-1987,23,42,14,Boston Breakers,2011
+13,US,FW,Alex Morgan,2-Jul-1989,21,19,7,Western New York Flash,2011
+14,US,DF,Stephanie Cox,3-Apr-1986,25,74,0,Boston Breakers,2011
+15,US,MF,Megan Rapinoe,5-Jul-1985,25,31,10,Philadelphia Independence,2011
+16,US,MF,Lori Lindsey,19-Mar-1980,31,22,0,Philadelphia Independence,2011
+17,US,MF,Tobin Heath,29-May-1988,23,27,2,Sky Blue FC,2011
+18,US,GK,Nicole Barnhart,10-Oct-1981,29,39,0,Philadelphia Independence,2011
+19,US,DF,Rachel Buehler,26-Aug-1985,25,59,1,Boston Breakers,2011
+20,US,FW,Abby Wambach,2-Jun-1980,31,157,118,magicJack,2011
+21,US,GK,Jillian Loyden,25-May-1985,26,1,0,magicJack,2011
+1,Australia,GK,Melissa Barbieri,20-Jan-1980,31,52,0,Melbourne Victory FC,2011
+2,Australia,DF,Teigen Allen,12-Feb-1994,17,7,0,Sydney FC,2011
+3,Australia,DF,Kim Carroll,2-Sep-1987,23,38,2,Brisbane Roar,2011
+4,Australia,DF,Clare Polkinghorne,2-Jan-1989,22,10,0,Brisbane Roar,2011
+5,Australia,DF,Laura Alleway,28-Nov-1989,21,2,0,Brisbane Roar,2011
+6,Australia,DF,Ellyse Perry,3-Nov-1990,20,13,2,Canberra United,2011
+7,Australia,MF,Heather Garriock,21-Dec-1982,28,118,14,LdB Malmo,2011
+8,Australia,MF,Elise Kellond-Knight,10-Aug-1990,20,19,0,Brisbane Roar,2011
+9,Australia,FW,Caitlin Foord,11-Nov-1994,16,1,1,Sydney FC,2011
+10,Australia,MF,Servet Uzunlar,8-Mar-1989,22,20,1,Sydney FC,2011
+11,Australia,FW,Lisa De Vanna,14-Nov-1984,26,48,17,magicJack,2011
+12,Australia,FW,Emily van Egmond,12-Jul-1993,17,3,0,Canberra United,2011
+13,Australia,MF,Tameka Butt,16-Jun-1991,20,19,1,Brisbane Roar,2011
+14,Australia,MF,Collette McCallum,26-Mar-1986,25,35,7,Perth Glory,2011
+15,Australia,MF,Sally Shipard,20-Oct-1987,23,35,2,Canberra United,2011
+16,Australia,MF,Lauren Colthorpe,25-Oct-1985,25,16,2,Brisbane Roar,2011
+17,Australia,FW,Kyah Simon,25-Jun-1991,20,24,4,Sydney FC,2011
+18,Australia,GK,Lydia Williams,13-May-1988,23,5,0,Canberra United,2011
+19,Australia,FW,Leena Khamis,19-Jun-1986,25,16,4,Sydney FC,2011
+20,Australia,MF,Sam Kerr,10-Sep-1993,17,13,3,Perth Glory,2011
+21,Australia,GK,Casey Dumont,25-Jan-1992,19,0,0,Brisbane Roar,2011
+1,Brazil,GK,Andréia,14-Sep-1977,33,46,0,Santos,2011
+2,Brazil,DF,Maurine,14-Jan-1986,25,44,11,Western New York Flash,2011
+3,Brazil,DF,Daiane,15-Apr-1983,28,12,3,Botucatu,2011
+4,Brazil,DF,Aline,7-Jun-1982,29,23,4,Santos,2011
+5,Brazil,DF,Renata Costa,8-Jul-1986,24,63,27,Unattached,2011
+6,Brazil,DF,Rosana,7-Jul-1982,28,32,6,Centro Olímpico,2011
+7,Brazil,MF,Ester,9-Dec-1982,28,26,2,Santos,2011
+8,Brazil,MF,Formiga,3-Mar-1978,33,46,12,Unattached,2011
+9,Brazil,MF,Beatriz,17-Dec-1993,17,2,0,Bangu,2011
+10,Brazil,FW,Marta,19-Feb-1986,25,69,76,Western New York Flash,2011
+11,Brazil,FW,Cristiane,15-May-1985,26,56,41,Santos,2011
+12,Brazil,GK,Bárbara,4-Jul-1988,22,18,2,Foz Cataractas,2011
+13,Brazil,DF,Érika,4-Feb-1988,23,14,8,Santos,2011
+14,Brazil,FW,Fabiana,4-Aug-1989,21,18,4,Santos,2011
+15,Brazil,MF,Francielle,18-Oct-1989,21,15,5,São José dos Campos,2011
+16,Brazil,DF,Elaine,1-Nov-1982,28,18,4,Tyresö,2011
+17,Brazil,FW,Daniele,2-Apr-1983,28,12,3,Vasco da Gama,2011
+18,Brazil,FW,Thaís Guedes,20-Jan-1993,18,5,0,Bangu,2011
+19,Brazil,FW,Grazielle,28-Apr-1981,30,18,5,America,2011
+20,Brazil,DF,Roseane,23-Jul-1985,25,12,0,Bangu,2011
+21,Brazil,GK,Thaís Picarte,19-Jun-1987,24,12,0,Bangu,2011
+1,Equatorial Guinea,GK,Mirian,25-Feb-1982,29,9,0,São Francisco,2011
+2,Equatorial Guinea,DF,Bruna,12-May-1984,27,8,0,Rio Preto,2011
+3,Equatorial Guinea,DF,Dulce,18-Jan-1982,29,3,0,Centro Olímpico,2011
+4,Equatorial Guinea,DF,Carol,18-Feb-1983,28,8,3,Botucatu,2011
+5,Equatorial Guinea,MF,Cris,12-Dec-1985,25,4,0,Palmeiras,2011
+6,Equatorial Guinea,MF,Vânia[note 1],9-Nov-1980,30,2,0,Hyundai Steel Red Angels,2011
+7,Equatorial Guinea,FW,Blessing Diala,8-Dec-1989,21,17,4,Unattached,2011
+8,Equatorial Guinea,FW,Emiliana Mangue,4-Dec-1991,19,0,0,Waiso Ipola,2011
+9,Equatorial Guinea,MF,Dorine Chuigoué,28-Nov-1988,22,12,8,Waiso Ipola,2011
+10,Equatorial Guinea,MF,Genoveva Añonma,19-Apr-1989,22,28,15,USV Jena,2011
+11,Equatorial Guinea,MF,Natalia Abeso,5-Sep-1986,24,17,1,Inter Continental,2011
+12,Equatorial Guinea,MF,Mirey,26-Apr-1994,17,14,6,Waiso Ipola,2011
+13,Equatorial Guinea,GK,Yao Haoua,2-Jul-1979,31,9,0,Princesses,2011
+14,Equatorial Guinea,MF,Jumária,8-May-1979,32,13,1,São Francisco,2011
+15,Equatorial Guinea,MF,Gloria Chinasa,8-Dec-1987,23,17,9,Rivers Angels,2011
+16,Equatorial Guinea,MF,Lucrecia,24-Oct-1988,22,6,1,Waiso Ipola,2011
+17,Equatorial Guinea,FW,Tiga,16-Apr-1983,28,3,4,UNIP (futsal),2011
+18,Equatorial Guinea,GK,María Rosa,10-Oct-1982,28,6,0,Inter Continental,2011
+19,Equatorial Guinea,FW,Fatoumata Ndiaye[note 2],27-Mar-1994,17,4,1,Inter Continental,2011
+20,Equatorial Guinea,MF,Christelle Nyepel,16-Jan-1995,16,7,2,Waiso Ipola,2011
+21,Equatorial Guinea,DF,Laetitia Chapeh,7-Apr-1987,24,2,0,Waiso Ipola,2011
+1,Norway,GK,Ingrid Hjelmseth,10-Apr-1980,31,44,0,Stabæk Fotball,2011
+2,Norway,DF,Nora Holstad Berge,26-Mar-1987,24,5,0,Linköping,2011
+3,Norway,DF,Maren Mjelde,6-Nov-1989,21,31,1,Arna-Bjørnar,2011
+4,Norway,MF,Ingvild Stensland,3-Aug-1981,29,101,5,Olympique Lyonnais,2011
+5,Norway,MF,Marita Skammelsrud Lund,29-Jan-1989,22,19,0,LSK Kvinner FK,2011
+6,Norway,MF,Kristine Wigdahl Hegland,8-Aug-1992,18,0,0,Arna-Bjornar,2011
+7,Norway,DF,Trine Rønning,14-Jun-1982,29,111,15,Stabæk Fotball,2011
+8,Norway,DF,Runa Vikestad,13-Aug-1984,26,14,1,Kolbotn Fotball,2011
+9,Norway,FW,Isabell Herlovsen,23-Jun-1988,23,63,19,LSK Kvinner FK,2011
+10,Norway,FW,Cecilie Pedersen,14-Sep-1990,20,20,8,Avaldsnes IL,2011
+11,Norway,MF,Leni Larsen Kaurin,21-Mar-1981,30,80,4,VfL Wolfsburg,2011
+12,Norway,GK,Erika Skarbø,12-Jun-1987,24,15,0,Arna-Bjørnar,2011
+13,Norway,MF,Madeleine Giske,14-Sep-1987,23,15,1,Arna-Bjørnar,2011
+14,Norway,MF,Gry Tofte Ims,2-Mar-1986,25,7,0,Klepp IL,2011
+15,Norway,DF,Hedda Strand Gardsjord,28-Jun-1982,28,22,0,Røa IL,2011
+16,Norway,FW,Elise Thorsnes,14-Aug-1988,22,40,6,Røa IL,2011
+17,Norway,FW,Lene Mykjåland,20-Feb-1987,24,35,8,Røa IL,2011
+18,Norway,MF,Guro Knutsen Mienna,10-Jan-1985,26,27,3,Røa IL,2011
+19,Norway,FW,Emilie Haavi,16-Jun-1992,19,7,4,Røa IL,2011
+20,Norway,DF,Ingrid Ryland,29-May-1989,22,6,0,Arna-Bjørnar,2011
+21,Norway,GK,Caroline Knutsen,21-Nov-1983,27,4,0,Røa IL,2011
+1,Argentina,GK,Romina Ferro,26-Jun-1980,27,10,0,Boca Juniors,2007
+2,Argentina,DF,Eva González,2-Sep-1987,20,18,3,Boca Juniors,2007
+3,Argentina,DF,Valeria Cotelo,26-Mar-1984,23,7,0,Boca Juniors,2007
+4,Argentina,MF,Gabriela Chávez,9-Apr-1989,18,11,0,Independiente,2007
+5,Argentina,DF,Carmen Brusca,7-Nov-1985,21,17,0,Boca Juniors,2007
+6,Argentina,DF,Celeste Barbitta,22-May-1979,28,1,0,Boca Juniors,2007
+7,Argentina,FW,Ludmila Manicler,6-Jul-1987,20,14,3,Independiente,2007
+8,Argentina,DF,Clarisa Huber,22-Dec-1984,22,10,0,Boca Juniors,2007
+9,Argentina,FW,Natalia Gatti,20-Oct-1982,24,17,0,Boca Juniors,2007
+10,Argentina,FW,Emilia Mendieta,4-Apr-1988,19,11,2,AFA,2007
+11,Argentina,MF,Rosana Gómez,12-Jul-1980,27,16,0,Boca Juniors,2007
+12,Argentina,GK,Vanina Correa,14-Aug-1983,24,9,0,Renato Cesarini,2007
+13,Argentina,MF,Florencia Quiñones,26-Aug-1986,21,13,0,San Lorenzo,2007
+14,Argentina,DF,Catalina Pérez,16-Feb-1989,18,16,0,River Plate,2007
+15,Argentina,MF,Florencia Mandrile,10-Dec-1988,18,18,0,San Lorenzo,2007
+16,Argentina,FW,Andrea Ojeda,17-Jan-1985,22,8,0,Boca Juniors,2007
+17,Argentina,MF,Fabiana Vallejos,30-Jul-1985,22,10,0,Boca Juniors,2007
+18,Argentina,FW,Belén Potassa,12-Dec-1988,18,16,8,AFA,2007
+19,Argentina,FW,Analía Almeida,19-Aug-1985,22,8,0,San Lorenzo,2007
+20,Argentina,MF,Mercedes Pereyra,7-May-1987,20,12,3,River Plate,2007
+21,Argentina,GK,Elisabeth Minnig,6-Jan-1987,20,12,0,AFA,2007
+1,England,GK,Rachel Brown,2-Jul-1980,27,48,0,Everton,2007
+2,England,DF,Alex Scott,14-Dec-1984,22,33,6,Arsenal,2007
+3,England,DF,Casey Stoney,13-May-1982,25,49,2,Chelsea,2007
+4,England,MF,Katie Chapman,15-Jun-1982,25,61,5,Arsenal,2007
+5,England,DF,Faye White,2-Feb-1978,29,56,4,Arsenal,2007
+6,England,DF,Mary Phillip,14-Mar-1977,30,60,0,Arsenal,2007
+7,England,MF,Karen Carney,1-Aug-1987,20,31,5,Arsenal,2007
+8,England,MF,Fara Williams,25-Jan-1984,23,53,15,Everton,2007
+9,England,FW,Eniola Aluko,21-Feb-1987,20,26,4,Chelsea,2007
+10,England,FW,Kelly Smith,29-Oct-1978,28,65,21,Arsenal,2007
+11,England,MF,Rachel Yankey,1-Nov-1979,27,75,11,Arsenal,2007
+12,England,DF,Anita Asante,27-Apr-1985,22,24,1,Arsenal,2007
+13,England,GK,Siobhan Chamberlain,15-Aug-1983,24,6,0,Chelsea,2007
+14,England,DF,Rachel Unitt,5-Jun-1982,25,63,4,Everton,2007
+15,England,MF,Sue Smith,24-Nov-1979,27,64,14,Leeds United,2007
+16,England,MF,Jill Scott,2-Feb-1987,20,11,0,Everton,2007
+17,England,FW,Jody Handley,12-Mar-1979,28,30,5,Everton,2007
+18,England,FW,Lianne Sanderson,3-Feb-1988,19,7,1,Arsenal,2007
+19,England,MF,Vicky Exley,22-Oct-1975,31,52,6,Doncaster Rovers Belles,2007
+20,England,DF,Lindsay Johnson,8-May-1980,27,20,0,Everton,2007
+21,England,GK,Carly Telford,7-Jul-1987,20,1,0,Leeds United,2007
+1,Germany,GK,Nadine Angerer,10-Nov-1978,28,44,0,FFC Turbine Potsdam,2007
+2,Germany,DF,Kerstin Stegemann,29-Sep-1977,29,159,6,Wattenscheid 09,2007
+3,Germany,DF,Saskia Bartusiak,9-Sep-1982,25,2,0,FSV Frankfurt,2007
+4,Germany,DF,Babett Peter,12-May-1988,19,11,0,FFC Turbine Potsdam,2007
+5,Germany,DF,Annike Krahn,1-Jul-1985,22,25,0,FCR Duisburg,2007
+6,Germany,MF,Linda Bresonik,7-Dec-1983,23,27,2,Essen-Schoenebeck,2007
+7,Germany,MF,Melanie Behringer,18-Nov-1985,21,14,3,SC Freiburg,2007
+8,Germany,FW,Sandra Smisek,3-Jul-1977,30,115,27,FFC Frankfurt,2007
+9,Germany,FW,Birgit Prinz,25-Oct-1977,29,161,105,FFC Frankfurt,2007
+10,Germany,MF,Renate Lingor,11-Oct-1975,31,126,30,FFC Frankfurt,2007
+11,Germany,FW,Anja Mittag,16-May-1985,22,36,5,FFC Turbine Potsdam,2007
+12,Germany,GK,Ursula Holl,26-Jun-1982,25,2,0,SC 07 Bad Neuenahr,2007
+13,Germany,DF,Sandra Minnert,7-Apr-1973,34,137,15,SC 07 Bad Neuenahr,2007
+14,Germany,MF,Simone Laudehr,12-Jul-1986,21,0,0,FCR Duisburg,2007
+15,Germany,DF,Sonja Fuss,5-Nov-1978,28,48,3,FCR Duisburg,2007
+16,Germany,FW,Martina Müller,18-Apr-1980,27,57,25,VfL Wolfsburg,2007
+17,Germany,DF,Ariane Hingst,25-Jul-1979,28,130,9,Djurgårdens IF,2007
+18,Germany,MF,Kerstin Garefrekes,4-Sep-1979,28,75,22,FFC Frankfurt,2007
+19,Germany,MF,Fatmire Bajramaj,1-Apr-1988,19,5,0,FCR Duisburg,2007
+20,Germany,FW,Petra Wimbersky,9-Nov-1982,24,62,15,FFC Frankfurt,2007
+21,Germany,GK,Silke Rottenberg,25-Jan-1972,35,123,0,FFC Frankfurt,2007
+1,Japan,GK,Miho Fukumoto,2-Oct-1983,23,28,0,Okayama Yunogo Belle,2007
+2,Japan,DF,Hiromi Isozaki,22-Dec-1975,31,102,4,Tasaki Perule,2007
+3,Japan,DF,Yukari Kinga,2-May-1984,23,14,0,NTV Beleza,2007
+4,Japan,DF,Kyoko Yano,3-Jun-1984,23,38,1,Kanagawa University,2007
+5,Japan,MF,Miyuki Yanagita,11-Apr-1981,26,73,11,Urawa Reds Ladies,2007
+6,Japan,MF,Ayumi Hara,21-Feb-1979,28,0,0,INAC Leonessa,2007
+7,Japan,MF,Tomomi Miyamoto,31-Dec-1978,28,72,13,IGA FC Kunoichi,2007
+8,Japan,MF,Tomoe Sakai,27-May-1978,29,105,7,NTV Beleza,2007
+9,Japan,FW,Eriko Arakawa,30-Oct-1979,27,49,17,NTV Beleza,2007
+10,Japan,MF,Homare Sawa,6-Sep-1978,29,125,65,NTV Beleza,2007
+11,Japan,FW,Mio Otani,5-May-1979,28,71,32,Tasaki Perule,2007
+12,Japan,GK,Nozomi Yamago,16-Jan-1975,32,58,0,Urawa Reds Ladies,2007
+13,Japan,DF,Kozue Ando,9-Jul-1982,25,49,7,Urawa Reds Ladies,2007
+14,Japan,DF,Nayuha Toyoda,15-Sep-1986,20,13,0,NTV Beleza,2007
+15,Japan,DF,Azusa Iwashimizu,14-Oct-1986,20,18,4,NTV Beleza,2007
+16,Japan,MF,Aya Miyama,28-Jan-1985,22,45,13,Okayama Yunogo Belle,2007
+17,Japan,FW,Yūki Nagasato,15-Jul-1987,20,30,18,NTV Beleza,2007
+18,Japan,FW,Shinobu Ohno,23-Jan-1984,23,41,18,NTV Beleza,2007
+19,Japan,MF,Mizuho Sakaguchi,15-Oct-1987,19,12,13,Tasaki Perule,2007
+20,Japan,DF,Rumi Utsugi,5-Dec-1988,18,12,0,NTV Beleza,2007
+21,Japan,GK,Misaki Amano,22-Apr-1985,22,0,0,Waseda University,2007
+1,Nigeria,GK,Precious Dede,18-Jan-1980,27,12,0,Delta Queens FC,2007
+2,Nigeria,MF,Efioanwan Ekpo,25-Jan-1984,23,20,3,Pelican Stars FC,2007
+3,Nigeria,DF,Ayisat Yusuf,6-Mar-1985,22,30,0,NiceFutis,2007
+4,Nigeria,FW,Perpetua Nkwocha,3-Jan-1976,31,13,10,Sunnanå SK,2007
+5,Nigeria,DF,Onome Ebi,8-May-1983,24,2,0,Bayelsa Queens FC,2007
+6,Nigeria,MF,Gift Otuwe,15-Jul-1984,23,0,0,Bayelsa Queens FC,2007
+7,Nigeria,FW,Stella Mbachu,16-Apr-1978,29,55,25,Tianjin Teda F.C.,2007
+8,Nigeria,FW,Ifeanyi Chiejine,17-May-1983,24,58,15,Bayelsa Queens FC,2007
+9,Nigeria,MF,Ogonna Chukwudi,14-Sep-1988,18,0,0,Nasarawa Amazons FC,2007
+10,Nigeria,FW,Rita Chikwelu,6-Mar-1988,19,2,0,United Pietarsaari,2007
+11,Nigeria,FW,Chi-Chi Igbo,1-May-1986,21,0,0,Fortuna Hjørring,2007
+12,Nigeria,GK,Tochukwu Oluehi,2-May-1987,20,0,0,Bayelsa Queens FC,2007
+13,Nigeria,DF,Christie George,10-May-1984,23,0,0,Pelican Stars FC,2007
+14,Nigeria,DF,Faith Ikidi,28-Feb-1987,20,15,0,Linköping,2007
+15,Nigeria,MF,Maureen Mmadu,7-May-1975,32,68,0,Linköping,2007
+16,Nigeria,DF,Ulunma Jerome,11-Apr-1988,19,2,0,Rivers Angels FC,2007
+17,Nigeria,DF,Yinka Kudaisi,25-Aug-1975,32,0,0,Pelican Stars FC,2007
+18,Nigeria,FW,Cynthia Uwak,15-Jul-1986,21,2,0,Falköpings KIK,2007
+19,Nigeria,DF,Lilian Cole,1-Aug-1985,22,12,0,Delta Queens FC,2007
+20,Nigeria,MF,Maureen Eke,19-Dec-1986,20,3,0,Delta Queens FC,2007
+21,Nigeria,GK,Aladi Ayegba,25-Jun-1986,21,0,0,Kokkolan Palloveikot,2007
+1,North Korea,GK,Phi Un-hui,2-Aug-1985,22,2,0,Amrokgang,2007
+2,North Korea,MF,Kim Kyong-hwa,28-Mar-1986,21,2,0,25-Apr,2007
+3,North Korea,DF,Om Jong-ran,10-Oct-1985,21,5,0,25-Apr,2007
+4,North Korea,DF,Yun Song-mi,28-Jan-1992,15,1,0,Pyongyang City,2007
+5,North Korea,DF,Song Jong-sun,11-Mar-1981,26,10,0,Amrokgang,2007
+6,North Korea,MF,Kim Ok-sim,2-Jul-1987,20,2,1,Rimyongsu,2007
+7,North Korea,MF,Ho Sun-hui,5-Mar-1980,27,30,16,Amrokgang,2007
+8,North Korea,FW,Kil Son-hui,7-Mar-1986,21,2,0,Rimyongsu,2007
+9,North Korea,MF,Ri Un-suk,1-Jan-1986,21,2,0,25-Apr,2007
+10,North Korea,FW,Ri Kum-suk,16-Aug-1978,29,65,40,25-Apr,2007
+11,North Korea,FW,Ho Un-byol,19-Jan-1992,15,1,0,25-Apr,2007
+12,North Korea,MF,Ri Un-gyong,19-Nov-1980,26,35,17,Rimyongsu,2007
+14,North Korea,DF,Jang Yong-ok,17-Sep-1982,24,1,0,25-Apr,2007
+15,North Korea,DF,Sonu Kyong-sun,28-Sep-1983,23,5,0,25-Apr,2007
+16,North Korea,DF,Kong Hye-ok,19-Jul-1983,24,5,0,25-Apr,2007
+17,North Korea,FW,Kim Yong-ae,7-Mar-1983,24,3,6,25-Apr,2007
+18,North Korea,GK,Yun Hyon-hi,9-Sep-1992,15,1,0,25-Apr,2007
+19,North Korea,FW,Jong Pok-sim,31-Jul-1985,22,2,0,25-Apr,2007
+20,North Korea,DF,Hong Myong-gum,10-Jul-1986,21,2,0,Amrokgang,2007
+21,North Korea,GK,Jon Myong-hui,7-Aug-1986,21,1,0,Rimyongsu,2007
+1,Sweden,GK,Hedvig Lindahl,29-Apr-1983,24,21,0,Linköping FC,2007
+2,Sweden,DF,Karolina Westberg,16-May-1978,29,118,0,Umeå IK,2007
+3,Sweden,DF,Stina Segerström,17-Jun-1982,25,18,2,KIF Örebro DFF,2007
+4,Sweden,DF,Hanna Marklund,26-Nov-1977,29,113,6,Sunnanå SK,2007
+5,Sweden,MF,Caroline Seger,19-Mar-1985,22,31,3,Linköping FC,2007
+6,Sweden,DF,Sara Thunebro,26-Apr-1979,28,19,2,Djurgårdens IF,2007
+7,Sweden,DF,Sara Larsson,13-May-1979,28,69,6,Linköping FC,2007
+8,Sweden,MF,Lotta Schelin,27-Feb-1984,23,42,9,Kopparbergs/Göteborg,2007
+9,Sweden,FW,Therese Lundin,3-Mar-1979,28,49,8,Malmö FF,2007
+10,Sweden,FW,Hanna Ljungberg,8-Jan-1979,28,120,72,Umeå IK,2007
+11,Sweden,FW,Victoria Svensson,18-May-1977,30,137,58,Djurgårdens IF,2007
+12,Sweden,GK,Sofia Lundgren,20-Sep-1982,24,19,0,AIK,2007
+13,Sweden,DF,Frida Östberg,10-Dec-1977,29,57,2,Linköping FC,2007
+14,Sweden,FW,Sara Johansson,23-Jan-1980,27,24,7,Hammarby IF DFF,2007
+15,Sweden,MF,Therese Sjögran,8-Apr-1977,30,113,11,Malmö FF,2007
+16,Sweden,DF,Anna Paulson,29-Feb-1984,23,10,0,Umeå IK,2007
+17,Sweden,FW,Madelaine Edlund,15-Sep-1985,21,1,0,Umeå IK,2007
+18,Sweden,MF,Nilla Fischer,2-Aug-1984,23,20,2,Malmö FF,2007
+19,Sweden,DF,Charlotte Rohlin,2-Dec-1980,26,4,1,Linköping FC,2007
+20,Sweden,MF,Linda Forsberg,19-Jun-1985,22,1,0,Djurgårdens IF,2007
+21,Sweden,GK,Kristin Hammarström,29-Mar-1982,25,0,0,KIF Örebro DFF,2007
+1,US,GK,Briana Scurry,7-Sep-1971,36,166,0,Massachusetts,2007
+2,US,DF,Marian Dalmy,25-Nov-1984,22,5,0,Santa Clara,2007
+3,US,DF,Christie Rampone,24-Jun-1975,32,175,4,Monmouth,2007
+4,US,DF,Cat Whitehill,10-Feb-1982,25,121,11,New Jersey Wildcats,2007
+5,US,FW,Lindsay Tarpley,22-Sep-1983,23,77,15,UNC,2007
+6,US,FW,Natasha Kai,22-May-1983,24,33,7,Hawaii,2007
+7,US,MF,Shannon Boxx,29-Jun-1977,30,75,15,Notre Dame,2007
+8,US,DF,Tina Ellertson,20-May-1982,25,29,0,Washington,2007
+9,US,FW,Heather O'Reilly,2-Jan-1985,22,70,12,New Jersey Wildcats,2007
+10,US,MF,Aly Wagner,10-Aug-1980,27,115,21,Santa Clara,2007
+11,US,MF,Carli Lloyd,16-Jul-1982,25,42,6,Rutgers,2007
+12,US,MF,Leslie Osborne,27-May-1983,24,50,2,Santa Clara,2007
+13,US,MF,Kristine Lilly,22-Jul-1971,36,338,128,UNC,2007
+14,US,DF,Stephanie Lopez,3-Apr-1986,21,30,0,University of Portland,2007
+15,US,DF,Kate Markgraf,23-Aug-1976,31,168,0,Notre Dame,2007
+16,US,MF,Angela Hucles,5-Jul-1978,29,68,5,Virginia,2007
+17,US,MF,Lori Chalupny,1-Jan-1984,23,51,6,River Cities Futbol Club,2007
+18,US,GK,Hope Solo,30-Jul-1981,26,52,0,Washington,2007
+19,US,MF,Marci Jobson,4-Dec-1975,31,16,0,SMU,2007
+20,US,FW,Abby Wambach,2-Jun-1980,27,103,85,Florida,2007
+21,US,GK,Nicole Barnhart,10-Oct-1981,25,3,0,Stanford,2007
+1,Australia,GK,Melissa Barbieri,20-Jan-1980,27,50,0,Richmond SC,2007
+2,Australia,DF,Kate McShea,13-Apr-1983,24,55,2,Queensland Academy of Sport,2007
+3,Australia,MF,Alicia Ferguson,31-Oct-1981,25,63,6,Queensland Sting,2007
+4,Australia,DF,Dianne Alagich,12-May-1979,28,74,3,NSW Institute of Sport,2007
+5,Australia,DF,Cheryl Salisbury,8-Mar-1974,33,135,33,NSW Institute of Sport,2007
+6,Australia,DF,Rhian Davies,5-Jan-1981,26,66,3,NSW Institute of Sport,2007
+7,Australia,DF,Heather Garriock,21-Dec-1982,24,93,13,Adirondack Lynx,2007
+8,Australia,FW,Caitlin Munoz,4-Oct-1983,23,31,12,ACT Academy of Sport,2007
+9,Australia,FW,Sarah Walsh,11-Jan-1983,24,45,23,NSW Institute of Sport,2007
+10,Australia,MF,Joanne Peters,11-Mar-1979,28,106,28,NSW Institute of Sport,2007
+11,Australia,FW,Lisa De Vanna,14-Nov-1984,22,44,13,Doncaster Rovers Belles LFC,2007
+12,Australia,FW,Kate Gill,10-Dec-1984,22,41,24,NSW Institute of Sport,2007
+13,Australia,DF,Thea Slatyer,2-Feb-1983,24,35,0,NSW Institute of Sport,2007
+14,Australia,MF,Collette McCallum,26-Mar-1986,21,31,6,Western Waves,2007
+15,Australia,MF,Sally Shipard,20-Oct-1987,19,32,2,ACT Academy of Sport,2007
+16,Australia,MF,Lauren Colthorpe,25-Oct-1985,21,13,1,NSW Institute of Sport,2007
+17,Australia,MF,Danielle Small,7-Feb-1979,28,41,9,NSW Institute of Sport,2007
+18,Australia,GK,Lydia Williams,13-May-1988,19,5,0,ACT Academy of Sport,2007
+19,Australia,DF,Clare Polkinghorne,1-Feb-1989,18,9,0,Queensland Academy of Sport,2007
+20,Australia,FW,Joanne Burgess,23-Sep-1979,27,27,4,NSW Institute of Sport,2007
+21,Australia,GK,Emma Wirkus,11-Jan-1982,25,7,0,South Australian Institute of Sport,2007
+1,Canada,GK,Karina LeBlanc,30-Mar-1980,27,41,16,New Jersey Wildcats,2007
+2,Canada,DF,Kristina Kiss,13-Feb-1981,26,44,5,Unattached,2007
+3,Canada,DF,Melanie Booth,24-Aug-1984,23,15,0,Toronto Lynx,2007
+4,Canada,DF,Robyn Gayle,31-Oct-1985,21,15,0,Ottawa Fury,2007
+5,Canada,MF,Andrea Neil,26-Oct-1971,35,130,22,Vancouver Whitecaps,2007
+6,Canada,DF,Tanya Dennis,26-Aug-1985,22,12,0,Nebraska Cornhuskers,2007
+7,Canada,FW,Rhian Wilkinson,12-May-1982,25,6,3,Ottawa Fury,2007
+8,Canada,MF,Diana Matheson,16-Apr-1984,23,29,1,Ottawa Fury,2007
+9,Canada,MF,Candace Chapman,21-Apr-1983,24,21,1,Vancouver Whitecaps,2007
+10,Canada,DF,Martina Franko,13-Jan-1976,31,24,0,Vancouver Whitecaps,2007
+11,Canada,DF,Randee Hermus,14-Nov-1979,27,53,4,Vancouver Whitecaps,2007
+12,Canada,FW,Christine Sinclair,12-Jun-1983,24,100,40,Vancouver Whitecaps,2007
+13,Canada,MF,Amy Walsh,13-Sep-1977,29,0,0,Laval Comets,2007
+14,Canada,MF,Melissa Tancredi,27-Dec-1981,25,7,0,Atlanta Silverbacks,2007
+15,Canada,FW,Kara Lang,22-Oct-1986,20,43,21,Vancouver Whitecaps,2007
+16,Canada,MF,Katie Thorlakson,14-Jan-1985,22,1,0,Notre Dame Fighting Irish,2007
+17,Canada,DF,Brittany Timko,5-Sep-1985,22,28,9,Vancouver Whitecaps,2007
+18,Canada,GK,Erin McLeod,26-Feb-1983,24,12,0,Vancouver Whitecaps,2007
+19,Canada,MF,Sophie Schmidt,28-Jun-1988,19,1,0,Atlanta Silverbacks,2007
+20,Canada,GK,Taryn Swiatek,4-Feb-1981,26,14,0,Ottawa Fury,2007
+21,Canada,FW,Jodi-Ann Robinson,17-Apr-1989,18,9,2,Vancouver Whitecaps,2007
+1,Ghana,GK,Gladys Enti,21-Apr-1975,32,19,0,Ghatel Ladies,2007
+2,Ghana,DF,Aminatu Ibrahim,3-Jan-1979,28,8,0,Ghatel Ladies,2007
+3,Ghana,DF,Mavis Danso,24-Mar-1984,23,8,0,Robert Morris College,2007
+4,Ghana,MF,Doreen Awuah,12-Dec-1989,17,0,0,Ghatel Ladies,2007
+5,Ghana,DF,Patricia Ofori,9-Jun-1981,26,8,0,University of Alabama,2007
+6,Ghana,MF,Florence Okoe,12-Nov-1984,22,8,0,Ghatel Ladies,2007
+7,Ghana,FW,Safia Abdul Rahman,5-May-1986,21,0,0,Ghatel Ladies,2007
+8,Ghana,MF,Sheila Okai,14-Feb-1979,28,30,5,Ghatel Ladies,2007
+9,Ghana,FW,Anita Amenuku,27-Jul-1985,22,0,0,Ghatel Ladies,2007
+10,Ghana,MF,Adjoa Bayor,17-May-1979,28,30,5,Ghatel Ladies,2007
+11,Ghana,FW,Gloria Foriwa,11-May-1981,26,6,1,Ghatel Ladies,2007
+12,Ghana,DF,Olivia Amoako,30-Sep-1985,21,0,0,Ghatel Ladies,2007
+13,Ghana,DF,Yaa Avoe,1-Jul-1982,25,23,0,Ash Town Ladies,2007
+14,Ghana,FW,Rumanatu Tahiru,4-Jun-1984,23,0,0,Athleta Ladies,2007
+15,Ghana,DF,Lydia Ankrah,1-Dec-1973,33,14,0,Post Ladies,2007
+16,Ghana,GK,Memunatu Sulemana,4-Nov-1977,29,34,0,Post Ladies,2007
+17,Ghana,DF,Hamdya Abass,1-Aug-1982,25,7,0,Ghatel Ladies,2007
+18,Ghana,FW,Anita Amankwa,2-Sep-1989,18,0,0,Takoradi Ladies,2007
+19,Ghana,GK,Fati Mohammed,4-Jun-1979,28,13,0,Robert Morris College,2007
+20,Ghana,MF,Belinda Kanda,3-Nov-1982,24,1,0,University of Alabama,2007
+21,Ghana,MF,Memuna Darku,17-Apr-1979,28,0,0,Ghatel Ladies,2007
+1,Norway,GK,Bente Nordby,23-Jul-1974,33,164,0,Djurgårdens IF Dam,2007
+2,Norway,DF,Ane Stangeland Horpestad,2-Jun-1980,27,80,2,Klepp,2007
+3,Norway,DF,Gunhild Følstad,3-Nov-1981,25,50,1,Trondheims-Ørn SK,2007
+4,Norway,MF,Ingvild Stensland,3-Aug-1981,26,49,1,Kopparbergs/Göteborg,2007
+5,Norway,DF,Siri Nordby,4-Aug-1978,29,24,0,Røa IL,2007
+6,Norway,DF,Camilla Huse,31-Aug-1979,28,18,0,Kolbotn IL,2007
+7,Norway,DF,Trine Rønning,14-Jun-1982,25,75,15,Kolbotn IL,2007
+8,Norway,MF,Solveig Gulbrandsen,12-Jan-1981,26,104,33,Kolbotn IL,2007
+9,Norway,FW,Isabell Herlovsen,23-Jun-1988,19,24,2,Kolbotn IL,2007
+10,Norway,FW,Melissa Wiik,7-Feb-1985,22,17,6,Asker SK,2007
+11,Norway,FW,Leni Larsen Kaurin,21-Mar-1981,26,26,0,Asker SK,2007
+12,Norway,GK,Erika Skarbø,12-Jun-1987,20,0,0,Arna-Bjørnar,2007
+13,Norway,GK,Christine Colombo Nilsen,30-Apr-1982,25,2,0,Kolbotn IL,2007
+14,Norway,FW,Guro Knutsen,10-Jan-1985,22,2,1,Røa IL,2007
+15,Norway,MF,Madeleine Giske,14-Sep-1987,19,6,1,Arna-Bjørnar,2007
+16,Norway,FW,Ragnhild Gulbrandsen,22-Feb-1977,30,73,23,Asker SK,2007
+17,Norway,FW,Lene Mykjåland,20-Feb-1987,20,7,0,Røa IL,2007
+18,Norway,MF,Marie Knutsen,31-Aug-1982,25,29,4,Røa IL,2007
+19,Norway,DF,Marit Fiane Christensen,11-Dec-1980,26,46,6,Røa IL,2007
+20,Norway,FW,Lise Klaveness,19-Apr-1981,26,47,5,Umeå IK,2007
+21,Norway,MF,Lene Storløkken,20-Jun-1981,26,14,1,Team Strømmen FK,2007
+1,Brazil,GK,Andréia,14-Sep-1977,29,28,0,Transportes Alcaine,2007
+2,Brazil,DF,Elaine,1-Nov-1982,24,13,4,Umeå,2007
+3,Brazil,DF,Aline,6-Jul-1982,25,46,0,CEUNSP Salto,2007
+4,Brazil,DF,Tânia,10-Mar-1974,33,33,3,Saad,2007
+5,Brazil,MF,Renata Costa,8-Jul-1986,21,49,23,Botucatu,2007
+6,Brazil,DF,Rosana,7-Jul-1982,25,16,0,SV Neulengbach,2007
+7,Brazil,FW,Daniela,1-Dec-1984,22,18,17,Saad,2007
+8,Brazil,FW,Formiga,3-Mar-1978,29,25,9,Saad,2007
+9,Brazil,MF,Maycon,30-Apr-1977,30,20,12,Saad,2007
+10,Brazil,FW,Marta,19-Feb-1986,21,45,47,Umeå,2007
+11,Brazil,FW,Cristiane,15-May-1985,22,37,23,VfL Wolfsburg,2007
+12,Brazil,GK,Bárbara,4-Jul-1988,19,12,2,Sport Recife,2007
+13,Brazil,DF,Mônica,4-Apr-1978,29,7,2,Botucatu,2007
+14,Brazil,MF,Grazielle,28-Apr-1981,26,0,0,Botucatu,2007
+15,Brazil,FW,Kátia,18-Feb-1977,30,28,17,Lyon,2007
+16,Brazil,DF,Simone,10-Feb-1981,26,13,3,Lyon,2007
+17,Brazil,DF,Daiane,15-Apr-1983,24,0,0,Botucatu,2007
+18,Brazil,MF,Pretinha,19-May-1975,32,15,3,Leonessa,2007
+19,Brazil,DF,Michele,10-Jun-1984,23,8,1,Botucatu,2007
+20,Brazil,MF,Ester,12-Sep-1982,24,8,0,CEPE-Caxias,2007
+21,Brazil,GK,Thaís,19-Jun-1987,20,2,0,São Caetano,2007
+1,China PR,GK,Zhang Yanru,10-Jan-1987,20,21,0,Jiangsu Shuntian,2007
+2,China PR,DF,Weng Xinzhi,15-Jun-1988,19,22,0,Jiangsu Shuntian,2007
+3,China PR,DF,Li Jie,8-Jul-1979,28,191,10,Beijing Chengjian,2007
+4,China PR,MF,Wang Kun,20-Oct-1985,21,47,5,Hebei Huabei,2007
+5,China PR,MF,Song Xiaoli,21-Jul-1981,26,10,1,Jiangsu Shuntian,2007
+6,China PR,MF,Xie Caixia,17-Feb-1976,31,11,1,Guangdong Xiongying,2007
+7,China PR,MF,Bi Yan,17-Feb-1984,23,97,10,Dalian Shide,2007
+8,China PR,FW,Pan Lina,18-Jul-1977,30,135,5,Shanghai Shenhua,2007
+9,China PR,FW,Han Duan,15-Jun-1983,24,129,95,Dalian Shide,2007
+10,China PR,FW,Ma Xiaoxu,5-Jun-1988,19,25,8,Dalian Shide,2007
+11,China PR,DF,Pu Wei,20-Aug-1980,27,154,35,Inter Shanghai,2007
+12,China PR,MF,Qu Feifei,18-May-1982,25,88,20,Bayi,2007
+13,China PR,MF,Li Dongna,6-Dec-1988,18,10,0,Tianjin Teda,2007
+14,China PR,FW,Zhang Ouying,2-Nov-1975,31,105,21,Hebei Huabei,2007
+15,China PR,DF,Zhou Gaoping,20-Oct-1986,20,12,0,Jiangsu Shuntian,2007
+16,China PR,DF,Liu Yali,9-Jun-1980,27,141,0,Hebei Huabei,2007
+17,China PR,FW,Liu Sa,11-Jul-1987,20,10,2,Beijing Chenjian,2007
+18,China PR,GK,Han Wenxia,23-Aug-1976,31,90,0,Dalian Shide,2007
+19,China PR,DF,Zhang Ying,27-Jun-1985,22,61,4,Shanghai Shenhua,2007
+20,China PR,MF,Zhang Tong,3-Apr-1984,23,31,2,Beijing Chenjian,2007
+21,China PR,GK,Xu Meishuang,28-May-1986,21,3,0,Changchun Yatai,2007
+1,Denmark,GK,Heidi Johansen,9-Jun-1983,24,41,0,Fortuna Hjørring,2007
+2,Denmark,DF,Mia Olsen,15-Oct-1981,25,24,0,Brøndby IF,2007
+3,Denmark,DF,Katrine Pedersen,13-Apr-1977,30,125,4,Asker S.K.,2007
+4,Denmark,DF,Gitte Andersen,28-Apr-1977,30,72,1,Brøndby IF,2007
+5,Denmark,DF,Bettina Falk,31-Mar-1981,26,40,0,Brøndby IF,2007
+6,Denmark,MF,Louise Hansen,4-May-1975,32,96,5,1. FFC Frankfurt,2007
+7,Denmark,MF,Cathrine Paaske Sørensen,14-Jun-1978,29,76,19,Brøndby IF,2007
+8,Denmark,MF,Julie Rydahl Bukh,9-Jan-1982,25,42,4,Brøndby IF,2007
+9,Denmark,FW,Maiken Pape,20-Feb-1978,29,15,7,Brøndby IF,2007
+10,Denmark,MF,Anne Dot Eggers Nielsen,6-Nov-1975,31,110,25,Brøndby IF,2007
+11,Denmark,FW,Merete Pedersen,30-Jun-1973,34,115,53,Odense,2007
+12,Denmark,FW,Stine Dimun,15-Oct-1979,27,26,3,Brøndby IF,2007
+13,Denmark,FW,Johanna Rasmussen,2-Jul-1983,24,37,6,Fortuna Hjørring,2007
+14,Denmark,DF,Dorte Dalum Jensen,3-Jul-1978,29,40,1,Djurgårdens IF Dam,2007
+15,Denmark,DF,Mariann Gajhede Knudsen,16-Nov-1984,22,33,0,Fortuna Hjørring,2007
+16,Denmark,GK,Tine Cederkvist,21-Mar-1979,28,44,0,Brøndby IF,2007
+17,Denmark,MF,Janne Madsen,12-Mar-1978,29,46,4,Fortuna Hjørring,2007
+18,Denmark,DF,Christina Ørntoft,2-Jul-1985,22,20,0,Skovlunde,2007
+19,Denmark,MF,Line Røddik Hansen,31-Jan-1988,19,9,0,Brøndby IF,2007
+20,Denmark,MF,Camilla Sand Andersen,14-Feb-1986,21,7,1,Fortuna Hjørring,2007
+21,Denmark,GK,Susanne Graversen,8-Nov-1984,22,1,0,Skovbakken IK,2007
+1,New Zealand,GK,Jenny Bindon,25-Feb-1973,34,12,0,Three Kings United,2007
+2,New Zealand,DF,Ria Percival,7-Dec-1989,17,12,2,Lynn-Avon United,2007
+3,New Zealand,DF,Hannah Bromley,15-Nov-1986,20,4,0,Soccerplus Connecticut,2007
+4,New Zealand,MF,Katie Hoyle,1-Feb-1988,19,9,0,Lynn-Avon United,2007
+5,New Zealand,DF,Abby Erceg,20-Nov-1989,17,12,2,Western Springs AFC,2007
+6,New Zealand,DF,Rebecca Smith,17-Jun-1981,26,21,2,Sunnanå SK,2007
+7,New Zealand,FW,Zoe Thompson,16-Sep-1983,23,10,2,Three Kings United,2007
+8,New Zealand,MF,Hayley Moorwood,13-Feb-1984,23,20,2,Lynn-Avon United,2007
+9,New Zealand,FW,Wendi Henderson,16-Jul-1971,36,55,16,Upper Hutt City SC,2007
+10,New Zealand,MF,Annalie Longo,1-Jul-1991,16,7,0,Three Kings United,2007
+11,New Zealand,DF,Marlies Oostdam,29-Jul-1977,30,21,0,Eastern Suburbs AFC,2007
+12,New Zealand,GK,Stephanie Puckrin,22-Aug-1979,28,1,0,Lynn-Avon United,2007
+13,New Zealand,FW,Ali Riley,30-Oct-1987,19,8,0,Stanford University,2007
+14,New Zealand,MF,Simone Ferrara,7-Jun-1977,30,18,7,Ajax America,2007
+15,New Zealand,DF,Maia Jackman,25-May-1975,32,37,11,Western Springs AFC,2007
+16,New Zealand,MF,Emma Humphries,14-Jun-1986,21,5,0,Cocoa Expos,2007
+17,New Zealand,FW,Rebecca Tegg,18-Dec-1985,21,3,0,Eastern Suburbs AFC,2007
+18,New Zealand,MF,Priscilla Duncan,19-May-1983,24,15,1,Western Springs AFC,2007
+19,New Zealand,MF,Emily McColl,1-Nov-1985,21,6,0,Cocoa Expos,2007
+20,New Zealand,FW,Merissa Smith,11-Nov-1990,16,6,0,Three Kings United,2007
+21,New Zealand,GK,Rachel Howard,30-Nov-1977,29,12,0,TSV Crailsheim,2007
+1,Nigeria,GK,Ugochi Opara,27-May-1976,27,,,,2003
+2,Nigeria,MF,Efioanwan Ekpo,25-Jan-1984,19,,,,2003
+3,Nigeria,DF,Bunmi Kayode,13-Apr-1985,18,,,,2003
+4,Nigeria,MF,Perpetua Nkwocha,3-Jan-1976,27,,,,2003
+5,Nigeria,DF,Onome Ebi,8-May-1983,20,,,,2003
+6,Nigeria,DF,Florence Ajayi,28-Apr-1977,26,,,,2003
+7,Nigeria,MF,Stella Mbachu,16-Apr-1978,25,,,,2003
+8,Nigeria,FW,Olaitan Yusuf,12-Jan-1982,21,,,,2003
+9,Nigeria,MF,Faith Ikidi,28-Feb-1987,16,,,,2003
+10,Nigeria,FW,Mercy Akide,26-Aug-1975,28,,,,2003
+11,Nigeria,FW,Nkechi Egbe,5-Feb-1978,25,,,,2003
+12,Nigeria,GK,Precious Dede,18-Jan-1980,23,,,,2003
+13,Nigeria,MF,Nkiru Okosieme,1-Mar-1972,31,,,,2003
+14,Nigeria,DF,Ifeanyi Chiejine,17-May-1983,20,,,,2003
+15,Nigeria,MF,Maureen Mmadu,7-May-1975,28,,,,2003
+16,Nigeria,DF,Florence Iweta,29-Mar-1983,20,,,,2003
+17,Nigeria,DF,Florence Omagbemi,2-Feb-1975,28,,,,2003
+18,Nigeria,MF,Patience Avre,10-Jun-1976,27,,,,2003
+19,Nigeria,GK,Esther Okhae,12-Mar-1986,17,,,,2003
+20,Nigeria,FW,Vera Okolo,5-Jan-1985,18,,,,2003
+1,North Korea,GK,Ri Jong-hui,20-Aug-1975,28,,,,2003
+2,North Korea,DF,Yun In-sil,10-Jan-1976,27,,,,2003
+3,North Korea,DF,Kim Hwa-song,19-Aug-1985,18,,,,2003
+5,North Korea,DF,Sin Kum-ok,25-Nov-1975,27,,,,2003
+6,North Korea,DF,Ra Mi-ae,8-Dec-1975,27,,,,2003
+7,North Korea,FW,Ri Kum-suk,16-Aug-1978,25,,,,2003
+8,North Korea,FW,Pak Kum-chun,22-Feb-1978,25,,,,2003
+9,North Korea,MF,Ho Sun-hui,5-Mar-1980,23,,,,2003
+10,North Korea,FW,Jin Pyol-hui,19-Aug-1980,23,,,,2003
+11,North Korea,MF,Yun Yong-hui,18-Mar-1977,26,,,,2003
+12,North Korea,DF,Jang Ok-gyong,29-Jan-1980,23,,,,2003
+13,North Korea,DF,Song Jong-sun,11-Mar-1981,22,,,,2003
+14,North Korea,MF,O Kum-ran,18-Sep-1981,22,,,,2003
+15,North Korea,MF,Ri Un-gyong,19-Nov-1980,22,,,,2003
+16,North Korea,FW,Pak Kyong-sun,23-Jun-1985,18,,,,2003
+17,North Korea,DF,Jon Hye-yong,16-Feb-1977,26,,,,2003
+18,North Korea,GK,Chon Kyong-hwa,7-Aug-1983,20,,,,2003
+19,North Korea,MF,Ri Hyang-ok,18-Dec-1977,25,,,,2003
+20,North Korea,DF,Ri Un-ju,25-Oct-1983,19,,,,2003
+1,Sweden,GK,Caroline Jönsson,22-Nov-1977,25,44,0,,2003
+2,Sweden,DF,Karolina Westberg,16-May-1978,25,82,0,,2003
+3,Sweden,DF,Jane Törnqvist,9-May-1975,28,83,10,,2003
+4,Sweden,DF,Hanna Marklund,26-Nov-1977,25,62,3,,2003
+5,Sweden,DF,Kristin Bengtsson,12-Jan-1970,33,125,14,,2003
+6,Sweden,MF,Malin Moström,1-Aug-1975,28,68,11,,2003
+7,Sweden,DF,Sara Larsson,13-May-1979,24,36,2,,2003
+8,Sweden,MF,Frida Nordin,23-May-1982,21,14,1,,2003
+9,Sweden,MF,Malin Andersson,4-May-1973,30,127,36,,2003
+10,Sweden,FW,Hanna Ljungberg,8-Jan-1979,24,90,51,,2003
+11,Sweden,FW,Victoria Svensson,18-May-1977,26,85,33,,2003
+12,Sweden,GK,Sofia Lundgren,20-Sep-1982,21,7,0,,2003
+13,Sweden,MF,Sara Johansson,23-Jan-1980,23,8,1,,2003
+14,Sweden,MF,Linda Fagerström,17-Mar-1977,26,72,7,,2003
+15,Sweden,MF,Therese Sjögran,4-Aug-1977,26,58,4,,2003
+16,Sweden,FW,Salina Olsson,29-Aug-1978,25,36,7,,2003
+17,Sweden,MF,Anna Sjöström,23-Apr-1977,26,21,2,,2003
+18,Sweden,DF,Frida Östberg,10-Dec-1977,25,8,1,,2003
+19,Sweden,DF,Sara Call,16-Jul-1977,26,34,1,,2003
+20,Sweden,FW,Josefine Öqvist,23-Jul-1983,20,5,1,,2003
+1,US,GK,Briana Scurry,7-Sep-1971,32,,,Atlanta Beat,2003
+2,US,DF,Kylie Bivens,24-Oct-1978,24,,,Atlanta Beat,2003
+3,US,DF,Christie Pearce,24-Jun-1975,28,,,New York Power,2003
+4,US,DF,Cat Reddick,10-Feb-1982,21,,,University of North Carolina,2003
+5,US,MF,Tiffany Roberts,5-May-1978,25,,,Carolina Courage,2003
+6,US,DF,Brandi Chastain,21-Jul-1968,35,,,San Jose CyberRays,2003
+7,US,MF,Shannon Boxx,29-Jun-1977,26,,,New York Power,2003
+8,US,FW,Shannon MacMillan,7-Oct-1974,28,,,San Diego Spirit,2003
+9,US,FW,Mia Hamm,17-Mar-1972,31,,,Washington Freedom,2003
+10,US,MF,Aly Wagner,10-Aug-1980,23,,,Boston Breakers,2003
+11,US,MF,Julie Foudy,23-Jan-1971,32,,,San Diego Spirit,2003
+12,US,FW,Cindy Parlow,8-May-1978,25,,,Atlanta Beat,2003
+13,US,MF,Kristine Lilly,22-Jul-1971,32,,,Boston Breakers,2003
+14,US,DF,Joy Fawcett,8-Feb-1968,35,,,San Diego Spirit,2003
+15,US,DF,Kate Sobrero,23-Aug-1976,27,,,Boston Breakers,2003
+16,US,FW,Tiffeny Milbrett,23-Oct-1972,30,,,New York Power,2003
+17,US,DF,Danielle Slaton,10-Jun-1980,23,,,Carolina Courage,2003
+18,US,GK,Siri Mullinix,22-May-1978,25,,,Washington Freedom,2003
+19,US,MF,Angela Hucles,5-Jul-1978,25,,,San Diego Spirit,2003
+20,US,FW,Abby Wambach,2-Jun-1980,23,,,Washington Freedom,2003
+1,Brazil,GK,Andréia,14-Sep-1977,26,,,,2003
+2,Brazil,FW,Simone,10-Feb-1981,22,,,,2003
+3,Brazil,DF,Juliana,3-Oct-1981,21,,,,2003
+4,Brazil,DF,Tânia,3-Oct-1974,28,,,,2003
+5,Brazil,MF,Renata Costa,8-Jul-1986,17,,,,2003
+6,Brazil,MF,Michele,10-Jun-1984,19,,,,2003
+7,Brazil,FW,Formiga,3-Mar-1978,25,,,,2003
+8,Brazil,MF,Rafaela,23-May-1981,22,,,,2003
+9,Brazil,FW,Kelly,8-May-1985,18,,,,2003
+10,Brazil,FW,Marta,19-Feb-1986,17,,,,2003
+11,Brazil,FW,Cristiane,15-May-1985,18,,,,2003
+12,Brazil,GK,Giselle,20-Nov-1983,19,,,,2003
+13,Brazil,DF,Mônica,4-Apr-1978,25,,,,2003
+14,Brazil,FW,Rosana,7-Jul-1982,21,,,,2003
+15,Brazil,DF,Renata Diniz,1-Nov-1985,17,,,,2003
+16,Brazil,FW,Maycon,30-Apr-1977,26,,,,2003
+17,Brazil,FW,Kátia,18-Feb-1977,26,,,,2003
+18,Brazil,FW,Daniela,12-Jan-1984,19,,,,2003
+19,Brazil,MF,Priscila,10-Mar-1982,21,,,,2003
+20,Brazil,MF,Milene,18-Jun-1979,24,,,,2003
+1,France,GK,Céline Marty,30-Mar-1976,27,,,,2003
+2,France,DF,Sabrina Viguier,4-Jan-1981,22,,,,2003
+3,France,DF,Peggy Provost,19-Sep-1977,26,,,,2003
+4,France,DF,Laura Georges,20-Aug-1984,19,,,,2003
+5,France,DF,Corinne Diacre,4-Aug-1974,29,,,,2003
+6,France,MF,Sandrine Soubeyrand,16-Aug-1973,30,,,,2003
+7,France,FW,Stéphanie Mugneret-Béghé,22-Mar-1974,29,,,,2003
+8,France,MF,Sonia Bompastor,8-Jun-1980,23,,,,2003
+9,France,FW,Marinette Pichon,26-Nov-1975,27,,,,2003
+10,France,MF,Élodie Woock,13-Jan-1976,27,,,,2003
+11,France,MF,Amélie Coquet,31-Dec-1984,18,,,,2003
+12,France,MF,Séverine Lecouflé,31-Mar-1975,28,,,,2003
+13,France,DF,Anne-Laure Casseleux,13-Jan-1984,19,,,,2003
+14,France,MF,Virginie Dessalle,3-Jul-1981,22,,,,2003
+15,France,FW,Laëtitia Tonazzi,31-Jan-1981,22,,,,2003
+16,France,GK,Bérangère Sapowicz,6-Feb-1983,20,,,,2003
+17,France,FW,Marie-Ange Kramo,20-Feb-1979,24,,,,2003
+18,France,FW,Hoda Lattaf,31-Aug-1978,25,,,,2003
+19,France,DF,Severine Goulois,18-Apr-1982,21,,,,2003
+20,France,DF,Emmanuelle Sykora,21-Feb-1976,27,,,,2003
+1,Norway,GK,Bente Nordby,23-Jul-1974,29,119,,Kolbotn,2003
+2,Norway,DF,Brit Sandaune,5-Jun-1972,31,115,,Trondheims-Ørn,2003
+3,Norway,DF,Ane Stangeland,2-Jun-1980,23,27,,Klepp,2003
+4,Norway,DF,Monica Knudsen,25-Mar-1975,28,81,,Asker,2003
+5,Norway,MF,Karin Bredland,7-Jan-1978,25,1,,Røa,2003
+6,Norway,MF,Hege Riise,18-Jul-1969,34,177,,Carolina Courage,2003
+7,Norway,FW,Trine Rønning,14-Jun-1982,21,30,,Kolbotn,2003
+8,Norway,MF,Solveig Gulbrandsen,12-Jan-1981,22,67,,Kolbotn,2003
+9,Norway,FW,Anita Rapp,24-Jul-1976,27,58,,Asker,2003
+10,Norway,MF,Unni Lehn,7-Jun-1977,26,88,,Carolina Courage,2003
+11,Norway,FW,Marianne Pettersen,12-Apr-1975,28,93,,Asker,2003
+12,Norway,GK,Silje Vesterbekkmo,22-Jun-1983,20,,,Røa,2003
+13,Norway,DF,Anne Tønnessen,18-Mar-1974,29,59,,Klepp,2003
+14,Norway,FW,Dagny Mellgren,19-Jun-1978,25,71,,Boston Breakers,2003
+15,Norway,DF,Marit Fiane Christensen,11-Dec-1980,22,6,,Asker,2003
+16,Norway,DF,Gunhild Følstad,3-Nov-1981,21,3,,Trondheims-Ørn,2003
+17,Norway,FW,Linda Ørmen,22-Mar-1977,26,46,,Asker,2003
+18,Norway,FW,Ingrid Camilla Fosse Sæthre,19-Jan-1978,25,15,,Arna-Bjørnar,2003
+19,Norway,MF,Kristine Edner,8-Mar-1976,27,10,,Røa,2003
+20,Norway,MF,Lise Klaveness,19-Apr-1981,22,10,,Asker,2003
+1,South Korea,GK,Jung Ho-jung,11-May-1976,27,,,INI Steel,2003
+2,South Korea,MF,Kim Ju-hee,10-Mar-1985,18,,,Wirye Information Industry HS,2003
+3,South Korea,MF,Hong Kyung-suk,14-Oct-1984,18,,,Yeojoo Institute of Technology,2003
+4,South Korea,DF,Kim Yu-jin,17-Jul-1979,24,,,INI Steel,2003
+5,South Korea,DF,Park Hae-jung,10-Mar-1977,26,,,INI Steel,2003
+6,South Korea,DF,Jin Suk-hee,9-Jul-1978,25,,,INI Steel,2003
+7,South Korea,FW,Park Eun-sun,25-Dec-1986,16,,,Wirye Information Industry HS,2003
+8,South Korea,MF,Hwang In-sun,2-Feb-1976,27,,,INI Steel,2003
+9,South Korea,MF,Song Ju-hee,30-Oct-1977,25,,,INI Steel,2003
+10,South Korea,MF,Kim Jin-hee,26-Mar-1981,22,,,Ulsan College,2003
+11,South Korea,FW,Lee Ji-eun,16-Dec-1979,23,,,INI Steel,2003
+12,South Korea,GK,Kim Jung-mi,16-Oct-1984,18,,,Yeungjin College,2003
+13,South Korea,MF,Kim Yoo-jin,26-Sep-1981,21,,,INI Steel,2003
+14,South Korea,MF,Han Jin-sook,15-Dec-1979,23,,,Daekyo Kangaroos,2003
+15,South Korea,MF,Kim Kyul-sil,13-Apr-1982,21,,,Yeojoo Institute of Technology,2003
+16,South Korea,MF,Shin Sun-nam,30-May-1981,22,,,INI Steel,2003
+17,South Korea,FW,Sung Hyun-ah,5-May-1982,21,,,Daekyo Kangaroos,2003
+18,South Korea,DF,Kim Yu-mi,15-Aug-1979,24,,,INI Steel,2003
+19,South Korea,MF,Lee Myung-hwa,29-Jul-1973,30,,,INI Steel,2003
+20,South Korea,DF,Yoo Young-sil,1-May-1975,28,,,INI Steel,2003
+1,Argentina,GK,Romina Ferro,26-Jun-1980,23,,,River Plate,2003
+2,Argentina,DF,Clarisa Huber,22-Dec-1984,18,,,Unattached,2003
+3,Argentina,DF,Mariela Ricotti,2-Apr-1979,24,,,Boca Juniors,2003
+4,Argentina,DF,Andrea Gonsebate,7-May-1977,26,,,Unattached,2003
+5,Argentina,MF,Marisa Gerez,3-Nov-1976,26,,,Boca Juniors,2003
+6,Argentina,DF,Noelia López,29-Jul-1978,25,,,Unattached,2003
+7,Argentina,FW,Karina Alvariza,11-Apr-1976,27,,,Boca Juniors,2003
+8,Argentina,MF,Natalia Gatti,20-Oct-1982,20,,,Unattached,2003
+9,Argentina,DF,Yesica Arrien,1-Jul-1980,23,,,Gimnasia y Esgrima,2003
+10,Argentina,MF,Rosana Gómez,13-Jul-1980,23,,,Boca Juniors,2003
+11,Argentina,FW,Marisol Medina,11-May-1980,23,,,Unattached,2003
+12,Argentina,GK,Vanina Correa,14-Aug-1983,20,,,Banfield,2003
+13,Argentina,DF,Nancy Díaz,14-Mar-1973,30,,,Boca Juniors,2003
+14,Argentina,FW,Fabiana Vallejos,30-Jun-1985,18,,,River Plate,2003
+15,Argentina,MF,Yanina Gaitán,3-Jun-1978,25,,,Boca Juniors,2003
+16,Argentina,DF,Adela Medina,3-Nov-1978,24,,,Unattached,2003
+17,Argentina,DF,Valeria Cotelo,26-Mar-1984,19,,,Unattached,2003
+18,Argentina,FW,Mariela Coronel,20-Jun-1981,22,,,Independiente,2003
+19,Argentina,DF,Celeste Barbitta,22-May-1979,24,,,Unattached,2003
+20,Argentina,FW,Elizabeth Villanueva,29-Oct-1974,28,,,Boca Juniors,2003
+1,Canada,GK,Karina LeBlanc,30-Mar-1980,23,,,,2003
+2,Canada,FW,Christine Latham,15-Sep-1981,22,,,,2003
+3,Canada,DF,Linda Consolante,23-May-1982,21,,,,2003
+4,Canada,DF,Sasha Andrews,24-Feb-1983,20,,,,2003
+5,Canada,MF,Andrea Neil,26-Oct-1971,31,,,,2003
+6,Canada,DF,Sharolta Nonen,30-Dec-1977,25,,,,2003
+7,Canada,DF,Isabelle Morneau,18-Apr-1976,27,,,,2003
+8,Canada,MF,Kristina Kiss,13-Feb-1981,22,,,,2003
+9,Canada,MF,Rhian Wilkinson,12-May-1982,21,,,,2003
+10,Canada,FW,Charmaine Hooper,15-Jan-1968,35,,,,2003
+11,Canada,DF,Randee Hermus,14-Nov-1979,23,,,,2003
+12,Canada,FW,Christine Sinclair,12-Jun-1983,20,,,,2003
+13,Canada,MF,Diana Matheson,16-Apr-1984,19,,,,2003
+14,Canada,MF,Carmelina Moscato,2-May-1984,19,,,,2003
+15,Canada,MF,Kara Lang,22-Oct-1986,16,,,,2003
+16,Canada,MF,Brittany Timko,5-Sep-1985,18,,,,2003
+17,Canada,FW,Silvana Burtini,10-May-1969,34,,,,2003
+18,Canada,FW,Tanya Dennis,26-Aug-1985,18,,,,2003
+19,Canada,GK,Erin McLeod,26-Feb-1983,20,,,,2003
+20,Canada,GK,Taryn Swiatek,4-Feb-1981,22,,,,2003
+1,Germany,GK,Silke Rottenberg,25-Jan-1972,31,5,,FCR 2001 Duisburg,2003
+2,Germany,DF,Kerstin Stegemann,29-Sep-1977,25,42,,FFC Heike Rheine,2003
+3,Germany,DF,Linda Bresonik,7-Dec-1983,19,26,,FCR 2001 Duisburg,2003
+4,Germany,DF,Nia Künzer,18-Jan-1980,23,81,,1. FFC Frankfurt,2003
+5,Germany,MF,Steffi Jones,22-Dec-1972,30,38,,1. FFC Frankfurt,2003
+6,Germany,MF,Renate Lingor,11-Oct-1975,27,14,,1. FFC Frankfurt,2003
+7,Germany,MF,Pia Wunderlich,26-Jan-1975,28,28,,1. FFC Frankfurt,2003
+8,Germany,MF,Sandra Smisek,3-Jul-1977,26,18,,FSV Frankfurt,2003
+9,Germany,FW,Birgit Prinz,25-Oct-1977,25,43,,1. FFC Frankfurt,2003
+10,Germany,MF,Bettina Wiegmann,7-Oct-1971,31,44,,FFC Brauweiler Pulheim,2003
+11,Germany,FW,Martina Müller,18-Apr-1980,23,26,,SC 07 Bad Neuenahr,2003
+12,Germany,DF,Sonja Fuss,5-Nov-1978,24,45,,FFC Brauweiler Pulheim,2003
+13,Germany,DF,Sandra Minnert,7-Apr-1973,30,42,,1. FFC Frankfurt,2003
+14,Germany,FW,Maren Meinert,5-Aug-1973,30,40,,Boston Breakers,2003
+15,Germany,GK,Nadine Angerer,10-Nov-1978,24,25,,1. FFC Turbine Potsdam,2003
+16,Germany,MF,Viola Odebrecht,11-Feb-1983,20,48,,1. FFC Turbine Potsdam,2003
+17,Germany,DF,Ariane Hingst,25-Jul-1979,24,46,,1. FFC Turbine Potsdam,2003
+18,Germany,MF,Kerstin Garefrekes,4-Sep-1979,24,17,,FFC Heike Rheine,2003
+19,Germany,DF,Stefanie Gottschlich,5-Aug-1978,25,46,,VfL Wolfsburg,2003
+20,Germany,FW,Conny Pohlers,16-Nov-1978,24,17,,1. FFC Turbine Potsdam,2003
+1,Japan,GK,Nozomi Yamago,16-Jan-1975,28,,,,2003
+2,Japan,DF,Yumi Obe,15-Feb-1975,28,,,,2003
+3,Japan,DF,Hiromi Isozaki,22-Dec-1975,27,,,,2003
+4,Japan,DF,Yasuyo Yamagishi,28-Nov-1979,23,,,,2003
+5,Japan,MF,Tomoe Sakai,27-May-1978,25,,,,2003
+6,Japan,MF,Yayoi Kobayashi,18-Sep-1981,22,,,,2003
+7,Japan,MF,Naoko Kawakami,16-Nov-1977,25,,,,2003
+8,Japan,MF,Tomomi Miyamoto,31-Dec-1978,24,,,,2003
+9,Japan,FW,Eriko Arakawa,30-Oct-1979,23,,,,2003
+10,Japan,FW,Homare Sawa,6-Sep-1978,25,,,Atlanta Beat,2003
+11,Japan,FW,Mio Otani,5-May-1979,24,,,,2003
+12,Japan,GK,Shiho Onodera,18-Nov-1973,29,,,,2003
+13,Japan,MF,Mai Nakachi,16-Dec-1980,22,,,,2003
+14,Japan,DF,Kyoko Yano,3-Jun-1984,19,,,,2003
+15,Japan,DF,Yuka Miyazaki,13-Oct-1983,19,,,,2003
+16,Japan,MF,Emi Yamamoto,9-Mar-1982,21,,,,2003
+17,Japan,MF,Miyuki Yanagita,11-Apr-1981,22,,,,2003
+18,Japan,FW,Karina Maruyama,26-Mar-1983,20,,,,2003
+19,Japan,FW,Akiko Sudo,7-Apr-1984,19,,,,2003
+20,Japan,MF,Aya Miyama,28-Jan-1985,18,,,,2003
+1,Australia,GK,Cassandra Kell,8-Aug-1980,23,,,NSW Sapphires,2003
+2,Australia,MF,Gillian Foster,28-Aug-1976,27,,,Canberra Eclipse,2003
+3,Australia,DF,Sacha Wainwright,6-Feb-1972,31,,,Canberra Eclipse,2003
+4,Australia,DF,Dianne Alagich,12-May-1979,24,,,San Jose Cyber Rays,2003
+5,Australia,DF,Cheryl Salisbury,8-Mar-1974,29,,,New York Power,2003
+6,Australia,DF,Rhian Davies,5-Jan-1981,22,,,Canberra Eclipse,2003
+7,Australia,FW,Kelly Golebiowski,26-Jul-1981,22,,,Washington Freedom,2003
+8,Australia,MF,Bryony Duus,7-Oct-1977,25,,,Queensland Sting,2003
+9,Australia,FW,April Mann,21-Apr-1978,25,,,Queensland Sting,2003
+10,Australia,MF,Joanne Peters,11-Mar-1979,24,,,New York Power,2003
+11,Australia,MF,Heather Garriock,21-Dec-1982,20,,,Queensland Sting,2003
+12,Australia,GK,Melissa Barbieri,20-Jan-1980,23,,,Victoria Vision,2003
+13,Australia,DF,Karla Reuter,14-Jun-1984,19,,,Queensland Sting,2003
+14,Australia,DF,Pamela Grant,15-Nov-1982,20,,,Queensland Sting,2003
+15,Australia,MF,Tal Karp,30-Dec-1981,21,,,Canberra Eclipse,2003
+16,Australia,MF,Taryn Rockall,11-Nov-1977,25,,,NSW Sapphires,2003
+17,Australia,FW,Danielle Small,7-Feb-1979,24,,,Northern NSW Pride,2003
+18,Australia,GK,Amy Beattie,8-Sep-1980,23,,,Canberra Eclipse,2003
+19,Australia,FW,Amy Wilson,9-Jun-1980,23,,,Canberra Eclipse,2003
+20,Australia,FW,Hayley Crawford,27-Mar-1984,19,,,Northern NSW Pride,2003
+1,China PR,GK,Han Wenxia,23-Aug-1976,27,,,,2003
+2,China PR,DF,Sun Rui,30-Mar-1978,25,,,,2003
+3,China PR,DF,Li Jie,8-Jul-1979,24,,,,2003
+4,China PR,DF,Gao Hongxia,7-Dec-1973,29,,,,2003
+5,China PR,DF,Fan Yunjie,29-Apr-1972,31,,,,2003
+6,China PR,MF,Zhao Lihong,25-Dec-1972,30,,,,2003
+7,China PR,FW,Bai Jie,28-Mar-1972,31,,,,2003
+8,China PR,MF,Zhang Ouying,2-Nov-1975,27,,,,2003
+9,China PR,FW,Sun Wen,6-Apr-1973,30,,,,2003
+10,China PR,MF,Liu Ying,11-Jun-1974,29,,,,2003
+11,China PR,MF,Pu Wei,20-Aug-1980,23,,,,2003
+12,China PR,MF,Qu Feifei,18-May-1982,21,,,,2003
+13,China PR,FW,Teng Wei,21-May-1974,29,,,,2003
+14,China PR,FW,Bi Yan,17-Feb-1984,19,,,,2003
+15,China PR,MF,Ren Liping,21-Oct-1978,24,,,,2003
+16,China PR,DF,Liu Yali,9-Feb-1980,23,,,,2003
+17,China PR,MF,Pan Lina,18-Jul-1977,26,,,,2003
+18,China PR,GK,Zhao Yan,7-May-1972,31,,,,2003
+19,China PR,FW,Han Duan,15-Jun-1983,20,,,,2003
+20,China PR,DF,Wang Liping,12-Nov-1973,29,,,,2003
+1,Ghana,GK,Memunatu Sulemana,4-Nov-1977,25,,,,2003
+2,Ghana,DF,Aminatu Ibrahim,3-Jan-1979,24,,,,2003
+3,Ghana,DF,Mavis Danso,24-Mar-1984,19,,,,2003
+4,Ghana,DF,Patience Sackey,22-Apr-1975,28,,,,2003
+5,Ghana,MF,Patricia Ofori,9-Jun-1981,22,,,,2003
+6,Ghana,MF,Florence Okoe,12-Nov-1984,18,,,,2003
+7,Ghana,MF,Genevive Clottey,25-Apr-1969,34,,,,2003
+8,Ghana,FW,Myralyn Osei Agyemang,5-Nov-1981,21,,,,2003
+9,Ghana,FW,Akua Anokyewaa,15-Oct-1984,18,,,,2003
+10,Ghana,FW,Adjoa Bayor,17-May-1979,24,,,,2003
+11,Ghana,FW,Gloria Foriwa,11-May-1981,22,,,,2003
+12,Ghana,GK,Fati Mohammed,4-Jun-1979,24,,,,2003
+13,Ghana,DF,Yaa Avoe,1-Jul-1982,21,,,,2003
+14,Ghana,DF,Elizabeth Baidu,28-Apr-1978,25,,,,2003
+15,Ghana,FW,Alberta Sackey,6-Nov-1972,30,,,,2003
+16,Ghana,DF,Lydia Ankrah,1-Dec-1973,29,,,,2003
+17,Ghana,MF,Belinda Kanda,3-Nov-1982,20,,,,2003
+18,Ghana,FW,Mavis Dgajmah,21-Dec-1973,29,,,,2003
+19,Ghana,FW,Basilea Amoa-Tetteh,7-Mar-1984,19,,,,2003
+20,Ghana,GK,Gladys Enti,21-Apr-1975,28,,,,2003
+1,Russia,GK,Svetlana Petko,6-Jun-1970,33,,,,2003
+2,Russia,DF,Tatiana Zaitseva,27-Aug-1978,25,,,,2003
+3,Russia,DF,Marina Burakova,8-May-1966,37,,,,2003
+4,Russia,DF,Marina Saenko,1-May-1975,28,,,,2003
+5,Russia,DF,Vera Stroukova,6-Aug-1981,22,,,,2003
+6,Russia,MF,Galina Komarova,12-Aug-1977,26,,,,2003
+7,Russia,MF,Tatiana Egorova,10-Mar-1970,33,,,,2003
+8,Russia,MF,Alexandra Svetlitskaya,20-Aug-1971,32,,,,2003
+9,Russia,MF,Olga Sergaeva,8-Mar-1977,26,,,,2003
+10,Russia,FW,Natalia Barbashina,26-Aug-1973,30,,,,2003
+11,Russia,FW,Olga Letyushova,29-Dec-1975,27,,,,2003
+12,Russia,GK,Alla Volkova,12-Apr-1968,35,,,,2003
+13,Russia,MF,Elena Fomina,5-Apr-1979,24,,,,2003
+14,Russia,MF,Oksana Shmachkova,20-Jun-1981,22,,,,2003
+15,Russia,MF,Tatyana Skotnikova,27-Nov-1978,24,,,,2003
+16,Russia,DF,Marina Kolomiets,29-Sep-1972,30,,,,2003
+17,Russia,FW,Elena Danilova,17-Jun-1987,16,,,,2003
+18,Russia,DF,Anastasia Pustovoitova,10-Feb-1981,22,,,,2003
+19,Russia,MF,Elena Denchtchik,11-Nov-1973,29,,,,2003
+20,Russia,GK,Maria Pigaleva,19-Feb-1981,22,,,,2003
+1,Denmark,1GK,Dorthe Larsen,8-Aug-1969,29,,,,1999
+2,Denmark,4FW,Hanne Sand Christensen,22-Sep-1973,25,,,,1999
+3,Denmark,4FW,Karina Christensen,1-Jul-1973,25,,,,1999
+4,Denmark,4FW,Lene Terp,15-Apr-1973,26,,,,1999
+5,Denmark,4FW,Marlene Kristensen,28-May-1973,26,,,,1999
+6,Denmark,3MF,Jeanne Axelsen,3-Jan-1968,31,,,,1999
+7,Denmark,3MF,Louise Hansen,4-May-1975,24,,,,1999
+8,Denmark,3MF,Janne Rasmussen,18-Jul-1970,28,,,,1999
+9,Denmark,4FW,Christina Petersen,17-Sep-1974,24,,,,1999
+10,Denmark,4FW,Gitte Krogh,13-May-1977,22,,,,1999
+11,Denmark,4FW,Merete Pedersen,30-Jun-1973,25,,,,1999
+12,Denmark,4FW,Lene Jensen,17-Mar-1976,23,,,,1999
+13,Denmark,2DF,Ulla Knudsen,21-Jun-1976,22,,,,1999
+14,Denmark,2DF,Katrine Pedersen,13-Apr-1977,22,,,,1999
+15,Denmark,4FW,Mikka Hansen,11-Nov-1975,23,,,,1999
+16,Denmark,1GK,Christina Jensen,21-Jan-1974,25,,,,1999
+17,Denmark,3MF,Hanne Nørregaard,21-Dec-1968,30,,,,1999
+18,Denmark,2DF,Lise Søndergaard,27-Oct-1973,25,,,,1999
+19,Denmark,4FW,Janni Johansen,14-Jan-1976,23,,,,1999
+20,Denmark,2DF,Anne-Mette Christensen,4-Mar-1973,26,,,,1999
+1,Nigeria,1GK,Ann Chiejine,2-Feb-1974,25,,,,1999
+2,Nigeria,2DF,Yinka Kudaisi,25-Aug-1975,23,,,,1999
+3,Nigeria,3MF,Martha Tarhemba,1-Apr-1978,21,,,,1999
+4,Nigeria,2DF,Adanna Nwaneri,31-Aug-1975,23,,,,1999
+5,Nigeria,2DF,Eberechi Opara,6-Mar-1976,23,,,,1999
+6,Nigeria,2DF,Florence Ajayi,28-Apr-1977,22,,,,1999
+7,Nigeria,4FW,Stella Mbachu,16-Apr-1978,21,,,,1999
+8,Nigeria,4FW,Rita Nwadike,3-Nov-1974,24,,,,1999
+9,Nigeria,3MF,Gloria Usieta,19-Jun-1977,22,,,,1999
+10,Nigeria,2DF,Mavis Ogun,24-Aug-1973,25,,,,1999
+11,Nigeria,2DF,Prisca Emeafu,30-Mar-1972,27,,,,1999
+12,Nigeria,1GK,Judith Chime,20-May-1978,21,,,,1999
+13,Nigeria,3MF,Nkiru Okosieme,1-Mar-1972,27,,,,1999
+14,Nigeria,3MF,Florence Omagbemi,2-Feb-1975,24,,,,1999
+15,Nigeria,3MF,Maureen Mmadu,7-May-1975,24,,,,1999
+16,Nigeria,2DF,Florence Iweta,29-Mar-1983,16,,,,1999
+17,Nigeria,4FW,Nkechi Egbe,5-Feb-1978,21,,,,1999
+18,Nigeria,4FW,Patience Avre,10-Jun-1976,23,,,,1999
+19,Nigeria,4FW,Mercy Akide,26-Aug-1975,23,,,,1999
+20,Nigeria,3MF,Ifeanyi Chiejine,17-May-1983,16,,,,1999
+1,North Korea,1GK,Ri Jong-hui,20-Aug-1975,23,,,,1999
+2,North Korea,2DF,Yun In-sil,10-Jan-1976,23,,,,1999
+3,North Korea,4FW,Jo Song-ok,18-Mar-1974,25,,,,1999
+4,North Korea,2DF,Kim Sun-hui,4-Apr-1972,27,,,,1999
+5,North Korea,2DF,Kim Sun-hye,1-Jan-1977,22,,,,1999
+6,North Korea,3MF,Sol Yong-suk,4-Feb-1975,24,,,,1999
+7,North Korea,3MF,Ri Hyang-ok,18-Dec-1977,21,,,,1999
+8,North Korea,4FW,Kim Song-ryo,5-Jun-1976,23,,,,1999
+9,North Korea,3MF,Ri Kyong-ae,4-Dec-1972,26,,,,1999
+10,North Korea,3MF,Kim Kum-sil,24-Dec-1970,28,,,,1999
+11,North Korea,4FW,Jo Jong-ran,18-Sep-1971,27,,,,1999
+12,North Korea,2DF,Kim Hye-ran,19-May-1970,29,,,,1999
+13,North Korea,2DF,Ri Ae-gyong,12-Sep-1971,27,,,,1999
+14,North Korea,3MF,Pak Jong-ae,3-Apr-1974,25,,,,1999
+15,North Korea,4FW,Jin Pyol-hui,19-Aug-1980,18,,,,1999
+16,North Korea,3MF,Ri Kum-suk,16-Aug-1978,20,,,,1999
+17,North Korea,2DF,Yang Kyong-hui,21-Jan-1978,21,,,,1999
+18,North Korea,1GK,Kye Yong-sun,27-Mar-1972,27,,,,1999
+19,North Korea,2DF,Jang Ok-gyong,29-Jan-1980,19,,,,1999
+20,North Korea,3MF,Kim Un-ok,18-Apr-1978,21,,,,1999
+1,US,1GK,Briana Scurry,7-Sep-1971,27,,0,,1999
+2,US,3MF,Lorrie Fair,5-Aug-1978,20,,1,University of North Carolina,1999
+3,US,2DF,Christie Pearce,24-Jun-1975,23,,3,,1999
+4,US,2DF,Carla Overbeck,9-May-1968,31,,7,,1999
+5,US,3MF,Tiffany Roberts,5-May-1978,21,,6,,1999
+6,US,2DF,Brandi Chastain,21-Jul-1968,30,,20,,1999
+7,US,3MF,Sara Whalen,28-Apr-1976,23,,2,,1999
+8,US,3MF,Shannon MacMillan,7-Oct-1974,24,,19,,1999
+9,US,4FW,Mia Hamm,17-Mar-1972,27,,111,,1999
+10,US,3MF,Michelle Akers,1-Feb-1966,33,,104,,1999
+11,US,3MF,Julie Foudy,23-Jan-1971,28,,29,,1999
+12,US,4FW,Cindy Parlow,8-May-1978,21,,25,,1999
+13,US,3MF,Kristine Lilly,22-Jul-1971,27,,71,,1999
+14,US,2DF,Joy Fawcett,8-Feb-1968,31,,18,,1999
+15,US,3MF,Tisha Venturini,3-Mar-1973,26,,41,,1999
+16,US,4FW,Tiffeny Milbrett,23-Oct-1972,26,,58,,1999
+17,US,4FW,Danielle Fotopoulos,24-Mar-1976,23,,8,,1999
+18,US,1GK,Saskia Webber,13-Jun-1973,26,,0,,1999
+19,US,1GK,Tracy Ducar,18-Jun-1973,26,,0,,1999
+20,US,2DF,Kate Sobrero,23-Aug-1976,22,,0,,1999
+1,Brazil,1GK,Maravilha,10-Apr-1973,26,,,,1999
+2,Brazil,2DF,Nenê,31-Mar-1976,23,,,,1999
+3,Brazil,2DF,Elane,4-Jun-1968,31,,,,1999
+4,Brazil,2DF,Tânia,3-Oct-1974,24,,,,1999
+5,Brazil,3MF,Cidinha,6-Oct-1976,22,,,,1999
+6,Brazil,2DF,Juliana,3-Oct-1981,17,,,,1999
+7,Brazil,4FW,Maycon,30-Apr-1977,22,,,,1999
+8,Brazil,3MF,Formiga,3-Mar-1978,21,,,,1999
+9,Brazil,4FW,Kátia,18-Feb-1977,22,,,,1999
+10,Brazil,3MF,Sissi,2-Jun-1967,32,,,,1999
+11,Brazil,2DF,Suzana,12-Oct-1973,25,,,,1999
+12,Brazil,1GK,Andréia,14-Sep-1977,21,,,,1999
+13,Brazil,2DF,Fanta,14-Sep-1966,32,,,,1999
+14,Brazil,4FW,Grazielle,28-Mar-1981,18,,,,1999
+15,Brazil,3MF,Raquel,10-May-1978,21,,,,1999
+16,Brazil,2DF,Marisa,10-Aug-1966,32,,,,1999
+17,Brazil,4FW,Pretinha,19-May-1975,24,,,,1999
+18,Brazil,3MF,Priscila,10-Mar-1982,17,,,,1999
+19,Brazil,3MF,Valeria,9-Mar-1968,31,,,,1999
+20,Brazil,3MF,Deva,16-Apr-1981,18,,,,1999
+1,Germany,1GK,Silke Rottenberg,25-Jan-1972,27,5,,Sportfreunde Siegen,1999
+2,Germany,2DF,Kerstin Stegemann,29-Sep-1977,21,42,,FCR Duisburg,1999
+3,Germany,2DF,Ariane Hingst,25-Jul-1979,19,46,,1. FFC Turbine Potsdam,1999
+4,Germany,2DF,Steffi Jones,22-Dec-1972,26,38,,SC 07 Bad Neuenahr,1999
+5,Germany,2DF,Doris Fitschen,25-Oct-1968,30,38,,1. FFC Frankfurt,1999
+6,Germany,3MF,Melanie Hoffmann,29-Nov-1974,24,14,,FCR Duisburg,1999
+7,Germany,3MF,Martina Voss,22-Dec-1967,31,28,,FCR Duisburg,1999
+8,Germany,3MF,Sandra Smisek,3-Jul-1977,21,18,,FCR Duisburg,1999
+9,Germany,4FW,Birgit Prinz,25-Oct-1977,21,43,,1. FFC Frankfurt,1999
+10,Germany,3MF,Bettina Wiegmann,7-Oct-1971,27,44,,Sportfreunde Siegen,1999
+11,Germany,3MF,Maren Meinert,5-Feb-1973,26,40,,FCR Duisburg,1999
+12,Germany,4FW,Claudia Müller,21-May-1974,25,45,,1. FFC Frankfurt,1999
+13,Germany,2DF,Sandra Minnert,7-Apr-1973,26,42,,FSV Frankfurt,1999
+14,Germany,2DF,Tina Wunderlich,10-Oct-1977,21,40,,1. FFC Frankfurt,1999
+15,Germany,1GK,Nadine Angerer,10-Nov-1978,20,25,,FC Wacker München,1999
+16,Germany,3MF,Renate Lingor,11-Oct-1975,23,14,,1. FFC Frankfurt,1999
+17,Germany,2DF,Pia Wunderlich,26-Jan-1975,24,28,,1. FFC Frankfurt,1999
+18,Germany,4FW,Inka Grings,31-Oct-1978,20,17,,FCR Duisburg,1999
+19,Germany,2DF,Nicole Brandebusemeyer,9-Oct-1974,24,46,,Grün-Weiß Brauweiler,1999
+20,Germany,4FW,Monika Meyer,23-Jun-1972,26,17,,1. FFC Frankfurt,1999
+1,Italy,1GK,Giorgia Brenzan,21-Aug-1967,31,,,,1999
+2,Italy,2DF,Damiana Deiana,26-Jun-1970,28,,,,1999
+3,Italy,2DF,Paola Zanni,12-Jun-1977,22,,,,1999
+4,Italy,2DF,Luisa Marchio,6-Feb-1971,28,,,,1999
+5,Italy,2DF,Daniela Tavalazzi,8-Aug-1972,26,,,,1999
+6,Italy,2DF,Elisa Miniati,6-Jan-1974,25,,,,1999
+7,Italy,4FW,Rita Guarino,31-Jan-1971,28,,,,1999
+8,Italy,3MF,Manuela Tesse,28-Feb-1976,23,,,,1999
+9,Italy,4FW,Patrizia Panico,8-Feb-1975,24,,,,1999
+10,Italy,3MF,Antonella Carta,1-Mar-1967,32,,,,1999
+11,Italy,4FW,Patrizia Sberti,6-Jul-1969,29,,,,1999
+12,Italy,1GK,Fabiana Comin,20-Mar-1970,29,,,,1999
+13,Italy,2DF,Anna Duò,8-Aug-1972,26,,,,1999
+14,Italy,3MF,Federica D'Astolfo,27-Oct-1966,32,,,,1999
+15,Italy,2DF,Adele Frollani,4-Aug-1974,24,,,,1999
+16,Italy,3MF,Tatiana Zorri,19-Oct-1977,21,,,,1999
+17,Italy,4FW,Silvia Tagliacarne,8-Aug-1975,23,,,,1999
+18,Italy,3MF,Silvia Fiorini,24-Dec-1969,29,,,,1999
+19,Italy,3MF,Alessandra Pallotti,7-Sep-1974,24,,,,1999
+20,Italy,2DF,Roberta Stefanelli,18-May-1974,25,,,,1999
+1,Mexico,1GK,Linnea Quinones,17-Jul-1980,18,,,,1999
+2,Mexico,2DF,Susana Mora,26-Jan-1979,20,,,,1999
+3,Mexico,2DF,Martha Moore,14-Apr-1981,18,,,,1999
+4,Mexico,2DF,Gina Oceguera,9-Apr-1977,22,,,,1999
+5,Mexico,3MF,Patricia Pérez,17-Dec-1978,20,,,,1999
+6,Mexico,3MF,Fátima Leyva,14-Feb-1980,19,,,,1999
+7,Mexico,3MF,Mónica Vergara,2-May-1983,16,,,,1999
+8,Mexico,3MF,Andrea Rodebaugh,8-Oct-1966,32,,,,1999
+9,Mexico,4FW,Lisa Nanez,10-Mar-1977,22,,,,1999
+10,Mexico,4FW,Maribel Domínguez,18-Nov-1978,20,,,,1999
+11,Mexico,4FW,Monica Gerardo,10-Nov-1976,22,,,,1999
+12,Mexico,1GK,Yvette Valdez,16-Oct-1973,25,,,,1999
+13,Mexico,4FW,Mónica González,10-Oct-1978,20,,,,1999
+14,Mexico,4FW,Iris Mora,22-Sep-1981,17,,,,1999
+15,Mexico,3MF,Laurie Hill,11-Feb-1970,29,,,,1999
+16,Mexico,4FW,Nancy Pinzón,6-Jun-1974,25,,,,1999
+17,Mexico,3MF,Kendyl Michner,3-May-1978,21,,,,1999
+18,Mexico,4FW,Tánima Rubalcaba,24-Dec-1980,18,,,,1999
+19,Mexico,2DF,Bárbara Almaraz,4-May-1979,20,,,,1999
+20,Mexico,3MF,Denise Ireta,4-Jan-1980,19,,,,1999
+1,Canada,1GK,Nicci Wright,12-Aug-1972,26,,,,1999
+2,Canada,3MF,Liz Smith,25-Sep-1975,23,,,,1999
+3,Canada,2DF,Sharolta Nonen,30-Dec-1977,21,,,,1999
+4,Canada,3MF,Tanya Franck,13-Dec-1974,24,,,,1999
+5,Canada,2DF,Andrea Neil,26-Oct-1971,27,,,,1999
+6,Canada,3MF,Geri Donnelly,30-Nov-1965,33,,,,1999
+7,Canada,2DF,Isabelle Morneau,18-Apr-1976,23,,,,1999
+8,Canada,4FW,Sara Maglio,17-Mar-1978,21,,,,1999
+9,Canada,2DF,Janine Helland,24-Apr-1970,29,,,,1999
+10,Canada,4FW,Charmaine Hooper,15-Jan-1968,31,,,,1999
+11,Canada,4FW,Shannon Rosenow,20-Jun-1972,26,,,,1999
+12,Canada,4FW,Isabelle Harvey,27-Mar-1975,24,,,,1999
+13,Canada,3MF,Amy Walsh,13-Sep-1977,21,,,,1999
+14,Canada,3MF,Sarah Joly,16-Feb-1977,22,,,,1999
+15,Canada,2DF,Suzanne Muir,6-Jul-1970,28,,,,1999
+16,Canada,3MF,Jeanette Haas,3-Jan-1976,23,,,,1999
+17,Canada,4FW,Silvana Burtini,10-May-1969,30,,,,1999
+18,Canada,3MF,Mary Beth Bowie,27-Oct-1978,20,,,,1999
+19,Canada,1GK,Melanie Haz,26-Nov-1975,23,,,,1999
+20,Canada,1GK,Karina LeBlanc,30-Mar-1980,19,,,,1999
+1,Japan,1GK,Shiho Onodera,18-Nov-1973,25,,,,1999
+2,Japan,2DF,Rie Yamaki,2-Oct-1975,23,,,,1999
+3,Japan,2DF,Kaoru Nagadome,7-May-1973,26,,,,1999
+4,Japan,2DF,Mai Nakachi,16-Dec-1980,18,,,,1999
+5,Japan,3MF,Tomoe Sakai,27-May-1978,21,,,,1999
+6,Japan,2DF,Kae Nishina,7-Dec-1972,26,,,,1999
+7,Japan,2DF,Yumi Tomei,1-Jun-1972,27,,,,1999
+8,Japan,3MF,Ayumi Hara,21-Feb-1979,20,,,,1999
+9,Japan,4FW,Tamaki Uchiyama,13-Dec-1972,26,,,,1999
+10,Japan,3MF,Homare Sawa,6-Sep-1978,20,,,,1999
+11,Japan,4FW,Nami Otake,30-Jul-1974,24,,,,1999
+12,Japan,2DF,Hiromi Isozaki,22-Dec-1975,23,,,,1999
+13,Japan,3MF,Miyuki Yanagita,11-Apr-1981,18,,,,1999
+14,Japan,3MF,Tomomi Mitsui,31-Dec-1978,20,,,,1999
+15,Japan,4FW,Mito Isaka,25-Jan-1976,23,,,,1999
+16,Japan,3MF,Yayoi Kobayashi,18-Sep-1981,17,,,,1999
+17,Japan,4FW,Mayumi Omatsu,12-Jul-1970,28,,,,1999
+18,Japan,1GK,Nozomi Yamago,16-Jan-1975,24,,,,1999
+19,Japan,4FW,Kozue Ando,9-Jul-1982,16,,,,1999
+20,Japan,1GK,Naoko Nishigai,22-Jan-1969,30,,,,1999
+1,Norway,1GK,Bente Nordby,23-Jul-1974,24,,,Athene Moss,1999
+2,Norway,2DF,Brit Sandaune,5-Jun-1972,27,,,Trondheims-Ørn,1999
+3,Norway,2DF,Gøril Kringen,28-Jan-1972,27,,,Trondheims-Ørn,1999
+4,Norway,3MF,Silje Jørgensen,5-May-1977,22,,,Klepp,1999
+5,Norway,2DF,Henriette Viker,5-Aug-1973,25,,,Asker,1999
+6,Norway,3MF,Hege Riise,18-Jul-1969,29,,,Setskog/Høland FK,1999
+7,Norway,3MF,Tone Gunn Frustøl,21-Jun-1975,23,,,Asker,1999
+8,Norway,3MF,Monica Knudsen,25-Mar-1975,24,,,Asker,1999
+9,Norway,3MF,Ann Kristin Aarønes,19-Jan-1973,26,,,Trondheims-Ørn,1999
+10,Norway,2DF,Linda Medalen,17-Jun-1965,34,,,Asker,1999
+11,Norway,3MF,Marianne Pettersen,12-Apr-1975,24,,,Asker,1999
+12,Norway,1GK,Astrid Johannessen,10-Jan-1978,21,,,Asker,1999
+13,Norway,3MF,Ragnhild Gulbrandsen,22-Feb-1977,22,,,Trondheims-Ørn,1999
+14,Norway,2DF,Anne Nymark Andersen,28-Sep-1972,26,,,Bjørnar,1999
+15,Norway,3MF,Dagny Mellgren,19-Jun-1978,21,,,Bjørnar,1999
+16,Norway,3MF,Solveig Gulbrandsen,12-Jan-1981,18,,,Kolbotn,1999
+17,Norway,3MF,Anita Rapp,24-Jul-1977,21,,,Asker,1999
+18,Norway,2DF,Anne Tønnessen,18-Mar-1974,25,,,Kolbotn,1999
+19,Norway,3MF,Linda Ørmen,22-Mar-1977,22,,,Athene Moss,1999
+20,Norway,3MF,Unni Lehn,7-Jun-1977,22,,,Trondheims-Ørn,1999
+1,Russia,1GK,Svetlana Petko,6-Jun-1970,29,,,,1999
+2,Russia,2DF,Yulia Yushekivitch,14-Sep-1980,18,,,,1999
+3,Russia,2DF,Marina Burakova,8-May-1966,33,,,,1999
+4,Russia,2DF,Natalia Karasseva,30-Apr-1977,22,,,,1999
+5,Russia,2DF,Tatiana Cheverda,29-Aug-1974,24,,,,1999
+6,Russia,2DF,Galina Komarova,12-Aug-1977,21,,,,1999
+7,Russia,3MF,Tatiana Egorova,10-Mar-1970,29,,,,1999
+8,Russia,3MF,Irina Grigorieva,21-Feb-1972,27,,,,1999
+9,Russia,3MF,Alexandra Svetlitskaya,20-Aug-1971,27,,,,1999
+10,Russia,4FW,Natalia Barbashina,26-Aug-1973,25,,,,1999
+11,Russia,4FW,Olga Letyushova,29-Dec-1975,23,,,,1999
+12,Russia,1GK,Alla Volkova,12-Apr-1968,31,,,,1999
+13,Russia,3MF,Elena Fomina,5-Apr-1979,20,,,,1999
+14,Russia,3MF,Olga Karasseva,6-Oct-1975,23,,,,1999
+15,Russia,4FW,Larisa Savina,25-Nov-1970,28,,,,1999
+16,Russia,2DF,Natalia Filippova,7-Feb-1975,24,,,,1999
+17,Russia,3MF,Elena Lissacheva,25-Nov-1973,25,,,,1999
+18,Russia,3MF,Tatyana Skotnikova,27-Nov-1978,20,,,,1999
+19,Russia,2DF,Tatiana Zaitseva,27-Aug-1978,20,,,,1999
+20,Russia,1GK,Larissa Kapitonova,4-May-1970,29,,,,1999
+1,Australia,1GK,Belinda Kitching,15-Jul-1977,21,,,,1999
+2,Australia,2DF,Amy Taylor,11-Jun-1979,20,,,,1999
+3,Australia,2DF,Bridgette Starr,10-Dec-1975,23,,,,1999
+4,Australia,2DF,Sarah Cooper,8-Oct-1969,29,,,,1999
+5,Australia,2DF,Traci Bartlett,17-May-1972,27,,,,1999
+6,Australia,2DF,Anissa Tann,10-Oct-1967,31,,,,1999
+7,Australia,3MF,Lisa Casagrande,29-May-1978,21,,,,1999
+8,Australia,4FW,Cheryl Salisbury,8-Mar-1974,25,,,,1999
+9,Australia,4FW,Julie Murray,28-Apr-1970,29,,,,1999
+10,Australia,3MF,Angela Iannotta,22-Mar-1971,28,,,,1999
+11,Australia,3MF,Sharon Black,4-Apr-1971,28,,,,1999
+12,Australia,2DF,Kristyn Swaffer,13-Dec-1975,23,,,,1999
+13,Australia,4FW,Alicia Ferguson,31-Oct-1981,17,,,,1999
+14,Australia,3MF,Joanne Peters,11-Mar-1979,20,,,,1999
+15,Australia,3MF,Peita-Claire Hepperlin,24-Dec-1981,17,,,,1999
+16,Australia,3MF,Amy Wilson,9-Jun-1980,19,,,,1999
+17,Australia,3MF,Kelly Golebiowski,26-Jul-1981,17,,,,1999
+18,Australia,3MF,Alison Forman,17-Mar-1969,30,,,,1999
+19,Australia,2DF,Dianne Alagich,12-May-1979,20,,,,1999
+20,Australia,1GK,Tracey Wheeler,26-Sep-1967,31,,,,1999
+1,China PR,1GK,Han Wenxia,23-Aug-1976,22,,,,1999
+2,China PR,3MF,Wang Liping,12-Nov-1973,25,,,,1999
+3,China PR,2DF,Fan Yunjie,29-Apr-1972,27,,,,1999
+4,China PR,2DF,Man Yanling,9-Nov-1972,26,,,,1999
+5,China PR,2DF,Xie Huilin,17-Jan-1975,24,,,,1999
+6,China PR,3MF,Zhao Lihong,25-Dec-1972,26,,,,1999
+7,China PR,4FW,Zhang Ouying,2-Nov-1975,23,,,,1999
+8,China PR,4FW,Jin Yan,27-Jul-1972,26,,,,1999
+9,China PR,4FW,Sun Wen,6-Apr-1973,26,,,,1999
+10,China PR,3MF,Liu Ailing,2-May-1967,32,,,,1999
+11,China PR,3MF,Pu Wei,20-Aug-1980,18,,,,1999
+12,China PR,2DF,Wen Lirong,2-Oct-1969,29,,,,1999
+13,China PR,3MF,Liu Ying,11-Jun-1974,25,,,,1999
+14,China PR,2DF,Bai Jie,28-Mar-1972,27,,,,1999
+15,China PR,3MF,Qiu Haiyan,17-Jun-1974,25,,,,1999
+16,China PR,4FW,Fan Chunling,2-Feb-1972,27,,,,1999
+17,China PR,3MF,Zhu Jing,2-Mar-1978,21,,,,1999
+18,China PR,1GK,Gao Hong,27-Nov-1967,31,,,,1999
+19,China PR,2DF,Gao Hongxia,7-Dec-1973,25,,,,1999
+20,China PR,2DF,Wang Jingxia,11-Nov-1976,22,,,,1999
+1,Ghana,1GK,Memunatu Sulemana,4-Nov-1977,21,,,Mawuena Ladies,1999
+2,Ghana,2DF,Patience Sackey,25-Apr-1975,24,,,Postal Ladies,1999
+3,Ghana,2DF,Rita Yeboah,25-May-1976,23,,,Bluna Ladies,1999
+4,Ghana,2DF,Regina Ansah,23-Aug-1974,24,,,Bluna Ladies,1999
+5,Ghana,2DF,Elizabeth Baidu,28-Apr-1978,21,,,Bluna Ladies,1999
+6,Ghana,3MF,Juliana Kakraba,29-Dec-1979,19,,,Ghatel Ladies,1999
+7,Ghana,4FW,Mavis Dgajmah,21-Dec-1973,25,,,La Ladies,1999
+8,Ghana,2DF,Barikisu Tettey-Quao,28-Aug-1980,18,,,La Ladies,1999
+9,Ghana,4FW,Alberta Sackey,6-Nov-1972,26,,,Ghatel Ladies,1999
+10,Ghana,4FW,Vivian Mensah,13-Jun-1972,27,,,La Ladies,1999
+11,Ghana,4FW,Adjoa Bayor,17-May-1979,20,,,Ghatel Ladies,1999
+12,Ghana,2DF,Kulu Yahaya,23-May-1976,23,,,Ashiaman Ladies,1999
+13,Ghana,2DF,Lydia Ankrah,1-Dec-1973,25,,,Postal Ladies,1999
+14,Ghana,2DF,Mercy Tagoe,5-Feb-1974,25,,,Bluna Ladies,1999
+15,Ghana,4FW,Nana Gyamfuah,4-Aug-1978,20,,,Postal Ladies,1999
+16,Ghana,4FW,Gladys Enti,21-Apr-1975,24,,,Ghatel Ladies,1999
+17,Ghana,4FW,Sheila Okai,14-Feb-1979,20,,,Ghatel Ladies,1999
+18,Ghana,1GK,Priscilla Mensah,19-Apr-1974,25,,,La Ladies,1999
+19,Ghana,3MF,Stella Quartey,28-Dec-1973,25,,,Ghatel Ladies,1999
+20,Ghana,3MF,Genevive Clottey,29-Apr-1969,30,,,Ghatel Ladies,1999
+1,Sweden,1GK,Ulrika Karlsson,14-Oct-1970,28,34,0,,1999
+2,Sweden,2DF,Karolina Westberg,16-May-1978,21,27,0,,1999
+3,Sweden,2DF,Jane Törnqvist,9-May-1975,24,37,5,,1999
+4,Sweden,2DF,Åsa Lönnqvist,14-Apr-1970,29,61,1,,1999
+5,Sweden,3MF,Kristin Bengtsson,12-Jan-1970,29,77,4,,1999
+6,Sweden,3MF,Malin Moström,1-Aug-1975,23,9,2,,1999
+7,Sweden,2DF,Cecilia Sandell,10-Jun-1968,31,41,2,,1999
+8,Sweden,4FW,Malin Gustafsson,24-Jan-1980,19,6,1,,1999
+9,Sweden,3MF,Malin Andersson,4-May-1973,26,69,20,,1999
+10,Sweden,3MF,Hanna Ljungberg,8-Jan-1979,20,35,5,,1999
+11,Sweden,4FW,Victoria Svensson,18-May-1977,22,32,8,,1999
+12,Sweden,1GK,Ulla-Karin Thelin,19-Feb-1977,22,2,0,,1999
+13,Sweden,2DF,Hanna Marklund,26-Nov-1977,21,13,0,,1999
+14,Sweden,2DF,Jessika Sundh,9-Jul-1974,24,5,0,,1999
+15,Sweden,3MF,Linda Gren,12-Nov-1974,24,5,0,,1999
+16,Sweden,4FW,Salina Olsson,29-Aug-1978,20,18,1,,1999
+17,Sweden,3MF,Linda Fagerström,17-Mar-1977,22,18,2,,1999
+18,Sweden,3MF,Therese Lundin,3-Mar-1979,20,1,0,,1999
+19,Sweden,3MF,Minna Heponiemi,10-Aug-1977,21,3,1,,1999
+20,Sweden,3MF,Tina Nordlund,19-Mar-1977,22,8,0,,1999
+1,Brazil,1GK,Meg,1-Jan-1956,39,,,,1995
+2,Brazil,3MF,Valeria,3-Sep-1968,26,,,,1995
+3,Brazil,2DF,Elane,6-Apr-1968,27,,,,1995
+4,Brazil,2DF,Solange,29-Mar-1969,26,,,,1995
+5,Brazil,3MF,Leda Maria,16-Apr-1966,29,,,,1995
+6,Brazil,3MF,Fanta,14-Sep-1966,28,,,,1995
+7,Brazil,4FW,Pretinha,19-May-1975,20,,,,1995
+8,Brazil,3MF,Cenira,2-Dec-1965,29,,,,1995
+9,Brazil,4FW,Michael Jackson,19-Nov-1963,31,,,,1995
+10,Brazil,3MF,Sissi,6-Feb-1967,28,,,,1995
+11,Brazil,4FW,Roseli,9-Jul-1969,25,,,,1995
+12,Brazil,1GK,Eliane,22-Apr-1971,24,,,,1995
+13,Brazil,2DF,Nenê,31-Mar-1976,19,,,,1995
+14,Brazil,3MF,Márcia Taffarel,15-Mar-1968,27,,,,1995
+15,Brazil,4FW,Nalvinha,14-Jul-1965,29,,,,1995
+16,Brazil,3MF,Formiga,3-Mar-1978,17,,,,1995
+17,Brazil,2DF,Yara,13-Feb-1964,31,,,,1995
+18,Brazil,2DF,Kátia,18-Feb-1977,18,,,,1995
+19,Brazil,2DF,Suzy,2-Jul-1967,27,,,,1995
+20,Brazil,4FW,Tânia,10-Mar-1974,21,,,,1995
+1,Germany,1GK,Manuela Goller,5-Jan-1971,24,30,,Grün-Weiß Brauweiler,1995
+2,Germany,2DF,Anouschka Bernhard,5-Oct-1970,24,33,,FSV Frankfurt,1995
+3,Germany,2DF,Birgitt Austermühl,8-Oct-1965,29,41,,FSV Frankfurt,1995
+4,Germany,2DF,Dagmar Pohlmann,7-Feb-1972,23,26,,FSV Frankfurt,1995
+5,Germany,3MF,Ursula Lohn,7-Nov-1966,28,20,,TuS Ahrbach,1995
+6,Germany,3MF,Maren Meinert,5-Aug-1973,21,30,,FC Rumeln-Kaldenhausen,1995
+7,Germany,3MF,Martina Voss,22-Dec-1967,27,75,,FC Rumeln-Kaldenhausen,1995
+8,Germany,3MF,Bettina Wiegmann,7-Oct-1971,23,52,,Sportfreunde Siegen,1995
+9,Germany,4FW,Heidi Mohr,29-May-1967,28,82,,TuS Ahrbach,1995
+10,Germany,3MF,Silvia Neid,2-May-1964,31,95,,TSV Siegen,1995
+11,Germany,4FW,Patricia Brocker,7-Apr-1966,29,28,,TuS Niederkirchen,1995
+12,Germany,1GK,Katja Kraus,23-Nov-1970,24,1,,FSV Frankfurt,1995
+13,Germany,4FW,Melanie Hoffmann,29-Nov-1974,20,1,,FC Rumeln-Kaldenhausen,1995
+14,Germany,2DF,Sandra Minnert,7-Apr-1973,22,20,,FSV Frankfurt,1995
+15,Germany,2DF,Claudia Klein,24-Sep-1971,23,4,,Grün-Weiß Brauweiler,1995
+16,Germany,4FW,Birgit Prinz,25-Oct-1977,17,14,,FSV Frankfurt,1995
+17,Germany,2DF,Tina Wunderlich,10-Oct-1977,17,3,,SG Praunheim,1995
+18,Germany,3MF,Pia Wunderlich,26-Jan-1975,20,11,,SG Praunheim,1995
+19,Germany,3MF,Sandra Smisek,3-Jul-1977,17,2,,FSV Frankfurt,1995
+20,Germany,1GK,Christine Francke,12-Jun-1974,20,2,,TuS Ahrbach,1995
+1,Japan,1GK,Junko Ozawa,12-Jul-1973,21,,,,1995
+2,Japan,2DF,Yumi Tomei,6-Jan-1972,23,,,,1995
+3,Japan,2DF,Rie Yamaki,10-Feb-1975,20,,,,1995
+4,Japan,2DF,Maki Haneta,30-Sep-1972,22,,,,1995
+5,Japan,2DF,Ryoko Uno,11-Sep-1975,19,,,,1995
+6,Japan,2DF,Kae Nishina,12-Jul-1972,22,,,,1995
+7,Japan,3MF,Homare Sawa,9-Jun-1978,16,,,,1995
+8,Japan,3MF,Asako Takakura,19-Apr-1968,27,,,,1995
+9,Japan,3MF,Futaba Kioka,22-Nov-1965,29,,,,1995
+10,Japan,4FW,Akemi Noda,13-Oct-1969,25,,,,1995
+11,Japan,3MF,Etsuko Handa,5-Oct-1965,29,,,,1995
+12,Japan,2DF,Yumi Obe,15-Feb-1975,20,,,,1995
+13,Japan,3MF,Kaori Nagamine,6-Mar-1968,27,,,,1995
+14,Japan,2DF,Kaoru Kadohara,25-May-1970,25,,,,1995
+15,Japan,4FW,Tsuru Morimoto,9-Nov-1970,24,,,,1995
+16,Japan,3MF,Nami Otake,30-Jul-1974,20,,,,1995
+17,Japan,4FW,Tamaki Uchiyama,13-Dec-1972,22,,,,1995
+18,Japan,4FW,Inesu Emiko Takeoka,1-May-1971,24,,,,1995
+19,Japan,1GK,Shiho Onodera,18-Nov-1973,21,,,,1995
+20,Japan,1GK,Megumi Sakata,18-Oct-1971,23,,,,1995
+1,Sweden,1GK,Elisabeth Leidinge,6-Mar-1957,38,107,0,Malmö,1995
+2,Sweden,2DF,Malin Lundgren,9-Mar-1967,28,57,6,Malmö,1995
+3,Sweden,2DF,Åsa Jakobsson,2-Jun-1966,29,37,0,Gideonsbergs IF,1995
+4,Sweden,2DF,Pia Sundhage,13-Feb-1960,35,123,62,Hammarby IF,1995
+5,Sweden,2DF,Kristin Bengtsson,12-Jan-1970,25,29,1,Hammarby IF,1995
+6,Sweden,3MF,Anna Pohjanen,25-Jan-1974,21,7,0,Sunnanå SK,1995
+7,Sweden,3MF,Lena Videkull,9-Dec-1962,32,98,59,Malmö,1995
+8,Sweden,3MF,Susanne Hedberg,26-Jun-1972,22,53,7,Gideonsbergs IF,1995
+9,Sweden,3MF,Malin Andersson,5-Apr-1973,22,17,6,Alvsjö AIK,1995
+10,Sweden,4FW,Anneli Andelén,21-Jun-1968,26,79,35,Öxabäck/Mark IF,1995
+11,Sweden,4FW,Ulrika Kalte,19-May-1970,25,35,16,Alvsjö AIK,1995
+12,Sweden,1GK,Annelie Nilsson,14-Jun-1971,23,14,0,Sunnanå SK,1995
+13,Sweden,2DF,Annika Nessvold,24-Feb-1971,24,17,3,Malmö,1995
+14,Sweden,3MF,Åsa Lönnqvist,14-Apr-1970,25,17,0,Tyresö FF,1995
+15,Sweden,3MF,Anneli Olsson,7-Feb-1967,28,10,2,Hammarby IF,1995
+16,Sweden,3MF,Eva Zeikfalvy,18-Apr-1967,28,58,2,,1995
+17,Sweden,3MF,Malin Flink,4-Sep-1974,20,1,0,Gideonsbergs IF,1995
+18,Sweden,4FW,Helen Nilsson,24-Nov-1970,24,33,6,Gideonsbergs IF,1995
+19,Sweden,4FW,Anika Bozicevic,8-Nov-1972,22,2,0,Malmö,1995
+20,Sweden,3MF,Sofia Johansson,5-Sep-1969,25,5,1,Malmö,1995
+1,Canada,1GK,Wendy Hawthorne,6-Jul-1960,34,,,,1995
+2,Canada,4FW,Helen Stoumbos,18-Oct-1970,24,,,,1995
+3,Canada,4FW,Charmaine Hooper,15-Jan-1968,27,,,,1995
+4,Canada,2DF,Michelle Ring,28-Nov-1967,27,,,,1995
+5,Canada,2DF,Andrea Neil,26-Oct-1971,23,,,,1995
+6,Canada,3MF,Geri Donnelly,30-Nov-1965,29,,,,1995
+7,Canada,4FW,Isabelle Morneau,18-Apr-1976,19,,,,1995
+8,Canada,2DF,Nicole Sedgwick,19-Jan-1974,21,,,,1995
+9,Canada,2DF,Janine Helland,24-Apr-1970,25,,,,1995
+10,Canada,3MF,Veronica O'Brien,29-Jan-1971,24,,,,1995
+11,Canada,3MF,Annie Caron,5-Jun-1964,31,,,,1995
+12,Canada,3MF,Joan McEachern,4-Dec-1963,31,,,,1995
+13,Canada,3MF,Angela Kelly,10-Mar-1971,24,,,,1995
+14,Canada,2DF,Cathy Ross,19-Nov-1967,27,,,,1995
+15,Canada,2DF,Suzanne Muir,7-Jun-1970,24,,,,1995
+16,Canada,2DF,Luce Mongrain,1-Nov-1971,23,,,,1995
+17,Canada,4FW,Silvana Burtini,5-Oct-1969,25,,,,1995
+18,Canada,1GK,Carla Chin,5-Oct-1966,28,,,,1995
+19,Canada,3MF,Suzanne Gerrior,4-Apr-1973,22,,,,1995
+20,Canada,1GK,Tania Singfield,9-Feb-1970,25,,,,1995
+1,England,1GK,Pauline Cope,16-Feb-1969,26,,,Arsenal Ladies,1995
+2,England,3MF,Hope Powell,8-Dec-1966,28,,,Croydon Women,1995
+3,England,2DF,Tina Mapes,21-Jan-1971,24,,,Croydon Women,1995
+4,England,2DF,Samantha Britton,8-Dec-1973,21,,,Arsenal Ladies,1995
+5,England,2DF,Clare Taylor,22-May-1965,30,,,Liverpool Ladies,1995
+6,England,3MF,Gillian Coultard,22-Jul-1963,31,,,Doncaster Belles,1995
+7,England,3MF,Marieanne Spacey,13-Feb-1966,29,,,Arsenal Ladies,1995
+8,England,3MF,Debbie Bampton,7-Oct-1961,33,,,Croydon Women,1995
+9,England,4FW,Karen Farley,2-Sep-1970,24,,,Hammarby IF,1995
+10,England,3MF,Karen Burke,14-Jun-1971,23,,,Liverpool Ladies,1995
+11,England,2DF,Brenda Sempare,9-Nov-1961,33,,,Croydon Women,1995
+12,England,3MF,Kerry Davis,8-Feb-1962,33,,,Croydon Women,1995
+13,England,1GK,Lesley Higgs,25-Oct-1965,29,,,Wembley Ladies,1995
+14,England,4FW,Karen Walker,29-Jul-1969,25,,,Doncaster Belles,1995
+15,England,3MF,Sian Williams,2-Feb-1968,27,,,Arsenal Ladies,1995
+16,England,2DF,Donna Smith,17-Jan-1967,28,,,Croydon Women,1995
+17,England,2DF,Louise Waller,30-Jul-1969,25,,,Millwall Lionesses,1995
+18,England,2DF,Mary Phillip,14-Mar-1977,18,,,Millwall Lionesses,1995
+19,England,2DF,Julie Fletcher,28-Sep-1974,20,,,Millwall Lionesses,1995
+20,England,3MF,Becky Easton,16-Apr-1974,21,,,Liverpool Ladies,1995
+1,Nigeria,1GK,Ann Chiejine,2-Feb-1974,21,,,,1995
+2,Nigeria,2DF,Florence Omagbemi,2-Feb-1975,20,,,,1995
+3,Nigeria,2DF,Ngozi Ezeocha,12-Oct-1973,21,,,,1995
+4,Nigeria,4FW,Adaku Okoroafor,18-Nov-1974,20,,,,1995
+5,Nigeria,2DF,Omo-Love Branch,10-Jan-1974,21,,,,1995
+6,Nigeria,3MF,Yinka Kudaisi,25-Aug-1975,19,,,,1995
+7,Nigeria,3MF,Nkechi Mbilitam,5-Apr-1974,21,,,,1995
+8,Nigeria,3MF,Rita Nwadike,11-Mar-1974,21,,,,1995
+9,Nigeria,4FW,Ngozi Eucharia Uche,18-Jun-1973,21,,,,1995
+10,Nigeria,2DF,Mavis Ogun,24-Aug-1973,21,,,,1995
+11,Nigeria,2DF,Prisca Emeafu,30-Mar-1972,23,,,,1995
+12,Nigeria,3MF,Mercy Akide,26-Aug-1975,19,,,,1995
+13,Nigeria,3MF,Nkiru Okosieme,3-Jan-1972,23,,,,1995
+14,Nigeria,2DF,Phoebe Ebimiekumo,17-Jan-1974,21,,,,1995
+15,Nigeria,4FW,Maureen Mmadu,5-Jul-1975,19,,,,1995
+16,Nigeria,2DF,Ugochi Opara,27-May-1976,19,,,,1995
+17,Nigeria,1GK,Louisa Akpagu,22-Dec-1974,20,,,,1995
+18,Nigeria,3MF,Patience Avre,6-Oct-1976,18,,,,1995
+19,Nigeria,1GK,Diana Nwaiwu,10-Oct-1973,21,,,,1995
+20,Nigeria,3MF,Ann Mukoro,27-May-1975,20,,,,1995
+1,Norway,1GK,Bente Nordby,23-Jul-1974,20,,,SK Sprint/Jeløy,1995
+2,Norway,2DF,Tina Svensson,16-Nov-1966,28,,,Asker,1995
+3,Norway,2DF,Gro Espeseth,30-Oct-1972,22,,,IL Sandviken,1995
+4,Norway,3MF,Anne Nymark Andersen,28-Sep-1972,22,,,Bjørnar IL,1995
+5,Norway,2DF,Nina Nymark Andersen,28-Sep-1972,22,,,IL Sandviken,1995
+6,Norway,3MF,Hege Riise,18-Jul-1969,25,,,Setskog/Høland FK,1995
+7,Norway,3MF,Tone Haugen,6-Feb-1964,31,,,Nikko Sec. Ladies FC,1995
+8,Norway,3MF,Heidi Støre,4-Jul-1963,31,,,Kolbotn IL,1995
+9,Norway,4FW,Kristin Sandberg,23-Mar-1972,23,,,Asker,1995
+10,Norway,4FW,Linda Medalen,17-Jun-1965,29,,,Nikko Sec. Ladies FC,1995
+11,Norway,4FW,Ann Kristin Aarønes,19-Jan-1973,22,,,Trondheims-Ørn SK,1995
+12,Norway,1GK,Reidun Seth,9-Jun-1966,28,,,Öxabäck IF,1995
+13,Norway,2DF,Merete Myklebust,16-May-1973,22,,,Trondheims-Ørn SK,1995
+14,Norway,3MF,Hege Gunnerød,22-Nov-1973,21,,,Asker,1995
+15,Norway,4FW,Randi Leinan,9-Apr-1968,27,,,Trondheims-Ørn SK,1995
+16,Norway,4FW,Marianne Pettersen,4-Dec-1975,19,,,Gjelleråsen IF,1995
+17,Norway,2DF,Anita Waage,31-Jul-1971,23,,,Trondheims-Ørn SK,1995
+18,Norway,3MF,Tone Gunn Frustøl,21-Jun-1975,19,,,FK Donn,1995
+19,Norway,2DF,Agnete Carlsen,15-Jan-1971,24,,,Kolbotn IL,1995
+20,Norway,1GK,Ingrid Sternhoff,25-Feb-1977,18,,,SK Haugar,1995
+1,Australia,1GK,Tracey Wheeler,26-Sep-1967,27,,,Forrestfield United,1995
+2,Australia,2DF,Sarah Cooper,10-Aug-1969,25,,,Mindil Aces,1995
+3,Australia,2DF,Jane Oakley,25-Jun-1966,28,,,Berwick City,1995
+4,Australia,3MF,Julie Murray,28-Apr-1970,25,,,Sydney Olympic,1995
+5,Australia,3MF,Cheryl Salisbury,8-Mar-1974,21,,,Stirling Macedonia,1995
+6,Australia,2DF,Anissa Tann,10-Oct-1967,27,,,Marconi Stallions,1995
+7,Australia,2DF,Alison Forman,17-Mar-1969,26,,,Fortuna Hjørring,1995
+8,Australia,2DF,Sonia Gegenhuber,28-Sep-1970,24,,,Eastern Suburbs,1995
+9,Australia,4FW,Angela Iannotta,22-Mar-1971,24,,,Agliana CF,1995
+10,Australia,4FW,Sunni Hughes,6-Sep-1968,26,,,Panasonic Bambina,1995
+11,Australia,3MF,Kaylene Janssen,18-Aug-1968,26,,,Eastern Suburbs,1995
+12,Australia,4FW,Michelle Watson,17-Jun-1976,18,,,Marconi Stallions,1995
+13,Australia,2DF,Traci Bartlett,17-May-1972,23,,,Marconi Stallions,1995
+14,Australia,3MF,Denie Pentecost,23-Apr-1970,25,,,Sydney Olympic,1995
+15,Australia,3MF,Kim Lembryk,19-Feb-1966,29,,,Marconi Stallions,1995
+16,Australia,4FW,Lisa Casagrande,29-May-1978,17,,,Goonellabah Hornets,1995
+17,Australia,2DF,Sacha Wainwright,2-Jun-1972,23,,,Weston Creek,1995
+18,Australia,2DF,Louise McMurtrie,26-Apr-1976,19,,,Queensland Academy of Sport,1995
+19,Australia,4FW,Lizzy Claydon,11-Nov-1972,22,,,Stirling Vasto,1995
+20,Australia,1GK,Claire Nichols,7-Aug-1975,19,,,Liverpool (NSW),1995
+1,China PR,1GK,Zhong Honglian,27-Oct-1967,27,,,,1995
+2,China PR,3MF,Wang Liping,11-Dec-1973,21,,,,1995
+3,China PR,2DF,Fan Yunjie,29-Apr-1972,23,,,,1995
+4,China PR,2DF,Yu Hongqi,2-Feb-1973,22,,,,1995
+5,China PR,3MF,Zhou Yang,2-Jan-1971,24,,,,1995
+6,China PR,3MF,Zhou Hua,10-Mar-1969,26,,,,1995
+7,China PR,4FW,Wei Haiying,1-May-1971,24,,,,1995
+8,China PR,3MF,Shui Qingxia,18-Dec-1966,28,,,,1995
+9,China PR,4FW,Sun Wen,4-Jun-1973,22,,,,1995
+10,China PR,3MF,Liu Ailing,5-Feb-1967,28,,,,1995
+11,China PR,3MF,Sun Qingmei,19-Jun-1966,28,,,,1995
+12,China PR,2DF,Wen Lirong,10-Feb-1969,26,,,,1995
+13,China PR,2DF,Niu Lijie,4-Dec-1969,25,,,,1995
+14,China PR,3MF,Xie Huilin,17-Jan-1975,20,,,,1995
+15,China PR,4FW,Shi Guihong,13-Feb-1968,27,,,,1995
+16,China PR,3MF,Chen Yufeng,17-Jan-1970,25,,,,1995
+17,China PR,3MF,Zhao Lihong,25-Dec-1972,22,,,,1995
+18,China PR,2DF,Man Yanling,11-Sep-1972,22,,,,1995
+19,China PR,3MF,Li Ying,21-Oct-1973,21,,,,1995
+20,China PR,1GK,Gao Hong,27-Nov-1967,27,,,,1995
+1,Denmark,1GK,Dorthe Larsen,8-Aug-1969,25,,,,1995
+2,Denmark,3MF,Louise Hansen,5-Apr-1975,20,,,,1995
+3,Denmark,2DF,Kamma Flæng,30-Mar-1976,19,,,,1995
+4,Denmark,2DF,Lene Terp,15-Apr-1973,22,,,,1995
+5,Denmark,2DF,Katrine Pedersen,13-Apr-1977,18,,,,1995
+6,Denmark,2DF,Rikke Holm,22-Mar-1972,23,,,,1995
+7,Denmark,3MF,Annette Laursen,6-Feb-1975,20,,,,1995
+8,Denmark,3MF,Lisbet Kolding,6-Apr-1965,30,,,,1995
+9,Denmark,3MF,Helle Jensen,23-Mar-1969,26,,,,1995
+10,Denmark,3MF,Birgit Christensen,31-May-1976,19,,,,1995
+11,Denmark,4FW,Gitte Krogh,13-May-1977,18,,,,1995
+12,Denmark,3MF,Anne Dot Eggers Nielsen,6-Nov-1975,19,,,,1995
+13,Denmark,4FW,Christina Hansen,5-Jun-1970,25,,,,1995
+14,Denmark,4FW,Lene Madsen,11-Mar-1973,22,,,,1995
+15,Denmark,3MF,Christina Bonde,28-Sep-1973,21,,,,1995
+16,Denmark,1GK,Helle Bjerregaard,21-Jun-1968,26,,,,1995
+17,Denmark,3MF,Karina Christensen,1-Jul-1973,21,,,,1995
+18,Denmark,2DF,Bettina Allentoft,16-Nov-1973,21,,,,1995
+19,Denmark,3MF,Jeanne Axelsen,3-Jan-1968,27,,,,1995
+20,Denmark,3MF,Christina Petersen,17-Sep-1974,20,,,,1995
+1,US,1GK,Briana Scurry,7-Sep-1971,23,,0,University of Massachusetts Amherst,1995
+2,US,2DF,Thori Staples,17-Apr-1974,21,,0,NC State,1995
+3,US,3MF,Holly Manthei,8-Feb-1976,19,,0,University of Notre Dame,1995
+4,US,2DF,Carla Overbeck,9-May-1968,27,,2,University of North Carolina,1995
+5,US,3MF,Tiffany Roberts,5-May-1977,18,,5,University of North Carolina,1995
+6,US,4FW,Debbie Keller,24-Mar-1975,20,,0,University of North Carolina,1995
+7,US,4FW,Sarah Rafanelli,7-Jun-1972,22,,8,Santa Clara University,1995
+8,US,2DF,Linda Hamilton,4-Jun-1969,26,,1,University of North Carolina,1995
+9,US,3MF,Mia Hamm,17-Mar-1972,23,,47,University of North Carolina,1995
+10,US,4FW,Michelle Akers,1-Feb-1966,29,,83,University of Central Florida,1995
+11,US,3MF,Julie Foudy,23-Jan-1971,24,,11,Stanford University,1995
+12,US,4FW,Carin Jennings,9-Jan-1965,30,,48,UC Santa Barbara,1995
+13,US,3MF,Kristine Lilly,22-Jul-1971,23,,33,University of North Carolina,1995
+14,US,2DF,Joy Fawcett,8-Feb-1968,27,,14,UC Berkeley,1995
+15,US,3MF,Tisha Venturini,3-Mar-1973,22,,12,University of North Carolina,1995
+16,US,4FW,Tiffeny Milbrett,23-Oct-1972,22,,9,University of Portland,1995
+17,US,2DF,Jennifer Lalor,5-Sep-1974,20,,1,Santa Clara University,1995
+18,US,1GK,Saskia Webber,13-Jun-1971,23,,0,Rutgers University,1995
+19,US,3MF,Amanda Cromwell,15-Jun-1970,24,,1,University of Virginia,1995
+20,US,1GK,Mary Harvey,4-Jun-1965,30,,0,Santa Clara University,1995
+1,China PR,1GK,Zhong Honglian,27-Oct-1967,24,,,Dalian,1991
+2,China PR,2DF,Chen Xia,26-Nov-1969,21,,,Guangdong,1991
+3,China PR,2DF,Ma Li,3-Mar-1969,22,,,Beijing,1991
+4,China PR,3MF,Li Xiufu,28-Jun-1965,26,,,Prima Ham FC,1991
+5,China PR,2DF,Zhou Yang,1-Feb-1971,20,,,Dalian,1991
+6,China PR,2DF,Shui Qingxia,18-Dec-1966,24,,,Shanghai,1991
+7,China PR,4FW,Wu Weiying,19-Jan-1969,22,,,Guangdong,1991
+8,China PR,3MF,Zhou Hua,3-Oct-1969,22,,,Dalian,1991
+9,China PR,3MF,Sun Wen,6-Apr-1973,18,,,Shanghai,1991
+10,China PR,3MF,Liu Ailing,2-May-1967,24,,,Beijing,1991
+11,China PR,4FW,Sun Qingmei,19-Jun-1966,25,,,Hebei,1991
+12,China PR,2DF,Wen Lirong,2-Oct-1969,22,,,Beijing,1991
+13,China PR,4FW,Niu Lijie,12-Apr-1969,22,,,Changchun,1991
+14,China PR,4FW,Zhang Yan,6-Aug-1972,19,,,Dalian,1991
+15,China PR,4FW,Wei Haiying,5-Jan-1971,20,,,Guangdong,1991
+16,China PR,4FW,Zhang Hongdong,20-Mar-1969,22,,,Beijing,1991
+17,China PR,3MF,Zhu Tao,20-Nov-1974,16,,,Beijing,1991
+18,China PR,1GK,Li Sa,3-Jan-1968,23,,,Beijing,1991
+1,Denmark,1GK,Helle Bjerregaard,21-Jun-1968,23,,,Rødovre BK,1991
+2,Denmark,2DF,Karina Sefron,2-Jul-1967,24,,,Malmö FF,1991
+3,Denmark,2DF,Jannie Hansen,6-Oct-1963,28,,,Rødovre BK,1991
+4,Denmark,2DF,Bonny Madsen,10-Aug-1967,24,,,Malmö FF,1991
+5,Denmark,2DF,Helle Rotbøll,8-Oct-1963,28,,,HEI Aarhus,1991
+6,Denmark,2DF,Mette Nielsen,15-Jun-1964,27,,,Vorup FB,1991
+7,Denmark,3MF,Susan Mackensie,24-Dec-1962,28,,,HEI Aarhus,1991
+8,Denmark,3MF,Lisbet Kolding,6-Apr-1965,26,,,HEI Aarhus,1991
+9,Denmark,4FW,Annie Gam-Pedersen,5-Jul-1965,26,,,Odense BK,1991
+10,Denmark,4FW,Helle Jensen,23-Mar-1969,22,,,B 1909,1991
+11,Denmark,4FW,Hanne Nissen,21-Nov-1970,20,,,Odense BK,1991
+12,Denmark,3MF,Irene Stelling,25-Jul-1971,20,,,HEI Aarhus,1991
+13,Denmark,4FW,Annette Thychosen,30-Aug-1968,23,,,Odense BK,1991
+14,Denmark,3MF,Marianne Jensen,14-Jan-1970,21,,,HEI Aarhus,1991
+15,Denmark,3MF,Rikke Holm,22-Mar-1972,19,,,B 1909,1991
+16,Denmark,1GK,Gitte Hansen,21-Sep-1961,30,,,B 1909,1991
+17,Denmark,3MF,Lotte Bagge,21-May-1968,23,,,B 1909,1991
+18,Denmark,3MF,Janne Rasmussen,18-Jul-1970,21,,,B 1909,1991
+1,New Zealand,1GK,Leslie King,13-Nov-1963,28,,,,1991
+2,New Zealand,2DF,Jocelyn Parr,5-Mar-1967,24,,,,1991
+3,New Zealand,2DF,Cinnamon Chaney,10-Jan-1969,22,,,,1991
+4,New Zealand,2DF,Lynley Pedruco,11-Oct-1960,31,,,,1991
+5,New Zealand,3MF,Deborah Pullen,20-Sep-1961,30,,,,1991
+6,New Zealand,3MF,Lorraine Taylor,20-Sep-1961,30,,,,1991
+7,New Zealand,3MF,Maureen Jacobson,7-Dec-1961,29,,,,1991
+8,New Zealand,3MF,Monique van de Elzen,17-Jul-1967,24,,,,1991
+9,New Zealand,4FW,Wendi Henderson,16-Jul-1971,20,,,,1991
+10,New Zealand,3MF,Donna Baker,27-Feb-1966,25,,,,1991
+11,New Zealand,4FW,Amanda Crawford,16-Feb-1971,20,,,,1991
+12,New Zealand,3MF,Julia Campbell,1-Apr-1965,26,,,,1991
+13,New Zealand,2DF,Kim Nye,10-May-1961,30,,,,1991
+14,New Zealand,2DF,Maria George,3-Mar-1965,26,,,,1991
+15,New Zealand,2DF,Terry McCahill,1-Sep-1970,21,,,,1991
+16,New Zealand,2DF,Vivienne Robertson,18-Jun-1955,36,,,,1991
+17,New Zealand,3MF,Lynne Warring,1-Dec-1963,27,,,,1991
+18,New Zealand,1GK,Anne Smith,27-Sep-1951,40,,,,1991
+1,Norway,1GK,Reidun Seth,9-Jun-1966,25,,,GAIS,1991
+2,Norway,3MF,Cathrine Zaborowski,2-Aug-1971,20,,,Asker,1991
+3,Norway,2DF,Trine Stenberg,6-Dec-1969,21,,,Sandviken,1991
+4,Norway,3MF,Gro Espeseth,30-Oct-1972,19,,,Sandviken,1991
+5,Norway,2DF,Gunn Nyborg,21-Mar-1960,31,,,Asker,1991
+6,Norway,3MF,Agnete Carlsen,15-Jan-1971,20,,,SK Sprint/Jeløy,1991
+7,Norway,3MF,Tone Haugen,6-Feb-1964,27,,,Trondheims-Ørn,1991
+8,Norway,2DF,Heidi Støre,4-Jul-1963,28,,,SK Sprint/Jeløy,1991
+9,Norway,4FW,Hege Riise,18-Jul-1969,22,,,Setskog FK,1991
+10,Norway,4FW,Linda Medalen,17-Jun-1965,26,,,Asker,1991
+11,Norway,4FW,Birthe Hegstad,23-Jul-1966,25,,,Klepp,1991
+12,Norway,1GK,Bente Nordby,23-Jul-1974,17,,,Raufoss,1991
+13,Norway,3MF,Liv Strædet,21-Oct-1964,27,,,SK Sprint/Jeløy,1991
+14,Norway,3MF,Margunn Humlestøl,25-Jan-1970,21,,,Asker,1991
+15,Norway,3MF,Anette Igland,2-Oct-1971,20,,,Kaupanger,1991
+16,Norway,2DF,Tina Svensson,16-Nov-1966,25,,,Asker,1991
+17,Norway,4FW,Ellen Scheel Aalbu,26-Nov-1968,22,,,Jardar,1991
+18,Norway,1GK,Hilde Strømsvold,17-Aug-1967,24,,,Bøler,1991
+1,Brazil,1GK,Meg,1-Jan-1956,35,,,Radar,1991
+2,Brazil,2DF,Rosa Lima,2-May-1964,27,,,Vasco da Gama,1991
+3,Brazil,2DF,Marisa,10-Aug-1966,25,,,Radar,1991
+4,Brazil,2DF,Elane,4-Jun-1968,23,,,Radar,1991
+5,Brazil,3MF,Marcinha,22-Aug-1962,29,,,Radar,1991
+6,Brazil,3MF,Fanta,14-Sep-1966,25,,,Radar,1991
+7,Brazil,3MF,Pelézinha,12-Mar-1964,27,,,Radar,1991
+8,Brazil,2DF,Solange,29-Mar-1969,22,,,Radar,1991
+9,Brazil,4FW,Adriana,26-Dec-1966,24,,,Radar,1991
+10,Brazil,4FW,Roseli,7-Sep-1969,22,,,Radar,1991
+11,Brazil,4FW,Cenira,12-Feb-1965,26,,,Radar,1991
+12,Brazil,1GK,Miriam,4-May-1965,26,,,Radar,1991
+13,Brazil,3MF,Márcia Taffarel,12-Mar-1968,23,,,Radar,1991
+14,Brazil,3MF,Nalvinha,14-Jul-1965,26,,,Radar,1991
+15,Brazil,3MF,Pretinha,19-May-1975,16,,,L.D.N.I.,1991
+16,Brazil,2DF,Doralice,23-Oct-1963,28,,,Radar,1991
+17,Brazil,3MF,Danda,1-Apr-1964,27,,,Radar,1991
+18,Brazil,3MF,Fia,1-Apr-1964,27,,,Radar,1991
+1,Japan,1GK,Masae Suzuki,21-Jan-1957,34,,,Nikko Shofen,1991
+2,Japan,2DF,Midori Honda,16-Nov-1961,30,,,Yomiuri Belleza,1991
+3,Japan,2DF,Yumi Watanabe,2-Jul-1970,21,,,Fujita Tendai,1991
+4,Japan,2DF,Mayumi Kaji,28-Jun-1964,27,,,Tazaki Kobe,1991
+5,Japan,2DF,Sayuri Yamaguchi,25-Jul-1966,25,,,Suzuyo Shimizu F.C. Lovely Ladies,1991
+6,Japan,2DF,Yoko Takahagi,17-Apr-1969,22,,,Tokyo Gakugei,1991
+7,Japan,2DF,Yumi Obe,15-Feb-1975,16,,,Nikko Shofen,1991
+8,Japan,3MF,Michiko Matsuda,26-Oct-1966,25,,,Prima Ham,1991
+9,Japan,4FW,Akemi Noda,13-Oct-1969,22,,,Yomiuri Belleza,1991
+10,Japan,3MF,Asako Takakura,9-Apr-1968,23,,,Yomiuri Belleza,1991
+11,Japan,3MF,Futaba Kioka,22-Nov-1965,25,,,Suzuyo Shimizu F.C. Lovely Ladies,1991
+12,Japan,1GK,Megumi Sakata,18-Oct-1971,20,,,Nissan Ladies,1991
+13,Japan,2DF,Kyoko Kuroda,8-May-1970,21,,,Prima Ham,1991
+14,Japan,4FW,Etsuko Handa,10-May-1965,26,,,Suzuyo Shimizu F.C. Lovely Ladies,1991
+15,Japan,4FW,Kaori Nagamine,3-Jun-1968,23,,,Reggiana,1991
+16,Japan,4FW,Takako Tezuka,6-Nov-1970,21,,,Yomiuri Belleza,1991
+17,Japan,4FW,Yuriko Mizuma,22-Jul-1970,21,,,Urawa Motobuto,1991
+18,Japan,2DF,Tamaki Uchiyama,13-Dec-1972,18,,,Tazaki Kobe,1991
+1,Sweden,1GK,Elisabeth Leidinge,6-Mar-1957,34,82,0,Jitex BK,1991
+2,Sweden,2DF,Malin Lundgren,3-Sep-1967,24,18,1,Malmö FF,1991
+3,Sweden,2DF,Anette Hansson,2-May-1963,28,33,3,Jitex BK,1991
+4,Sweden,2DF,Camilla Fors,24-Apr-1969,22,8,0,Jitex BK,1991
+5,Sweden,2DF,Eva Zeikfalvy,18-Apr-1967,24,32,0,Malmö FF,1991
+6,Sweden,3MF,Malin Swedberg,15-Sep-1968,23,22,0,Djurgårdens IF,1991
+7,Sweden,3MF,Pia Sundhage,13-Feb-1960,31,101,56,Hammarby IF,1991
+8,Sweden,3MF,Susanne Hedberg,26-Jun-1972,19,18,4,Sunnanå SK,1991
+9,Sweden,4FW,Helen Johansson,9-Jul-1965,26,57,16,Jitex BK,1991
+10,Sweden,4FW,Lena Videkull,9-Dec-1962,28,55,33,Malmö FF,1991
+11,Sweden,4FW,Anneli Andelén,21-Sep-1968,23,36,8,Öxabäck/Marks IF,1991
+12,Sweden,1GK,Ing-Marie Olsson,23-Feb-1966,25,9,0,Malmö FF,1991
+13,Sweden,2DF,Marie Ewrelius,31-Aug-1967,24,12,0,Djurgårdens IF,1991
+14,Sweden,2DF,Camilla Svensson-Gustafsson,20-Jan-1969,22,4,0,GAIS,1991
+15,Sweden,4FW,Helen Nilsson,24-Nov-1970,20,2,2,Sundsvalls DFF,1991
+16,Sweden,3MF,Ingrid Johansson,9-Jul-1965,26,26,2,Jitex BK,1991
+17,Sweden,3MF,Marie Karlsson,4-Dec-1963,27,43,2,Öxabäck/Marks IF,1991
+18,Sweden,3MF,Pärnilla Larsson,19-Feb-1969,22,12,0,Gideonsbergs IF,1991
+1,US,1GK,Mary Harvey,4-Jun-1965,26,5,0,UC Berkeley,1991
+2,US,4FW,April Heinrichs,27-Feb-1964,27,42,33,University of North Carolina,1991
+3,US,3MF,Shannon Higgins,20-Feb-1968,23,26,4,University of North Carolina,1991
+4,US,2DF,Carla Werden,9-May-1968,23,81,0,University of North Carolina,1991
+5,US,2DF,Lori Henry,20-Mar-1966,25,38,3,University of North Carolina,1991
+6,US,4FW,Brandi Chastain,21-Jul-1968,23,14,7,Santa Clara University,1991
+7,US,3MF,Tracey Bates,5-May-1967,24,28,5,University of North Carolina,1991
+8,US,2DF,Linda Hamilton,4-Jun-1969,22,18,0,University of North Carolina,1991
+9,US,3MF,Mia Hamm,17-Mar-1972,19,43,12,University of North Carolina,1991
+10,US,4FW,Michelle Akers-Stahl,1-Feb-1966,25,44,44,University of Central Florida,1991
+11,US,3MF,Julie Foudy,23-Jan-1971,20,26,4,Stanford University,1991
+12,US,4FW,Carin Jennings,9-Jan-1965,26,45,22,UC Santa Barbara,1991
+13,US,3MF,Kristine Lilly,22-Jul-1971,20,42,9,University of North Carolina,1991
+14,US,2DF,Joy Biefeld,8-Feb-1968,23,40,7,UC Berkeley,1991
+15,US,4FW,Wendy Gebauer,25-Dec-1966,24,25,8,University of North Carolina,1991
+16,US,2DF,Debbie Belkin,27-May-1966,25,48,2,University of Massachusetts Amherst,1991
+17,US,1GK,Amy Allmann,25-Mar-1965,26,46,0,University of Central Florida,1991
+18,US,1GK,Kim Maslin-Kammerdeiner,12-Aug-1964,27,17,0,George Mason University,1991
+1,Chinese Taipei,1GK,Hong Li-chyn,23-May-1970,21,,,TaipeiTaiwan PE College,1991
+2,Chinese Taipei,3MF,Liu Hsiu-mei,28-Nov-1972,18,,,TaipeiTaiwan PE College,1991
+3,Chinese Taipei,2DF,Chen Shwu-ju,2-Mar-1965,26,,,TaipeiMing Chuan University,1991
+4,Chinese Taipei,2DF,Lo Chu-yin,6-Oct-1965,26,,,TaipeiMulan,1991
+5,Chinese Taipei,2DF,Chen Hsiu-lin,12-Dec-1973,17,,,TaipeiJinwen College,1991
+6,Chinese Taipei,3MF,Chou Tai-ying,16-Aug-1963,28,,,Suzuyo Shimizu F.C. Lovely Ladies,1991
+7,Chinese Taipei,4FW,Lin Mei-chun,11-Jan-1974,17,,,TaipeiMing Chuan University,1991
+8,Chinese Taipei,3MF,Shieh Su-jean,10-Feb-1969,22,,,Suzuyo Shimizu F.C. Lovely Ladies,1991
+9,Chinese Taipei,3MF,Wu Su-ching,21-Jul-1970,21,,,TaipeiTaiwan PE College,1991
+10,Chinese Taipei,4FW,Huang Yu-chuan,17-Feb-1971,20,,,TaipeiMing Chuan University,1991
+11,Chinese Taipei,2DF,Hsu Chia-cheng,7-Jun-1969,22,,,Suzuyo Shimizu F.C. Lovely Ladies,1991
+12,Chinese Taipei,2DF,Lan Lan-fen,22-Nov-1973,17,,,TaipeiMing Chuan University,1991
+13,Chinese Taipei,4FW,Lin Chao-chun,31-Oct-1972,19,,,TaipeiTaiwan PE College,1991
+14,Chinese Taipei,4FW,Ko Chiao-lin,14-Sep-1973,18,,,TaipeiMing Chuan University,1991
+15,Chinese Taipei,2DF,Wu Min-hsun,26-Sep-1974,17,,,TaipeiJinwen College,1991
+16,Chinese Taipei,3MF,Chen Shu-chin,19-Sep-1974,17,,,TaipeiJinwen College,1991
+17,Chinese Taipei,3MF,Lin Mei-jih,27-Feb-1972,19,,,TaipeiMing Chuan University,1991
+18,Chinese Taipei,1GK,Lin Hui-fang,6-Oct-1973,18,,,TaipeiJinwen College,1991
+1,Germany,1GK,Marion Isbert,25-Feb-1964,27,52,,TSV Siegen,1991
+2,Germany,2DF,Britta Unsleber,25-Dec-1966,24,38,,FSV Frankfurt,1991
+3,Germany,2DF,Birgitt Austermühl,8-Oct-1965,26,2,,TSV Battenberg,1991
+4,Germany,2DF,Jutta Nardenbach,13-Oct-1968,23,28,,TuS Ahrbach,1991
+5,Germany,2DF,Doris Fitschen,25-Oct-1968,23,36,,VfR Eintracht Wolfsburg,1991
+6,Germany,2DF,Frauke Kuhlmann,27-Sep-1966,25,36,,Schmalfelder SV,1991
+7,Germany,3MF,Martina Voss,22-Dec-1967,23,41,,TSV Siegen,1991
+8,Germany,3MF,Bettina Wiegmann,7-Oct-1971,20,16,,Grün-Weiß Brauweiler,1991
+9,Germany,4FW,Heidi Mohr,29-May-1967,24,41,,TuS Niederkirchen,1991
+10,Germany,3MF,Silvia Neid,2-May-1964,27,61,,TSV Siegen,1991
+11,Germany,3MF,Beate Wendt,21-Sep-1971,20,4,,SC Poppenbüttel,1991
+12,Germany,1GK,Elke Walther,1-Apr-1971,20,4,,VfL Sindelfingen,1991
+13,Germany,3MF,Roswitha Bindl,14-Jan-1965,26,5,,FC Wacker München,1991
+14,Germany,3MF,Petra Damm,20-Mar-1961,30,43,,VfR Eintracht Wolfsburg,1991
+15,Germany,3MF,Christine Paul,21-Jan-1965,26,7,,FC Wacker München,1991
+16,Germany,4FW,Gudrun Gottschlich,23-May-1970,21,16,,KBC Duisburg,1991
+17,Germany,3MF,Sandra Hengst,12-Apr-1973,18,4,,KBC Duisburg,1991
+18,Germany,4FW,Michaela Kubat,10-Apr-1972,19,3,,Grün-Weiß Brauweiler,1991
+1,Italy,1GK,Stefania Antonini,10-Oct-1970,21,,,Reggiana,1991
+2,Italy,2DF,Paola Bonato,31-Jan-1961,30,,,Reggiana,1991
+3,Italy,2DF,Marina Cordenons,12-Jan-1969,22,,,Pordenone,1991
+4,Italy,3MF,Maria Mariotti,27-Apr-1964,27,,,Reggiana,1991
+5,Italy,2DF,Raffaella Salmaso,16-Apr-1968,23,,,Milan '82,1991
+6,Italy,2DF,Maura Furlotti,12-Sep-1957,34,,,Lazio,1991
+7,Italy,4FW,Silvia Fiorini,24-Dec-1969,21,,,Firenze,1991
+8,Italy,3MF,Federica D'Astolfo,27-Oct-1966,25,,,Sassari,1991
+9,Italy,4FW,Carolina Morace,5-Feb-1964,27,,,Milan '82,1991
+10,Italy,3MF,Feriana Ferraguzzi,20-Feb-1959,32,,,Standard Liège,1991
+11,Italy,3MF,Adele Marsiletti,7-Nov-1964,27,,,Reggiana,1991
+12,Italy,1GK,Giorgia Brenzan,21-Aug-1967,24,,,Sassari,1991
+13,Italy,2DF,Emma Iozzelli,12-Jun-1966,25,,,Reggiana,1991
+14,Italy,2DF,Elisabetta Bavagnoli,3-Sep-1963,28,,,Milan '82,1991
+15,Italy,3MF,Anna Mega,21-Oct-1962,29,,,Reggiana,1991
+16,Italy,3MF,Fabiana Correra,1-Oct-1967,24,,,Turris,1991
+17,Italy,4FW,Nausica Pedersoli,17-Apr-1969,22,,,Milan '82,1991
+18,Italy,4FW,Rita Guarino,31-Jan-1971,20,,,Juventus,1991
+1,Nigeria,1GK,Ann Chiejine,2-Feb-1974,17,,,Flying Angels,1991
+2,Nigeria,2DF,Diana Nwaiwu,10-Oct-1973,18,,,Kakanfo Babes,1991
+3,Nigeria,2DF,Ngozi Ezeocha,10-Dec-1973,17,,,Princess Jegede,1991
+4,Nigeria,4FW,Adaku Okoroafor,18-Nov-1974,16,,,Flying Angels,1991
+5,Nigeria,2DF,Omo-Love Branch,1-Oct-1974,17,,,Ufuoma Babes,1991
+6,Nigeria,3MF,Nkechi Mbilitam,4-May-1974,17,,,Kakanfo Babes,1991
+7,Nigeria,4FW,Chioma Ajunwa,25-Dec-1971,19,,,River Mermaids,1991
+8,Nigeria,4FW,Rita Nwadike,3-Nov-1974,17,,,River Mermaids,1991
+9,Nigeria,4FW,Ngozi Eucharia Uche,18-Jun-1973,18,,,Ufuoma Babes,1991
+10,Nigeria,2DF,Mavis Ogun,24-Aug-1973,18,,,Ufuoma Babes,1991
+11,Nigeria,4FW,Gift Showemimo,24-May-1974,17,,,Kakanfo Babes,1991
+12,Nigeria,3MF,Florence Omagbemi,2-Feb-1975,16,,,Ufuoma Babes,1991
+13,Nigeria,3MF,Nkiru Okosieme,1-Mar-1972,19,,,S.C. Imo State,1991
+14,Nigeria,2DF,Phoebe Ebimiekumo,17-Jan-1974,17,,,Ufuoma Babes,1991
+15,Nigeria,3MF,Ann Mukoro,27-Apr-1975,16,,,Ufuoma Babes,1991
+16,Nigeria,1GK,Lydia Koyonda,29-May-1974,17,,,Ufuoma Babes,1991
+17,Nigeria,2DF,Edith Eluma,27-Sep-1958,33,,,Princess Jegede,1991
+18,Nigeria,3MF,Rachael Yamala,12-Feb-1975,16,,,Kakanfo Babes,1991
