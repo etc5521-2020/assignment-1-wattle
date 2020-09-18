@@ -138,6 +138,7 @@ squads_cleaned <- squads %>%
 # row binds with 2019 squad info
 squads_cleaned <- squads_cleaned %>%
   mutate(year = 2019) 
+names(wc_squad_full)[1] <- "squad_no"
 squads_cleaned <- squads_cleaned %>%
   rbind(wc_squad_full)
 
@@ -454,13 +455,14 @@ squads_cleaned %>%
   # filter out 2003 as clubs info were missing
   summarise("Player" = n_distinct(player)) %>% 
   arrange(club, year) %>%
-  ggplot(aes(x = factor(year), Player, fill = year)) +
+  ggplot(aes(x = factor(year), Player, fill = as.factor(year))) +
   geom_col(stat = "identity") +
   facet_wrap(~ club) +
   theme_bw() +
   xlab("year") +
   theme(legend.position = "none") +
   ggtitle("Clubs' players by year from WC2007-WC2019")
+
 ```
 
 In terms of year, 5 out of the 12 clubs featured in the chart did not join the whole four World Cups. We can see clearly from the chart that 25-Apr had made an impressive contribution of players for the North Korea team in 2007 and 2011, which brought them to our ranking even though they dropped out in the recent two games.
@@ -497,12 +499,16 @@ domestic %>%
   summarise(prop = sum(prop)) %>%
   filter(origin == "Domestic") %>%
   ggplot(aes(fct_reorder(club, prop), prop)) +
-  geom_col(stat = "identity", colour = "blue", fill = "blue") +
+  geom_col(stat = "identity",fill="#f68060", fill="#f68060"，alpha=.6, width=.4) +
   coord_flip() +
-  theme_bw() + 
+  # theme_bw() + 
   ylab("club") +
   xlab("% Domestical Player") +
-  ggtitle("Percentage of domestical player of top 12")
+  theme(axis.text.y = element_text(color = "grey", face = "bold"),
+        plot.title = element_text(face = "bold"),
+        plot.background = element_rect(fill="white"),
+        panel.background = element_rect(fill="white"))
+
 ```
 
 We can see that Vancouver Whitecaps, 25-apr and Rivers Angels had most of their World Cup players coming from their own country. Other big names like Chelse, Arsena, Lyon or 1. FFC Frankfurt hold only 50% - 60% of their World Cup players domestic, other were exported. To understand better about how such composition would contribute to their performance in World Cup, we were tempted to see of all the international clubs featured in the World Cup, which one hold the highest of players and how would that related to their performance. However, the task of gathering the nation of each club took a lot of time and manual works, hence we referred to a study by FIFA for this question.
@@ -523,12 +529,21 @@ Next we will take a look deeper into the stars of the game - the players. In thi
 First of all, we will look at the overall age distribution of all the players through all eight World Cup tournaments.
 
 ```{r player-age, fig.cap = "Player's age distribution"}
-squads_cleaned %>%
-  ggplot(aes(x = age)) +
-  geom_histogram(binwidth = 1 , color = "black", fill = "magenta") +
-  theme_bw()+
-  facet_wrap(~ year) +
-  ggtitle("Player's age distribution")
+
+
+  squads_mean <-squads_cleaned %>% 
+  group_by(year) %>% 
+  summarise(age = mean(age))
+  
+ggplot()+
+  geom_histogram(squads_cleaned, mapping = aes(age,fill= as.factor(year)))+
+  geom_vline(squads_mean, mapping = aes(xintercept = age), color = "red", size = 1.5)+
+  geom_text(squads_mean, mapping = aes(x = age+3, y =0, label = round(age,digits = 2)))+
+  facet_wrap(year~., scales = "free")+
+  theme_minimal()+
+  theme(legend.position = "bottom")+
+  labs(y = "Count", title = "Player's age distribution")
+
 ```
 
 We chose the bindwith equals to 1, meaning each bindwith represented 1 year of age. We could ignore the count for each year as the number of teams participated were not similar for the all the years. Instead we will concentrate on the distribution. 
@@ -656,6 +671,11 @@ Ages also influence over whether a player could be qualifies for World Cup or no
 Finally, from the data we have analysed, we formed up an assumption that some of the national clubs either had their prestige players reaching the retirement age, by the most recent Women World Cup 2019 or they might have been holding back from sending their ace players to the field. Whether the assumption holds or not, we only knew that FIFA has responded by introducing the support package for the first time ever, by which the national clubs will be benefited by releasing the best out of the safe vault and allow them to compete in the World Cup. 
 
 
+
+
+
+
+
 # Acknowledge
 
 The packages used are as follows:
@@ -674,6 +694,10 @@ The packages used are as follows:
 - plotly [@plotly]
 
 - GGally [@ggally]
+
+
+
+
 
 
 
