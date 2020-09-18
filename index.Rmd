@@ -108,7 +108,7 @@ wc_squad_full <- read.csv(here::here("femalewwc_squad.csv")) %>%
   mutate(dob = as.Date(dob, format = "%d-%B-%Y"))
 
 # Update missing info for squads_raw
-squads <- squads %>%
+squads_cleaned <- squads %>%
   mutate(
     caps = case_when(
     str_detect(player, "Xu Huan") ~ 1,
@@ -136,13 +136,13 @@ squads <- squads %>%
   )
     
 # row binds with 2019 squad info
-squads <- squads %>%
+squads_cleaned <- squads_cleaned %>%
   mutate(year = 2019) 
-squads <- squads %>%
+squads_cleaned <- squads_cleaned %>%
   rbind(wc_squad_full)
 
 # manually fix the name of some clubs to avoid mismatch
-squads <- squads %>%
+squads_cleaned <- squads_cleaned %>%
   mutate(club = case_when(
     str_detect(club, "Olympique Lyon") ~ "Lyon",
     str_detect(club, "Olympique Lyonnais") ~ "Lyon",
@@ -198,13 +198,13 @@ squads <- squads %>%
     TRUE ~ club
   ))
 
-glimpse(squads)
+glimpse(squads_cleaned)
 ```
 
-After we joined the two datasets, once again we checked the missing values for this newly created "squads"
+After we joined the two datasets, once again we checked the missing values for this newly created "squads_cleaned"
 
 ```{r miss-data,fig.cap="Missing data for squads"}
-visdat::vis_miss(squads)
+visdat::vis_miss(squads_cleaned)
 ```
 
 The information of caps, goals and clubs were mostly not available for the World Cup that took place too long ago. In each analysis, we will filter only the years that have suffice information to respond to the tasks on hand.  
@@ -420,7 +420,7 @@ To find out what factors could determined a World Cup player, we tried to looked
 It's no surprise when we would see some clubs or leagues that better represents the players than the others. Those clubs usually are big in size, providing more resources to produce a quality player. In the figure below, we will examine the biggest 12 clubs that are or were home to the highest numbers of World Cup players.  
 
 ```{r player-contri}
-wc_clubs_players <- squads %>% 
+wc_clubs_players <- squads_cleaned %>% 
   # leave the unattached out to count
   # filter out 2003 as clubs info were missing
   filter(year > 2003,
@@ -443,7 +443,7 @@ Lyon contributed the highest number of players throughout the four World Cup tou
 We have two special cases that top the chart: 25-Apr of North Korea and Rivers Angels of Nigeria. These two clubs were special in their own way that their national World Cup teams mostly consisted of their players. We will revisit this point again when we get to the breakdown of Domestical and Foreign elements of these 12 clubs later in this section.   
 
 ```{r top-10-by-year, fig.cap = "Clubs' players by year from WC2007-WC2019"}
-squads %>% 
+squads_cleaned %>% 
   # filter top twelve only
   filter(club %in% c("Lyon", "Arsenal", "Paris Saint-Germain", "1. FFC Frankfurt", "25-Apr",
                      "Barcelona", "Rivers Angels", "Chelsea", "Vancouver Whitecaps", "VfL Wolfsburg",
@@ -475,7 +475,7 @@ Finally in this club section, we will look at the composition of the players tha
 
 ```{r top-12-by-year, fig.cap = "Percentage of domestical player of top 12"}
 # Count the distinct nationals in each club in top 12
-domestic <- squads %>% 
+domestic <- squads_cleaned %>% 
   # filter top 12 only
   filter(club %in% c("Lyon", "Arsenal", "Paris Saint-Germain", "1. FFC Frankfurt", "25-Apr",
                      "Barcelona", "Rivers Angels", "Chelsea", "Vancouver Whitecaps", "VfL Wolfsburg",
@@ -523,7 +523,7 @@ Next we will take a look deeper into the stars of the game - the players. In thi
 First of all, we will look at the overall age distribution of all the players through all eight World Cup tournaments.
 
 ```{r player-age, fig.cap = "Player's age distribution"}
-squads %>%
+squads_cleaned %>%
   ggplot(aes(x = age)) +
   geom_histogram(binwidth = 1 , color = "black", fill = "magenta") +
   theme_bw()+
@@ -538,7 +538,7 @@ We can see that the age distribution by year varied quite significantly. From 19
 Next up, we will comb through the age of all participants that took part in the World Cup from the very first tournament in 1991 to the most recent in 2019.  
 
 ```{r country-age, fig.cap = "Summary of player age by country"}
-player_age <- squads %>%
+player_age <- squads_cleaned %>%
   group_by(year, country) %>%
   mutate(dummy = ifelse(country %in% c("US", "Norway", "Germany","Netherlands", "Japan", "China PR", "Sweden", "Brazil"),1, 0)) 
 
@@ -565,7 +565,7 @@ The number of caps of each player represents the number of times a player repres
 Table \@ref(tab:arrangecapped) below summarised top 10 players with the highest caps in the history of World Cup, along with the country they presented, their positions, the clubs they played for and their caps and goals at the most recent time they participated in the World Cup. 
 
 ```{r arrangecapped}
-most_capped <- squads %>%
+most_capped <- squads_cleaned %>%
   filter(year > 2003,
          !club == "Unattached") %>%
   select(-age, - squad_no) %>%
@@ -630,7 +630,7 @@ In this section we used _ggscatmat_ function to visualise the relationship betwe
 ```{r relation, fig.cap = "Relationship between ages, caps and goals"}
 library(GGally)
 # filter out 2003 and forwards due to lack of info
-squads %>% 
+squads_cleaned %>% 
   filter(year > 2003) %>%
   ggscatmat(columns = 6:8, color = "year", alpha = 0.5) +
   scale_colour_brewer(palette="Set1") +
