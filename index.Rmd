@@ -233,16 +233,20 @@ Before we start, there are a couple of questions we need to bear in mind to serv
 
 Primary question: What factors would describe a World Cup participant's characteristics and if possible, the World Cup champion?
 
+- Does the total number of goals have anything to do with the chance of winning the championship?
+
+- Will the country with more goals win the game? 
+
 - How does the a player's domestic club influence her performance?
 
 - How does the age and the caps of a player influence her performance?
 
 - Is there any relation between the age of a player, the caps she has achieved and the goals she made?
 
-
-## Analysis the performance of woman world cup by country
+## Analysis by country 
 
 ### Overall summary trend of the number of goals scored by the country
+
 ```{r score-dis,fig.cap="Nation goals distribution"}
 wwc_outcomes_2019 <- wwc_outcomes %>% 
   group_by(team,year) %>% 
@@ -278,9 +282,9 @@ Looking into figure \@ref(fig:score-dis), the USA and Germany score significantl
 
 ### General summary of the promotion of the National Women's World Cup
 
-> Remember to change the caption and titles, check the height of the graphics also.
 
-```{r exp-layout, fig.width = 15, fig.cap = "Experimental layout", fig.height= 20}
+
+```{r exp-layout, fig.width = 15, fig.cap = "country score layout"}
 
 options(repr.plot.width = 12, repr.plot.height = 18)
  wwc_outcomes_ROUND  %>% 
@@ -295,11 +299,11 @@ options(repr.plot.width = 12, repr.plot.height = 18)
   theme_classic(base_size =12) + 
   guides(color = FALSE) + 
   labs(fill = "Win_status", y = "Round", x = "Year") +
-  ggtitle("Experimental layout")
+  ggtitle("country score layout")
 ```
 Figure \@ref(fig:exp-layout) show the promotion situation for all the country attend the woman world cup between 1991 and 2019, the color represents the win, lose or tie, Each row represents a different stage of the game, such as group matches, semi-finals or final. It is clear to see that the United States has only lost four times in the past 20 years, The United States is a strong opponent in the Women's World Cup, followed by Germany, Although the number of losses is greater than that of the United States, Germany has also won many times. Figure \@ref(fig:exp-layout)  clearly sees the situation of each country. It can be seen that in women's football, the strength of different countries is very different. Why does this happen? What factors affect this phenomenon?
 
-## More score, more change to get the champion
+
 
 ### Total goals scored by different countries
 
@@ -334,7 +338,7 @@ p2 <- ggplot(numofplayers, aes(long, lat, group = group,label = region))+
     labs(fill = "Total number of goals",
          title = "Number of goals with different countries")+
    theme(
-    legend.position = c(.20, .30),
+    legend.position = c(.15, .30),
     legend.box.just = c("right","bottom"))+
    theme(axis.text.y = element_text(color = "grey", 
                                              face = "bold"),
@@ -385,35 +389,6 @@ ggplotly(p3)
 
 Figure \@ref(fig:Correlation) is a correlation analysis between total goals and change to win, The correlation coefficient is 0.768, which shows a positive correlation, that is, the more the total number of goals, the greater the chance of winning the championship.
 
-> Take note to come back to this part!
-
-```{r}
-# reference the country code in the wwc_outcomes
-wwc_outcomes_fullname <- wwc_outcomes %>%
-  left_join(codes, by = "team")
-```
-
-```{r team-result}
-# count the number of rounds participated by each country
-team_count <- wwc_outcomes_fullname %>%
-  select(country, year, score) %>%
-  count(country, year) %>%
-  rename("rounds" = n)
-# calculate the result for each team
-team_result <-wwc_outcomes_fullname %>%
-  select(country, year, score) %>%
-  group_by(country, year) %>%
-  summarise(total_score = sum(score)) %>%
-  ungroup()
-# bind the two tables to calculate avg score/ round
-avg_score_per_round <- team_result %>%
-  left_join(team_count, by = c("country", "year")) %>%
-  mutate(avg_score = total_score/rounds)
-```
-
-
-
-> Draw a line chart/ any other approprate charts for this. 
 
 ## Analysis by club
 
@@ -526,6 +501,7 @@ The domination of US and the rising of Spain suggested how a nation would suppor
 Next we will take a look deeper into the stars of the game - the players. In this section, we wanted to know if there are any factors that would determine a player's chance to participate in the World Cup, or even further, how these factors can tell about the performance of such player in the game.  
 
 ### Player's age
+
 First of all, we will look at the overall age distribution of all the players through all eight World Cup tournaments.
 
 ```{r player-age, fig.cap = "Player's age distribution"}
@@ -536,7 +512,7 @@ squads_mean <-squads_cleaned %>%
 ggplot()+
   geom_histogram(binwidth = 1 ,squads_cleaned, mapping = aes(age,fill= as.factor(year)), color = "black")+
   geom_vline(squads_mean, mapping = aes(xintercept = age), color = "red", size = 1.5)+
-  geom_text(squads_mean, mapping = aes(x = age+3, y = 60, label = round(age,digits = 2)))+
+  geom_text(squads_mean, mapping = aes(x = age+3, y = 50, label = round(age,digits = 2)))+
   facet_wrap(year~.)+
   theme_minimal()+
   theme(legend.position = "none")+
@@ -662,7 +638,9 @@ In figure \@ref(fig:relation), we have the density plot for each variables, the 
 
 # Conclusion
 
-In this exercise, we have learnt a bridging connection from the domestic clubs to the performance of their nations in an international field, which may appear to be counter - intuitive at first reception. If a country has managed to attract a lot of players played for its national clubs, the better its performance can be at any tournament.  Take the US for an example, the number of foreign players played for the US clubs as documented by FIFA was the highest out of all countries. Now that those foreign players came back to fight for their national teams, would you question how that would benefit the performance of the US national team? The US had won the World Cup half the time it was held until now, with another one being a runner up. The underlying fact was that if a country was attractive enough to have the players from everywhere come over, such country itself possesses enough resources to invest in talents, which solidify its stance further in any international game.    
+In this exercise, we have learnt a bridging connection from the domestic clubs to the performance of their nations in an international field, which may appear to be counter - intuitive at first reception. If a country has managed to attract a lot of players played for its national clubs, the better its performance can be at any tournament.  Take the US for an example, the number of foreign players played for the US clubs as documented by FIFA was the highest out of all countries. Now that those foreign players came back to fight for their national teams, would you question how that would benefit the performance of the US national team? The US had won the World Cup half the time it was held until now, with another one being a runner up. The underlying fact was that if a country was attractive enough to have the players from everywhere come over, such country itself possesses enough resources to invest in talents, which solidify its stance further in any international game.   
+
+We found that the total number of goals scored by a country is positively correlated with the chance of winning the championship. The more goals a country has, the greater the chance of winning the champion.
 
 Ages also influence over whether a player could be qualifies for World Cup or not. On average, a World Cup player would not be younger than her 20s and an ideal age range would be around 25 to 27 years. We also learnt that age and caps have a roughly positive relation where the higher the age, the more foreign experience a player most likely has. Unlike the age and caps, there was not a recognizable relation between the age and the goals. Higher age does not necessarily associate with higher goals. In fact, most goals were scored by players in their 20s - 30s. The position of players need to be taken into consideration rather than just goals to gauge a player's performance.  
 
